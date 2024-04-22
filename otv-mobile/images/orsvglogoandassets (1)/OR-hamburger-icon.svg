@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="89" height="89" viewBox="0 0 89 89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ed2028;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="44.5" cy="44.5" r="44.5"/>
+  <path id="RIGHT_NAVICATIN_" data-name="RIGHT_NAVICATIN " class="cls-2" d="M675,77.163v-3.17h40v3.17H675Zm14.737,16.914V90.906H715v3.172H689.737ZM675,110.992v-3.171h40v3.171H675Z" transform="translate(-655 -46)"/>
+</svg>

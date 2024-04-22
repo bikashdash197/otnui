@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="preconnect" href="https://odishatv.in/commondir/css/bootstrap.min.css" crossorigin>
+      <link rel="preconnect" href="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js" crossorigin>
+      <link rel="preconnect" href="https://odishatv.in/commondir/js/bootstrap.min.js" crossorigin>
+      <link rel="preconnect" href="https://images.odishatv.in/assets/js/jquery.unveil.js" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://odishatv.in/commondir/css/bootstrap.min.css">
+      <link href="https://odishatv.in/commondir/images/favicon.gif" rel="shortcut icon" type="image/gif">
+      <meta name="keywords" content="Home Page" />
+      <meta name="description" content="Home Page">
+      <title>OTV listing page desktop</title>
+      <style>
+         body {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Roboto', sans-serif;
+         font-weight: 400;
+         }
+         section {
+         float: left;
+         width: 100%;
+         }
+         .otv-300-250-ad {
+         width: 300px;
+         height: 250px;
+         display: flex;
+         margin: 0 auto;
+         text-align: center;
+         overflow: hidden;
+         background-color: #dfdfa1;
+         }
+         .otv-970-250-ad {
+            width: 970px;
+         height: 250px;
+         display: flex;
+         margin: 0 auto;
+         text-align: center;
+         overflow: hidden;
+         background-color: #dfdfa1;
+         }
+         /* BOOTSTRAP */
+         @media (min-width: 1200px) {
+         .container {
+         width: 1260px;
+         }
+         }
+         .col-xs-15,
+         .col-sm-15,
+         .col-md-15,
+         .col-lg-15 {
+         position: relative;
+         min-height: 1px;
+         padding-right: 7.5px;
+         padding-left: 7.5px;
+         }
+         .col-xs-15 {
+         width: 20%;
+         float: left;
+         }
+         @media (min-width: 768px) {
+         .col-sm-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         @media (min-width: 992px) {
+         .col-md-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         @media (min-width: 1200px) {
+         .col-lg-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         /* //BOOTSTRAP */
+         /* HEADING */
+         p, h1, h2, h3, h4, h5, h6 {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Roboto', sans-serif;
+         }
+         a, a:hover, a:focus, a:active {
+         text-decoration: none;
+         }
+         h2.bdn-heading-one-line {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         padding-left: 10px;
+         }
+         h2.bdn-heading-one-line span {
+         background-color: #fff;
+         padding: 0px 5px 0px 0px;
+         position: absolute;
+         z-index: 1;
+         }
+         h2.bdn-heading-one-line:before {
+         content: "";
+         background-color: #f00404;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         h2.bdn-heading-one-line:after {
+         content: "";
+         display: block;
+         position: absolute;
+         left: 13px;
+         top: 9px;
+         width: calc(100% - 75px);
+         height: 5px;
+         background-color: #cccccc;
+         border-radius: 5px;
+         z-index: 0;
+         }
+         a.bdn-more {
+         float: right;
+         color: #262626;
+         text-transform: uppercase;
+         border: #dc2229 solid 1px;
+         font-size: 13px;
+         margin: 0px 7.5px 0px 0px;
+         padding: 0px 5px;
+         line-height: 19px;
+         border-radius: 12px;
+         }
+         h2.bdn-heading-one {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         position: relative;
+         padding-left: 10px;
+         }
+         h2.bdn-heading-one:before {
+         content: "";
+         background-color: #f00404;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         /* //HEADING */
+         /* HEADER */
+         .bdn-main-nav.fixed-bdnnav {
+         top: 0;
+         position: fixed;
+         width: 100%;
+         transition-duration: .5s;
+         z-index: 9;
+         }
+         .bdn-main-nav {
+         float: left;
+         width: 100%;
+         background-color: #fff;
+         height: 80px;
+         box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+         }
+         .bdn-logo {
+         height: 80px;
+         padding-top: 15px;
+         width: 297.5px;
+         padding-left: 7.5px;
+         border-right: solid 1px #c5c5c5;
+         float: left;
+         }
+         .bdn-menu {
+         height: 80px;
+         float: left;
+         width: calc(100% - 297.5px);
+         }
+         .bdn-upper-menu {
+         height: 45px;
+         box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+         }
+         .bdn-lower-menu {
+         height: 35px;
+         }
+         button.bdn-sidemenu {
+         height: 45px;
+         width: 45px;
+         margin: 0px;
+         padding: 0px;
+         line-height: 45px;
+         border: none;
+         background: none;
+         float: left;
+         }
+         ul.upper-left-menu {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.upper-left-menu li {
+         list-style-type: none;
+         float: left;
+         line-height: 45px;
+         border-left: solid 1px #c5c5c5;
+         }
+         ul.upper-left-menu li a {
+         text-decoration: none;
+         display: block;
+         padding: 0px 15px;
+         text-transform: uppercase;
+         color: #333;
+         }
+         ul.upper-left-menu li a img {
+         margin: -6px 5px 0px 0px;
+         }
+         ul.upper-right-menu {
+         margin: 0px 7.5px 0px 0px;
+         padding: 0px;
+         float: right;
+         }
+         ul.upper-right-menu li {
+         list-style-type: none;
+         float: left;
+         line-height: 45px;
+         margin-left: 20px;
+         position: relative;
+         cursor: pointer;
+         }
+         ul.upper-right-menu li a {
+         text-decoration: none;
+         display: block;
+         text-transform: capitalize;
+         }
+         ul.lower-left-menu {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.lower-left-menu li {
+         list-style-type: none;
+         float: left;
+         margin-left: 10px;
+         line-height: 35px;
+         padding-top: 5px;
+         }
+         ul.lower-left-menu li a {
+         text-decoration: none;
+         display: block;
+         text-transform: uppercase;
+         color: #000;
+         font-size: 12px;
+         position: relative;
+         }
+         input.bdn-search {
+         position: absolute;
+         right: -13px;
+         top: 0;
+         height: 45px;
+         border: none;
+         outline: none;
+         background-color: #d3d3d3;
+         width: 320px;
+         padding: 0px 70px 0px 10px;
+         }
+         img.bdn-search-go {
+         position: absolute;
+         right: 24px;
+         top: 17px;
+         }
+         img.bdn-search-close {
+         position: absolute;
+         right: -6px;
+         top: 16px;
+         }
+         /* //HEADER */
+         /* HEADER */
+         header {
+         float: left;
+         width: 100%;
+         margin-bottom: 20px;
+         }
+         .top-bar {
+         float: left;
+         width: 100%;
+         background-color: #d3d3d3;
+         height: 35px;
+         }
+         ul.bdn-date-weather {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.bdn-date-weather li {
+         list-style-type: none;
+         float: left;
+         font-size: 14px;
+         text-transform: uppercase;
+         line-height: 35px;
+         }
+         li.bdn-weather {
+         position: relative;
+         margin-left: 25px;
+         }
+         li.bdn-weather:before {
+         content: "";
+         display: block;
+         width: 1px;
+         height: 14px;
+         background-color: #000;
+         position: absolute;
+         left: -12px;
+         top: 9px;
+         }
+         ul.bdn-top-social {
+         margin: 0px;
+         padding: 0px;
+         float: right;
+         }
+         ul.bdn-top-social li {
+         list-style-type: none;
+         float: left;
+         margin-left: 15px;
+         margin-right: 15px;
+         position: relative;
+         }
+         ul.bdn-top-social li a {
+         text-decoration: none;
+         display: block;
+         line-height: 35px;
+         }
+         ul.bdn-top-social li:before {
+         content: "";
+         display: block;
+         position: absolute;
+         right: -15px;
+         top: 0;
+         width: 1px;
+         height: 35px;
+         background-color: #9c9c9c;
+         }
+         ul.bdn-top-social li:last-child:before {
+         display: none;
+         }
+         ul.lower-left-menu li a span {
+         position: absolute;
+         right: -1px;
+         top: -13px;
+         color: #333;
+         font-size: 11px;
+         }
+         ul.lower-right-menu {
+         float: right;
+         margin: 0px 7.5px 0px 0px;
+         padding: 0px;
+         }
+         ul.lower-right-menu li {
+         list-style-type: none;
+         line-height: 35px;
+         margin-left: 40px;
+         float: left;
+         padding-top: 5px;
+         }
+         ul.lower-right-menu li a {
+         text-decoration: none;
+         display: block;
+         color: #000;
+         text-transform: capitalize;
+         font-size: 13px;
+         font-weight: 700;
+         position: relative;
+         }
+         ul.lower-right-menu li a span {
+         position: absolute;
+         right: 0;
+         top: -4px;
+         font-size: 12px;
+         color: #fff;
+         background-color: #b7392e;
+         line-height: 14px;
+         padding: 0px 3px;
+         border-radius: 2px;
+         }
+         /* //HEADER */
+         /* FOOTER */
+         footer {
+         float: left;
+         width: 100%;
+         }
+         .main-visit-links-ft{
+         background-color:rgba(34,34,34,255);
+         padding: 20px 0;
+         }
+         .ft-fst-row{
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 20px;
+         }
+         .logo-btn-ft{
+         display: flex;
+         }
+         .otv-logo-ft{
+         height: 35px;
+         margin-right: 20px;
+         }
+         .live-btn-otv-ft{
+         background-color: #c10503;
+         border: none;
+         border-radius: 22px;
+         padding: 0px 9px;
+         margin: 7px 0;
+         }
+         .live-btn-otv-ft a{
+         text-transform: capitalize;
+         color: #fff;
+         font-size: 14px;
+         text-decoration: none;
+         }
+         .sub-btn-otv-ft{
+         border:1px solid #fff;
+         background-color: #333030;
+         padding: 4px 6px;
+         border-radius: 4px;
+         }
+         .sub-btn-otv-ft a{
+         text-transform: uppercase;
+         font-size: 12px;
+         color: #fff;
+         font-weight: 600;
+         margin: 0;
+         text-decoration: none;
+         }
+         input.search-input-otv{
+         text-transform: capitalize;
+         padding: 4px 4px;
+         border-radius: 4px;
+         width: 420px;
+         margin-right: 5px;
+         }
+         .short-visit-link-otv{
+         border-right: 1px solid gray; 
+         }
+         h5.ft-link-heading a{
+         color: #fff;
+         text-transform: capitalize;
+         font-size: 14px;
+         padding: 0 0 4px 0;
+         text-decoration: underline;
+         }
+         ul.ft-subnews-link{
+         list-style-type: none;
+         }
+         ul.ft-subnews-link li a{
+         color: lightgray;
+         margin-left: -40px;
+         font-weight: 500;
+         font-size: 12px;
+         text-transform: capitalize;
+         text-decoration: none;
+         }
+         .partner-ft-otv{
+         background-color:#32373b;
+         padding: 10px 0;
+         }
+         h5.partner-ft-heading{
+         color: #fff;
+         padding: 0;
+         margin: 0 0 5px 0;
+         text-transform: uppercase;
+         font-size: 12px;
+         }
+         ul.partner-link-otv{
+         list-style-type: none;
+         margin-left: -40px;
+         }
+         ul.partner-link-otv li{
+         display: inline-block;
+         }
+         ul.partner-link-otv li a{
+         color: lightgray;
+         font-weight: 500;
+         font-size: 10px;
+         text-transform: uppercase;
+         text-decoration: none;
+         padding-right: 10px;
+         border-right: 1px solid gray;
+         }
+         .contact-ft-otv{
+         background-color: #1a1d22;
+         display: flex;
+         margin: 0;
+         padding: 0;
+         align-items: center;
+         }
+         ul.contact-us-link-otv{
+         list-style-type: none;
+         margin-left: -40px;
+         }
+         ul.contact-us-link-otv li a{
+         color: lightgray;
+         font-weight: 500;
+         font-size: 10px;
+         text-transform: uppercase;
+         text-decoration: none;
+         padding-right: 10px;
+         border-right: 1px solid gray;
+         }
+         ul.contact-us-link-otv li{
+         display: inline-block;
+         }
+         ul.social-icon-otv-ft{
+         list-style-type: none;
+         display: flex;
+         }
+         .social-icon-otv-img{
+         margin: 0 10px;
+         height: 14px;
+         }
+         .app-store-cnt-ft{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+         margin-left: 50px;
+         }
+         .store-title-otv{
+         color: #fff;
+         text-transform: uppercase;
+         margin: 0;
+         padding: 0;
+         font-size: 12px;
+         }
+         .googleplay-img-ft{
+         height: 40px;
+         }
+         .appstore-img-ft{
+         height: 28px;
+         }
+         /* //FOOTER */
+         /* PHOTO GALLERY */
+         ul.article-share-style-more li a i {
+         text-decoration: none;
+         display: block;
+         font-size: 19px;
+         }
+         ul.article-share-style-more li a i:hover {
+         }
+         .share-social-media-add {
+         position: relative;
+         }
+         ul.article-share-style-more {
+         position: absolute;
+         right: 100%;
+         bottom: -6px;
+         border: 1px solid #aaaaaa45;
+         box-shadow: 0 2px 8px #9a9797;
+         display: none;
+         background-color: #fff;
+         margin: 0px;
+         width: max-content;
+         height: 32px;
+         overflow: hidden;
+         padding: 0px 10px 0px 15px;
+         }
+         ul.article-share-style-more li {
+         list-style-type: none;
+         float: left;
+         margin: 0px 20.5px;
+         padding: 0px;
+         border: none !important;
+         margin-left: 0px !important;
+         padding-left: 0px !important;
+         }
+         ul.article-share-style-more li:last-child {
+         margin: 0px;
+         }
+         ul.article-share-style-more li a {
+         text-decoration: none;
+         display: block;
+         line-height: 50px;
+         padding: 6px 0px;
+         }
+         ul.article-share-style-more li a:hover i{
+         color: #7b0505 !important;
+         }
+         ul.article-share-style-more li a i.fab.fa-facebook-f {
+         color: #3c51a5;
+         }
+         ul.article-share-style-more li a i.fab.fa-twitter {
+         color: #5db2f7;
+         }
+         ul.article-share-style-more li a i.fab.fa-instagram {
+         color: #d94b8e;
+         }
+         ul.article-share-style-more li a i.fab.fa-pinterest-p {
+         color: #d93a34;
+         }
+         ul.article-share-style-more li a i.fab.fa-linkedin-in {
+         color: #036593;
+         }
+         ul.article-share-style-more li a i.fab.fa-telegram-plane {
+         color: #299ecf;
+         }
+         ul.article-share-style li a i.fas.fa-print {
+         color: #21428f;
+         }
+         ul.article-share-style li a i.fas.fa-comment-dots {
+         color: #f178a3;
+         }
+         ul.article-share-style li a i.fas.fa-bookmark {
+         color: #f4b01b;
+         }
+         ul.article-share-style li a i.fas.fa-share-alt {
+         color: #818181;
+         }
+         .dark-mode {
+         background-color: black;
+         color: #000;
+         }
+         div.black-bg-page {
+         float: left;
+         width: 100%;
+         margin-top: -20px;
+         padding-top: 20px;
+         }
+         /* photo-gallery-details-social */
+         ul.photo-gallery-details-social {
+         margin: 6px;
+         position: relative;
+         padding: 0px;
+         }
+         ul.photo-gallery-details-social li  {
+         color: #fbfbfb;
+         list-style: inline;
+         display: inline;
+         margin-right: 2px; 
+         }
+         ul.photo-gallery-details-social li a{
+         color: #000;
+         }
+         ul.photo-gallery-details-social li a:hover{
+         color: #d79450;
+         }
+         ul.photo-gallery-details-social li a i {
+         width: 44px;
+         height: 44px;
+         text-align: center;
+         font-size: 18px;
+         border-radius: 50%;
+         border: 2px solid #676363;
+         padding: 11px;
+         }
+         .photo-gallery h1 {
+         margin: 0px 0px 20px 0px;
+         padding: 0px;
+         text-transform: capitalize;
+         font-size: 30px;
+         font-weight: 700;
+         line-height: 44px;
+         color: #000;
+         }
+         .photo-gallery h2 {
+         margin: 0px 0px 20px 0px;
+         padding: 0px;
+         text-transform: capitalize;
+         font-size: 30px;
+         font-weight: 700;
+         line-height: 44px;
+         color: #000;
+         }
+         .photo-gallery h4 {
+         color: #ffffff;
+         }
+         p.last-update-date-gallery {
+         color: #c5bfbf;
+         font-size: 12px;
+         line-height: 20px;
+         font-weight: 200;
+         text-transform: uppercase;
+         }
+         .photo-gallery-details {
+         margin: 0px 0px 38px 0px;
+         padding-bottom: 15px;
+         display: inline-block;
+         border-bottom: solid 1px #715f65;
+         width: 100%;
+         position: relative;
+         }
+         .photo-gallery-details-photo {
+         position: relative;
+         }
+         hr.photo-gallery-details-photo {
+         border-top: 0.5px solid #8080804f;
+         }
+         .photo-gallery-details p {
+         color: #000;
+         margin: 20px 0px;
+         font-size: 20px;
+         line-height: 26px;
+         font-weight: 400;
+         }
+         span.photo-gallery-details-photo-credit-sub1 {
+         position: absolute;
+         bottom: 0px;
+         left: 0;
+         line-height: 18px;
+         background-color: rgb(0 0 0 / 0.58);
+         width: fit-content;
+         padding: 10px;
+         color: #fff;
+         font-size: 13px;
+         opacity: 0.8;
+         }
+         ul.photo-gallery-details-photo-credit-sub2 {
+         position: absolute;
+         right: 0px;
+         bottom: 0px;
+         line-height: 15px;
+         background-color: rgb(0 0 0 / 0.58);
+         width: fit-content;
+         padding: 8px;
+         color: #fff;
+         margin: 0px;
+         }
+         ul.photo-gallery-details-photo-credit-sub2 li {
+         list-style-type: none;
+         display: inline;
+         cursor: pointer;
+         }
+         ul.photo-gallery-details-photo-credit-sub2 li span {
+         font-size: 21px;
+         }
+         span.photo-gallery-details-photo-credit-sub1 i {
+         margin-right: 10px;
+         }
+         ul.photo-gallery-details-photo-credit-sub2 li:last-child {
+         margin-left: 15px;
+         border-left: 1px solid #eaeaea85;
+         padding-left: 16px;
+         }
+         ul.article-share-style-more.photo-gallery-social {
+         bottom: -6px;
+         }
+         .photo-gallery-details img {
+         width: 100%;
+         height: auto;
+         }
+         .photo-gallery-details h3 {
+         font-size: 36px;
+         margin-top: 0px;
+         color: #000;
+         margin-bottom: 11px;
+         }
+         ul.footer-button {
+         margin-left: 0px;
+         padding: 0px;
+         margin-bottom: 52px;
+         margin-top: 20px;
+         }
+         ul.footer-button li {
+         display: inline-block;
+         margin: 4px 2px 0px 0px;
+         color: #ffffff;
+         border: 1px solid;
+         padding: 7px 9px;
+         border-radius: 9px;
+         }
+         ul.footer-button li a {
+         color: #fbfbfb;
+         }
+         ul.footer-button li a:hover {
+         color: #d79450;
+         }
+         h2.next-heading {
+         color: #ffffff;
+         font-weight: 500;
+         font-size: 28px;
+         border: 1px solid #000;
+         margin: 0px;
+         padding: 6px 7px 6px 20px;
+         margin-bottom: 32px;
+         position: relative;
+         }
+         h2.next-heading:before {
+         content: "";
+         width: 0%;
+         height: 0%;
+         border-left: 12px solid transparent;
+         border-right: 12px solid transparent;
+         border-top: 11px solid #000;
+         bottom: 0px;
+         top: 43px;
+         position: absolute;
+         }
+         ul.photo-gallery2-heading {
+         margin: 0px 0px 0px 15px;
+         padding: 0px;
+         text-align: right;
+         display: inline-block;
+         width: 100%;
+         }
+         ul.photo-gallery2-heading li {
+         float: left;
+         margin-top: 7px;
+         list-style-type: none;
+         display: inline-block;
+         }
+         ul.photo-gallery2-heading li h3.heading-style-one {
+         padding: 0px 0px 0px 45px;
+         position: relative;
+         text-transform: uppercase;
+         font-weight: 700;
+         font-size: 18px;
+         }
+         ul.photo-gallery2-heading li h3.heading-style-one:before{
+         content: "";
+         display: block;
+         background-color: #7b0505;
+         position: absolute;
+         left: 0;
+         top: 3px;
+         width: 30px;
+         height: 13px;
+         }
+         /* //PHOTO GALLERY */
+         /* RIGHT SIDEBAR */
+         .bdn-top-stories {
+         background-color: #fff;
+         padding: 7.5px 0px;
+         }
+         .bdn-heading-block {
+         margin: 0px 0px 12px 0px;
+         padding: 0px;
+         display: inline-block;
+         width: -webkit-fill-available;
+         position: relative;
+         }
+         .bdn-card-two {
+         position: relative;
+         padding-right: 106px;
+         min-height: 54px;
+         display: inline-block;
+         margin-bottom: 12px;
+         }
+         img.bdn-card-two-img {
+         width: 96px;
+         height: 54px;
+         position: absolute;
+         right: 0;
+         top: 0;
+         border-radius: 3px;
+         }
+         .bdn-card-two h4 {
+         font-size: 15px;
+         text-decoration: none;
+         display: block;
+         color: #000;
+         font-weight: 400;
+         line-height: 19px;
+         margin-bottom: 5px;
+         }
+         .bdn-card-two h2 {
+         font-size: 15px;
+         text-decoration: none;
+         display: block;
+         color: #2b2b2b;
+         font-weight: 700;
+         line-height: 19px;
+         margin-bottom: 5px;
+         }
+         .bdn-card-two h3 {
+         text-decoration: none;
+         display: block;
+         color: #2b2b2b;
+         margin-bottom: 5px;
+         font-size: 14px;
+         font-weight: 700;
+         line-height: 18px;
+         }
+         .bdn-card-two ul {
+         margin: 12px 0px 0px 0px;
+         padding: 0px;
+         }
+         .bdn-card-two ul li {
+         list-style-type: none;
+         float: left;
+         text-transform: uppercase;
+         font-size: 12px;
+         color: #333;
+         }
+         .bdn-card-two li a {
+         color: #000;
+         margin-right: 23px;
+         position: relative;
+         }
+         .bdn-card-two ul li a:after {
+         content: "";
+         background-color: #b5afaf;
+         position: absolute;
+         width: 8px;
+         height: 8px;
+         border-radius: 50%;
+         right: -16px;
+         top: 3px;
+         }
+         .bdn-card-two.bottom-border {
+         padding-bottom: 20px;
+         margin-bottom: 23px;
+         }
+         .bdn-card-two.bottom-margin-two {
+         margin-bottom: 34px;
+         }
+         .bdn-card-two.bottom-sort-border:after {
+         width: 144px;
+         background-color: #e1dbdb;
+         height: 1px;
+         content: "";
+         display: block;
+         margin: 18px 0px 10px 0px;
+         }
+         .bottom-border {
+         border-bottom: solid 1px #e1dbdb;
+         }
+         /* //RIGHT SIDEBAR */
+      </style>
+   </head>
+   <body>
+      <header>
+         <div class="top-bar">
+            <div class="col-lg-12">
+               <ul class="bdn-date-weather">
+                  <li>THURSDAY, AUGUst 20, 2020</li>
+                  <li class="bdn-weather">Bhubaneswar <img src="https://beta-live.odishatv.in/commondir/images/svg/weather-icon.svg" alt="" title="" width="19" height="19"> <strong>31 &deg; C</strong></li>
+               </ul>
+               <ul class="bdn-top-social">
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-facebook.svg" alt="" title="" width="6" height="11"></a></li>
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-twitter.svg" alt="" title="" width="12" height="12"></a></li>
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-linkedin.svg" alt="" title="" width="12" height="12"></a></li>
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-instagram.svg" alt="" title="" width="12" height="12"></a></li>
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-telegram.svg" alt="" title="" width="12" height="12"></a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="bdn-main-nav">
+            <div class="bdn-logo">
+               <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/logo.svg" alt="OTV Logo" title="OTV Logo" width="281" height="50" class="main-logo-img"></a>
+            </div>
+            <div class="bdn-menu">
+               <div class="bdn-upper-menu">
+                  <button class="bdn-sidemenu" title="menu">
+                  <img src="https://beta-live.odishatv.in/commondir/images/svg/hamburger-icon-otv.svg" alt="" title="" width="22" height="14">
+                  </button>
+                  <ul class="upper-left-menu">
+                     <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/home-otv.svg" alt="" title="" width="17" height="17"> news</a></li>
+                     <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/video-otv.svg" alt="" title="" width="17" height="17"> videos</a></li>
+                     <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/photos-otv.svg" alt="" title="" width="17" height="17"> photos</a></li>
+                     <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/webseries-otv.svg" alt="" title="" width="17" height="17"> webstories</a></li>
+                  </ul>
+                  <ul class="upper-right-menu">
+                     <li><img src="https://beta-live.odishatv.in/commondir/images/svg/fa-moon.svg" alt="" title="" width="43" height="25" class="darkmode-btn darkmode-svg-icon"></li>
+                     <li class="bdn-search-list">
+                        <form>
+                           <input type="text" name="" class="bdn-search" placeholder="Search" style="display: none;">
+                           <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="" title="" width="15" height="15" class="bdn-search-go" style="display: none;">
+                           <img src="https://beta-live.odishatv.in/commondir/images/svg/close-gray.svg" alt="" title="" width="16" height="14" class="bdn-search-close" style="display: none;">
+                        </form>
+                        <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="Search" title="Search" width="15" height="15" class="search-bdn">
+                     </li>
+                     <li><img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsignin.svg" alt="" title="" width="12" height="18"> Sign In</li>
+                  </ul>
+               </div>
+               <div class="bdn-lower-menu">
+                  <ul class="lower-left-menu">
+                     <li><a href="#" title="otv">live tv</a></li>
+                     <li><a href="#" title="otv">ipl 2023</a></li>
+                     <li><a href="#" title="otv">latest</a></li>
+                     <li><a href="#" title="otv">latest<span>New</span></a></li>
+                     <li><a href="#" title="otv">ipl 2023</a></li>
+                     <li><a href="#" title="otv">latest<span>New</span></a></li>
+                     <li><a href="#" title="otv">live tv</a></li>
+                     <li><a href="#" title="otv">ipl 2023</a></li>
+                     <li><a href="#" title="otv">latest<span>New</span></a></li>
+                  </ul>
+                  <ul class="lower-right-menu">
+                     <li><a href="#" title="otv">astrospeak<span>New</span></a></li>
+                     <li><a href="#" title="otv">astrospeak<span>New</span></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- SIDE MENU -->
+         <div class="hamburger-nav" style="display: none;">
+            <button class="close-hamburger"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdnleftarrow.svg"></button>
+            <div class="bdn-otv-small-logo">
+               <a href="#" title="otv"><img src="https://odishatv.in//commondir/images/logo-white.png" alt="" title="" width="44" height="36"></a>
+               <span>menu</span>
+            </div>
+            <ul class="hamburger-menu">
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">covid <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">1 covid <span>new</span></a></li>
+            </ul>
+         </div>
+         <!-- //SIDE MENU -->
+      </header>
+      <section class="main-article">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12 sticky">
+                     <div class="photo-gallery">
+                        <h1>Farmers’ Nationwide Rail Roko Disrupts Train Services</h1>
+                        <p>Train services across the country were severely disrupted on Monday owing to a nationwide 'Rail Roko' protest by the Samyukta Kisan Morcha (SKM). Several trains had to be cancelled while many others were partially cancelled due to the protest. The Kisan Morcha backed by several farmer organisations observed a six-hour-long rail roko from 10AM to 4PM demanding removal of Union MoS for Home Affairs Ajay Mishra from his post over the Lakhimpur Kheri incident, in which his son Ashish is an accused.</p>
+                     </div>
+                     <p class="last-update-date-gallery">Last updated: 19 October 2021, 12:33 PM IST</p>
+                     <div class="photo-gallery-details">
+                        <!-- <h3>Rail Roko by Farmers</h3> -->
+                        <div class="photo-gallery-details-photo" id="image_1">
+                           <img data-url="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-imagenum="1" data-alt="Rail Roko by Farmers" src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1634625574.jpg" class="img-responsive gallery-responsive" alt="Rail Roko by Farmers" title="Rail Roko by Farmers">
+                           <!--============ GALLERY SHARE ===========-->
+                           <ul class="photo-gallery-details-photo-credit-sub2 ">
+                              <li><span>1</span>/10</li>
+                              <li class="share-social-media-add">
+                                 <i class="fas fa-share-alt"></i>
+                                 <ul class="article-share-style-more photo-gallery-social">
+                                    <li> <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060') +'&amp;t='+encodeURIComponent('Rail Roko by Farmers'),'_blank'); return false;"><i class="fab fa-facebook-f"></i>
+                                       </a> 
+                                    </li>
+                                    <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060')+'&amp;text='+encodeURIComponent('Rail Roko by Farmers')+'&amp;hashtags=otv','_blank'); return false;"><i class="fab fa-twitter"></i></a> </li>
+                                    <!--<li>
+                                       <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                                       <i class="fab fa-instagram"></i>
+                                       </a>
+                                       </li>-->
+                                    <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060 is the best website to Get latest news and updates" title="Rail Roko by Farmers" data-link="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                                    <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                       <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                                 </ul>
+                              </li>
+                           </ul>
+                           <!--============ GALLERY SHARE ===========-->
+                        </div>
+                        <p class="gallery_copy_true">Farmers block railway tracks at Devi Dass Pura in Amritsar district as part of the Samyukt Kisan Morcha's rail roko protest demanding the dismissal and arrest of Union Minister Ajay Mishra in connection with Lakhimpur Kheri violence.</p>
+                     </div>
+                     <div class="photo-gallery-details">
+                        <!-- <h3>Rail Roko by Farmers </h3> -->
+                        <div class="photo-gallery-details-photo" id="image_2">
+                           <img data-url="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-imagenum="2" data-alt="Rail Roko by Farmers " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1634625644.jpg" class="img-responsive gallery-responsive" alt="Rail Roko by Farmers " title="Rail Roko by Farmers ">
+                           <!--============ GALLERY SHARE ===========-->
+                           <ul class="photo-gallery-details-photo-credit-sub2 ">
+                              <li><span>2</span>/10</li>
+                              <li class="share-social-media-add">
+                                 <i class="fas fa-share-alt"></i>
+                                 <ul class="article-share-style-more photo-gallery-social">
+                                    <li> <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060') +'&amp;t='+encodeURIComponent('Rail Roko by Farmers '),'_blank'); return false;"><i class="fab fa-facebook-f"></i>
+                                       </a> 
+                                    </li>
+                                    <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060')+'&amp;text='+encodeURIComponent('Rail Roko by Farmers ')+'&amp;hashtags=otv','_blank'); return false;"><i class="fab fa-twitter"></i></a> </li>
+                                    <!--<li>
+                                       <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                                       <i class="fab fa-instagram"></i>
+                                       </a>
+                                       </li>-->
+                                    <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060 is the best website to Get latest news and updates" title="Rail Roko by Farmers " data-link="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                                    <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                       <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                                 </ul>
+                              </li>
+                           </ul>
+                           <!--============ GALLERY SHARE ===========-->
+                        </div>
+                        <p class="gallery_copy_true">Members of various farmer organizations block a railway track during a protest against the central government, at Krishnanagar in Nadia.</p>
+                     </div>
+                     <div class="otv-728-90-ad">
+                     </div>
+                     <div class="photo-gallery-details">
+                        <!-- <h3>Rail Roko by Farmers </h3> -->
+                        <div class="photo-gallery-details-photo" id="image_3">
+                           <img data-url="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-imagenum="3" data-alt="Rail Roko by Farmers " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1634625713.jpg" class="img-responsive gallery-responsive" alt="Rail Roko by Farmers " title="Rail Roko by Farmers ">
+                           <!--============ GALLERY SHARE ===========-->
+                           <ul class="photo-gallery-details-photo-credit-sub2 ">
+                              <li><span>3</span>/10</li>
+                              <li class="share-social-media-add">
+                                 <i class="fas fa-share-alt"></i>
+                                 <ul class="article-share-style-more photo-gallery-social">
+                                    <li> <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060') +'&amp;t='+encodeURIComponent('Rail Roko by Farmers '),'_blank'); return false;"><i class="fab fa-facebook-f"></i>
+                                       </a> 
+                                    </li>
+                                    <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060')+'&amp;text='+encodeURIComponent('Rail Roko by Farmers ')+'&amp;hashtags=otv','_blank'); return false;"><i class="fab fa-twitter"></i></a> </li>
+                                    <!--<li>
+                                       <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                                       <i class="fab fa-instagram"></i>
+                                       </a>
+                                       </li>-->
+                                    <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060 is the best website to Get latest news and updates" title="Rail Roko by Farmers " data-link="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                                    <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                       <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                                 </ul>
+                              </li>
+                           </ul>
+                           <!--============ GALLERY SHARE ===========-->
+                        </div>
+                        <p class="gallery_copy_true">Police personnel attempt to stop members of various farmer unions during a protest at Kachiguda Railway Station in Hyderabad.</p>
+                     </div>
+                     <div class="photo-gallery-details">
+                        <!-- <h3>Rail Roko protest</h3> -->
+                        <div class="photo-gallery-details-photo" id="image_4">
+                           <img data-url="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-imagenum="4" data-alt="Rail Roko protest" src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1634625849.jpg" class="img-responsive gallery-responsive" alt="Rail Roko protest" title="Rail Roko protest">
+                           <!--============ GALLERY SHARE ===========-->
+                           <ul class="photo-gallery-details-photo-credit-sub2 ">
+                              <li><span>4</span>/10</li>
+                              <li class="share-social-media-add">
+                                 <i class="fas fa-share-alt"></i>
+                                 <ul class="article-share-style-more photo-gallery-social">
+                                    <li> <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060') +'&amp;t='+encodeURIComponent('Rail Roko protest'),'_blank'); return false;"><i class="fab fa-facebook-f"></i>
+                                       </a> 
+                                    </li>
+                                    <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060')+'&amp;text='+encodeURIComponent('Rail Roko protest')+'&amp;hashtags=otv','_blank'); return false;"><i class="fab fa-twitter"></i></a> </li>
+                                    <!--<li>
+                                       <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                                       <i class="fab fa-instagram"></i>
+                                       </a>
+                                       </li>-->
+                                    <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060 is the best website to Get latest news and updates" title="Rail Roko protest" data-link="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                                    <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                       <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                                 </ul>
+                              </li>
+                           </ul>
+                           <!--============ GALLERY SHARE ===========-->
+                        </div>
+                        <p class="gallery_copy_true">Hundreds of farmers block railway tracks as part of Rail Roko protest in Bahadurgarh. </p>
+                     </div>
+                     <div class="otv-728-90-ad">
+                     </div>
+                     <div class="photo-gallery-details">
+                        <!-- <h3>Rail Roko protest by farmers</h3> -->
+                        <div class="photo-gallery-details-photo" id="image_5">
+                           <img data-url="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-imagenum="5" data-alt="Rail Roko protest by farmers" src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1634626419.jpg" class="img-responsive gallery-responsive" alt="Rail Roko protest by farmers" title="Rail Roko protest by farmers">
+                           <!--============ GALLERY SHARE ===========-->
+                           <ul class="photo-gallery-details-photo-credit-sub2 ">
+                              <li><span>5</span>/10</li>
+                              <li class="share-social-media-add">
+                                 <i class="fas fa-share-alt"></i>
+                                 <ul class="article-share-style-more photo-gallery-social">
+                                    <li> <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060') +'&amp;t='+encodeURIComponent('Rail Roko protest by farmers'),'_blank'); return false;"><i class="fab fa-facebook-f"></i>
+                                       </a> 
+                                    </li>
+                                    <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060')+'&amp;text='+encodeURIComponent('Rail Roko protest by farmers')+'&amp;hashtags=otv','_blank'); return false;"><i class="fab fa-twitter"></i></a> </li>
+                                    <!--<li>
+                                       <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                                       <i class="fab fa-instagram"></i>
+                                       </a>
+                                       </li>-->
+                                    <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060 is the best website to Get latest news and updates" title="Rail Roko protest by farmers" data-link="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                                    <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                       <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                                 </ul>
+                              </li>
+                           </ul>
+                           <!--============ GALLERY SHARE ===========-->
+                        </div>
+                        <p class="gallery_copy_true">Farmers ride tractors as they move towards a protest site during an agitation against Noida authority in Noida.</p>
+                     </div>
+                     <div class="photo-gallery-details">
+                        <!-- <h3>Rail Roko by Farmers </h3> -->
+                        <div class="photo-gallery-details-photo" id="image_6">
+                           <img data-url="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-imagenum="6" data-alt="Rail Roko by Farmers " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1634626566.jpg" class="img-responsive gallery-responsive" alt="Rail Roko by Farmers " title="Rail Roko by Farmers ">
+                           <!--============ GALLERY SHARE ===========-->
+                           <ul class="photo-gallery-details-photo-credit-sub2 ">
+                              <li><span>6</span>/10</li>
+                              <li class="share-social-media-add">
+                                 <i class="fas fa-share-alt"></i>
+                                 <ul class="article-share-style-more photo-gallery-social">
+                                    <li> <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060') +'&amp;t='+encodeURIComponent('Rail Roko by Farmers '),'_blank'); return false;"><i class="fab fa-facebook-f"></i>
+                                       </a> 
+                                    </li>
+                                    <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060')+'&amp;text='+encodeURIComponent('Rail Roko by Farmers ')+'&amp;hashtags=otv','_blank'); return false;"><i class="fab fa-twitter"></i></a> </li>
+                                    <!--<li>
+                                       <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                                       <i class="fab fa-instagram"></i>
+                                       </a>
+                                       </li>-->
+                                    <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060 is the best website to Get latest news and updates" title="Rail Roko by Farmers " data-link="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                                    <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                       <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                                 </ul>
+                              </li>
+                           </ul>
+                           <!--============ GALLERY SHARE ===========-->
+                        </div>
+                        <p class="gallery_copy_true">Bharatiya Kisan Union farmers during their protest march towards the Noida Authority, in Greater Noida.</p>
+                     </div>
+                     <div class="photo-gallery-details">
+                        <!-- <h3>rail roko</h3> -->
+                        <div class="photo-gallery-details-photo" id="image_7">
+                           <img data-url="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-imagenum="7" data-alt="rail roko" src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/rail_roko_1634626639.jpg" class="img-responsive gallery-responsive" alt="rail roko" title="rail roko">
+                           <!--============ GALLERY SHARE ===========-->
+                           <ul class="photo-gallery-details-photo-credit-sub2 ">
+                              <li><span>7</span>/10</li>
+                              <li class="share-social-media-add">
+                                 <i class="fas fa-share-alt"></i>
+                                 <ul class="article-share-style-more photo-gallery-social">
+                                    <li> <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060') +'&amp;t='+encodeURIComponent('rail roko'),'_blank'); return false;"><i class="fab fa-facebook-f"></i>
+                                       </a> 
+                                    </li>
+                                    <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060')+'&amp;text='+encodeURIComponent('rail roko')+'&amp;hashtags=otv','_blank'); return false;"><i class="fab fa-twitter"></i></a> </li>
+                                    <!--<li>
+                                       <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                                       <i class="fab fa-instagram"></i>
+                                       </a>
+                                       </li>-->
+                                    <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060 is the best website to Get latest news and updates" title="rail roko" data-link="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                                    <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                       <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                                 </ul>
+                              </li>
+                           </ul>
+                           <!--============ GALLERY SHARE ===========-->
+                        </div>
+                        <p class="gallery_copy_true">Farmers block railway tracks at Modinagar in Ghaziabad. </p>
+                     </div>
+                     <div class="photo-gallery-details">
+                        <!-- <h3>farmers protest</h3> -->
+                        <div class="photo-gallery-details-photo" id="image_8">
+                           <img data-url="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-imagenum="8" data-alt="farmers protest" src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1634626730.jpg" class="img-responsive gallery-responsive" alt="farmers protest" title="farmers protest">
+                           <!--============ GALLERY SHARE ===========-->
+                           <ul class="photo-gallery-details-photo-credit-sub2 ">
+                              <li><span>8</span>/10</li>
+                              <li class="share-social-media-add">
+                                 <i class="fas fa-share-alt"></i>
+                                 <ul class="article-share-style-more photo-gallery-social">
+                                    <li> <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060') +'&amp;t='+encodeURIComponent('farmers protest'),'_blank'); return false;"><i class="fab fa-facebook-f"></i>
+                                       </a> 
+                                    </li>
+                                    <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060')+'&amp;text='+encodeURIComponent('farmers protest')+'&amp;hashtags=otv','_blank'); return false;"><i class="fab fa-twitter"></i></a> </li>
+                                    <!--<li>
+                                       <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                                       <i class="fab fa-instagram"></i>
+                                       </a>
+                                       </li>-->
+                                    <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060 is the best website to Get latest news and updates" title="farmers protest" data-link="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                                    <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                       <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                                 </ul>
+                              </li>
+                           </ul>
+                           <!--============ GALLERY SHARE ===========-->
+                        </div>
+                        <p class="gallery_copy_true">Tractor riding of farmers as part of protest leads to traffic jam in Noida</p>
+                     </div>
+                     <div class="photo-gallery-details">
+                        <!-- <h3>Farmers block railway tracks </h3> -->
+                        <div class="photo-gallery-details-photo" id="image_9">
+                           <img data-url="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-imagenum="9" data-alt="Farmers block railway tracks " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1634626889.jpg" class="img-responsive gallery-responsive" alt="Farmers block railway tracks " title="Farmers block railway tracks ">
+                           <!--============ GALLERY SHARE ===========-->
+                           <ul class="photo-gallery-details-photo-credit-sub2 ">
+                              <li><span>9</span>/10</li>
+                              <li class="share-social-media-add">
+                                 <i class="fas fa-share-alt"></i>
+                                 <ul class="article-share-style-more photo-gallery-social">
+                                    <li> <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060') +'&amp;t='+encodeURIComponent('Farmers block railway tracks '),'_blank'); return false;"><i class="fab fa-facebook-f"></i>
+                                       </a> 
+                                    </li>
+                                    <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060')+'&amp;text='+encodeURIComponent('Farmers block railway tracks ')+'&amp;hashtags=otv','_blank'); return false;"><i class="fab fa-twitter"></i></a> </li>
+                                    <!--<li>
+                                       <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                                       <i class="fab fa-instagram"></i>
+                                       </a>
+                                       </li>-->
+                                    <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060 is the best website to Get latest news and updates" title="Farmers block railway tracks " data-link="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                                    <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                       <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                                 </ul>
+                              </li>
+                           </ul>
+                           <!--============ GALLERY SHARE ===========-->
+                        </div>
+                        <p class="gallery_copy_true">Farmers block railway tracks in Bahadurgarh</p>
+                     </div>
+                     <div class="photo-gallery-details">
+                        <!-- <h3>rail roko</h3> -->
+                        <div class="photo-gallery-details-photo" id="image_10">
+                           <img data-url="https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060" data-imagenum="10" data-alt="rail roko" src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/rail_roko_1634626954.jpg" class="img-responsive gallery-responsive" alt="rail roko" title="rail roko">
+                           <!--============ GALLERY SHARE ===========-->
+                           <ul class="photo-gallery-details-photo-credit-sub2 ">
+                              <li><span>10</span>/10</li>
+                              <li class="share-social-media-add">
+                                 <i class="fas fa-share-alt"></i>
+                                 <ul class="article-share-style-more photo-gallery-social">
+                                    <li> <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060') +'&amp;t='+encodeURIComponent('rail roko'),'_blank'); return false;"><i class="fab fa-facebook-f"></i>
+                                       </a> 
+                                    </li>
+                                    <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/farmers-nationwide-rail-roko-disrupts-train-services-162060')+'&amp;text='+encodeURIComponent('rail roko')+'&amp;hashtags=otv','_blank'); return false;"><i class="fab fa-twitter"></i></a> </li>
+                                 </ul>
+                              </li>
+                           </ul>
+                           <!--============ GALLERY SHARE ===========-->
+                        </div>
+                        <p class="gallery_copy_true">Passengers wait at a platform after farmers stop movement of trains during their Rail Roko protest in Jalandhar.</p>
+                     </div>
+                     <ul class="footer-button">
+                        <li><a href="https://odishatv.in/tag/rail-roko">Rail Roko</a></li>
+                        <li><a href="https://odishatv.in/tag/samyukta-kisan-morcha">Samyukta Kisan Morcha</a></li>
+                        <li><a href="https://odishatv.in/tag/farmer-protest">Farmer Protest</a></li>
+                        <li><a href="https://odishatv.in/tag/lakhimpur-kheri-incident">Lakhimpur Kheri Incident</a></li>
+                     </ul>
+                     <!--  <a href=""><h2 class="next-heading">Next gallery</h2></a> -->
+                     <!-- //RELATED NEWS -->
+                  </div>
+                  <!-- RIGHT SIDEBAR -->
+                  <div class="col-lg-3">
+                     <div class="otv-300-250-ad" style="margin-bottom: 10px;"> &nbsp;
+                     </div>
+                     <div class="bdn-top-stories">
+                        <div class="bdn-heading-block">
+                           <a href="#" title="otv">
+                              <h2 class="bdn-heading-one-line"><span>stories highlight</span></h2>
+                           </a>
+                           <a href="#" title="otv" class="bdn-more">more</a>
+                        </div>
+                        <div class="bdn-top-stories-items">
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two bottom-border">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                           <div class="bdn-card-two">
+                              <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+                              <a href="#" title="otv">
+                                 <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+                              </a>
+                              <ul>
+                                 <li><a href="#" title="otv">cricket</a></li>
+                                 <li>2 hours ago</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- //RIGHT SIDEBAR -->
+               </div>
+            </div>
+         </section>
+      <footer>
+         <div class="main-visit-links-ft">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-10">
+                     <div class="ft-fst-row">
+                        <div class="logo-btn-ft">
+                           <img src="https://beta-live.odishatv.in/commondir/images/svg/ft-logo-otv.svg" alt="" class="otv-logo-ft" width="197" height="35">
+                           <button class="live-btn-otv-ft"><a href="#" title="otv">live tv</a></button>
+                        </div>
+                        <div class="search-bar-otv-ft">
+                           <input type="text" placeholder="type here...." class="search-input-otv">
+                           <button class="sub-btn-otv-ft"><a href="#" title="otv">subscribe</a></button>
+                        </div>
+                     </div>
+                     <div class="ft-snd-row">
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-2">
+                     <ul class="social-icon-otv-ft">
+                        <li><a href="#" title="otv" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/fb-ft-otv.svg" class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                        <li><a href="#" title="otv" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/twitter-ft-otv.svg" class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                        <li><a href="#" title="otv" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/youtube-ft-otv.svg" class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                        <li><a href="#" title="otv" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/telegram-ft-otv.svg"class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                     </ul>
+                     <div class="app-store-cnt-ft">
+                        <p class="store-title-otv">mobile app</p>
+                        <img src="https://beta-live.odishatv.in/commondir/images/svg/google-play-icon-ft.svg" class="googleplay-img-ft" alt="" width="103" height="40">
+                        <img src="https://beta-live.odishatv.in/commondir/images/svg/app-store-icon-ft.svg" class="appstore-img-ft" alt="" width="103" height="40">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="partner-ft-otv">
+            <div class="container">
+               <h5 class="partner-ft-heading">partner sites</h5>
+               <ul class="partner-link-otv">
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="contact-ft-otv">
+            <div class="container">
+               <ul class="contact-us-link-otv">
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <script src="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js"></script>
+      <script src="https://odishatv.in/commondir/js/bootstrap.min.js"></script>
+      <script src="https://images.odishatv.in/assets/js/jquery.unveil.js" async defer ></script>
+      <script>
+         jQuery(document).ready(function() {
+         /* DARKTHEME */
+         var src = $('.main-logo-img').attr("src");
+         var srcicon = $('.darkmode-svg-icon').attr("src");
+         $('.darkmode-btn').click(function() {
+             var logosrc1 = $('.main-logo-img').attr("src");
+             var logosrc2 = "logo.svg";
+             var logosrc3 = "dark-logo.svg";
+             if (logosrc1.indexOf(logosrc2) != -1) {
+                 $('.main-logo-img').attr("src", src.replace("logo.svg", "dark-logo.svg"));
+             }
+             if (logosrc1.indexOf(logosrc3) != -1) {
+                 $('.main-logo-img').attr("src", src.replace("dark-logo.svg", "logo.svg"));
+             }
+             var logosrcicon1 = $('.darkmode-svg-icon').attr("src");
+             var logosrcicon2 = "fa-moon.svg";
+             var logosrcicon3 = "fa-sun.svg";
+             if (logosrcicon1.indexOf(logosrcicon2) != -1) {
+                 $('.darkmode-svg-icon').attr("src", srcicon.replace("fa-moon.svg", "fa-sun.svg"));
+             }
+             if (logosrcicon1.indexOf(logosrcicon3) != -1) {
+                 $('.darkmode-svg-icon').attr("src", srcicon.replace("fa-sun.svg", "fa-moon.svg"));
+             }
+         });
+         const btn = document.querySelector(".darkmode-btn");
+         const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+         const currentTheme = localStorage.getItem("theme");
+         if (currentTheme == "dark") {
+             document.body.classList.toggle("dark-theme");
+             $('.main-logo-img').attr("src", src.replace("logo.svg", "dark-logo.svg"));
+             $('.darkmode-svg-icon').attr("src", srcicon.replace("fa-moon.svg", "fa-sun.svg"));
+         } else if (currentTheme == "light") {
+             document.body.classList.toggle("light-theme");
+         }
+         btn.addEventListener("click", function() {
+             if (prefersDarkScheme.matches) {
+                 document.body.classList.toggle("light-theme");
+                 var theme = document.body.classList.contains("light-theme") ?
+                     "light" :
+                     "dark";
+             } else {
+                 document.body.classList.toggle("dark-theme");
+                 var theme = document.body.classList.contains("dark-theme") ?
+                     "dark" :
+                     "light";
+             }
+             localStorage.setItem("theme", theme);
+         });
+         /* //DARKTHEME */
+         /* SEARCH BUTTON */
+         $(".search-bdn").click(function(){
+              $(".bdn-search").animate({
+                 width: "show"
+             });
+             $(".bdn-search-go").show();
+             $(".bdn-search-close").show();
+         });
+         $(".bdn-search-close").click(function(){
+              $(".bdn-search").animate({
+                 width: "hide"
+             });
+             $(".bdn-search-go").hide();
+             $(this).hide();
+         });
+         /* //SEARCH BUTTON */
+         // menu start
+         $('.bdn-sidemenu').click(function() {
+         $('.hamburger-nav').animate({width: "show"}, 200);
+          $("body").addClass("comment-active");
+         });
+         $('.close-hamburger').click(function() {
+             $('.hamburger-nav').animate({width: "hide"}, 200);
+         });
+                     // menu end
+         // sticky header start
+         
+             //caches a jQuery object containing the header element
+             var header = $(".bdn-main-nav");
+             $(window).scroll(function() {
+                 var scroll = $(window).scrollTop();
+                 if (scroll >= 35) {
+                     header.addClass("fixed-bdnnav");
+                 } else {
+                     header.removeClass("fixed-bdnnav");
+                 }
+             });
+         // sticky header end
+         });
+         // unveil start
+         $(function() {
+             $("img").unveil();
+             // $("img").unveil(200, function() {
+             //     $(this).load(function() {
+             //         this.style.opacity = 1;
+             //     });
+             // });
+         });
+         // unveil end
+      </script>
+   </body>
+</html>

@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <style>
+         /* common-section */
+         body{
+         margin: 0;
+         padding: 0;
+         }
+         a , a:hover{
+         text-decoration: none;
+         } 
+         .otv-header{
+         height: auto;
+         width: 100%;
+         margin-bottom: 20px;
+         }  
+         /* <!-- bredcum --> */
+         ul.live-details-bredcum {
+         margin: -13px 0 9px;
+         padding: 0;
+         position: relative;
+         display: block;
+         float: left;
+         width: 100%;
+         }
+         ul.live-details-bredcum li {
+         list-style-type: none;
+         display: inline-block;
+         color: #7b0505;
+         font-size: 10px;
+         font-family: Faustina, serif;
+         position: relative;
+         margin-right: 20px;
+         font-weight: 400;
+         text-transform: uppercase;
+         }
+         ul.live-details-bredcum li:before {
+         content: "";
+         background-image: url(https://odishatv.in/commondir/images/svg/bread-crumb.svg);
+         width: 9px;
+         height: 7px;
+         right: -16px;
+         background-repeat: no-repeat;
+         margin-left: 8px;
+         display: block;
+         position: absolute;
+         top: 4px;
+         }
+         ul.live-details-bredcum li:last-child::before{
+         display: none;
+         }
+         ul.live-details-bredcum li a {
+         color: #7b0505;
+         }
+         .more-para{
+         /* border: 1px solid #555; */
+         border-radius: 4px;
+         border-top: none;
+         padding: 2px;
+         margin-bottom: 10px;
+         }
+         .more-para p{
+         padding: 0;
+         font-size: 18px;
+         font-family: Faustina, serif;
+         margin: 0;
+         padding: 0;
+         line-height: 22px;
+         color: #000;
+         }
+         .more-para p a{
+         color: #7b0505;
+         font-weight: 600;
+         font-size: 18px;
+         font-family: Faustina, serif;
+         margin: 0;
+         padding: 0;
+         }
+         /*bredcum-end//////*/
+         /* all-heading-design */
+         h1,h2,h3,h4,h5,h6{
+         font-family: 'Libre Franklin',sans-serif;
+         }
+         p{
+         font-family: 'Libre Franklin',sans-serif;
+         }
+         .bdn-heading-block {
+         margin: 0 0 12px;
+         padding: 0;
+         width: -webkit-fill-available;
+         position: relative;
+         display: inline-block;
+         line-height: 31px;
+         }
+         h2.bdn-heading-one {
+            color: #333;
+         font-weight: 700;
+         font-size: 26px;
+          font-family: Faustina,serif;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         padding-left: 10px;
+         height: 20px;
+         position: relative;
+         }
+         h2.bdn-heading-one:before {
+         content: "";
+         background-color: #f00404;
+         height: 28px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         a.bdn-more {
+         float: right;
+         color: #262626;
+         text-transform: uppercase;
+         border: 1px solid #dc2229;
+         font-size: 13px;
+         margin: 0 7.5px 0 0;
+         padding: 0 5px;
+         line-height: 19px;
+         border-radius: 12px;
+         }
+         .bdn-heading-block-wt {
+         margin: 0 0 12px;
+         padding: 0;
+         width: -webkit-fill-available;
+         position: relative;
+         display: inline-block;
+         line-height: 31px;
+         }
+         h2.bdn-heading-one-wt {
+            font-weight: 700;
+          font-family: Faustina,serif;
+         position: relative;
+         color: #fff;
+         font-size: 24px;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         padding-left: 10px;
+         font-weight: 700;
+         height: 20px;
+         }
+         h2.bdn-heading-one-wt:before {
+         content: "";
+         background-color: #f00404;
+         height: 28px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         a.bdn-more-wt {
+         float: right;
+         color: #fff;
+         text-transform: uppercase;
+         border: 1px solid #dc2229;
+         font-size: 13px;
+         font-family: 'Libre Franklin',sans-serif;
+         margin: 0 7.5px 0 0;
+         padding: 0 5px;
+         line-height: 19px;
+         border-radius: 12px;
+         }
+         /* all-heading-design-end//////// */
+         /* common-section-end// */
+         /* top-section */
+         .bdn-card-six {
+         position: relative;
+         background-color: #fff;
+         border-radius: 5px;
+         }
+         img.bdn-card-six-img{
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+         border-radius: 5px; 
+         }
+         .bdn-card-six-content {
+         padding: 10px 4px;
+         }
+         .bdn-card-six-content h3{
+            font-family: Faustina,serif;
+    color: #000;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 8px;
+         }
+         .bdn-card-six-content p {
+         color: #333;
+         font-size: 16px;
+         line-height: 22px;
+         padding-bottom: 10px;
+         border-bottom: 1px solid #888;
+         font-family: 'Libre Franklin',sans-serif;
+         }
+         .bdn-card-two {
+         position: relative;
+         padding-left: 106px;
+         min-height: 54px;
+         display: inline-block;
+         padding-bottom: 6px;
+         margin-bottom: 6px;
+         border-bottom: 1px solid #888;
+         }
+         img.bdn-card-two-img {
+         width: 96px;
+         height: 54px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         border-radius: 3px;
+         }
+         .bdn-card-two h3 {
+         font-family: 'Libre Franklin',sans-serif;
+         text-decoration: none;
+         display: block;
+         color: #555;
+         margin-bottom: 5px;
+         font-size: 16px;
+         font-weight: 700;
+         line-height: 20px;
+         display: -webkit-box;
+         -webkit-line-clamp: 3;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         min-height: 58px;
+         }
+         .bdn-card-two ul {
+         margin: 12px 0 0;
+         padding: 0;
+         }
+         .bdn-card-two ul li {
+         list-style-type: none;
+         float: left;
+         text-transform: uppercase;
+         font-size: 12px;
+         color: #333;
+         }
+         .bdn-card-one li a, .bdn-card-two li a {
+         color: #000;
+         margin-right: 23px;
+         position: relative;
+         }
+         .bdn-card-two ul li a:after {
+         content: "";
+         background-color: #b5afaf;
+         position: absolute;
+         width: 8px;
+         height: 8px;
+         border-radius: 50%;
+         right: -16px;
+         top: 3px;
+         }
+         h3.short-headline {
+         color: #555;
+         font-size: 16px;
+         line-height: 18px;
+         padding-bottom: 6px;
+         font-weight: 400;
+         border-bottom: 1px solid #b5acac;
+         font-family: 'Libre Franklin',sans-serif;
+         }
+         h3.short-headline  a{
+         color: #555; 
+         }
+         /* news-scroll-box */
+         .news-scroll-box{
+         height: 320px;
+         width: 100%;
+         border: 1px solid #555;
+         border-radius: 4px;
+         padding-bottom: 50px;
+         margin-bottom: 20px;
+         overflow: hidden;
+         }
+         .news-scroll-box h1{
+         color:#fff;
+         font-size:24px;
+         text-transform: capitalize;
+         font-weight: bold;
+         line-height: 30px;
+         padding: 10px;
+         background-color: hsl(0deg 99.09% 42.94%);
+         font-family: Faustina,serif;
+         }
+         ul.news-box{
+         height: 100%;
+         overflow-y: scroll;
+         }
+         ul.news-box li{
+         list-style-type: none;
+         position: relative;
+         margin: 0;
+         padding: 0;
+         font-size: 16px;
+         font-weight: 600;
+         line-height: 22px;
+         margin-bottom: 10px 
+         }
+         ul.news-box li::before{
+         position: absolute;
+         left: -16px;
+         top: 8px;
+         content: "";
+         height: 8px;
+         width: 8px;
+         border-radius: 50%;
+         background-color: hsl(0deg 99.09% 42.94%);
+         }
+         .add{
+         height: 210px;
+         width: 100%;
+         background-color: #888;
+         margin-bottom: 20px;
+         }
+         .vdo-clip{
+         width: 100%;
+         margin-bottom: 10px; 
+         }
+         .vdo-clip-video{
+         height: 100%;
+         }
+         /* news-scroll-box-end//////*/
+         /* top-section-end///////*/
+         /* opinion-section */
+         h1.headline-style-one{
+         background-color: hsl(212.98deg 100% 29.61%);
+         font-size: 38px;
+         line-height: 38px;
+         color: #fff;
+         text-align: center;
+         text-transform: uppercase;
+         margin-bottom: 20px;
+         padding: 30px 0;
+         font-weight:bold;
+         border-radius: 4px;
+         font-family: 'Libre Franklin',sans-serif;
+         }
+         h1.headline-style-one span{
+         color:hsl(46.72deg 99.22% 50%); 
+         font-family: 'Libre Franklin',sans-serif;
+         }
+         .polling-container{
+         height: 500px;
+         width: 100%;
+         border-radius: 8px;
+         margin-bottom: 20px;
+         background-color: hsl(217.14deg 55.26% 85.1%);
+         }
+         p.tagline-elec{
+         font-size: 24px;
+         font-family: 'Libre Franklin',sans-serif;
+         line-height: 28px;
+         color: #000;
+         text-align: center;
+         text-transform: capitalize;
+         margin: 0 15px 10px 15px;
+         font-weight:600;
+         padding: 15px 0;
+         border-bottom: 1px solid hsl(214.74deg 17.43% 57.25%);
+         }
+         p.tagline-elec span{
+         background-color: hsl(12.99deg 100% 49.8%);
+         font-family: 'Libre Franklin',sans-serif;
+         color: #fff;
+         font-size: 15px;
+         line-height: 20px;
+         padding: 3px 5px;
+         font-weight: 400;
+         border-radius: 4px;
+         margin-right: 5px;
+         }
+         .single-voting-box{
+         margin: 20px 35px;
+         display: flex;
+         position: relative;
+         z-index: 0;
+         width: 92%;
+         }
+         img.voting-box-img{
+         margin-top: 10px;
+         height: 100px;
+         width: 100px;
+         border-radius: 50%;
+         padding: 3px;
+         background-color: #fff;
+         box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+         z-index: 1;
+         object-fit: cover;
+         }
+         .inside-box{
+         height: 120px;
+         width: 90%;
+         background-color: #fff;
+         margin-left: -50px;
+         z-index: 0;
+         border-radius: 10px;
+         box-shadow: 0 8px 4px rgba(0,0,0,0.2);
+         border: 1px solid hsl(212.67deg 43.72% 45.29%);
+         }
+         .inside-box.active{
+         border: none;
+         }
+         .member-party{
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         margin: 30px 0 0 0px;    
+         }
+         .member-party p{
+         color: hsl(201.99deg 81.73% 38.63%);
+         text-transform: capitalize;
+         font-weight: 600;
+         margin: 0;
+         font-size: 18px;
+         font-family: 'Libre Franklin',sans-serif;
+         width: 200px;
+         }
+         .img-party-name{
+         display: flex;
+         height: 55px;
+         align-items: center;
+         }
+         p.voted{
+         color: #fff;
+         font-family: 'Libre Franklin',sans-serif;
+         text-transform: uppercase;
+         font-size: 23px;
+         background-color: hsl(220deg 81.46% 70.39%);
+         margin: 0 20px 0 10px;
+         padding: 13px 35px;
+         border-radius: 0 8px 8px 0;
+         line-height: 40px;
+         width: 150px 
+         }
+         .voted.active{
+         background-color: hsl(150.97deg 42.08% 56.67%);
+         }
+         .party-img {
+         height: 60px;
+         width: 60px;
+         border-radius: 50%;
+         object-fit: cover;
+         padding: 4px;
+         border: 1px solid #000;
+         }
+         .live-number span{
+         color: #fff;
+         background-color: hsl(358.97deg 80.56% 71.76%);
+         border-radius: 4px;
+         text-transform: capitalize;
+         padding:0 10px;
+         font-size: 18px;
+         line-height: 22px;
+         margin-right: 15px;
+         }
+         .live-number p{
+         font-size: 22px;
+         font-family: 'Libre Franklin',sans-serif;
+         color: hsl(250deg 22.22% 42.35%);
+         }
+         .progress-container {
+         width: 96%;
+         background-color: #f5f5f5;
+         margin: 20px 25px 0 25px;
+         border-radius: 20px;
+         }
+         .progress-bar.active{
+         animation: none; 
+         }
+         .progress-bar {
+         display: block;
+         position: relative;
+         width: 0%;
+         height: 5px;
+         background-color: hsl(25.96deg 99.05% 58.82%);
+         transition: width 0.3s ease-in-out;
+         overflow: visible;
+         animation: fluctuate 2s ease-in-out infinite alternate;
+         }
+         .progress-text1,.progress-text2,.progress-text3 {
+         position: absolute;
+         top: -20px;
+         right: -35px;
+         color: #fff;
+         font-size: 12px;
+         font-family: 'Libre Franklin',sans-serif;
+         font-weight: 400;
+         background-color: hsl(150.97deg 42.08% 56.67%);
+         border-radius: 16px 12px 12px 0;
+         padding: 0 5px;
+         border:2px solid hsl(151deg 49.2% 36.31%);
+         }
+         .progress-per{
+         display: none;
+         }
+         .progress-per.active{
+         display: block;
+         }
+         .hover-span{
+         position: absolute;
+         top: 0;
+         right: 3%;
+         width: 9%;
+         height: 100%;
+         background-color: hsl(212.27deg 89.19% 70.98%);
+         color: #fff;
+         text-align: center;
+         font-size: 18px;
+         font-weight: 600;
+         text-transform: uppercase;
+         border-radius: 0 10px 10px 0;
+         transition: right 0.3s ease;
+         z-index: -1;
+         padding: 30px 10px;
+         }
+         .hover-span.active{
+         background-color: hsl(150.97deg 42.08% 56.67%);
+         }
+         .single-voting-box:hover .hover-span {
+         right: -3%; 
+         }
+         .single-voting-box .hover-span.active {
+         right: -3%; 
+         }
+         /* opinion-section-end//////*/ 
+         /* legislative-election-sec */
+         .legislative-election-sec{
+         margin: 40px 0 20px 0;
+         background-color: #fff;
+         }
+         .featured-vdo-content-sm h1 {
+         margin: 0px;
+         padding: 0px 5px 20px 5px;
+         font-size: 18px;
+         font-family: 'Libre Franklin',sans-serif;
+         color: #000;
+         font-weight: 400;
+         line-height: 22px;
+         margin: 0 0 10px;
+         display: -webkit-box;
+         -webkit-line-clamp: 3;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         max-height: 64px;
+         }
+         /* legislative-election-sec-end//////*/
+         /* twitter-prof-sec */
+         section.twitter-prof-sec{
+         height: auto;
+         width: 100%;
+         padding: 60px 0 90px 0;
+         position: relative;
+         opacity: 0.9;
+         z-index: -1;
+         }
+         .prof-name{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         }
+         section.twitter-prof-sec:before {
+         content: "";
+         position: absolute;
+         background-color:#7b0505cf;
+         width: 100%;
+         height: 100%;
+         left: 0;
+         top: 0;
+         z-index: -1;
+         }
+         img.bg-parliament{
+         position: absolute;
+         z-index: -2;
+         top: 0;
+         left: 0;
+         height: 100%;
+         width: 100%;
+         }
+         h1.elec-heading{
+         color:#fff;
+         text-transform: capitalize;
+         font-size: 34px;
+         font-family: 'Libre Franklin',sans-serif;
+         font-weight: bold;
+         margin: 0 0 15px 0;
+         padding: 0;
+         }
+         .date-elec{
+         color: #fff;
+         font-size: 18px;
+         margin: 0 0 30px 0;
+         padding: 0;
+         font-weight: 600;
+         text-transform: capitalize;
+         }
+         img.member-img{
+         height: 120px;
+         width: 120px;
+         border-radius: 50%;
+         display: block;
+         object-fit: cover;
+         }
+         p.member-name-id{
+         font-size: 20px;
+         font-weight: bold;
+         color: #fff; 
+         text-transform: capitalize;
+         margin-bottom: 30px;
+         }
+         p.member-name-id span{
+         font-size: 14px;
+         font-weight: 600;
+         font-family: 'Libre Franklin',sans-serif;
+         color: #fff; 
+         text-transform: capitalize;
+         display: block;   
+         }
+         .tag-line{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         }
+         .tag-line-left{
+         display: flex;
+         align-items: center;
+         }
+         .tag-line-left img{
+         height: 30px;
+         width: 30px;
+         }
+         .tag-line-left p{
+         color: #fff;
+         font-family: 'Libre Franklin',sans-serif;
+         text-transform: capitalize;
+         font-size: 30px;
+         font-weight: bold;
+         margin: 0 10px;
+         padding: 0;
+         }
+         .tag-line-right p{
+         text-transform: capitalize;
+         font-family: 'Libre Franklin',sans-serif;
+         font-size: 22px;
+         color: #fff;
+         margin: 0 0 0 -30px;
+         padding: 0;  
+         }
+         /* twitter-prof-sec-end//////*/
+         /* opinion */
+         section.daily-show-section{
+         background-color: hsl(0deg 0% 86.27% / 57%);
+         margin-top: -76px;
+         z-index: 1;
+         }
+         .opinion-white-bg {
+         padding: 20px 0 10px 0;
+         }
+         .bdn-card-three{
+         position: relative;
+         padding-left: 106px;
+         }
+         .bdn-card-three {
+         min-height: 54px;
+         display: inline-block;
+         margin-bottom: 12px;
+         }
+         img.bdn-card-three-img{
+         width: 96px;
+         height: 54px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         border-radius: 3px;
+         }
+         .bdn-card-three h3{
+         text-decoration: none;
+         display: block;
+         color: #2b2b2b;
+         margin-bottom: 5px;
+         font-size: 18px;
+         font-family: 'Libre Franklin',sans-serif;
+         line-height: 22px;
+         }
+         .bdn-card-three h4 {
+         font-size: 18px;
+         font-family: 'Libre Franklin',sans-serif;
+         text-decoration: none;
+         display: block;
+         color: #000;
+         line-height: 22px;
+         margin-bottom: 5px;
+         }
+         /* opinion-end////*/
+         /* twitter-election-sec */
+         .twitter-election-sec{
+         margin: 40px 0 20px 0;
+         background-color: #fff;
+         }
+         .twitter-img-content{
+         margin: 0;
+         padding: 0;
+         }
+         .twitter-img-content img{
+         width: 100%;
+         height: auto;
+         border-radius:12px;
+         margin-bottom: 8px;
+         }
+         .twitter-img-content h3{
+         font-family: 'Libre Franklin',sans-serif;
+         font-size: 22px;
+         line-height: 26px;
+         margin: 0 0 10px 0;
+         padding: 0;
+         }
+         .twitter-img-content p{
+         font-size: 18px;
+         font-family: 'Libre Franklin',sans-serif;
+         line-height: 24px;
+         }
+         .twitter-election-sec {
+         margin: 40px 0 20px 0;
+         background-color: #fff;
+         }
+         .twitter-img-content {
+         margin: 0;
+         padding: 0;
+         }
+         .twitter-img-content img {
+         width: 100%;
+         height: auto;
+         border-radius: 12px;
+         margin-bottom: 8px;
+         }
+         .twitter-img-content h1 {
+         font-family: 'Libre Franklin',sans-serif;
+         font-size: 22px;
+         line-height: 26px;
+         margin: 0 0 10px 0;
+         padding: 0;
+         }
+         /* twitter-election-sec-end//////*/
+         /* webstory-section*/
+         section.bdn-webstories {
+         margin-bottom: 30px;
+         height: 409px;
+         }
+         .webstory-item {
+         position: relative;
+         }
+         .webstory-item img {
+         width: 100%;
+         height: 370px;
+         object-fit: cover;
+         }
+         .webstory-content {
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         background-image: linear-gradient(transparent, black);
+         padding: 7.5px;
+         text-align: center;
+         display: block;
+         font-family: 'Libre Franklin',sans-serif;
+         }
+         .webstory-content h3 {
+         font-family: 'Libre Franklin',sans-serif;
+         background-color: #f4c219;
+         color: #000;
+         text-align: center;
+         width: fit-content;
+         font-size: 12px;
+         text-transform: uppercase;
+         font-weight: 700;
+         line-height: 20px;
+         padding: 0px 5px;
+         border-radius: 3px;
+         margin: 0 auto;
+         }
+         .webstory-content h4 {
+         font-family: 'Libre Franklin',sans-serif;
+         color: #fff;
+         font-weight: 700;
+         font-size: 18px;
+         margin: 10px 0px;
+         display: -webkit-box;
+         -webkit-line-clamp: 2;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         max-height: 44px;
+         }
+         /* //WEBSTORY */
+         /* webstory-section-end////// */
+         /* elec-video-sec */
+         section.elec-video-sec{
+         height: auto;
+         width: 100%;
+         padding: 30px 0 20px 0;
+         background-color: #000;
+         margin-bottom: 20px 
+         }
+         .featured-image-container {
+         position: relative;
+         width: 100%;
+         height: auto;
+         margin: 5px 0px;
+         border-radius: 12px;
+         border: 1px solid #9c8c8c;
+         }
+         img.featured-vdo-image {
+         width: 100%;
+         object-fit: cover;
+         border-radius: 12px; 
+         }
+         .featured-video-content {
+         position: absolute;
+         left: 0px;
+         bottom: 0px;
+         background: linear-gradient(#0000, #000000b8, rgb(0 0 0));
+         padding:7px 15px;
+         border-radius: 0 0 12px 12px; 
+         }
+         .featured-video-content h1 {
+         font-family: 'Libre Franklin',sans-serif;
+         margin: 0px;
+         padding: 0px;
+         font-size: 22px;
+         color: #fff;
+         font-weight: 400;
+         line-height: 26px;
+         display: -webkit-box;
+         -webkit-line-clamp: 3;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         max-height: 52px;
+         }
+         .featured-image-container-sm {
+         position: relative;
+         width: 100%;
+         height: auto;
+         margin: 5px 0 10px 0;
+         border-radius: 12px;
+         border: 1px solid #9c8c8c;
+         }
+         img.featured-vdo-image-sm {
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+         border-radius: 12px; 
+         }
+         .featured-video-content-sm {
+         position: absolute;
+         left: 0px;
+         bottom: 0px;
+         background: linear-gradient(#0000, #000000b8, rgb(0 0 0));
+         padding:7px 15px;
+         padding-top: 17px;
+         border-radius: 0 0 12px 12px; 
+         }
+         .featured-video-content-sm h3 {
+         margin: 0px;
+         padding: 0px;
+         font-size: 16px;
+         font-family: 'Libre Franklin',sans-serif;
+         color: #fff;
+         font-weight: 400;
+         line-height: 18px;
+         display: -webkit-box;
+         -webkit-line-clamp:2;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+         max-height: 38px;
+         }
+         img.videoslide-icon{
+         position: absolute;
+         height: 45px;
+         width: 45px;
+         top: 45%;
+         left: 45%;
+         }
+         img.videoslide-icon-sm{
+         position: absolute;
+         height: 25px;
+         width: 25px;
+         top: 35%;
+         left: 45%;
+         }
+         ul.tm-dt-ep{
+         margin: 6px 0 0;
+         padding: 0;   
+         }
+         ul.tm-dt-ep li{
+         list-style-type: none;
+         float: left;
+         text-transform: uppercase;
+         font-size: 12px;
+         font-family: 'Libre Franklin',sans-serif;
+         color: #fff;
+         }
+         ul.tm-dt-ep li a{
+         color: #f94c4c;
+         margin-right: 14px;
+         position: relative;
+         }
+         ul.tm-dt-ep li a:after{
+         content: "/";
+         color: #b5afaf;
+         position: absolute;
+         margin: 0 0px 0 6px;
+         }
+         /* elec-video-sec-end//////*/ 
+         /* other-section */
+         .bdn-card-one {
+         position: relative;
+         padding-left: 106px;
+         min-height: 54px;
+         display: inline-block;
+         margin: 10px 0;
+         }
+         img.bdn-card-one-cn-vdo {
+         width: 96px;
+         height: 54px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         border-radius: 3px;
+         }
+         .bdn-card-one h3 {
+         font-family: 'Libre Franklin',sans-serif;
+         text-decoration: none;
+         display: block;
+         color: #2b2b2b;
+         margin-bottom: 5px;
+         font-size: 14px;
+         font-weight: 700;
+         line-height: 18px;
+         }
+         /* other-section-end-end//////*/
+         ::-webkit-scrollbar {
+         width: 5px; 
+         }
+         ::-webkit-scrollbar-track {
+         background: #f1f1f1; 
+         }
+         ::-webkit-scrollbar-thumb {
+         background: #888;
+         }
+         ::-webkit-scrollbar-thumb:hover {
+         background: #555; 
+         }
+         @media screen and (max-width: 767px) {
+         .tag-line-left p {
+         font-size: 12px;
+         } 
+         .tag-line-right p {
+         font-size: 12px;
+         }
+         .tag-line-left img{
+         height: 20px;
+         width: 20px;
+         }
+         section.elec-video-sec {
+         padding: 30px 0 20px 0;
+         }
+         .img.bg-parliament {
+         object-fit: cover;
+         }
+         }
+         @keyframes fluctuate {
+         0% {
+         width: 0%;
+         }
+         100% {
+         width: 100%;
+         }
+         }    
+         .otv-footer{
+         width: 100%;
+         height: auto;
+         }
+         /* BOOTSTRAP */
+         @media (min-width: 1200px) {
+         .container {
+         width: 1260px;
+         }
+         }
+         .col-xs-15,
+         .col-sm-15,
+         .col-md-15,
+         .col-lg-15 {
+         position: relative;
+         min-height: 1px;
+         padding-right: 7.5px;
+         padding-left: 7.5px;
+         }
+         .col-xs-15 {
+         width: 20%;
+         float: left;
+         }
+         @media (min-width: 768px) {
+         .col-sm-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         @media (min-width: 992px) {
+         .col-md-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         @media (min-width: 1200px) {
+         .col-lg-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         /* //BOOTSTRAP */
+      </style>
+   </head>
+   <body>
+      <!-- elec-top-section -->
+      <section classs="elec-top-section">
+         <div class="container">
+            <!-- bredcum -->
+            <ul class="live-details-bredcum">
+               <li><a href="https://odishatv.in/">Home</a></li>
+               <li>Jobs</li>
+            </ul>
+            <!-- bredcum -->
+            <div class="bdn-heading-block">
+               <a href="" title="Sections">
+                  <h2 class="bdn-heading-one">india's legisilative election 2023</h2>
+               </a>
+               <a href="" title="Sections" class="bdn-more">more</a>
+            </div>
+            <div class="row">
+               <div class="col-lg-4">
+                  <div class="bdn-card-six">
+                     <a href="#">
+                     <img src="images/feature-img.jpg" alt="" title="" width="195" height="110" class="bdn-card-six-img"></a>
+                     <div class="bdn-card-six-content">
+                        <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni reveals why he became a farmer despite earning in crores - watch">
+                           <h3>MS Dhoni reveals why he became a farmer despite earning in crores - watch</h3>
+                        </a>
+                        <p>As per Dhoni, they had a 40 acre land and during Covid times he got a lot of time. The situation propelled him to make farming more extensive in 2020.</p>
+                        <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni reveals why he became a farmer despite earning in crores - watch">
+                           <h3>MS Dhoni reveals why he became a farmer despite earning in crores - watch</h3>
+                        </a>
+                        <div class="bdn-card-two">
+                           <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1692288788.webp" alt="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" width="96" height="54" class="bdn-card-two-img"></a>
+                           <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o">
+                              <h3>Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon on Aug </h3>
+                           </a>
+                           <ul>
+                              <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                              <li>4 months ago </li>
+                           </ul>
+                        </div>
+                        <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni reveals why he became a farmer despite earning in crores - watch">
+                           <h3>MS Dhoni reveals why he became a farmer despite earning in crores - watch</h3>
+                        </a>
+                        <div class="bdn-card-two">
+                           <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1692288788.webp" alt="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" width="96" height="54" class="bdn-card-two-img"></a>
+                           <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o">
+                              <h3>Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon on Aug</h3>
+                           </a>
+                           <ul>
+                              <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                              <li>4 months ago </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <div class="bdn-card-two">
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1692288788.webp" alt="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" width="96" height="54" class="bdn-card-two-img"></a>
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o">
+                        <h3>Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon on Aug</h3>
+                     </a>
+                     <ul>
+                        <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                        <li>4 months ago </li>
+                     </ul>
+                  </div>
+                  <div class="bdn-card-two">
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1692288788.webp" alt="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" width="96" height="54" class="bdn-card-two-img"></a>
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o">
+                        <h3>Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon on Aug</h3>
+                     </a>
+                     <ul>
+                        <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                        <li>4 months ago </li>
+                     </ul>
+                  </div>
+                  <div class="bdn-card-two">
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1692288788.webp" alt="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" width="96" height="54" class="bdn-card-two-img"></a>
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o">
+                        <h3>Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon on Aug</h3>
+                     </a>
+                     <ul>
+                        <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                        <li>4 months ago </li>
+                     </ul>
+                  </div>
+                  <div class="bdn-card-two">
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1692288788.webp" alt="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" width="96" height="54" class="bdn-card-two-img"></a>
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o">
+                        <h3>Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon on Aug </h3>
+                     </a>
+                     <ul>
+                        <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                        <li>4 months ago </li>
+                     </ul>
+                  </div>
+                  <div class="bdn-card-two">
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1692288788.webp" alt="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" width="96" height="54" class="bdn-card-two-img"></a>
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o">
+                        <h3>Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon on Aug </h3>
+                     </a>
+                     <ul>
+                        <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                        <li>4 months ago </li>
+                     </ul>
+                  </div>
+                  <div class="bdn-card-two">
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1692288788.webp" alt="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" width="96" height="54" class="bdn-card-two-img"></a>
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o">
+                        <h3>Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon on Aug </h3>
+                     </a>
+                     <ul>
+                        <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                        <li>4 months ago </li>
+                     </ul>
+                  </div>
+                  <div class="bdn-card-two">
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1692288788.webp" alt="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" width="96" height="54" class="bdn-card-two-img"></a>
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o">
+                        <h3>Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon on Aug</h3>
+                     </a>
+                     <ul>
+                        <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                        <li>4 months ago </li>
+                     </ul>
+                  </div>
+                  <div class="bdn-card-two">
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1692288788.webp" alt="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" width="96" height="54" class="bdn-card-two-img"></a>
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o">
+                        <h3>Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon on Aug</h3>
+                     </a>
+                     <ul>
+                        <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                        <li>4 months ago </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2">
+                  <h3 class="short-headline"> <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, labore.</a></h3>
+                  <h3 class="short-headline"> <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, labore.</a></h3>
+                  <h3 class="short-headline"> <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, labore.</a></h3>
+                  <h3 class="short-headline"> <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, labore.</a></h3>
+                  <h3 class="short-headline"> <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, labore.</a></h3>
+                  <h3 class="short-headline"> <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, labore.</a></h3>
+                  <h3 class="short-headline"> <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, labore.</a></h3>
+                  <h3 class="short-headline"> <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, labore.</a></h3>
+                  <h3 class="short-headline"> <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, labore.</a></h3>
+                  <h3 class="short-headline"> <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, labore.</a></h3>
+               </div>
+               <div class="col-lg-3">
+                  <div class="add">
+                  </div>
+                  <div class="vdo-clip">
+                     <iframe  src="https://www.youtube.com/embed/PCUv-Uip7QU?si=KrAWpnD4Gb0eA9c0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe class="vdo-clip-video">
+                  </div>
+                  <!-- news-scroll-box -->
+                  <div class="news-scroll-box">
+                     <h1>Lorem, ipsum dolor.</h1>
+                     <ul class="news-box">
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis tempora non.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis tempora non.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis tempora non.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis tempora non.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis tempora non.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis tempora non.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis tempora non.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis tempora non.</li>
+                     </ul>
+                  </div>
+                  <div class="bdn-heading-block">
+                     <a href="" title="Sections">
+                        <h2 class="bdn-heading-one">latest</h2>
+                     </a>
+                     <a href="" title="Sections" class="bdn-more">more</a>
+                  </div>
+                  <div class="bdn-card-two">
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1692288788.webp" alt="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o" width="96" height="54" class="bdn-card-two-img"></a>
+                     <a href="https://beta-live.odishatv.in/news/science/chandrayaan-3-lander-on-course-for-historic-soft-landing-on-moon-on-aug-23-212504" title="Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon o">
+                        <h3>Chandrayaan-3 lander separates from propulsion module; on course for historic soft landing on moon on Aug</h3>
+                     </a>
+                     <ul>
+                        <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                        <li>4 months ago </li>
+                     </ul>
+                  </div>
+                  <!-- news-scroll-box -->
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- elec-top-section -->
+      <!-- webstory-section -->
+      <section class="bdn-webstories">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">Web stories</h2>
+               </a>
+               <a href="#" title="otv" class="bdn-more">more</a>
+            </div>
+            <div class="row">
+               <div class="col-lg-15">
+                  <div class="webstory-item">
+                     <a href="#" title="otv"><img src="images/web1.jpg" data-src="" alt="" title="" width="237" height="370"></a>
+                     <div class="webstory-content">
+                        <a href="#" title="otv">
+                           <h3>world news</h3>
+                        </a>
+                        <a href="#" title="otv">
+                           <h4>7 Simple Home Remedies for Longer Hair</h4>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-15">
+                  <div class="webstory-item">
+                     <a href="#" title="otv"><img src="images/web3.jpg" data-src="" alt="" title="" width="237" height="370"></a>
+                     <div class="webstory-content">
+                        <a href="#" title="otv">
+                           <h3>world news</h3>
+                        </a>
+                        <a href="#" title="otv">
+                           <h4>7 Simple Home Remedies for Longer Hair</h4>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-15">
+                  <div class="webstory-item">
+                     <a href="#" title="otv"><img src="images/web4.jpg" data-src="" alt="" title="" width="237" height="370"></a>
+                     <div class="webstory-content">
+                        <a href="#" title="otv">
+                           <h3>world news</h3>
+                        </a>
+                        <a href="#" title="otv">
+                           <h4>7 Simple Home Remedies for Longer Hair</h4>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-15">
+                  <div class="webstory-item">
+                     <a href="#" title="otv"><img src="images/web5.jpg" data-src="" alt="" title="" width="237" height="370"></a>
+                     <div class="webstory-content">
+                        <a href="#" title="otv">
+                           <h3>world news</h3>
+                        </a>
+                        <a href="#" title="otv">
+                           <h4>7 Simple Home Remedies for Longer Hair</h4>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-15">
+                  <div class="webstory-item">
+                     <a href="#" title="otv"><img src="images/web2.jpg" data-src="" alt="" title="" width="237" height="370"></a>
+                     <div class="webstory-content">
+                        <a href="#" title="otv">
+                           <h3>world news</h3>
+                        </a>
+                        <a href="#" title="otv">
+                           <h4>7 Simple Home Remedies for Longer Hair</h4>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <!-- webstory-section -->
+      <!-- elec-video-sec -->
+      <section class="elec-video-sec">
+         <div class="container">
+            <div class="bdn-heading-block-wt">
+               <a href="" title="Sections">
+                  <h2 class="bdn-heading-one-wt">video</h2>
+               </a>
+               <a href="" title="Sections" class="bdn-more-wt">more</a>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="featured-image-container">
+                     <a href="#"><img src="https://odishatv.in/commondir/images/svg/video-icon-red.svg" alt="Play video" class="videoslide-icon"></a>
+                     <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493"><img src="images/featured2.jpg" data-src="" alt="BJP Spokesperson Anil Biswal" title="BJP Spokesperson Anil Biswal" class="featured-vdo-image"></a>
+                     <div class="featured-video-content">
+                        <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493">
+                           <h1>Odisha BJP questions CM Naveen's silence over Rs 350 cr cash haul in I-T raids, hints at nexus</h1>
+                        </a>
+                        <ul class="tm-dt-ep">
+                           <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                           <li>4 months ago </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <div class="featured-image-container-sm">
+                           <a href="#"><img src="https://odishatv.in/commondir/images/svg/video-icon-red.svg" alt="Play video" class="videoslide-icon-sm"></a>
+                           <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493"><img src="images/feature-img.jpg" data-src="" alt="BJP Spokesperson Anil Biswal" title="BJP Spokesperson Anil Biswal" class="featured-vdo-image-sm" ></a>
+                           <div class="featured-video-content-sm">
+                              <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493">
+                                 <h3>Odisha BJP questions CM Naveen's silence over Rs 350 cr cash haul in I-T raids, hints at nexus</h3>
+                              </a>
+                              <ul class="tm-dt-ep">
+                                 <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                                 <li>4 months ago </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="featured-image-container-sm">
+                           <a href="#"><img src="https://odishatv.in/commondir/images/svg/video-icon-red.svg" alt="Play video" class="videoslide-icon-sm"></a>
+                           <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493"><img src="images/featured2.jpg" data-src="" alt="BJP Spokesperson Anil Biswal" title="BJP Spokesperson Anil Biswal" class="featured-vdo-image-sm"></a>
+                           <div class="featured-video-content-sm">
+                              <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493" class="featured-vdo-image-sm">
+                                 <h3>Odisha BJP questions CM Naveen's silence over Rs 350 cr cash haul in I-T raids, hints at nexus</h3>
+                              </a>
+                              <ul class="tm-dt-ep">
+                                 <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                                 <li>4 months ago </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6">
+                        <div class="featured-image-container-sm">
+                           <a href="#"><img src="https://odishatv.in/commondir/images/svg/video-icon-red.svg" alt="Play video" class="videoslide-icon-sm"></a>
+                           <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493"><img src="images/feature-img.jpg" data-src="" alt="BJP Spokesperson Anil Biswal" title="BJP Spokesperson Anil Biswal" class="featured-vdo-image-sm"></a>
+                           <div class="featured-video-content-sm">
+                              <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493">
+                                 <h3>Odisha BJP questions CM Naveen's silence over Rs 350 cr cash haul in I-T raids, hints at nexus</h3>
+                              </a>
+                              <ul class="tm-dt-ep">
+                                 <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                                 <li>4 months ago </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="featured-image-container-sm">
+                           <a href="#"><img src="https://odishatv.in/commondir/images/svg/video-icon-red.svg" alt="Play video" class="videoslide-icon-sm"></a>
+                           <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493"><img src="images/featured4.jpg" data-src="" alt="BJP Spokesperson Anil Biswal" title="BJP Spokesperson Anil Biswal" class="featured-vdo-image-sm" ></a>
+                           <div class="featured-video-content-sm">
+                              <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493">
+                                 <h3>Odisha BJP questions CM Naveen's silence over Rs 350 cr cash haul in I-T raids, hints at nexus</h3>
+                              </a>
+                              <ul class="tm-dt-ep">
+                                 <li><a href="https://beta-live.odishatv.in/science" title="Science">Science</a></li>
+                                 <li>4 months ago </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- elec-video-sec -->
+      <!-- other-section -->
+      <section>
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="" title="Sections">
+                  <h2 class="bdn-heading-one">Odisha News</h2>
+               </a>
+               <a href="" title="Sections" class="bdn-more">more</a>
+            </div>
+            <div class="row">
+               <div class="col-lg-4">
+                  <div class="featured-image-container">
+                     <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493"><img src="images/featured2.jpg" data-src="" alt="BJP Spokesperson Anil Biswal" title="BJP Spokesperson Anil Biswal" class="featured-vdo-image" ></a>
+                     <div class="featured-video-content">
+                        <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493">
+                           <h1>Odisha BJP questions CM Naveen's silence over Rs 350 cr cash haul in I-T raids, hints at nexus</h1>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="bdn-card-one">
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni reveals why he became a farmer despite earning in crores - watch" class="cn-vdo">
+                     <img src="images/feature-img.jpg" data-src="" alt="MS Dhoni" title="MS Dhoni" width="96" height="54" class="bdn-card-one-cn-vdo">
+                     </a>
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni">
+                        <h3>MS Dhoni reveals why he became a farmer despite earning in crores - watch</h3>
+                     </a>
+                  </div>
+                  <div class="bdn-card-one">
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni reveals why he became a farmer despite earning in crores - watch" class="cn-vdo">
+                     <img src="images/feature-img.jpg" data-src="" alt="MS Dhoni" title="MS Dhoni" width="96" height="54" class="bdn-card-one-cn-vdo">
+                     </a>
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni">
+                        <h3>MS Dhoni reveals why he became a farmer despite earning in crores - watch</h3>
+                     </a>
+                  </div>
+                  <div class="bdn-card-one">
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni reveals why he became a farmer despite earning in crores - watch" class="cn-vdo">
+                     <img src="images/feature-img.jpg" data-src="" alt="MS Dhoni" title="MS Dhoni" width="96" height="54" class="bdn-card-one-cn-vdo">
+                     </a>
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni">
+                        <h3>MS Dhoni reveals why he became a farmer despite earning in crores - watch</h3>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="featured-image-container">
+                     <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493"><img src="images/featured4.jpg" data-src="" alt="BJP Spokesperson Anil Biswal" title="BJP Spokesperson Anil Biswal" class="featured-vdo-image" ></a>
+                     <div class="featured-video-content">
+                        <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493">
+                           <h1>Odisha BJP questions CM Naveen's silence over Rs 350 cr cash haul in I-T raids, hints at nexus</h1>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="bdn-card-one">
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni reveals why he became a farmer despite earning in crores - watch" class="cn-vdo">
+                     <img src="images/feature-img.jpg" data-src="" alt="MS Dhoni" title="MS Dhoni" width="96" height="54" class="bdn-card-one-cn-vdo">
+                     </a>
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni">
+                        <h3>MS Dhoni reveals why he became a farmer despite earning in crores - watch</h3>
+                     </a>
+                  </div>
+                  <div class="bdn-card-one">
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni reveals why he became a farmer despite earning in crores - watch" class="cn-vdo">
+                     <img src="images/feature-img.jpg" data-src="" alt="MS Dhoni" title="MS Dhoni" width="96" height="54" class="bdn-card-one-cn-vdo">
+                     </a>
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni">
+                        <h3>MS Dhoni reveals why he became a farmer despite earning in crores - watch</h3>
+                     </a>
+                  </div>
+                  <div class="bdn-card-one">
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni reveals why he became a farmer despite earning in crores - watch" class="cn-vdo">
+                     <img src="images/feature-img.jpg" data-src="" alt="MS Dhoni" title="MS Dhoni" width="96" height="54" class="bdn-card-one-cn-vdo">
+                     </a>
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni">
+                        <h3>MS Dhoni reveals why he became a farmer despite earning in crores - watch</h3>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="featured-image-container">
+                     <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493"><img src="images/feature-img.jpg" data-src="" alt="BJP Spokesperson Anil Biswal" title="BJP Spokesperson Anil Biswal" class="featured-vdo-image" ></a>
+                     <div class="featured-video-content">
+                        <a href="https://odishatv.in/news/odisha/odisha-bjp-questions-cm-naveen-s-silence-over-rs-350-cr-cash-haul-in-i-t-raids-hints-at-nexus-222493">
+                           <h1>Odisha BJP questions CM Naveen's silence over Rs 350 cr cash haul in I-T raids, hints at nexus</h1>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="bdn-card-one">
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni reveals why he became a farmer despite earning in crores - watch" class="cn-vdo">
+                     <img src="images/feature-img.jpg" data-src="" alt="MS Dhoni" title="MS Dhoni" width="96" height="54" class="bdn-card-one-cn-vdo">
+                     </a>
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni">
+                        <h3>MS Dhoni reveals why he became a farmer despite earning in crores - watch</h3>
+                     </a>
+                  </div>
+                  <div class="bdn-card-one">
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni reveals why he became a farmer despite earning in crores - watch" class="cn-vdo">
+                     <img src="images/feature-img.jpg" data-src="" alt="MS Dhoni" title="MS Dhoni" width="96" height="54" class="bdn-card-one-cn-vdo">
+                     </a>
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni">
+                        <h3>MS Dhoni reveals why he became a farmer despite earning in crores - watch</h3>
+                     </a>
+                  </div>
+                  <div class="bdn-card-one">
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni reveals why he became a farmer despite earning in crores - watch" class="cn-vdo">
+                     <img src="images/feature-img.jpg" data-src="" alt="MS Dhoni" title="MS Dhoni" width="96" height="54" class="bdn-card-one-cn-vdo">
+                     </a>
+                     <a href="https://beta-live.odishatv.in/news/sports/ms-dhoni-reveals-why-he-became-a-farmer-despite-earnings-in-crores-212655" title="MS Dhoni">
+                        <h3>MS Dhoni reveals why he became a farmer despite earning in crores - watch</h3>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- other-section -->
+      <script src="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js"></script>
+      <script>
+         function updateProgressBar(progressId) {
+           const progressBar = document.getElementById(progressId);
+           const progress = parseInt(progressBar.getAttribute('data-progress'));
+         
+           progressBar.style.width = progress + '%';
+           progressBar.querySelector(`.progress-text${progressId.slice(-1)}`).textContent = progress + '%';
+         }
+         
+         const progressBars = ['progress-bar1', 'progress-bar2', 'progress-bar3'];
+         
+         progressBars.forEach(progressId => {
+           updateProgressBar(progressId);
+           
+         })
+         // added by bikash //
+         $(document).ready(function(){
+         $(".voted").click(function(){
+         $(".voted").removeClass("active");
+         $(".progress-per").removeClass("active");
+         
+         $(".hover-span").removeClass("active");
+         $(".hover-span").html("please Vote Us");
+         $(this).addClass("active");
+         
+         $(".progress-bar").addClass("active");
+         $(".progress-per").addClass("active");
+         $(this).closest('.single-voting-box').find('.hover-span').addClass("active");
+         $(this).closest('.single-voting-box').find('.hover-span').html("Voted");
+         });
+         });
+         // //added by bikash //
+      </script>
+   </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+
+<!--************** LAZY LOADING SCRIPT ******************--
+<div style="width: 100%; height: 347px; margin-top: auto; margin-left: auto; margin-right: auto" id="jb-podcast-container"></div>
+<script>
+jQuery(document).ready(function() {
+    setTimeout(function() {
+      // SCRIPT START
+      (function (w, d, s, o, f, js, fjs) {
+            w[o] =
+                w[o] ||
+                function () {
+                    (w[o].q = w[o].q || []).push(arguments);
+                };
+            (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+            js.id = o;
+            js.src = f;
+            js.async = 1;
+            fjs.parentNode.insertBefore(js, fjs);
+        })(window, document, 'script', 'jbWidget', 'https://widget.justbaat.com/jb-widget.min.js');
+        jbWidget('init', {
+            appId:  "93503ef5-057c-4c1c-868b-d4dc72a37de2",
+            secret:  "54e5bc4f708cc511d273ca487770b210ef6a75bec7c1b8f1c9c192966a3858b4",
+            partner_id:  "ODISHATV",
+            render: [
+                {
+                    wid: 'INSTORY_WIDGET',
+                    tgtEl: 'jb-podcast-container',
+                    uiConfig: {
+                        width: '100%'
+                    },
+                  
+                    widgetConfig: {
+                        tilesInView: 3,
+                    }
+                }
+            ]
+        });
+      // SCRIPT END
+    }, 2000);
+});
+</script>
+--************** //LAZY LOADING SCRIPT ******************-->
+
+<!--************** LAZY LOADING IFRAME ******************--
+<div style="width: 804px; height: 452px; background-color: #333;">
+  <iframe style="display: none;" id="lazyvideo1" width="804" height="452" src="" videosrc="https://www.youtube.com/embed/O0fOiYHNV8E" title="Tension erupts at Bhubaneswar Market Building after scuffle among vendors" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    setTimeout(function() {
+      // SCRIPT START
+      var lazy_video1 = $("#lazyvideo1").attr("videosrc");
+      $("#lazyvideo1").attr("src", lazy_video1);
+       $("#lazyvideo1").show();
+      // SCRIPT END
+    }, 6000);
+});
+</script>
+--************* //LAZY LOADING IFRAME *****************-->
+
+
+<!--************* LAZY LOADING ON SCROLL *****************-->
+<script>
+    $(window).scroll(function() {
+    if ($(this).scrollTop() >= 200) { // this refers to window
+        alert("You've scrolled 100 pixels.");
+    }
+});
+</script>
+<!--************ //LAZY LOADING ON SCROLL ****************-->
+
+
+
+</body>
+</html>

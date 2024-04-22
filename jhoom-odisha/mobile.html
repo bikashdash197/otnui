@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Jhoom Odisha 2022</title>
+      <link rel="stylesheet" href="https://odishatv.in/commondir/css/bootstrap.min.css">
+      <style type="text/css">
+         body {
+         margin: 0px;
+         padding: 0px;
+         }
+         section.jhoomodisha-sec {
+         float: left;
+         width: 100%;
+         margin: 50px 0px;
+         }
+         .jhoomodisha {
+         width: 320px;
+         height: 693px;
+         overflow: hidden;
+         margin: 0 auto;
+         position: relative;
+         }
+         img.jhoomodishabg {
+         width: 100%;
+         height: auto;
+         }
+         .contestent {
+         position: absolute;
+         left: 20px;
+         top: 148px;
+         width: 275px;
+         height: 434px;
+         overflow: hidden;
+         overflow-y: scroll;
+         }
+         .contestent-list {
+         width: 275px;
+         float: left;
+         position: relative;
+         padding-left: 21px;
+         margin: 10px 0px 0px 0px;
+         }
+         img.contestent-image {
+         width: 204px;
+         height: 223px;
+         margin: 0 auto 0 auto;
+         display: block;
+         }
+         img.vote {
+         position: absolute;
+         left: 21px;
+         top: 155px;
+         width: 55px;
+         height: 55px;
+         border-radius: 50%;
+         cursor: pointer;
+         }
+         /* POPUP */
+         h4.jo-modal-title {
+         margin: 0px;
+         padding: 0px;
+         font-size: 23px;
+         text-align: center;
+         text-transform: uppercase;
+         font-weight: 700;
+         color: #000;
+         }
+         form#joform {
+         text-align: center;
+         position: relative;
+         }
+         form#joform label {
+         font-size: 17px;
+         font-weight: 100;
+         display: block;
+         margin: 10px 0px;
+         padding: 0px;
+         }
+         input.jo-field {
+         width: 270px;
+         border: solid 1px #ccc;
+         line-height: 30px;
+         display: block;
+         margin: 0 auto;
+         padding: 5px;
+         outline: none;
+         }
+         input#josubmit {
+         background-color: green;
+         color: #fff;
+         border: none;
+         outline: none;
+         font-size: 20px;
+         font-weight: 700;
+         line-height: 35px;
+         width: fit-content;
+         padding: 0px 15px;
+         border-radius: 18px;
+         margin-top: 15px;
+         }
+         #jo_msg {
+         color: red;
+         }
+         /* //POPUP */
+      </style>
+   </head>
+   <body>
+      <section class="jhoomodisha-sec">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-9">
+                  <div class="jhoomodisha">
+                     <img src="https://images.odishatv.in/assets/jhoomodisha/jhoomodishamobilebg.jpg" alt="" title="" class="jhoomodishabg">
+                     <div class="contestent">
+                        <div class="contestent-list">
+                           <img src="https://images.odishatv.in/assets/jhoomodisha/contestent1.png" alt="" title="" class="contestent-image">
+                           <img src="https://images.odishatv.in/assets/jhoomodisha/vote.png" id="contestent1"  data-toggle="modal" data-target="#jhoomodishaModal" alt="" title="" class="vote" contestent="john and Doe">
+                        </div>
+                        <div class="contestent-list">
+                           <img src="https://images.odishatv.in/assets/jhoomodisha/contestent1.png" alt="" title="" class="contestent-image">
+                           <img src="https://images.odishatv.in/assets/jhoomodisha/vote.png" id="contestent2"  data-toggle="modal" data-target="#jhoomodishaModal" alt="" title="" class="vote" contestent="john2 and Doe2">
+                        </div>
+                        <div class="contestent-list">
+                           <img src="https://images.odishatv.in/assets/jhoomodisha/contestent1.png" alt="" title="" class="contestent-image">
+                           <img src="https://images.odishatv.in/assets/jhoomodisha/vote.png" id="contestent3"  data-toggle="modal" data-target="#jhoomodishaModal" alt="" title="" class="vote" contestent="john3 and Doe3">
+                        </div>
+                        <div class="contestent-list">
+                           <img src="https://images.odishatv.in/assets/jhoomodisha/contestent1.png" alt="" title="" class="contestent-image">
+                           <img src="https://images.odishatv.in/assets/jhoomodisha/vote.png" id="contestent4"  data-toggle="modal" data-target="#jhoomodishaModal" alt="" title="" class="vote" contestent="john4 and Doe4">
+                        </div>
+                        <div class="contestent-list">
+                           <img src="https://images.odishatv.in/assets/jhoomodisha/contestent1.png" alt="" title="" class="contestent-image">
+                           <img src="https://images.odishatv.in/assets/jhoomodisha/vote.png" id="contestent5"  data-toggle="modal" data-target="#jhoomodishaModal" alt="" title="" class="vote" contestent="john5 and Doe5">
+                        </div>
+                        <div class="contestent-list">
+                           <img src="https://images.odishatv.in/assets/jhoomodisha/contestent1.png" alt="" title="" class="contestent-image">
+                           <img src="https://images.odishatv.in/assets/jhoomodisha/vote.png" id="contestent6"  data-toggle="modal" data-target="#jhoomodishaModal" alt="" title="" class="vote" contestent="john6 and Doe6">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3"></div>
+            </div>
+         </div>
+      </section>
+      <!--=================== MODAL ==================-->
+      <div class="modal fade" id="jhoomodishaModal" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="jo-modal-title">Modal Header</h4>
+               </div>
+               <div class="modal-body">
+                  <form name="" action="" method="" id="joform">
+                     <label>Your Name</label>
+                     <input type="text" name="" id="joname" value="" class="jo-field">
+                     <label>Your 10-digit Phone Number</label>
+                     <input type="text" name="" id="jophone" value="" class="jo-field">
+                     <p id="jo_msg"></p>
+                     <input type="button" name="" value="Vote Now" select="" id="josubmit">
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--================== //MODAL =================-->
+      <script src="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js"></script>
+      <script src="https://odishatv.in/commondir/js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+         	$(".vote").click(function() {
+         		var tovote = $(this).attr("contestent");
+         		var tovoteID = $(this).attr("id");
+         		$(".jo-modal-title").text("To vote" + " " + tovote);
+         		$("#josubmit").attr("select", tovoteID);
+         
+         	});
+         	// VALIDATION
+         	$('#jo_msg').hide();
+         	$("#josubmit").click(function() {
+         		var joname = $("#joname").val();
+                    var jophone = $("#jophone").val();
+         		if(joname == "") {
+         		    $("#jo_msg").show();
+         		    $("#jo_msg").html("<strong>Error!</strong> Please Enter Your Name!");
+         		    $("#josubmit").val('Submit');
+         		    return false;
+                 }
+                 else if(jophone == "") {
+                     $("#jo_msg").show();
+                     $("#jo_msg").html("<strong>Error!</strong> Please Enter 10-digit Phone Number!");
+                     $("#josubmit").val('Submit');
+                     return false;
+                	}
+                	else if (isNaN(jophone)){
+                    	$("#jo_msg").show();
+         			$("#jo_msg").html("<strong>Error!</strong> Please Enter valid Phone Number!");
+         			$("#josubmit").val('Submit');
+         			return false;
+                    }
+                	else if(jophone.length != 10){
+         			$("#jo_msg").show();
+         			$("#jo_msg").html("<strong>Error!</strong> Please Enter 10-digit Phone Number!");
+         			$("#josubmit").val('Submit');
+         			return false;
+                    }
+                    else {
+                    	$("#jo_msg").hide();
+                    	var voting = $(this).attr("select");
+                    	$(".vote").attr("src", "https://images.odishatv.in/assets/jhoomodisha/deactivated.png");
+                    	$("#"+voting).attr("src", "https://images.odishatv.in/assets/jhoomodisha/activated.png");
+                    	$("#jhoomodishaModal").modal("hide");
+                    }
+         	});
+         });
+      </script>
+   </body>
+</html>

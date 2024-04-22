@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="angel_down_icon" data-name="angel down icon" class="cls-1" d="M938.95,322c0.724,0.682,1.4,2.319,2.05,2.932L933.491,332,926,324.948c0.635-.6,1.316-2.238,2-2.881l5.441,5.124Z" transform="translate(-926 -322)"/>
+</svg>

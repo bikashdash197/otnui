@@ -1,0 +1,194 @@
+<!doctype html>
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Lorem ipsum dolor sit amet consectetur adipiscing</title>
+    <link type="image/x-icon" href="https://thejbt.com/images/f-logo.png"rel="shortcut icon">
+    <link rel="canonical" href="https://odishatv.in/entertainment">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="amp-google-client-id-api" content="googleanalytics">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta property="og:locale" content="en" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content=">" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Odisha TV" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@thejbt" />
+    <meta name="twitter:site" content="@thejbt" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta property="twitter:url" content="" />
+    <style amp-boilerplate>
+body{-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both; -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both; -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both; animation: -amp-start 8s steps(1, end) 0s 1 normal both}
+@-webkit-keyframes -amp-start {from{visibility:hidden} to {visibility: visible}}
+@-moz-keyframes -amp-start{from {visibility:hidden} to {visibility: visible}}
+@-ms-keyframes -amp-start{from {visibility:hidden} to {visibility: visible}}
+@-o-keyframes -amp-start{from {visibility:hidden} to {visibility: visible}}
+@keyframes -amp-start{from {visibility:hidden} to {visibility: visible}}
+</style>
+<noscript>
+<style amp-boilerplate> body {-webkit-animation: none;-moz-animation: none;-ms-animation: none;animation: none}</style>
+</noscript>
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0/amp-experiment-0.1.js">
+    <link href=https://fonts.gstatic.com rel="dns-prefetch preconnect" crossorigin>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+    <script async custom-element="amp-cache-url" src="https://cdn.ampproject.org/v0/amp-cache-url-0.1.js"></script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-story-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-story-auto-ads-0.1.js"></script>
+    <link  href="https://fonts.googleapis.com/css2?family=Teko:wght@600&amp;family=Poppins&amp;display=swap"
+    rel="stylesheet">
+        <script type="application/ld+json">
+              {"@context": "https://schema.org", 
+              "@type": "Article", 
+              "mainEntityOfPage": {"@type": "WebPage", 
+                "@id": "" 
+              }, 
+              "headline": "", 
+              "image": {"@type": "ImageObject", 
+                "url": "", 
+                "height": 1280, 
+                "width": 720 
+              },  
+              "datePublished": "",
+              "dateModified": "",  
+              "author": {"@type": "Person",
+                "name": ""
+              }, 
+              "publisher": {"@type": "Organization", 
+                "name": "Janbhawna Times", 
+                "logo": {"@type": "ImageObject", 
+                  "url": "https://thejbt.com/images/logo.png",  
+                  "width": 190, 
+                  "height": 88 
+              } 	
+              }, 
+              "description": ""
+              } 
+          </script>
+      <style amp-custom>.site a, .name a{color: #fff; text-decoration: none;}.text-white,h3,h3 span{color:#fff}.call-action a,.font-w-6,h4 span{font-weight:500}amp-story{font-family:Poppins,sans-serif}h1,h3{font-family:Teko,sans-serif}amp-story-page{background-color:#000}amp-story-grid-layer{padding:50px 7% 10px}amp-story-grid-layer.bottom{align-content:end;padding-bottom:60px}amp-story-grid-layer.coveredge{padding:0 8%}h1,h3,h4{font-weight:500;margin-bottom:8px}h1,h4{font-weight:400}h1{font-size:28px;line-height:40px}h3{font-size:1.5em;display:inline-block;text-transform:uppercase;padding:5px 10px 0;margin-bottom:5px;background:linear-gradient(135deg,rgb(253 75 20 / 70%) 1%,#ff2e2e 50%,#ef4c4c 100%);border-radius:0 15px}h4{font-size:.9em;line-height:1.6em;padding:5px}.text-cyan{color:#01dfdc}.text-center{text-align:center}.z-index-up{position:relative;z-index:9}.mar-20{margin:20px}.mar-b100{margin-bottom:100px}.overlay-end,.overlay-end-deep,.overlay-start,.overlay-start-deep{position:relative;z-index:1}.overlay-end-deep:after,.overlay-end:after,.overlay-start-deep:after,.overlay-start:after{content:"";position:absolute;bottom:0;left:0;right:0;display:block;width:100%;height:100%;line-height:0;z-index:0}.overlay-start:after{background:-webkit-linear-gradient(bottom,rgba(0,0,0,.9) 0,rgba(0,0,0,.3) 30%,rgba(0,0,0,0) 100%);background:linear-gradient(to top,rgba(0,0,0,.9) 0,rgba(0,0,0,.3) 30%,rgba(0,0,0,0) 100%)}.overlay-end:after{background:-webkit-linear-gradient(bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 70%,rgba(0,0,0,.8) 100%);background:linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 70%,rgba(0,0,0,.8) 100%)}.overlay-start-deep{background:-moz-linear-gradient(bottom,rgba(0,0,0,.8) 20%,rgba(0,0,0,0) 50%);background:-webkit-linear-gradient(to top,rgba(0,0,0,.8) 20%,rgba(0,0,0,0) 50%)}.overlay-end-deep:after{background:-webkit-linear-gradient(bottom,rgba(0,0,0,0) 40%,rgba(0,0,0,.75) 80%,rgba(0,0,0,.95) 100%);background:linear-gradient(to top,rgba(0,0,0,0) 40%,rgba(0,0,0,.75) 80%,rgba(0,0,0,.95) 100%)}.blkBg{border-radius:50%;right:20px;bottom:35px;background:#000;display:inline-flex;padding:0;}.call-action a{text-align:left;color:#fff;text-decoration:none;padding:8px 15px;background:#a17af2;border-radius:3px;font-size:14px;position:absolute;top:50px}.writer{text-align:left;position:relative;width:100%;z-index:1;margin:-25px 0 0 -10px}.writer .blkBg{background-color:transparent;}.cover-slide{padding:20px 0 12px;border-radius:10px;margin-bottom:0}.cover-slide h1{font-size:2.2em;font-weight:600;line-height:1.2;margin-bottom:10px}.cover-slide h1 span{display:block;font-weight:800;font-size:1.2em;line-height:1.8em}.cover-slide .label{background-color:#000;margin:-42px auto 0;border-radius:80px;width:65px;height:65px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;position:relative;bottom:11px;border:4px solid #fff}.cover-slide .label img,.credit,.headingStyle ul li:before,hr{display:block}.cover-slide .date,.cover-slide .name,.cover-slide .site{font-size:.65rem;display:block;margin-bottom:0;font-weight:400;color:#fff}.cover-slide .name{font-size:.65rem}.authorDet{position:relative;padding-left:130px}.authorDet .writer{position:absolute;left:0;top:0;text-align:left;margin:0;}hr{width:50px;height:3px;border:0;background:red;margin:0 0 12px}.headingStyle ul{list-style:none;padding:0}.headingStyle ul li{padding-left:15px;position:relative;margin-bottom:6px}.headingStyle ul li:before{content:"";position:absolute;left:0;top:5px;height:5px;width:5px;background:-webkit-linear-gradient(-45deg,rgba(238,119,82,.7) 1%,rgba(231,60,126,.7) 50%,rgba(161,122,242,.7) 100%);background:linear-gradient(135deg,rgba(238,119,82,.7) 1%,#e73c7e 50%,#a17af2 100%)}ul.listing{padding:0;margin:0 0 0 12px}ul.listing li{margin-bottom:6px}.credit{bottom:10px;left:0;right:0;color:#fff;font-size:10px;font-weight:400;position:absolute;margin:0 auto;text-align:center}.linkBottom{text-align:center;width:100%;position:relative;display:flex;justify-content:center;align-items:flex-end;margin-bottom:10px;font-size:13px}.linkBottom a{background:linear-gradient(135deg,rgba(238,119,82,.7) 1%,#e73c7e 50%,#a17af2 100%);padding:5px 20px;border-radius:15px;color:#fff;text-decoration:none}</style>
+    
+  </head>
+  <body>
+  <amp-story standalone title="" publisher="Odisha TV"
+        publisher-logo-src="https://odishareporter.in/commondir/images/logo.svg"
+        poster-portrait-src="https://webstories.odishatv.in/wp-content/uploads/2022/10/pexels-kiran-7406887-scaled.jpg">
+    <!-- Ads Code -->
+    <amp-story-auto-ads>
+        <script type="application/json">
+            {
+              "ad-attributes": {
+              "type": "adsense",
+              "data-ad-client": "ca-pub-8070483819694809",
+              "data-ad-slot": "4666568047"
+              }
+            }
+        </script>
+    </amp-story-auto-ads>
+    <!-- Google Analytics -->
+    <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+    {
+      "vars" : {
+        "gtag_id": "UA-207900208-1",
+        "config" : {
+          "UA-207900208-1": { "groups": "default" }
+        }
+      }
+    }
+    </script>
+    </amp-analytics> 
+    <!-- Cover page -->  
+    <amp-story-page id="cover">
+            <amp-story-grid-layer template="fill">
+                <amp-img data-hero src="https://webstories.odishatv.in/wp-content/uploads/2022/10/indian-sweet-food-gulab-jamun-served-round-ceramic-bowl-3-min-scaled.jpg" width="720"
+                    height="1280" alt="use sour curd like this" layout="responsive"></amp-img>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical" class="bottom coveredge overlay-end">
+                <div class="z-index-up cover-slide" animate-in="fly-in-top" animate-in-delay="0.3s"
+                    animate-in-duration="0.3s">
+                    <h1 class="text-white font-w-6" animate-in="fly-in-right" animate-in-delay="0.5s"
+                        animate-in-duration="0.8s">Lorem ipsum dolor sit amet, consectetur adipiscing</h1>
+                    <hr animate-in="fly-in-right" animate-in-delay="1s" animate-in-duration="0.5s" />
+                    <div class="authorDet">
+                        <div class="writer"> <span class="logo-thumb blkBg" animate-in="fly-in-right"
+                                animate-in-delay="0s" animate-in-duration="0.6s">
+                                <amp-img data-hero
+                                    src="https://odishareporter.in/commondir/images/logo.svg"
+                                    width="100" height="47" alt="Odisha TV Logo Icon"></amp-img>
+                            </span></div>
+                        <div class="name" animate-in="fade-in" animate-in-delay="0.8s" animate-in-duration="1s">
+                        <a href="">Bikash dash</a></div>
+                        <div class="date" animate-in="fade-in" animate-in-delay="0.8s" animate-in-duration="1s">15 APR 2022 IST</div>
+                        <div class="site" animate-in="fade-in" animate-in-delay="0.9s" animate-in-duration="1s">
+                        <a href="https://odishatv.in/">odishatv.in</a></div>
+                    </div>
+                </div>
+            </amp-story-grid-layer>
+        </amp-story-page>  
+       <amp-story-page id="page-1">
+                <amp-story-grid-layer template="fill">
+                <amp-img src="https://webstories.odishatv.in/wp-content/uploads/2022/10/pexels-vlada-karpovich-6944061-scaled.jpg"
+                    width="720" height="1280" alt="" layout="responsive" animate-in="zoom-in"
+                    animate-in-duration="150s"></amp-img>
+                </amp-story-grid-layer>
+                <amp-story-grid-layer template="fill">
+                <amp-video autoplay loop
+                    grid-area="middle-third"
+                    width="720"
+                    height="960"
+                    poster="https://webstories.odishatv.in/wp-content/uploads/2022/10/pexels-life-of-pix-9095-scaled.jpg"
+                    layout="responsive"
+                    alt="...">
+                    <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+                </amp-video>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical" class="bottom overlay-start">
+                <div class="z-index-up text-white headingStyle">
+                <h3 animate-in="fly-in-left" animate-in-delay="0s" animate-in-duration="0.5s"><span
+                            class="font-w-6"> Lorem ipsum dolor sit amet, consectetur adipiscing</span></h3>
+                    <h4 animate-in="fly-in-right" animate-in-delay="0s" animate-in-duration="0.5s">
+                        <ul>Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing</ul>
+                    </h4>
+                </div>
+            </amp-story-grid-layer>
+            <amp-story-grid-layer template="vertical" class="top">
+                <div class="writer" animate-in="fly-in-right" animate-in-delay="0.2s" animate-in-duration="0.6s"> <span
+                        class="logo-thumb blkBg">
+                        <amp-img data-hero
+                            src="https://odishareporter.in/commondir/images/logo.svg"
+                            width="100" height="47" alt="Odisha TV Logo"></amp-img>
+                    </span> </div>
+                    <span class="credit">Credit: bikash dash</span>
+            </amp-story-grid-layer>
+        </amp-story-page>
+    <amp-story-page id="covermb">
+        <amp-story-grid-layer template="fill">
+          <amp-img id="55" src="https://webstories.odishatv.in/wp-content/uploads/2022/10/pexels-kulbir-7449105-scaled.jpg" width="720" height="1280" layout="responsive"></amp-img>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="thirds">
+            <div class="content" grid-area="lower-third" animate-in="whoosh-in-left">
+            <h3 animate-in="fly-in-left" animate-in-delay="0s" animate-in-duration="0.5s"><span
+                            class="font-w-6">eiusmod tempor incididunt ut labore et dolore</span></h3>
+            </div> 
+        </amp-story-grid-layer>
+        <amp-story-cta-layer class="bt">
+                <div class="call-action text-center" animate-in="fly-in-left" animate-in-delay="0.8s"
+                    animate-in-duration="0.7s"> <a href="https://odishatv.in/entertainment" target="_blank"
+                        role="link">Read More</a></div>
+        </amp-story-cta-layer>
+       
+    </amp-story-page>
+
+    </amp-story>
+    
+  </body>
+</html>

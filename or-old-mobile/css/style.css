@@ -1,0 +1,148 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+@media (min-width: 1200px) {
+	.container, .container-lg, .container-md, .container-sm, .container-xl {
+	    max-width: 1290px;
+	}
+}
+a, a:focus, a:hover, a:active {
+    text-decoration: none;
+}
+.sticky {
+    position: sticky;
+    top: 50px;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+section{
+	float: left;
+	width: 100%;
+}
+
+
+/*=============== TOPBAR =================*/
+
+/*============== //TOPBAR ================*/
+
+/*============== FOOTER ===============*/
+footer {
+    float: left;
+    background-color: #212121;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 1;
+    position: relative;
+}
+ul.footer-link {
+    margin: 0;
+    padding: 0;
+}
+ul.footer-link li {
+    list-style-type: none;
+    display: block;
+}
+ul.footer-link li a {
+    color: #a9a3a3;
+    font-size: 13px;
+    line-height: 30px;
+    text-decoration: none;
+    display: block;
+    transition-duration: .5s;
+}
+ul.footer-link .footer-link-heading {
+    color: #a9a3a3;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    padding: 0;
+    border-bottom: 1px solid #cecdcd;
+}
+.footer-sidebar {
+    padding-left: 10px;
+    display: inline-table;
+}
+h4.odishatv-app-heading {
+    color: #fff;
+    margin: 0 0 30px 0;
+    padding: 3px 0 0 0;
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 46px;
+}
+h4.odishatv-app-heading img {
+    width: 33px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+ul.odishatv-app {
+    margin: 20px 0 20px 0;
+    padding: 0;
+}
+ul.odishatv-app li {
+    list-style-type: none;
+    display: inline-block;
+}
+ul.odishatv-app li a {
+    text-decoration: none;
+    display: block;
+    width: auto;
+    height: 28px;
+    margin-right: 5px;
+}
+h4.tarangplus-app-heading {
+    color: #fff;
+    display: inline-block;
+    margin: 20px 0 0 0;
+    padding: 3px 0 0 0;
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    padding-left: 90px;
+}
+h4.tarangplus-app-heading img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: auto;
+}
+
+
+section.copyright {
+    float: left;
+    width: 100%;
+    background-color: #000;
+    padding: 10px 0;
+}
+section.copyright h6 {
+    color: #a9a3a3;
+    margin: 4px 0 0 0;
+    padding: 0;
+    font-size: 13px;
+}
+section.copyright ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+section.copyright ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+section.copyright ul li a {
+    color: #a9a3a3;
+    font-size: 13px;
+    list-style-type: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+/*============== //FOOTER ===============*/

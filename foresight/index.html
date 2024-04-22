@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title></title>
+      <link rel="stylesheet" href="https://odishatv.in/commondir/css/bootstrap.min.css">
+      <style>
+         body {
+         margin: 0px;
+         padding: 0px;
+         }
+         section {
+         float: left;
+         width: 100%;
+         }
+         .logo {
+         position: relative;
+         }
+         section.whitebg {
+         background-image: url(images/white-bg.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         padding-bottom: 40px;
+         }
+         .header {
+         margin-top: 10px;
+         }
+         h4.back-to-home {
+         position: absolute;
+         right: -60px;
+         top: 19px;
+         color: #000;
+         text-transform: capitalize;
+         font-size: 14px;
+         font-weight: 700;
+         }
+         h4.back-to-home:before {
+         content: "";
+         width: 0;
+         height: 0;
+         border-top: 7px solid transparent;
+         border-right: 15px solid red;
+         border-bottom: 7px solid transparent;
+         position: absolute;
+         display: block;
+         left: -22px;
+         top: 0;
+         }
+         h1.foresight-heading {
+         margin: 0px;
+         padding: 0px;
+         font-weight: bold;
+         font-size: 76px;
+         color: #000;
+         }
+         h1.foresight-heading span {
+         color: #ff6363;
+         }
+         img.annual-convention {
+         margin: 20px auto 30px auto;
+         display: block;
+         }
+         img.foresightlogo {
+         margin: 0 auto 25px auto;
+         display: block;
+         }
+         /*BREAKING NEWS */
+         .breakingnews-slide {
+         position: relative;
+         display: inline-block;
+         background-color: #fff;
+         width: 100%;
+         -webkit-box-shadow: 0px 0px 5px 4px rgb(0 0 0 / 16%);
+         -moz-box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.16);
+         box-shadow: 0px 0px 5px 4px rgb(0 0 0 / 16%);
+         height: 46px;
+         padding-left: 185px;
+         margin-top: 15px;
+         }
+         .breakingnews-slide .owl-nav {
+         display: none;
+         }
+         .breakingnews-slide h3 {
+         position: absolute;
+         margin: 0px;
+         background-color: #ff4d4d;
+         color: #fff;
+         text-transform: uppercase;
+         font-size: 18px;
+         font-weight: 700;
+         line-height: 46px;
+         padding: 0px 10px;
+         width: 175px;
+         left: 0;
+         top: 0;
+         }
+         .breakingnews-slide p {
+         line-height: 46px;
+         height: 45px;
+         overflow: hidden;
+         color: #000;
+         font-size: 18px;
+         font-weight: 700;
+         }
+         /*//BREAKING NEWS */
+         /* social media */
+         ul.top-social-menu {
+         margin: 25px 0px 0px 0px;
+         padding: 0px;
+         float: right;
+         }
+         ul.top-social-menu li {
+         float: left;
+         list-style-type: none;
+         margin-left: 8px;
+         }
+         ul.top-social-menu li a {
+         text-decoration: none;
+         display: block;
+         }
+         .svg-sprite {
+         background: url(images/svg-sprite.svg) no-repeat;
+         }
+         span.svg-sprite-label {
+         display: none;
+         }
+         a.facebook.svg-sprite {
+         width: 22px;
+         height: 22px;
+         background-position: -120px -90px;
+         }
+         a.twitter.svg-sprite {
+         width: 22px;
+         height: 22px;
+         background-position: -60px -90px;
+         }
+         a.instagram.svg-sprite {
+         width: 22px;
+         height: 22px;
+         background-position: -150px -90px;
+         }
+         a.linkedin.svg-sprite {
+         width: 22px;
+         height: 22px;
+         background-position: -180px -90px;
+         }
+         a.telegram.svg-sprite {
+         width: 22px;
+         height: 22px;
+         background-position: -90px -90px;
+         }
+         a.koo.svg-sprite {
+         width: 22px;
+         height: 22px;
+         background-position: -210px -90px;
+         }
+         a.youtube.svg-sprite {
+         width: 22px;
+         height: 22px;
+         background-position: 0 -90px;
+         }
+         /* //social media */
+         /* footer */
+         footer {
+         float: left;
+         width: 100%;
+         background-color: #4a4a4a;
+         text-align: center;
+         padding: 20px 0px;
+         }
+         footer p {
+         color: #a9a3a3;
+         margin: 4px 0 0;
+         padding: 0;
+         font-size: 13px;
+         }
+         footer ul {
+         margin: 10px 0px;
+         padding: 0;
+         }
+         footer ul li {
+         list-style-type: none;
+         display: inline-block;
+         margin: 0 0 0 15px;
+         }
+         footer ul li a {
+         color: #a9a3a3;
+         font-size: 13px;
+         list-style-type: none;
+         text-decoration: none;
+         text-transform: capitalize;
+         }
+         /* //footer */
+         /* panel members */
+         section.panel-list {
+         background-image: url(images/black-bg.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         padding-bottom: 40px;
+         }
+         h3.heading-style-three {
+         margin: 20px 0px;
+         padding: 0px;
+         color: #fff;
+         text-transform: uppercase;
+         font-size: 22px;
+         font-weight: 700;
+         }
+         h3.heading-style-three span {
+         color: #90ff00;
+         }
+         .panel-members img {
+         width: 200px !important;
+         height: 200px;
+         object-fit: cover;
+         border-radius: 100%;
+         margin: 0 auto;
+         display: block;
+         }
+         .panel-members {
+         text-align: center;
+         }
+         .panel-members h4 {
+         margin: 15px 0px;
+         padding: 0px;
+         color: #fff;
+         font-size: 20px;
+         font-weight: 700;
+         }
+         .panel-members p {
+         color: #fff;
+         font-size: 15px;
+         }
+         /* //panel members */
+         /* NEWS SECTION */
+         section.foresight-news {
+         margin: 0px;
+         padding: 30px 0px;
+         background-color: #e6e7e9;
+         }
+         .category-news-item {
+         position: relative;
+         padding-bottom: 10px;
+         }
+         .category-news-item img {
+         width: 100%;
+         height: 232px;
+         object-fit: cover;
+         margin-top: 3px;
+         margin-bottom: 20px;
+         }
+         ul.category-news-item-story {
+         margin: -7px 0 0;
+         padding: 0;
+         }
+         ul.category-news-item-story li {
+         list-style-type: none;
+         display: inline;
+         }
+         ul.category-news-item-story li a {
+         font-size: 19px;
+         text-decoration: none;
+         display: inline;
+         color: #000;
+         line-height: 22px;
+         }
+         ul.category-news-item-time {
+         margin: 0 0 5px;
+         padding: 0;
+         position: relative;
+         }
+         ul.category-news-item-time li {
+         list-style-type: none;
+         display: inline-block;
+         position: relative;
+         color: #463d3d;
+         font-size: 10px;
+         font-family: 'Libre Franklin',sans-serif;
+         font-weight: 300;
+         text-transform: uppercase;
+         margin-right: 24px;
+         }
+         ul.category-news-item-time li:last-child:before {
+         content: "";
+         display: block;
+         position: absolute;
+         left: -16px;
+         top: 4px;
+         width: 7px;
+         height: 7px;
+         background-color: #b5afaf;
+         border-radius: 50%;
+         }
+         .category-custom-two-item {
+         width: 100%;
+         padding-left: 130px;
+         min-height: 80px;
+         position: relative;
+         margin-bottom: 15px;
+         }
+         .category-custom-two-item img {
+         width: 120px;
+         height: 74px;
+         object-fit: cover;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         ul.category-custom-two-time {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.category-custom-two-time li {
+         list-style-type: none;
+         display: block;
+         color: #7a7171;
+         text-transform: capitalize;
+         font-size: 14px;
+         }
+         ul.category-custom-two-post {
+         margin: -5px 0 0;
+         padding: 0;
+         max-height: 62px;
+         overflow: hidden;
+         }
+         ul.category-custom-two-post li{
+         list-style-type: none;
+         display: inline;
+         }
+         ul.category-custom-two-post li:first-child{
+         position: relative;
+         margin-right: 15px;
+         }
+         ul.category-custom-two-post li:first-child:before {
+         content: "";
+         display: block;
+         background-color: #e92b28;
+         width: 1px;
+         height: 10px;
+         position: absolute;
+         top: 5px;
+         right: -10px;
+         transform: rotate(10deg);
+         }
+         ul.category-custom-two-post li a {
+         font-size: 16px;
+         text-decoration: none;
+         display: inline;
+         color: #af262d;
+         line-height: 19px;
+         }
+         h3.heading-style-one {
+         margin: 0 0 15px;
+         color: #333;
+         line-height: 17px;
+         position: relative;
+         padding-left: 40px;
+         text-transform: uppercase;
+         font-weight: 700;
+         font-size: 20px;
+         }
+         h3.heading-style-one:before {
+         content: "";
+         display: block;
+         background-color: #7b0505;
+         position: absolute;
+         left: 0;
+         top: 3px;
+         width: 30px;
+         height: 13px;
+         }
+         /* //NEWS SECTION */
+         @media screen and (max-width: 992px) {
+         img.annual-convention {
+         max-width: 90%;
+         margin: 20px auto;
+         }
+         .container.breaking {
+         display: none;
+         }
+         h1.foresight-heading {
+         font-size: 35px;
+         }
+         h4.back-to-home {
+         position: relative;
+         right: -23px;
+         top: 0px;
+         display: inline-block;
+         }
+         h4.back-to-home:before {
+         top: -3px;
+         transform: rotate(94deg);
+         }
+		ul.top-social-menu {
+		margin: 5px 0px 0px 0px;
+		float: none;
+		}
+         }
+      </style>
+   </head>
+   <body>
+      <section class="whitebg">
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-4">
+                     <div class="logo">
+                        <img src="https://odishatv.in/commondir/images/logo.svg" width="300" height="65" alt="logo" title="logo">
+                        <a href="">
+                           <h4 class="back-to-home">back to home</h4>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-lg-8">
+                     <ul class="top-social-menu">
+                        <li class="top-social-btn">
+                           <a href="https://www.facebook.com/otvnews/" title="Facebook" target="_blank" class="facebook svg-sprite" height="22" width="22">
+                           <span class="svg-sprite-label">facebook</span>
+                           </a>
+                        </li>
+                        <li class="top-social-btn">
+                           <a href="https://twitter.com/otvnews" title="Twitter" target="_blank" class="twitter svg-sprite" height="22" width="22">
+                           <span class="svg-sprite-label">twitter</span>
+                           </a>
+                        </li>
+                        <li class="top-social-btn">
+                           <a href="https://www.instagram.com/otv.news" title="Instagram" target="_blank" class="instagram svg-sprite" height="22" width="22">
+                           <span class="svg-sprite-label">instagram</span>
+                           </a>
+                        </li>
+                        <li class="top-social-btn">
+                           <a href="https://www.linkedin.com/company/odishatv" title="LinkedIn" target="_blank" class="linkedin svg-sprite" height="22" width="22">
+                           <span class="svg-sprite-label">linkedin</span>
+                           </a>
+                        </li>
+                        <li class="top-social-btn">
+                           <a href="https://t.me/otvtelegram" title="Telegram" target="_blank" class="telegram svg-sprite" height="22" width="22">
+                           <span class="svg-sprite-label">telegram</span>
+                           </a>
+                        </li>
+                        <li class="top-social-btn">
+                           <a href="https://www.kooapp.com/profile/otvnews" title="Koo" target="_blank" class="koo svg-sprite" height="22" width="22">
+                           <span class="svg-sprite-label">koo</span>
+                           </a>
+                        </li>
+                        <li class="top-social-btn">
+                           <a href="https://www.youtube.com/c/OTVNewsEnglish" title="Youtube" target="_blank" class="youtube svg-sprite" height="22" width="22">
+                           <span class="svg-sprite-label">youtube</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- BREAKING NEWS -->
+         <div class="container breaking">
+            <div class="breakingnews-slide">
+               <h3>Breaking news</h3>
+               <div class="breakingslider owl-carousel">
+                  <div class="carousel-item">
+                     <a title="ଖଇରା ଥାନା ତିଳଦା ଗାଁରେ ଦାମ୍ପତ୍ୟ କଳହରୁ ପିଟାପିଟି ହୋଇ ସ୍ୱାମୀସ୍ତ୍ରୀ ମୃତ" href="#">
+                        <p>ଖଇରା ଥାନା ତିଳଦା ଗାଁରେ ଦାମ୍ପତ୍ୟ କଳହରୁ ପିଟାପିଟି ହୋଇ ସ୍ୱାମୀସ୍ତ୍ରୀ ମୃତ</p>
+                     </a>
+                  </div>
+                  <div class="carousel-item active">
+                     <a title="ନବ ଦାସ ହତ୍ୟା ପ୍ରସଙ୍ଗରେ ଭୁବନେଶ୍ୱର ଲୋୟର ପିଏମଜିରେ ବିଜେପି ଯୁବମୋର୍ଚ୍ଚାର ବିଶାଳ ରାଲି" href="#">
+                        <p>ନବ ଦାସ ହତ୍ୟା ପ୍ରସଙ୍ଗରେ ଭୁବନେଶ୍ୱର ଲୋୟର ପିଏମଜିରେ ବିଜେପି ଯୁବମୋର୍ଚ୍ଚାର ବିଶାଳ ରାଲି</p>
+                     </a>
+                  </div>
+                  <div class="carousel-item ">
+                     <a title="+୨ ପରୀକ୍ଷା ପରିଚାଳନାରେ ଭାଗ ନେବେ ୬୬୨ ବର୍ଗ ଅଧ୍ୟାପକ" href="#">
+                        <p>+୨ ପରୀକ୍ଷା ପରିଚାଳନାରେ ଭାଗ ନେବେ ୬୬୨ ବର୍ଗ ଅଧ୍ୟାପକ</p>
+                     </a>
+                  </div>
+                  <div class="carousel-item ">
+                     <a title="ଜଗତସିଂହପୁର: ବାଣ ତିଆରି କାରଖାନାରେ ବିସ୍ଫୋରଣ ଘଟି ୨ ମୃତ, ୨ ଗୁରୁତର" href="#">
+                        <p>ଜଗତସିଂହପୁର: ବାଣ ତିଆରି କାରଖାନାରେ ବିସ୍ଫୋରଣ ଘଟି ୨ ମୃତ, ୨ ଗୁରୁତର</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- //BREAKING NEWS -->
+         <img src="images/annual-convention.png" width="406" height="41" alt="13th OTV Annual Convention" title="13th OTV Annual Convention" class="annual-convention">
+         <img src="images/logo.png" width="272" height="180" alt="Foresight" title="Foresight" class="foresightlogo">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4">
+                  <h1 class="foresight-heading">Live on <span>4th march</span> 2023 10:00AM Onwards</h1>
+               </div>
+               <div class="col-lg-8">
+                  <iframe style="margin-top: 15px;" width="100%" height="391" src="https://www.youtube.com/embed/UWY2p8YEnb8" title="OTV Live 24x7  | Latest Odisha News Live Updates | Latest National News In Odia Live  | OTV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="panel-list">
+         <div class="container">
+            <h3 class="heading-style-three">know your <span>panelists</span></h3>
+            <div class="panelslide owl-carousel">
+               <div class="panel-members">
+                  <img src="https://i1.sndcdn.com/avatars-000640575936-pgu3fe-t500x500.jpg" width="200" height="200" alt="" title="">
+                  <h4>Anupam kher</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </div>
+               <div class="panel-members">
+                  <img src="https://i1.sndcdn.com/avatars-000640575936-pgu3fe-t500x500.jpg" width="200" height="200" alt="" title="">
+                  <h4>Anupam kher</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </div>
+               <div class="panel-members">
+                  <img src="https://i1.sndcdn.com/avatars-000640575936-pgu3fe-t500x500.jpg" width="200" height="200" alt="" title="">
+                  <h4>Anupam kher</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </div>
+               <div class="panel-members">
+                  <img src="https://i1.sndcdn.com/avatars-000640575936-pgu3fe-t500x500.jpg" width="200" height="200" alt="" title="">
+                  <h4>Anupam kher</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </div>
+               <div class="panel-members">
+                  <img src="https://i1.sndcdn.com/avatars-000640575936-pgu3fe-t500x500.jpg" width="200" height="200" alt="" title="">
+                  <h4>Anupam kher</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </div>
+               <div class="panel-members">
+                  <img src="https://i1.sndcdn.com/avatars-000640575936-pgu3fe-t500x500.jpg" width="200" height="200" alt="" title="">
+                  <h4>Anupam kher</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </div>
+               <div class="panel-members">
+                  <img src="https://i1.sndcdn.com/avatars-000640575936-pgu3fe-t500x500.jpg" width="200" height="200" alt="" title="">
+                  <h4>Anupam kher</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="foresight-news">
+         <div class="container">
+            <h3 class="heading-style-one">Suggested stories</h3>
+            <div class="row">
+               <div class="col-lg-4">
+                  <div class="category-news-item">
+                     <a href="#">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1677565071.webp" alt="" title="" width="400" height="225"></a>
+                     <ul class="category-news-item-story">
+                        <li><a href="https://odishatv.in/national"> National</a></li>
+                        <li><a href="https://odishatv.in/news/national/terrorist-who-killed-sanjay-sharma-neutralised-in-kashmir-encounter-198093">Terrorist who killed Sanjay Sharma neutralised in Kashmir encounter</a></li>
+                     </ul>
+                     <ul class="category-news-item-time">
+                        <li>India</li>
+                        <li>4 hours ago </li>
+                     </ul>
+                  </div>
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1677582340.webp" alt="" title=""></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/sports">Sports</a></li>
+                        <li><a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109">India wins Women's Snooker World Cup after beating England</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <li>44 minutes ago </li>
+                     </ul>
+                  </div>
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1677582340.webp" alt="" title=""></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/sports">Sports</a></li>
+                        <li><a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109">India wins Women's Snooker World Cup after beating England</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <li>44 minutes ago </li>
+                     </ul>
+                  </div>
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1677582340.webp" alt="" title=""></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/sports">Sports</a></li>
+                        <li><a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109">India wins Women's Snooker World Cup after beating England</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <li>44 minutes ago </li>
+                     </ul>
+                  </div>
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1677582340.webp" alt="" title=""></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/sports">Sports</a></li>
+                        <li><a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109">India wins Women's Snooker World Cup after beating England</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <li>44 minutes ago </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="category-news-item">
+                     <a href="#">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1677565071.webp" alt="" title="" width="400" height="225"></a>
+                     <ul class="category-news-item-story">
+                        <li><a href="https://odishatv.in/national"> National</a></li>
+                        <li><a href="https://odishatv.in/news/national/terrorist-who-killed-sanjay-sharma-neutralised-in-kashmir-encounter-198093">Terrorist who killed Sanjay Sharma neutralised in Kashmir encounter</a></li>
+                     </ul>
+                     <ul class="category-news-item-time">
+                        <li>India</li>
+                        <li>4 hours ago </li>
+                     </ul>
+                  </div>
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1677582340.webp" alt="" title=""></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/sports">Sports</a></li>
+                        <li><a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109">India wins Women's Snooker World Cup after beating England</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <li>44 minutes ago </li>
+                     </ul>
+                  </div>
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1677582340.webp" alt="" title=""></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/sports">Sports</a></li>
+                        <li><a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109">India wins Women's Snooker World Cup after beating England</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <li>44 minutes ago </li>
+                     </ul>
+                  </div>
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1677582340.webp" alt="" title=""></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/sports">Sports</a></li>
+                        <li><a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109">India wins Women's Snooker World Cup after beating England</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <li>44 minutes ago </li>
+                     </ul>
+                  </div>
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1677582340.webp" alt="" title=""></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/sports">Sports</a></li>
+                        <li><a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109">India wins Women's Snooker World Cup after beating England</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <li>44 minutes ago </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4">
+                  <div class="category-news-item">
+                     <a href="#">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1677565071.webp" alt="" title="" width="400" height="225"></a>
+                     <ul class="category-news-item-story">
+                        <li><a href="https://odishatv.in/national"> National</a></li>
+                        <li><a href="https://odishatv.in/news/national/terrorist-who-killed-sanjay-sharma-neutralised-in-kashmir-encounter-198093">Terrorist who killed Sanjay Sharma neutralised in Kashmir encounter</a></li>
+                     </ul>
+                     <ul class="category-news-item-time">
+                        <li>India</li>
+                        <li>4 hours ago </li>
+                     </ul>
+                  </div>
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1677582340.webp" alt="" title=""></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/sports">Sports</a></li>
+                        <li><a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109">India wins Women's Snooker World Cup after beating England</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <li>44 minutes ago </li>
+                     </ul>
+                  </div>
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1677582340.webp" alt="" title=""></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/sports">Sports</a></li>
+                        <li><a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109">India wins Women's Snooker World Cup after beating England</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <li>44 minutes ago </li>
+                     </ul>
+                  </div>
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1677582340.webp" alt="" title=""></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/sports">Sports</a></li>
+                        <li><a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109">India wins Women's Snooker World Cup after beating England</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <li>44 minutes ago </li>
+                     </ul>
+                  </div>
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1677582340.webp" alt="" title=""></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/sports">Sports</a></li>
+                        <li><a href="https://odishatv.in/news/sports/india-wins-women-s-snooker-world-cup-after-beating-england-198109">India wins Women's Snooker World Cup after beating England</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <li>44 minutes ago </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <img src="https://odishatv.in/commondir/images/dark-logo.svg" width="300" height="65" alt="" title="">
+         <ul>
+            <li>
+               <a href="https://odishatv.in/about-us" title="About us" target="_self">About us</a>
+            </li>
+            <li>
+               <a href="https://odishatv.in/contact-us" title="Contact us" target="_self">Contact us</a>
+            </li>
+            <li>
+               <a href="https://odishatv.in/privacy-policy" title="Privacy Policy" target="_self">Privacy Policy</a>
+            </li>
+            <li>
+               <a href="https://odishatv.in/terms-of-usage" title="T&amp;C" target="_self">T&amp;C</a>
+            </li>
+            <li>
+               <a href="https://odishatv.in/cookiepolicy" title="Cookie Policy" target="_self">Cookie Policy</a>
+            </li>
+         </ul>
+         <p>Copyright © 2023 - Odisha Television Limited All Rights Reserved.</p>
+      </footer>
+      <link rel='stylesheet' href="https://images.odishatv.in/assets/css/owl.carousel.min.css">
+      <script src="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js"></script>
+      <script src="https://odishatv.in/commondir/js/bootstrap.min.js"></script>
+      <script src="https://images.odishatv.in/assets/js/owl.carousel.min.js"></script>
+      <script>
+         var otvshows= $('.panelslide').owlCarousel({
+            loop:true,
+            margin:10,
+            dots: false,
+            autoHeight : true,
+            autoplayTimeout:2000,
+            responsiveClass:true,
+            autoplayHoverPause:true,
+            nav:true,
+            lazyLoad:true,
+            responsive:{
+                0:{
+                    items:1,
+                    loop:true,
+                    autoplay:true,
+                },
+                600:{
+                    items:4,
+                    loop:true,
+                    autoplay:true,
+                },
+                1000:{
+                    items:4,
+                    loop:true,
+                    autoplay:true,
+                }
+            }
+         });
+         var otvshows= $('.breakingslider').owlCarousel({
+            loop:true,
+            margin:10,
+            dots: false,
+            autoHeight : true,
+            autoplayTimeout:2000,
+            responsiveClass:true,
+            autoplayHoverPause:true,
+            nav:true,
+            lazyLoad:true,
+            responsive:{
+                0:{
+                    items:1,
+                    loop:true,
+                    autoplay:true,
+                },
+                600:{
+                    items:1,
+                    loop:true,
+                    autoplay:true,
+                },
+                1000:{
+                    items:1,
+                    loop:true,
+                    autoplay:true,
+                }
+            }
+         });
+      </script>
+   </body>
+</html>

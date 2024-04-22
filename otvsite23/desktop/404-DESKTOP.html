@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="preconnect" href="https://odishatv.in/commondir/css/bootstrap.min.css" crossorigin>
+      <link rel="preconnect" href="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js" crossorigin>
+      <link rel="preconnect" href="https://odishatv.in/commondir/js/bootstrap.min.js" crossorigin>
+      <link rel="preconnect" href="https://images.odishatv.in/assets/js/jquery.unveil.js" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://odishatv.in/commondir/css/bootstrap.min.css">
+      <link href="https://odishatv.in/commondir/images/favicon.gif" rel="shortcut icon" type="image/gif">
+      <meta name="keywords" content="Home Page" />
+      <meta name="description" content="Home Page">
+      <title>OTV listing page desktop</title>
+      <style>
+         body {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Roboto', sans-serif;
+         font-weight: 400;
+         }
+         section {
+         float: left;
+         width: 100%;
+         }
+         .otv-300-250-ad {
+         width: 300px;
+         height: 250px;
+         display: flex;
+         margin: 0 auto;
+         text-align: center;
+         overflow: hidden;
+         background-color: #dfdfa1;
+         }
+         /* BOOTSTRAP */
+         @media (min-width: 1200px) {
+         .container {
+         width: 1260px;
+         }
+         }
+         .col-xs-15,
+         .col-sm-15,
+         .col-md-15,
+         .col-lg-15 {
+         position: relative;
+         min-height: 1px;
+         padding-right: 7.5px;
+         padding-left: 7.5px;
+         }
+         .col-xs-15 {
+         width: 20%;
+         float: left;
+         }
+         @media (min-width: 768px) {
+         .col-sm-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         @media (min-width: 992px) {
+         .col-md-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         @media (min-width: 1200px) {
+         .col-lg-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         /* //BOOTSTRAP */
+         /* HEADING */
+         p, h1, h2, h3, h4, h5, h6 {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Roboto', sans-serif;
+         }
+         a, a:hover, a:focus, a:active {
+         text-decoration: none;
+         }
+         h2.bdn-heading-one-line {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         padding-left: 10px;
+         }
+         h2.bdn-heading-one-line span {
+         background-color: #fff;
+         padding: 0px 5px 0px 0px;
+         position: absolute;
+         z-index: 1;
+         }
+         h2.bdn-heading-one-line:before {
+         content: "";
+         background-color: #f00404;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         h2.bdn-heading-one-line:after {
+         content: "";
+         display: block;
+         position: absolute;
+         left: 13px;
+         top: 9px;
+         width: calc(100% - 75px);
+         height: 5px;
+         background-color: #cccccc;
+         border-radius: 5px;
+         z-index: 0;
+         }
+         a.bdn-more {
+         float: right;
+         color: #262626;
+         text-transform: uppercase;
+         border: #dc2229 solid 1px;
+         font-size: 13px;
+         margin: 0px 7.5px 0px 0px;
+         padding: 0px 5px;
+         line-height: 19px;
+         border-radius: 12px;
+         }
+         h2.bdn-heading-one {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         position: relative;
+         padding-left: 10px;
+         }
+         h2.bdn-heading-one:before {
+         content: "";
+         background-color: #f00404;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         /* //HEADING */
+         /* HEADER */
+         .bdn-main-nav.fixed-bdnnav {
+         top: 0;
+         position: fixed;
+         width: 100%;
+         transition-duration: .5s;
+         z-index: 9;
+         }
+         .bdn-main-nav {
+         float: left;
+         width: 100%;
+         background-color: #fff;
+         height: 80px;
+         box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+         }
+         .bdn-logo {
+         height: 80px;
+         padding-top: 15px;
+         width: 297.5px;
+         padding-left: 7.5px;
+         border-right: solid 1px #c5c5c5;
+         float: left;
+         }
+         .bdn-menu {
+         height: 80px;
+         float: left;
+         width: calc(100% - 297.5px);
+         }
+         .bdn-upper-menu {
+         height: 45px;
+         box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+         }
+         .bdn-lower-menu {
+         height: 35px;
+         }
+         button.bdn-sidemenu {
+         height: 45px;
+         width: 45px;
+         margin: 0px;
+         padding: 0px;
+         line-height: 45px;
+         border: none;
+         background: none;
+         float: left;
+         }
+         ul.upper-left-menu {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.upper-left-menu li {
+         list-style-type: none;
+         float: left;
+         line-height: 45px;
+         border-left: solid 1px #c5c5c5;
+         }
+         ul.upper-left-menu li a {
+         text-decoration: none;
+         display: block;
+         padding: 0px 15px;
+         text-transform: uppercase;
+         color: #333;
+         }
+         ul.upper-left-menu li a img {
+         margin: -6px 5px 0px 0px;
+         }
+         ul.upper-right-menu {
+         margin: 0px 7.5px 0px 0px;
+         padding: 0px;
+         float: right;
+         }
+         ul.upper-right-menu li {
+         list-style-type: none;
+         float: left;
+         line-height: 45px;
+         margin-left: 20px;
+         position: relative;
+         cursor: pointer;
+         }
+         ul.upper-right-menu li a {
+         text-decoration: none;
+         display: block;
+         text-transform: capitalize;
+         }
+         ul.lower-left-menu {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.lower-left-menu li {
+         list-style-type: none;
+         float: left;
+         margin-left: 10px;
+         line-height: 35px;
+         padding-top: 5px;
+         }
+         ul.lower-left-menu li a {
+         text-decoration: none;
+         display: block;
+         text-transform: uppercase;
+         color: #000;
+         font-size: 12px;
+         position: relative;
+         }
+         input.bdn-search {
+         position: absolute;
+         right: -13px;
+         top: 0;
+         height: 45px;
+         border: none;
+         outline: none;
+         background-color: #d3d3d3;
+         width: 320px;
+         padding: 0px 70px 0px 10px;
+         }
+         img.bdn-search-go {
+         position: absolute;
+         right: 24px;
+         top: 17px;
+         }
+         img.bdn-search-close {
+         position: absolute;
+         right: -6px;
+         top: 16px;
+         }
+         /* //HEADER */
+         /* HEADER */
+         header {
+         float: left;
+         width: 100%;
+         margin-bottom: 20px;
+         }
+         .top-bar {
+         float: left;
+         width: 100%;
+         background-color: #d3d3d3;
+         height: 35px;
+         }
+         ul.bdn-date-weather {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.bdn-date-weather li {
+         list-style-type: none;
+         float: left;
+         font-size: 14px;
+         text-transform: uppercase;
+         line-height: 35px;
+         }
+         li.bdn-weather {
+         position: relative;
+         margin-left: 25px;
+         }
+         li.bdn-weather:before {
+         content: "";
+         display: block;
+         width: 1px;
+         height: 14px;
+         background-color: #000;
+         position: absolute;
+         left: -12px;
+         top: 9px;
+         }
+         ul.bdn-top-social {
+         margin: 0px;
+         padding: 0px;
+         float: right;
+         }
+         ul.bdn-top-social li {
+         list-style-type: none;
+         float: left;
+         margin-left: 15px;
+         margin-right: 15px;
+         position: relative;
+         }
+         ul.bdn-top-social li a {
+         text-decoration: none;
+         display: block;
+         line-height: 35px;
+         }
+         ul.bdn-top-social li:before {
+         content: "";
+         display: block;
+         position: absolute;
+         right: -15px;
+         top: 0;
+         width: 1px;
+         height: 35px;
+         background-color: #9c9c9c;
+         }
+         ul.bdn-top-social li:last-child:before {
+         display: none;
+         }
+         ul.lower-left-menu li a span {
+         position: absolute;
+         right: -1px;
+         top: -13px;
+         color: #333;
+         font-size: 11px;
+         }
+         ul.lower-right-menu {
+         float: right;
+         margin: 0px 7.5px 0px 0px;
+         padding: 0px;
+         }
+         ul.lower-right-menu li {
+         list-style-type: none;
+         line-height: 35px;
+         margin-left: 40px;
+         float: left;
+         padding-top: 5px;
+         }
+         ul.lower-right-menu li a {
+         text-decoration: none;
+         display: block;
+         color: #000;
+         text-transform: capitalize;
+         font-size: 13px;
+         font-weight: 700;
+         position: relative;
+         }
+         ul.lower-right-menu li a span {
+         position: absolute;
+         right: 0;
+         top: -4px;
+         font-size: 12px;
+         color: #fff;
+         background-color: #b7392e;
+         line-height: 14px;
+         padding: 0px 3px;
+         border-radius: 2px;
+         }
+         /* //HEADER */
+         /* FOOTER */
+         footer {
+         float: left;
+         width: 100%;
+         }
+         .main-visit-links-ft{
+         background-color:rgba(34,34,34,255);
+         padding: 20px 0;
+         }
+         .ft-fst-row{
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 20px;
+         }
+         .logo-btn-ft{
+         display: flex;
+         }
+         .otv-logo-ft{
+         height: 35px;
+         margin-right: 20px;
+         }
+         .live-btn-otv-ft{
+         background-color: #c10503;
+         border: none;
+         border-radius: 22px;
+         padding: 0px 9px;
+         margin: 7px 0;
+         }
+         .live-btn-otv-ft a{
+         text-transform: capitalize;
+         color: #fff;
+         font-size: 14px;
+         text-decoration: none;
+         }
+         .sub-btn-otv-ft{
+         border:1px solid #fff;
+         background-color: #333030;
+         padding: 4px 6px;
+         border-radius: 4px;
+         }
+         .sub-btn-otv-ft a{
+         text-transform: uppercase;
+         font-size: 12px;
+         color: #fff;
+         font-weight: 600;
+         margin: 0;
+         text-decoration: none;
+         }
+         input.search-input-otv{
+         text-transform: capitalize;
+         padding: 4px 4px;
+         border-radius: 4px;
+         width: 420px;
+         margin-right: 5px;
+         }
+         .short-visit-link-otv{
+         border-right: 1px solid gray; 
+         }
+         h5.ft-link-heading a{
+         color: #fff;
+         text-transform: capitalize;
+         font-size: 14px;
+         padding: 0 0 4px 0;
+         text-decoration: underline;
+         }
+         ul.ft-subnews-link{
+         list-style-type: none;
+         }
+         ul.ft-subnews-link li a{
+         color: lightgray;
+         margin-left: -40px;
+         font-weight: 500;
+         font-size: 12px;
+         text-transform: capitalize;
+         text-decoration: none;
+         }
+         .partner-ft-otv{
+         background-color:#32373b;
+         padding: 10px 0;
+         }
+         h5.partner-ft-heading{
+         color: #fff;
+         padding: 0;
+         margin: 0 0 5px 0;
+         text-transform: uppercase;
+         font-size: 12px;
+         }
+         ul.partner-link-otv{
+         list-style-type: none;
+         margin-left: -40px;
+         }
+         ul.partner-link-otv li{
+         display: inline-block;
+         }
+         ul.partner-link-otv li a{
+         color: lightgray;
+         font-weight: 500;
+         font-size: 10px;
+         text-transform: uppercase;
+         text-decoration: none;
+         padding-right: 10px;
+         border-right: 1px solid gray;
+         }
+         .contact-ft-otv{
+         background-color: #1a1d22;
+         display: flex;
+         margin: 0;
+         padding: 0;
+         align-items: center;
+         }
+         ul.contact-us-link-otv{
+         list-style-type: none;
+         margin-left: -40px;
+         }
+         ul.contact-us-link-otv li a{
+         color: lightgray;
+         font-weight: 500;
+         font-size: 10px;
+         text-transform: uppercase;
+         text-decoration: none;
+         padding-right: 10px;
+         border-right: 1px solid gray;
+         }
+         ul.contact-us-link-otv li{
+         display: inline-block;
+         }
+         ul.social-icon-otv-ft{
+         list-style-type: none;
+         display: flex;
+         }
+         .social-icon-otv-img{
+         margin: 0 10px;
+         height: 14px;
+         }
+         .app-store-cnt-ft{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+         margin-left: 50px;
+         }
+         .store-title-otv{
+         color: #fff;
+         text-transform: uppercase;
+         margin: 0;
+         padding: 0;
+         font-size: 12px;
+         }
+         .googleplay-img-ft{
+         height: 40px;
+         }
+         .appstore-img-ft{
+         height: 28px;
+         }
+         /* //FOOTER */
+         /*================== 404 ===================*/
+         section.main-error-sec {
+         position: relative;
+         float: left;
+         width: 100%;
+         margin: 0px 0px 60px 0px;
+         text-align: center;
+         padding: 0px 15%;
+         }
+         section.main-error-sec h1 {
+         margin: 0px;
+         padding: 0px;
+         font-size: 160px;
+         font-weight: 700;
+         color: #444444;
+         }
+         section.main-error-sec h1 span {
+         display: block;
+         font-size: 20px;
+         }
+         section.main-error-sec h3 {
+         margin: 0px;
+         padding: 0px;
+         font-size: 39px;
+         font-weight: 700;
+         color: #444444;
+         text-transform: capitalize;
+         }
+         section.main-error-sec p {
+         margin: 15px 0px;
+         padding: 0px;
+         color: #a9a5a5;
+         font-size: 18px;
+         }
+         .error-home-redirect {
+         color: #000;
+         text-transform: capitalize;
+         font-weight: 700;
+         font-size: 16px;
+         border: none;
+         background: no-repeat;
+         outline: none;
+         }
+         section.main-error-sec ul {
+         margin: 30px 0px 0px 0px;
+         padding: 0px;
+         }
+         section.main-error-sec ul li {
+         list-style-type: none;
+         display: inline-block;
+         }
+         section.main-error-sec ul li {
+         list-style-type: none;
+         display: inline-block;
+         margin: 0px;
+         padding: 0px;
+         }
+         section.main-error-sec ul li input {
+         margin: 0px;
+         line-height: 36px;
+         padding: 0px 10px;
+         }
+         section.main-error-sec ul li:first-child input {
+         border: solid 2px #f7e4e4;
+         width: 100%;
+         }
+         section.main-error-sec ul li:last-child input {
+         background-color: #7b0505;
+         border: none;
+         color: #fff;
+         text-transform: uppercase;
+         font-weight: 700;
+         font-size: 15px;
+         width: 144px;
+         position: relative;
+         margin: 0 0px 0px -4px;
+         line-height: 39px;
+         outline: none;
+         transition-duration: .5s;
+         }
+         section.main-error-sec ul li:first-child {
+         width: 40%;
+         }
+         section.main-error-sec ul li:last-child input:hover {
+         background-color: #f5ad1a;
+         transition-duration: .5s;
+         }
+         section.error-page-article {
+         float: left;
+         width: 100%;
+         margin: 0px 0px 30px 0px;
+         }
+         section.error-page-article .category-custom-two-item:before{
+         display: none !important;
+         }
+         .category-custom-two-item {
+         position: relative;
+         display: inline-block;
+         width: 100%;
+         padding-left: 130px;
+         margin: 0px 0px 15px 0px;
+         min-height: 80px;
+         }
+         .category-custom-two-item img {
+         width: 120px;
+         height: 74px;
+         object-fit: cover;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         .category-custom-two-item:before {
+         content: "";
+         display: block;
+         width: 1px;
+         height: 100%;
+         background-color: #cecdcd;
+         position: absolute;
+         right: -8px;
+         top: 0;
+         }
+         ul.category-custom-two-post {
+         margin: -5px 0px 0px 0px;
+         padding: 0px;
+         max-height: 62px;
+         overflow: hidden;
+         }
+         ul.category-custom-two-post li {
+         list-style-type: none;
+         display: inline;
+         }
+         ul.category-custom-two-post li:first-child {
+         position: relative;
+         margin-right: 15px;
+         }
+         ul.category-custom-two-post li:first-child:before {
+         content: "";
+         display: block;
+         background-color: #e92b28;
+         width: 1px;
+         height: 10px;
+         position: absolute;
+         top: 5px;
+         right: -10px;
+         transform: rotate(10deg);
+         }
+         ul.category-custom-two-post li a {
+         font-size: 16px;
+         text-decoration: none;
+         display: inline;
+         color: #000;
+         line-height: 19px;
+         }
+         ul.category-custom-two-post li:first-child a {
+         color: #b30707;
+         }
+         ul.category-custom-two-post li a:hover {
+         color: #af262d;
+         }
+         ul.category-custom-two-time {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.category-custom-two-time li {
+         position: relative;
+         list-style-type: none;
+         display: inline-block;
+         color: #666;
+         font-size: 10px;
+         font-family: 'Libre Franklin', sans-serif;
+         font-weight: 300;
+         text-transform: uppercase;
+         }
+         ul.category-custom-two-time li:first-child:before {
+         content: "";
+         display: block;
+         position: absolute;
+         right: -16px;
+         top: 4px;
+         width: 7px;
+         height: 7px;
+         background-color: #b5afaf;
+         border-radius: 50%;
+         }
+         ul.category-custom-two-time li:first-child {
+         margin-right: 23px;
+         }
+         a.cat-more-news-btn {
+         outline: none;
+         line-height: 18px;
+         padding: 0px;
+         width: fit-content;
+         border: none;
+         color: #7b1c18;
+         text-transform: capitalize;
+         font-size: 12px;
+         border-radius: 2px;
+         float: right;
+         font-weight: 700;
+         transition-duration: .5s;
+         display: block;
+         position: relative;
+         margin-bottom: 10px;
+         }
+         a.cat-more-news-btn:after {
+         font-family: "Font Awesome 5 Free";
+         content: "\f30b";
+         margin-left: 8px;
+         }
+         a.cat-more-news-btn:hover {
+         color: #f4b01b;
+         transition-duration: .5s;
+         }
+         /*================= //404 ==================*/
+      </style>
+   </head>
+   <body>
+      <header>
+         <div class="top-bar">
+            <div class="col-lg-12">
+               <ul class="bdn-date-weather">
+                  <li>THURSDAY, AUGUst 20, 2020</li>
+                  <li class="bdn-weather">Bhubaneswar <img src="https://beta-live.odishatv.in/commondir/images/svg/weather-icon.svg" alt="" title="" width="19" height="19"> <strong>31 &deg; C</strong></li>
+               </ul>
+               <ul class="bdn-top-social">
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-facebook.svg" alt="" title="" width="6" height="11"></a></li>
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-twitter.svg" alt="" title="" width="12" height="12"></a></li>
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-linkedin.svg" alt="" title="" width="12" height="12"></a></li>
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-instagram.svg" alt="" title="" width="12" height="12"></a></li>
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-telegram.svg" alt="" title="" width="12" height="12"></a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="bdn-main-nav">
+            <div class="bdn-logo">
+               <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/logo.svg" alt="OTV Logo" title="OTV Logo" width="281" height="50" class="main-logo-img"></a>
+            </div>
+            <div class="bdn-menu">
+               <div class="bdn-upper-menu">
+                  <button class="bdn-sidemenu" title="menu">
+                  <img src="https://beta-live.odishatv.in/commondir/images/svg/hamburger-icon-otv.svg" alt="" title="" width="22" height="14">
+                  </button>
+                  <ul class="upper-left-menu">
+                     <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/home-otv.svg" alt="" title="" width="17" height="17"> news</a></li>
+                     <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/video-otv.svg" alt="" title="" width="17" height="17"> videos</a></li>
+                     <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/photos-otv.svg" alt="" title="" width="17" height="17"> photos</a></li>
+                     <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/webseries-otv.svg" alt="" title="" width="17" height="17"> webstories</a></li>
+                  </ul>
+                  <ul class="upper-right-menu">
+                     <li><img src="https://beta-live.odishatv.in/commondir/images/svg/fa-moon.svg" alt="" title="" width="43" height="25" class="darkmode-btn darkmode-svg-icon"></li>
+                     <li class="bdn-search-list">
+                        <form>
+                           <input type="text" name="" class="bdn-search" placeholder="Search" style="display: none;">
+                           <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="" title="" width="15" height="15" class="bdn-search-go" style="display: none;">
+                           <img src="https://beta-live.odishatv.in/commondir/images/svg/close-gray.svg" alt="" title="" width="16" height="14" class="bdn-search-close" style="display: none;">
+                        </form>
+                        <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="Search" title="Search" width="15" height="15" class="search-bdn">
+                     </li>
+                     <li><img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsignin.svg" alt="" title="" width="12" height="18"> Sign In</li>
+                  </ul>
+               </div>
+               <div class="bdn-lower-menu">
+                  <ul class="lower-left-menu">
+                     <li><a href="#" title="otv">live tv</a></li>
+                     <li><a href="#" title="otv">ipl 2023</a></li>
+                     <li><a href="#" title="otv">latest</a></li>
+                     <li><a href="#" title="otv">latest<span>New</span></a></li>
+                     <li><a href="#" title="otv">ipl 2023</a></li>
+                     <li><a href="#" title="otv">latest<span>New</span></a></li>
+                     <li><a href="#" title="otv">live tv</a></li>
+                     <li><a href="#" title="otv">ipl 2023</a></li>
+                     <li><a href="#" title="otv">latest<span>New</span></a></li>
+                  </ul>
+                  <ul class="lower-right-menu">
+                     <li><a href="#" title="otv">astrospeak<span>New</span></a></li>
+                     <li><a href="#" title="otv">astrospeak<span>New</span></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- SIDE MENU -->
+         <div class="hamburger-nav" style="display: none;">
+            <button class="close-hamburger"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdnleftarrow.svg"></button>
+            <div class="bdn-otv-small-logo">
+               <a href="#" title="otv"><img src="https://odishatv.in//commondir/images/logo-white.png" alt="" title="" width="44" height="36"></a>
+               <span>menu</span>
+            </div>
+            <ul class="hamburger-menu">
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">covid <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">1 covid <span>new</span></a></li>
+            </ul>
+         </div>
+         <!-- //SIDE MENU -->
+      </header>
+      <section class="main-error-sec">
+         <h1>404 <span>Page not found!</span></h1>
+         <p>We're sorry, but we can't find the page you were looking for. It's probably something we've done wrong but now we know about it and we'll try to fix it. In the meantime, try one of these options:</p>
+         <a href="https://odishatv.in/" class="error-home-redirect"><i class="fas fa-angle-double-right"></i> go to home page</a>
+         <ul>
+            <li>
+               <input placeholder="Search here...." type="text" name="searchtext" id="searchtext">
+            </li>
+            <li>
+               <input type="submit" id="searchagain">
+            </li>
+         </ul>
+      </section>
+      <section class="error-page-article">
+         <div class="container">
+            <h3 class="heading-style-one">Suggested stories</h3>
+            <div class="row">
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/miscellaneous/people-across-odisha-express-resentments-as-fuel-prices-continue-to-surge-162608"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1633417996.jpg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1633417996.jpg" alt="" title="People Across Odisha Express Resentments As Fuel Prices Continue To Surge "></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/miscellaneous">Miscellaneous</a></li>
+                        <li><a href="https://odishatv.in/news/miscellaneous/people-across-odisha-express-resentments-as-fuel-prices-continue-to-surge-162608">People Across Odisha Express Resentments As Fuel Prices Continue To Surge</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <!-- <li>Odisha</li> -->
+                        <li>43 seconds ago </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/national/pegasus-row-sc-sets-up-committee-to-probe-snooping-allegations-162607"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635314834.jpg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635314834.jpg" alt="" title="Pegasus Row: SC Sets Up Committee To Probe Snooping Allegations"></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/tag/pegasus-row">Pegasus Row</a></li>
+                        <li><a href="https://odishatv.in/news/national/pegasus-row-sc-sets-up-committee-to-probe-snooping-allegations-162607">Pegasus Row: SC Sets Up Committee To Probe Snooping Allegations</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <!-- <li>Odisha</li> -->
+                        <li>2 minutes ago </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/national/tn-cm-announces-rs-5l-as-relief-to-kin-of-victims-killed-in-fire-162605"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635314203.jpg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635314203.jpg" alt="" title="TN CM Announces Rs 5L As Relief To Kin Of Victims Killed In Fire"></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/tag/fire-mishap">Fire Mishap</a></li>
+                        <li><a href="https://odishatv.in/news/national/tn-cm-announces-rs-5l-as-relief-to-kin-of-victims-killed-in-fire-162605">TN CM Announces Rs 5L As Relief To Kin Of Victims Killed In Fire</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <!-- <li>Odisha</li> -->
+                        <li>13 minutes ago </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/business/petrol-diesel-rates-raised-again-by-35-paise-ltr-162603"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635311419.jpg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635311419.jpg" alt="" title="Petrol, Diesel Rates Raised Again By 35 Paise/Ltr"></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/tag/fuel-price-hike">Fuel Price Hike</a></li>
+                        <li><a href="https://odishatv.in/news/business/petrol-diesel-rates-raised-again-by-35-paise-ltr-162603">Petrol, Diesel Rates Raised Again By 35 Paise/ltr</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <!-- <li>Odisha</li> -->
+                        <li>59 minutes ago </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/technology/google-logs-record-18-9-billion-profit-search-and-youtube-soar-162602"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635310106.jpg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635310106.jpg" alt="" title="Google Logs Record $18.9 Billion Profit, Search And YouTube Soar"></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/tag/google">Google</a></li>
+                        <li><a href="https://odishatv.in/news/technology/google-logs-record-18-9-billion-profit-search-and-youtube-soar-162602">Google Logs Record $18.9 Billion Profit, Search And YouTube Soar</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <!-- <li>Odisha</li> -->
+                        <li>1 hour ago </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/sports/t20-world-cup-asif-malik-late-blitz-rauf-s-four-fer-help-pakistan-beat-kiwis-162601"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635309812.jpg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635309812.jpg" alt="" title="T20 World Cup: Asif-Malik Late Blitz, Rauf's Four-Fer Help Pakistan Beat Kiwis"></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/tag/icc-t20-world-cup">ICC T20 World Cup</a></li>
+                        <li><a href="https://odishatv.in/news/sports/t20-world-cup-asif-malik-late-blitz-rauf-s-four-fer-help-pakistan-beat-kiwis-162601">T20 World Cup: Asif-Malik Late Blitz, Rauf's Four-Fer Help Pakistan Beat Kiwis</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <!-- <li>Odisha</li> -->
+                        <li>1 hour ago </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/education/ug-pg-degrees-from-foreign-countries-aicte-issues-notice-noc-required-by-students-162600"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/AICTE_1620376957.jpg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/AICTE_1620376957.jpg" alt="" title="AICTE"></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/tag/aicte">AICTE</a></li>
+                        <li><a href="https://odishatv.in/news/education/ug-pg-degrees-from-foreign-countries-aicte-issues-notice-noc-required-by-students-162600">UG-PG Degrees From Foreign Countries: AICTE Issues Notice, NOC Required By Students</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <!-- <li>Odisha</li> -->
+                        <li>2 hours ago </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/covid-19/active-covid-19-cases-lowest-in-242-days-162599"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1633064969.jpg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1633064969.jpg" alt="" title="India Covid-19 Cases"></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/tag/india-covid19-updates">India COVID19 Updates</a></li>
+                        <li><a href="https://odishatv.in/news/covid-19/active-covid-19-cases-lowest-in-242-days-162599">Active COVID-19 Cases Lowest In 242 Days</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <!-- <li>Odisha</li> -->
+                        <li>2 hours ago </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/miscellaneous/3-dance-bars-sealed-in-bhubaneswar-162598"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635308635.jpg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635308635.jpg" alt="" title="raids at dance bars in Bhubaneswar"></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/tag/dance-bars-sealed-in-bhubaneswar">Dance Bars Sealed In Bhubaneswar</a></li>
+                        <li><a href="https://odishatv.in/news/miscellaneous/3-dance-bars-sealed-in-bhubaneswar-162598">3 Dance Bars Sealed In Bhubaneswar</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <!-- <li>Odisha</li> -->
+                        <li>2 hours ago </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/national/-developed-countries-fail-to-meet-climate-goals-while-india-exceeds-targets--162597"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635307787.jpg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635307787.jpg" alt="" title="Environment and Climate Change Minister Bhupender Yadav"></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/tag/environment-minister">Environment Minister</a></li>
+                        <li><a href="https://odishatv.in/news/national/-developed-countries-fail-to-meet-climate-goals-while-india-exceeds-targets--162597">'Developed Countries Fail To Meet Climate Goals, While India Exceeds Targets'</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <!-- <li>Odisha</li> -->
+                        <li>2 hours ago </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/technology/gadgets/users-can-now-transfer-whatsapp-chats-from-ios-to-pixel-android-12-phones-162594"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1634462171.jpg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1634462171.jpg" alt="" title="Users Can Now Transfer WhatsApp Chats From IOS To Pixel, Android 12 Phones"></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/tag/whatsapp">WhatsApp</a></li>
+                        <li><a href="https://odishatv.in/news/technology/gadgets/users-can-now-transfer-whatsapp-chats-from-ios-to-pixel-android-12-phones-162594">Users Can Now Transfer WhatsApp Chats From IOS To Pixel, Android 12 Phones</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <!-- <li>Odisha</li> -->
+                        <li>3 hours ago </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <div class="category-custom-two-item">
+                     <a href="https://odishatv.in/news/entertainment/kajal-aggarwal-achieves-this-milestone-leaving-behind-yash-vijay-rashmika-samantha-162593"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635305093.jpg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1635305093.jpg" alt="" title="Kajal Aggarwal"></a>
+                     <ul class="category-custom-two-post">
+                        <li><a href="https://odishatv.in/tag/rashmika-mandanna">Rashmika Mandanna</a></li>
+                        <li><a href="https://odishatv.in/news/entertainment/kajal-aggarwal-achieves-this-milestone-leaving-behind-yash-vijay-rashmika-samantha-162593">Kajal Aggarwal Achieves This Milestone Leaving Behind Yash, Vijay &amp; Samantha</a></li>
+                     </ul>
+                     <ul class="category-custom-two-time">
+                        <!-- <li>Odisha</li> -->
+                        <li>3 hours ago </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="main-visit-links-ft">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-10">
+                     <div class="ft-fst-row">
+                        <div class="logo-btn-ft">
+                           <img src="https://beta-live.odishatv.in/commondir/images/svg/ft-logo-otv.svg" alt="" class="otv-logo-ft" width="197" height="35">
+                           <button class="live-btn-otv-ft"><a href="#" title="otv">live tv</a></button>
+                        </div>
+                        <div class="search-bar-otv-ft">
+                           <input type="text" placeholder="type here...." class="search-input-otv">
+                           <button class="sub-btn-otv-ft"><a href="#" title="otv">subscribe</a></button>
+                        </div>
+                     </div>
+                     <div class="ft-snd-row">
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-2">
+                     <ul class="social-icon-otv-ft">
+                        <li><a href="#" title="otv" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/fb-ft-otv.svg" class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                        <li><a href="#" title="otv" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/twitter-ft-otv.svg" class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                        <li><a href="#" title="otv" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/youtube-ft-otv.svg" class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                        <li><a href="#" title="otv" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/telegram-ft-otv.svg"class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                     </ul>
+                     <div class="app-store-cnt-ft">
+                        <p class="store-title-otv">mobile app</p>
+                        <img src="https://beta-live.odishatv.in/commondir/images/svg/google-play-icon-ft.svg" class="googleplay-img-ft" alt="" width="103" height="40">
+                        <img src="https://beta-live.odishatv.in/commondir/images/svg/app-store-icon-ft.svg" class="appstore-img-ft" alt="" width="103" height="40">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="partner-ft-otv">
+            <div class="container">
+               <h5 class="partner-ft-heading">partner sites</h5>
+               <ul class="partner-link-otv">
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="contact-ft-otv">
+            <div class="container">
+               <ul class="contact-us-link-otv">
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <script src="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js"></script>
+      <script src="https://odishatv.in/commondir/js/bootstrap.min.js"></script>
+      <script src="https://images.odishatv.in/assets/js/jquery.unveil.js" async defer ></script>
+      <script>
+         jQuery(document).ready(function() {
+         /* DARKTHEME */
+         var src = $('.main-logo-img').attr("src");
+         var srcicon = $('.darkmode-svg-icon').attr("src");
+         $('.darkmode-btn').click(function() {
+             var logosrc1 = $('.main-logo-img').attr("src");
+             var logosrc2 = "logo.svg";
+             var logosrc3 = "dark-logo.svg";
+             if (logosrc1.indexOf(logosrc2) != -1) {
+                 $('.main-logo-img').attr("src", src.replace("logo.svg", "dark-logo.svg"));
+             }
+             if (logosrc1.indexOf(logosrc3) != -1) {
+                 $('.main-logo-img').attr("src", src.replace("dark-logo.svg", "logo.svg"));
+             }
+             var logosrcicon1 = $('.darkmode-svg-icon').attr("src");
+             var logosrcicon2 = "fa-moon.svg";
+             var logosrcicon3 = "fa-sun.svg";
+             if (logosrcicon1.indexOf(logosrcicon2) != -1) {
+                 $('.darkmode-svg-icon').attr("src", srcicon.replace("fa-moon.svg", "fa-sun.svg"));
+             }
+             if (logosrcicon1.indexOf(logosrcicon3) != -1) {
+                 $('.darkmode-svg-icon').attr("src", srcicon.replace("fa-sun.svg", "fa-moon.svg"));
+             }
+         });
+         const btn = document.querySelector(".darkmode-btn");
+         const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+         const currentTheme = localStorage.getItem("theme");
+         if (currentTheme == "dark") {
+             document.body.classList.toggle("dark-theme");
+             $('.main-logo-img').attr("src", src.replace("logo.svg", "dark-logo.svg"));
+             $('.darkmode-svg-icon').attr("src", srcicon.replace("fa-moon.svg", "fa-sun.svg"));
+         } else if (currentTheme == "light") {
+             document.body.classList.toggle("light-theme");
+         }
+         btn.addEventListener("click", function() {
+             if (prefersDarkScheme.matches) {
+                 document.body.classList.toggle("light-theme");
+                 var theme = document.body.classList.contains("light-theme") ?
+                     "light" :
+                     "dark";
+             } else {
+                 document.body.classList.toggle("dark-theme");
+                 var theme = document.body.classList.contains("dark-theme") ?
+                     "dark" :
+                     "light";
+             }
+             localStorage.setItem("theme", theme);
+         });
+         /* //DARKTHEME */
+         /* SEARCH BUTTON */
+         $(".search-bdn").click(function(){
+              $(".bdn-search").animate({
+                 width: "show"
+             });
+             $(".bdn-search-go").show();
+             $(".bdn-search-close").show();
+         });
+         $(".bdn-search-close").click(function(){
+              $(".bdn-search").animate({
+                 width: "hide"
+             });
+             $(".bdn-search-go").hide();
+             $(this).hide();
+         });
+         /* //SEARCH BUTTON */
+         // menu start
+         $('.bdn-sidemenu').click(function() {
+         $('.hamburger-nav').animate({width: "show"}, 200);
+          $("body").addClass("comment-active");
+         });
+         $('.close-hamburger').click(function() {
+             $('.hamburger-nav').animate({width: "hide"}, 200);
+         });
+                     // menu end
+         // sticky header start
+         
+             //caches a jQuery object containing the header element
+             var header = $(".bdn-main-nav");
+             $(window).scroll(function() {
+                 var scroll = $(window).scrollTop();
+                 if (scroll >= 35) {
+                     header.addClass("fixed-bdnnav");
+                 } else {
+                     header.removeClass("fixed-bdnnav");
+                 }
+             });
+         // sticky header end
+         });
+         // unveil start
+         $(function() {
+             $("img").unveil();
+             // $("img").unveil(200, function() {
+             //     $(this).load(function() {
+             //         this.style.opacity = 1;
+             //     });
+             // });
+         });
+         // unveil end
+      </script>
+   </body>
+</html>

@@ -1,0 +1,1662 @@
+<!doctype html>
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My AMP HTML Page</title>
+    <link rel="canonical" href="https://odishatv.in/new-story-page.html" />
+    <meta name="description" content="Most trusted Odisha News Platform Get all the latest and breaking news of Odisha from OdishaTV Get latest updates on weather jobs education entertainment health crime politics astrology and other top news" />
+      <meta name="keywords" content="odisha news lastest odisha news odisha breaking news odisha news today" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link href="https://cdn.ampproject.org/v0.js" rel="preload" as="script">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both
+      }
+
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+
+      @keyframes -amp-start {
+        from {
+          visibility: hidden
+        }
+
+        to {
+          visibility: visible
+        }
+      }
+    </style><noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none
+        }
+      </style>
+    </noscript>
+    <style amp-custom>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      a,
+      a:hover,
+      a:focus,
+      a:active {
+        text-decoration: none;
+      }
+
+      .container {
+        padding-right: 7.5px;
+        padding-left: 7.5px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Faustina', serif;
+        font-weight: 400;
+      }
+
+      /*********************** HEADER ****************************/
+      /* HEADER */
+      header {
+        float: left;
+        width: 100%;
+        padding: 10px 0px 0px 0px;
+        height: 46px;
+      }
+
+      img.img-responsive.main-logo-img {
+        float: left;
+      }
+
+      ul.header-icon {
+        margin: 0px;
+        padding: 0px;
+        float: right;
+      }
+
+      ul.header-icon li {
+        list-style-type: none;
+        float: left;
+        margin-left: 12px;
+      }
+
+      ul.header-icon li a {
+        text-decoration: none;
+        display: block;
+      }
+
+      ul.header-icon li.liveicon {
+        margin-top: 1px;
+      }
+
+      ul.header-icon li.read-in-odia {
+        margin-top: 5px;
+      }
+
+      /* //HEADER */
+      /* MENU */
+      .hamburger_wrapper {
+        padding: 5px;
+        z-index: 10;
+      }
+
+      #hamburger {
+        position: absolute;
+        cursor: pointer;
+        float: right;
+        text-align: right;
+        right: 0;
+        top: 0;
+        background-color: #efefef;
+        color: #bd433e;
+        outline: none;
+        border: none;
+        width: 39px;
+        line-height: 39px;
+        height: 39px;
+        margin: 0px;
+        padding: 0;
+        border-radius: 50%;
+        font-size: 24px;
+        transition-duration: 1s;
+        z-index: 2;
+      }
+
+      #hamburger span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 61%;
+        background: #bd433e;
+        border-radius: 16px;
+        opacity: 1;
+        left: -2px;
+        right: -2px;
+        margin: 0 auto;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+      }
+
+      #hamburger span:nth-child(1) {
+        top: 10px;
+        transform-origin: left center;
+      }
+
+      #hamburger span:nth-child(2) {
+        top: 18px;
+        transform-origin: left center;
+      }
+
+      #hamburger span:nth-child(3) {
+        top: 26px;
+        transform-origin: left center;
+      }
+
+      #hamburger.close span:nth-child(1) {
+        transform: rotate(41deg);
+      }
+
+      #hamburger.close span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+        transition: .1s;
+      }
+
+      #hamburger.close span:nth-child(3) {
+        transform: rotate(-42deg);
+      }
+
+      #nav-menu {
+        position: absolute;
+        left: 0;
+        top: 40px;
+        height: 400px;
+        transition: transform .5s ease, opacity ease .2s;
+      }
+
+      #nav-menu.now-active {
+        transform: translateX(0);
+        transition: transform .5s ease, opacity ease .2s;
+        opacity: 1;
+        display: block;
+      }
+
+      .nav-list {
+        padding: 10px;
+        list-style-type: none;
+        font-size: 2em;
+      }
+
+      .mobile-menu-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        z-index: 2;
+        background-color: #333;
+        height: auto;
+        padding: 10px;
+        display: none;
+        height: 400px;
+      }
+
+      ul.menu-signin {
+        margin: 0px 0px 20px 0px;
+        padding: 0px;
+        display: inline-block;
+        width: 100%;
+      }
+
+      ul.menu-signin li {
+        list-style-type: none;
+        display: inline-block;
+      }
+
+      a.darkmode-btn {
+        margin-bottom: 15px;
+        display: block;
+        width: fit-content;
+      }
+
+      ul.menu-signin li a {
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        background-color: #434449;
+        line-height: 35px;
+        padding: 0;
+        width: 110px;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 16px;
+        border-radius: 5px;
+        border: solid 1.7px #fff;
+        margin-right: 5px;
+      }
+
+      .mobile-serach-menu {
+        position: relative;
+      }
+
+      .mobile-serach-menu input {
+        width: 84%;
+        background-color: #434449;
+        border: solid 1px #fff;
+        border-radius: 5px;
+        color: #fff;
+        display: block;
+        line-height: 40px;
+        padding: 0px 5px 0px 42px;
+        outline: none;
+      }
+
+      .mobile-serach-menu input::placeholder {
+        color: #fff;
+      }
+
+      .mobile-serach-menu i {
+        position: absolute;
+        left: 9px;
+        top: 10px;
+        color: #fff;
+        font-size: 22px;
+      }
+
+      ul.mobile-menu-social {
+        margin: 15px 0px;
+        padding: 0px;
+      }
+
+      ul.mobile-menu-social li {
+        list-style-type: none;
+        display: block;
+        line-height: 32px;
+      }
+
+      ul.mobile-menu-social li a {
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 15px;
+      }
+
+      ul.mobile-menu-social li a i {
+        color: #fff;
+        width: 25px;
+      }
+
+      ul.custom-mobile-menu {
+        margin: 15px 0px 0px 0px;
+        padding: 0px;
+      }
+
+      ul.custom-mobile-menu li {
+        list-style-type: none;
+        display: block;
+        line-height: 30px;
+        border-bottom: dashed 1px #434449;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+      }
+
+      li.mobile-dropdown-nav.toggle-activated:before {
+        transform: rotate(90deg);
+        transition-duration: .5s;
+      }
+
+      ul.custom-mobile-menu li a {
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        font-size: 14px;
+      }
+
+      ul.mobile-custom-dropdown li {
+        position: relative;
+      }
+
+      ul.mobile-custom-dropdown li:before {
+        content: "";
+        position: absolute;
+        left: -14px;
+        top: 12px;
+        width: 6px;
+        height: 6px;
+        background-color: #f3b01b;
+        border-radius: 50%;
+      }
+
+      li.mobile-dropdown-nav:before {
+        background-image: url(https://odishatv.in/commondir/images/svg/dropdown-menu-white.svg);
+        content: "";
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 10px;
+        width: 10px;
+        height: 10px;
+        background-repeat: no-repeat;
+      }
+
+      ul.mobile-custom-dropdown {
+        display: none;
+        margin: 0px 0px 0px 30px;
+        padding: 0px;
+      }
+
+      li.mobile-dropdown-nav.toggle-activated ul.mobile-custom-dropdown {
+        display: block;
+      }
+
+      .main-menubar {
+        float: left;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 9;
+        box-shadow: 1px 5px 8px -4px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 1px 5px 8px -4px rgb(147 145 145 / 30%);
+        -moz-box-shadow: 1px 5px 8px -4px rgba(0, 0, 0, 0.75);
+        height: 40px;
+      }
+
+      #hamburger.close span {
+        left: 4px;
+      }
+
+      .amp-nav-slide {
+        display: inline-block;
+        position: relative;
+        margin-left: 60px;
+        width: calc(100% - 60px);
+        height: 40px;
+        overflow: hidden;
+      }
+
+      ul.amp-nav-slide-list {
+        margin: 0px;
+        padding: 0px;
+        width: 300px;
+        overflow-y: scroll;
+      }
+
+      ul.amp-nav-slide-list li {
+        list-style-type: none;
+        display: inline-block;
+        position: relative;
+        padding-right: 4px;
+        display: table-cell;
+      }
+
+      ul.amp-nav-slide-list li:before {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 10px;
+        background-color: #cac1c1;
+        position: absolute;
+        right: 1px;
+        top: 16px;
+      }
+
+      ul.amp-nav-slide-list li a {
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 400;
+        color: #333333;
+        line-height: 40px;
+        padding: 0px 10px;
+        font-size: 14px;
+        width: max-content;
+      }
+
+      ul.amp-nav-slide-list .amp-carousel-button.amp-carousel-button-next {
+        display: none;
+      }
+
+      ul.amp-nav-slide-list .amp-carousel-button.amp-carousel-button-prev {
+        display: none;
+      }
+
+      button.main-menubar-home {
+        background-color: #e6e6e6;
+        padding: 0px 5px;
+        font-size: 18px;
+        width: 54px;
+        color: #333;
+        height: 40px;
+        text-align: center;
+        border: none;
+        outline: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .amp-nav-slide:before {
+        content: "";
+        display: block;
+        background: linear-gradient(90deg, rgba(0, 212, 255, 0) 0%, rgba(255, 255, 255, 1) 39%);
+        width: 90px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+      }
+
+      /* //MENU */
+      /********************** //HEADER ***************************/
+      /* BREADCRUMB */
+      .mobile-breadcrumb-container {
+        color: black;
+        float: left;
+        padding: 0px 15px;
+        border-bottom: 1px solid #ffff;
+        box-shadow: white;
+        box-shadow: 1px 5px 8px -4px rgb(0 0 0 / 75%);
+        -webkit-box-shadow: 1px 5px 8px -4px rgb(147 145 145 / 30%);
+        -moz-box-shadow: 1px 5px 8px -4px rgba(0, 0, 0, 0.75);
+        margin: 8px 0px 0px 0px;
+        background-color: #fff;
+      }
+
+      ul.mobile-breadcrumb {
+        margin: 3px 0px;
+        padding: 0px;
+        position: relative;
+        display: block;
+        float: left;
+        width: 100%;
+        line-height: 30px;
+        height: 30px;
+        overflow: hidden;
+      }
+
+      ul.mobile-breadcrumb li {
+        list-style-type: none;
+        display: inline;
+        color: #666;
+        text-transform: capitalize;
+        font-size: 13px;
+        position: relative;
+        font-family: 'Libre Franklin', sans-serif;
+        line-height: 30px;
+        margin-right: 21px;
+      }
+
+      ul.mobile-breadcrumb li:before {
+        content: "";
+        background-image: url(https://odishatv.in/commondir/images/svg/bread-crumb.svg);
+        margin-left: 8px;
+        display: block;
+        width: 9px;
+        height: 7px;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: -17px;
+        top: 6px;
+      }
+
+      ul.mobile-breadcrumb li a {
+        color: #333;
+        font-weight: normal;
+      }
+
+      ul.mobile-breadcrumb li:last-child {
+        color: #333;
+        margin-left: 3px;
+      }
+
+      ul.mobile-breadcrumb li:last-child:before {
+        content: none;
+      }
+
+      /* //BREADCRUMB */
+      /* ARTICLE */
+      section.story-panel {
+        float: left;
+        width: 100%;
+      }
+
+      .mobile-welcome-container {
+        float: left;
+      }
+
+      .welcome-note h1 {
+        margin: 10px 0px 5px 0px;
+        font-size: 28px;
+        line-height: 32px;
+        color: #000;
+        font-family: 'Faustina', serif;
+      }
+
+      .welcome-note p {
+        font-size: 20px;
+        margin: 0px;
+        display: inline-block;
+        width: 100%;
+        font-family: 'Faustina', serif;
+        font-weight: 400;
+        padding: 0px;
+        line-height: 30px;
+        color: #252525;
+      }
+
+      .article-updated-socialmedia {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        float: left;
+      }
+
+      .article-updated-socialmedia ul {
+        margin: 0px;
+        padding: 0px;
+        height: 35px;
+      }
+
+      .article-updated-socialmedia ul li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      .article-updated-socialmedia ul li a {
+        text-decoration: none;
+        display: block;
+        font-size: 15px;
+        background-color: #e6e6e6;
+        display: block;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 50%;
+        color: #a99393;
+      }
+
+      .article-updated-socialmedia ul li a amp-img {
+        margin-top: 7px;
+      }
+
+      .article-updated-content {
+        padding: 5px 15px 5px 5px;
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 15px;
+        position: relative;
+        height: 76px;
+        float: left;
+      }
+      .article-updated-content ul {
+        margin: 0px;
+        padding: 0;
+      }
+
+      .article-updated-content ul li {
+        list-style: none;
+        padding: 2px 0px;
+        font-size: 11px;
+        line-height: 15px;
+        font-family: 'Libre Franklin', sans-serif;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+
+      .article-updated-content ul li i {
+        margin-right: 10px;
+        color: #b0b0b0;
+        width: 6px;
+      }
+
+      .article-content {
+        position: relative;
+        float: left;
+        font-size: 20px;
+        width: 100%;
+        font-family: 'Faustina', serif;
+        font-weight: 400;
+        line-height: 30px;
+        color: #252525;
+      }
+
+      .first-para-article p {
+        font-size: 20px;
+        margin: 0px 0px 25px 0px;
+        display: inline-block;
+        width: 100%;
+        font-family: 'Faustina', serif;
+        font-weight: 400;
+        padding: 0px;
+        line-height: 30px;
+        color: #252525;
+      }
+
+      .article-multi-thumb {
+        width: fit-content;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        clear: both;
+        height: 231px;
+        margin-bottom: 10px;
+      }
+
+      .article-multi-thumb img {
+        width: 100%;
+        height: 205px;
+      }
+
+      .article-multi-thumb p {
+        margin-top: 0px;
+        text-align: left;
+        background-color: #eaf1f9;
+        padding: 5px 15px 5px 15px;
+        margin: -5px 0px 0px 0px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: normal;
+        font-family: 'Libre Franklin', sans-serif;
+        position: relative;
+      }
+
+      .article-multi-thumb p span {
+        color: #fff;
+        position: absolute;
+        left: 0;
+        top: -25px;
+        height: 25px;
+        line-height: 25px;
+        background-color: #0000009e;
+        padding: 0px 10px;
+        font-size: 12px;
+      }
+
+      .reccommendations {
+        overflow-y: scroll;
+        width: 100%;
+        margin-bottom: 25px;
+        height: 217px;
+      }
+
+      .reccommendation-items {
+        position: relative;
+        display: table-cell;
+        margin-right: 10px;
+      }
+
+      .reccommendation-items h3 {
+        width: 130px;
+        color: #000;
+        background-color: #dfdfdf;
+        margin-right: 10px;
+        padding: 10px;
+        font-size: 18px;
+        height: 144px;
+        overflow: hidden;
+      }
+
+      button.article-read-more {
+        border: none;
+        color: #fff;
+        background-color: #a00606;
+        padding: 4px 10px 7px 10px;
+        font-size: 20px;
+        line-height: 40px;
+        margin: 15px auto 15px auto;
+        display: block;
+        width: 220px;
+        outline: none;
+        font-family: 'Faustina', serif;
+        border-radius: 32px;
+        margin-bottom: 30px;
+        box-shadow: 0px 14px 5px -9px rgb(0 0 0 / 27%);
+        -webkit-box-shadow: 0px 14px 5px -9px rgb(0 0 0 / 27%);
+        -moz-box-shadow: 0px 14px 5px -9px rgba(0, 0, 0, 0.27);
+      }
+
+      ul.article-summery-tags-list {
+        margin: 0px 0px 15px 0px;
+        padding: 0px;
+      }
+
+      ul.article-summery-tags-list li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0px 5px 5px 0px;
+        width: auto;
+      }
+
+      ul.article-summery-tags-list li a {
+        text-decoration: none;
+        display: block;
+        border: solid 1px #d4d4d4;
+        line-height: 30px;
+        padding: 0px 10px 3px 10px;
+        border-radius: 5px;
+        color: #333;
+        text-transform: capitalize;
+        font-size: 20px;
+      }
+
+      .other-headline-container {
+        margin-bottom: 20px;
+        float: left;
+      }
+
+      a.cat-more-news-btn {
+        outline: none;
+        line-height: 18px;
+        padding: 0px 17px 0px 0px;
+        width: fit-content;
+        border: none;
+        color: #7b1c18;
+        text-transform: capitalize;
+        font-size: 12px;
+        border-radius: 2px;
+        float: right;
+        font-weight: 700;
+        transition-duration: .5s;
+        display: block;
+        position: relative;
+        margin-bottom: 10px;
+      }
+
+      a.cat-more-news-btn button {
+        background: none;
+        margin: 0px;
+        padding: 0px;
+        border: none;
+        outline: none;
+      }
+
+      a.cat-more-news-btn:after {
+        content: "";
+        background-image: url(https://odishatv.in/commondir/images/svg/long-arrow.svg);
+        margin-left: 8px;
+        display: block;
+        width: 13px;
+        height: 5px;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        top: 7px;
+      }
+
+      /* //ARTICLE */
+      /* SVG SPRITE */
+      .svg-sprite {
+        background: url(https://odishatv.in/commondir/images/svg/svg-sprite.svg);
+        background-repeat: no-repeat;
+      }
+
+      .svg-sprite-label {
+        display: none;
+      }
+
+      a.svg-sprite.translate-svg {
+        width: 35px;
+        height: 17px;
+        background-position: -201px -8px;
+      }
+
+      a.facebook.svg-sprite {
+        width: 22px;
+        height: 22px;
+        background-position: -120px -90px;
+      }
+
+      a.twitter.svg-sprite {
+        width: 22px;
+        height: 22px;
+        background-position: -60px -90px;
+      }
+
+      a.instagram.svg-sprite {
+        width: 22px;
+        height: 22px;
+        background-position: -150px -90px;
+      }
+
+      a.linkedin.svg-sprite {
+        width: 22px;
+        height: 22px;
+        background-position: -180px -90px;
+      }
+
+      a.telegram.svg-sprite {
+        width: 22px;
+        height: 22px;
+        background-position: -90px -90px;
+      }
+
+      a.koo.svg-sprite {
+        width: 22px;
+        height: 22px;
+        background-position: -210px -90px;
+      }
+
+      a.youtube.svg-sprite {
+        width: 22px;
+        height: 22px;
+        background-position: 0px -90px;
+      }
+
+      a.svg-sprite.play-store {
+        width: 104px;
+        height: 31px;
+        background-position: 0px -49px;
+        display: block;
+      }
+
+      a.svg-sprite.app-store {
+        width: 104px;
+        height: 31px;
+        background-position: -128px -49px;
+        display: block;
+      }
+
+      span.svg-sprite.tarang-plus {
+        width: 55px;
+        height: 34px;
+        background-position: 0px 0;
+        display: block;
+      }
+
+      /* FOOTER */
+      footer {
+        float: left;
+        background-color: #212121;
+        width: 100%;
+        padding: 30px 0px;
+        z-index: 1;
+        position: relative;
+      }
+
+      ul.footer-link {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      ul.footer-link li {
+        list-style-type: none;
+        display: block;
+        margin: 5px 0px;
+      }
+
+      ul.footer-link li a {
+        color: #a9a3a3;
+        font-size: 13px;
+        line-height: 30px;
+        text-decoration: none;
+        display: block;
+        transition-duration: 1s;
+      }
+
+      ul.footer-link .footer-link-heading {
+        color: #a9a3a3;
+        font-size: 14px;
+        text-transform: capitalize;
+        font-weight: 700;
+        margin: 0px 0px 5px 0px;
+        padding: 0px;
+        border-bottom: 1px solid #cecdcd;
+      }
+
+			h4.odishatv-app-heading {
+			color: #fff;
+			margin: 15px 0 30px 0px;
+			padding: 3px 0 0 0;
+			font-size: 15px;
+			font-weight: 700;
+			position: relative;
+			}
+
+      h4.tarangplus-app-heading {
+        color: #fff;
+        display: inline-block;
+        margin: 20px 0 0 0;
+        padding: 3px 0 0 0;
+        font-size: 15px;
+        font-weight: 700;
+        position: relative;
+        padding-left: 63px;
+      }
+
+      h4.tarangplus-app-heading img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 20px;
+        width: auto;
+      }
+
+      h4.odishatv-app-heading img {
+        width: 33px;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: -3px;
+      }
+
+      .footer-sidebar a {
+        text-decoration: none;
+      }
+
+      ul.odishatv-app {
+        margin: 20px 0 20px 0;
+        padding: 0;
+      }
+
+      ul.odishatv-app li {
+        list-style-type: none;
+        display: inline-block;
+      }
+
+      ul.odishatv-app li a {
+        text-decoration: none;
+        display: block;
+        width: auto;
+        height: 28px;
+        margin-right: 5px;
+      }
+
+      ul.footer-follow-us {
+        margin: 20px 0px 0px 0px;
+        padding: 0px;
+      }
+
+      ul.footer-follow-us li {
+        margin: 10px;
+      }
+
+      .footer-free-heading {
+        margin: 0px 0px 10px 0px;
+        padding: 0px;
+        color: #fff;
+        font-size: 16px;
+        display: block;
+        width: 100%;
+      }
+
+      .scrollToTop {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        position: fixed;
+        bottom: 100px;
+        margin-right: 0px;
+        right: 0;
+        bottom: 78px;
+        right: 10px;
+        font-size: 16px;
+        background-color: #a00606;
+        transition-duration: .5s;
+        display: none;
+        cursor: pointer;
+        border-radius: 50%;
+        padding: 0px;
+        z-index: 7;
+        border: none;
+      }
+
+      /* //FOOTER */
+      /* COPYRIGHT */
+      section.copyright {
+        float: left;
+        width: 100%;
+        background-color: #000;
+        padding: 10px 0px;
+      }
+
+      section.copyright p {
+        color: #a9a3a3;
+        margin: 0px;
+        padding: 0px;
+        font-size: 13px;
+      }
+
+      /* //COPYRIGHT */
+      h2.recommended-heading {
+        margin: 0px;
+        padding: 0px 0px 0px 36px;
+        font-weight: 700;
+        font-size: 18px;
+        position: relative;
+        padding-right: 50px;
+        text-transform: uppercase;
+        color: #000;
+        font-family: 'Faustina', serif;
+      }
+
+      h2.recommended-heading:before {
+        content: "";
+        display: block;
+        background-color: #7b0505;
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 30px;
+        height: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container"><a href="https://odishatv.in/" class="main-logo-head">
+          <amp-img src="https://odishatv.in/commondir/images/logo.svg" alt="OdishaTV" title="OdishaTV" class="img-responsive main-logo-img" width="190" height="35"></amp-img>
+        </a>
+        <ul class="header-icon">
+          <li><a href="https://odishatv.in/astrospeak?utm_source=direct&amp;utm_medium=icon&amp;utm_campaign=astro_header_icon_mobile">
+              <amp-img src="https://odishatv.in/commondir/images/svg/astrospeak.svg" width="30px" height="30px" alt="Astrospeak" title="Astrospeak"></amp-img>
+            </a></li>
+          <li class="liveicon"><a href="https://odishatv.in/live-tv?utm_source=direct&amp;utm_medium=icon&amp;utm_campaign=livetv_header_icon_mobile">
+              <amp-img src="https://odishatv.in/commondir/images/livetvicon.gif" width="32" height="29" alt="livetv" title="livetv"></amp-img>
+            </a></li>
+          <li class="read-in-odia"><a href="https://otvkhabar.in/" target="_blank">
+              <amp-img src="https://odishatv.in/commondir/images/active-odia.svg" width="20" height="20" alt="ଓଡ଼ିଆରେ ପଢନ୍ତୁ" title="ଓଡ଼ିଆରେ ପଢନ୍ତୁ"></amp-img>
+            </a></li>
+        </ul>
+      </div>
+    </header>
+    <!--============== MENUBAR ===============-->
+    <div class="main-menubar">
+      <a href="https://odishatv.in/amp">
+        <button class="main-menubar-home" title="Home Link">
+          <amp-img src="https://odishatv.in/commondir/images/svg/menu-home-icon.svg" alt="Home Link" title="Home Link" width="20" height="20"></amp-img>
+        </button>
+      </a>
+      <div class="amp-nav-slide">
+        <ul class="amp-nav-slide-list">
+          <li>
+            <a href="https://odishatv.in/odisha/amp">Odisha</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/jobs/amp">Jobs</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/education/amp">Education</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/entertainment/amp">Entertainment</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/bazaar-today/amp">Bazaar Today</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/national/amp">National</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/sports/amp">Sports</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/viral/amp">Viral</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/videos/amp">Videos</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/lifestyle/amp">Lifestyle</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/photo-gallery/amp">Photos</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/politics/amp">Politics</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/crime/amp">Crime</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/health/amp">Health</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/opinion/amp">Long form</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/business/amp">Business</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/technology/amp">Tech & Gadgets</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/festivals-events/amp">Festivals</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/international/amp">International</a>
+          </li>
+        </ul>
+      </div>
+      <div id="hamburger" tabindex="-1" title="menu" role="button" on="tap:hamburger.toggleClass(class='close'),nav-menu.toggleClass(class='now-active')" class="">
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+        <span>&nbsp;</span>
+      </div>
+      <!--=================== MENU BOX ====================-->
+      <div id="nav-menu" class="mobile-menu-box">
+        <ul class="custom-mobile-menu">
+          <li>
+            <a href="https://odishatv.in/amp">Home</a>
+          </li>
+          <li class="mobile-dropdown-nav" id="navmenu1" role="button" tabindex="1" on="tap:navmenu1.toggleClass(class='toggle-activated')">
+            <a href="#">Odisha</a>
+            <ul class="mobile-custom-dropdown">
+              <li>
+                <a href="https://odishatv.in/odisha/amp">Odisha</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/odisha/bhubaneswar/amp">Bhubaneswar</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/odisha/cuttack/amp">Cuttack</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/odisha/puri/amp">Puri</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/odisha/sambalpur/amp">Sambalpur</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/odisha/ganjam/amp">Berhampur</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/odisha/rourkela/amp">Rourkela</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-dropdown-nav" id="navmenu2" role="button" tabindex="1" on="tap:navmenu2.toggleClass(class='toggle-activated')">
+            <a href="#">Jobs</a>
+            <ul class="mobile-custom-dropdown">
+              <li>
+                <a href="https://odishatv.in/jobs/amp">Jobs</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/tag/govt-jobs/amp">Govt Jobs</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-dropdown-nav" id="navmenu3" role="button" tabindex="1" on="tap:navmenu3.toggleClass(class='toggle-activated')">
+            <a href="#">Education</a>
+            <ul class="mobile-custom-dropdown">
+              <li>
+                <a href="https://odishatv.in/education/amp">Education</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/tag/cbse/amp">CBSE</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/tag/ugc/amp">UGC</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/tag/chse-odisha/amp">CHSE</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/tag/bse-odisha/amp">BSE</a>
+              </li>
+            </ul>
+          </li>
+          <li class="mobile-dropdown-nav" id="navmenu4" role="button" tabindex="1" on="tap:navmenu4.toggleClass(class='toggle-activated')">
+            <a href="#">Entertainment</a>
+            <ul class="mobile-custom-dropdown">
+              <li>
+                <a href="https://odishatv.in/entertainment/amp">Entertainment</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/entertainment/hollywood/amp">Hollywood</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/entertainment/bollywood/amp">Bollywood</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/entertainment/tollywood/amp">Tollywood</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/tag/tv-serial/amp">Telly</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://odishatv.in/weather/amp">Weather</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/national/amp">National</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/sports/amp">Sports</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/business/personal-finance" title="personal-finance" target="_self">Personal Finance</a>
+          </li>
+          <li>
+            <a href="https://odishatv.in/business/auto" title="auto" target="_self">Auto</a>
+          </li>
+          <li class="mobile-dropdown-nav" id="navmenu9" role="button" tabindex="1" on="tap:navmenu9.toggleClass(class='toggle-activated')">
+            <a href="#">Other</a>
+            <ul class="mobile-custom-dropdown">
+              <li>
+                <a href="https://odishatv.in/viral/amp">Viral</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/videos/amp">Videos</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/lifestyle/amp">Lifestyle</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/weather/amp">Weather</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/photo-gallery/amp">Photos</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/politics/amp">Politics</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/crime/amp">Crime</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/health/amp">Health</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/opinion/amp">Long form</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/business/amp">Business</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/technology/amp">Tech & Gadgets</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/festivals-events/amp">Festivals</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/international/amp">International</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!--================== //MENU BOX ===================-->
+    </div>
+    <!--============= //MENUBAR ==============-->
+    <div class="container mobile-breadcrumb-container">
+      <ul class="mobile-breadcrumb">
+        <li>
+          <a href="https://odishatv.in/">Home</a>
+        </li>
+        <li>
+          <a href="https://odishatv.in/news">News</a>
+        </li>
+        <li>
+          <a href="https://odishatv.in/odisha">Odisha</a>
+        </li>
+        <li>Falling NAAC grade puts Utkal University in quandary; experts blame excessive govt interference</li>
+      </ul>
+    </div>
+    <section class="story-panel" id="contentsWrapper">
+      <div class="content">
+        <div class="container mobile-welcome-container">
+          <div class="welcome-note">
+            <h1>Falling NAAC grade puts Utkal University in quandary; experts blame excessive govt interference</h1>
+            <p>The degradation affected all across the spectrum; from students to teachers and intellectuals fuelling debates on the possible reasons.</p>
+          </div>
+        </div>
+        <!--=========== //ARTICLE ============-->
+        <!-- UPDATED -->
+        <div class="container article-updated-socialmedia">
+          <ul class="article-share-btn">
+            <li>
+              <a title="Share on facebook" href="#">
+                <amp-img src="https://odishatv.in/commondir/images/svg/fb-gray.svg" width="20" height="20" alt="Facebook"></amp-img>
+              </a>
+            </li>
+            <li>
+              <a title="Share on twitter" href="#">
+                <amp-img src="https://odishatv.in/commondir/images/svg/twit-gray.svg" width="20" height="20" alt="Twitter"></amp-img>
+              </a>
+            </li>
+            <li>
+              <a title="Share on Telegram" href="#">
+                <amp-img src="https://odishatv.in/commondir/images/svg/telegram-gray.svg" width="20" height="20" alt="Telegram"></amp-img>
+              </a>
+            </li>
+            <li>
+              <a title="Share on WhataApp" href="#">
+                <amp-img src="https://odishatv.in/commondir/images/svg/whatsapp-gray.svg" width="20" height="20" alt="WhataApp"></amp-img>
+              </a>
+            </li>
+            <li>
+              <a title="Print" href="#">
+                <amp-img src="https://odishatv.in/commondir/images/svg/print-gray.svg" width="20" height="20" alt="Print"></amp-img>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="article-multi-thumb">
+          <amp-img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1683535691.webp" alt="Utkal University Campus" title="Utkal University Campus" style="width: 100%; height: 205px;" height="205" width="364"></amp-img>
+          <p>
+            <span class="article-multi-credit">Credit: OTV </span>Utkal University Campus
+          </p>
+        </div>
+        <div class="container article-updated-content">
+          <ul>
+            <li>
+              <a href="https://odishatv.in/odisha"> Odisha</a>, Published: Tuesday, 02 May 2023
+            </li>
+            <li> Updated: 02 May 2023, 08:42 PM IST </li>
+            <li> By: <a href="https://odishatv.in/author/mrunal-manmay-dash-16348">Mrunal Manmay Dash</a>
+            </li>
+            <li> Reported By: <a href="#">Bikash Dash</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="article-content article-content-more">
+            <div class="first-para-article">
+              <p>Utkal University was the topic of discussion across the State on Tuesday after the National Assessment and Accreditation Council (NAAC) degraded the premier University&rsquo;s rank from A+ to A in the recently released rankings.</p>
+              <p>The degradation affected all across the spectrum; from students to teachers and intellectuals fuelling debates on the possible reasons.</p>
+              <!-- trending -->
+              <h2 class="recommended-heading">Trending News</h2>
+              <div class="reccommendations">
+                <div class="reccommendation-items">
+                  <a href="#">
+                    <h3>Youth arrested in Bhubaneswar for duping Rs 25 lakh from job aspirants</h3>
+                  </a>
+                </div>
+                <div class="reccommendation-items">
+                  <a href="#">
+                    <h3>Youth arrested in Bhubaneswar for duping Rs 25 lakh from job aspirants</h3>
+                  </a>
+                </div>
+                <div class="reccommendation-items">
+                  <a href="#">
+                    <h3>Youth arrested in Bhubaneswar for duping Rs 25 lakh from job aspirants</h3>
+                  </a>
+                </div>
+                <div class="reccommendation-items">
+                  <a href="#">
+                    <h3>Youth arrested in Bhubaneswar for duping Rs 25 lakh from job aspirants</h3>
+                  </a>
+                </div>
+                <div class="reccommendation-items">
+                  <a href="#">
+                    <h3>Youth arrested in Bhubaneswar for duping Rs 25 lakh from job aspirants</h3>
+                  </a>
+                </div>
+                <div class="reccommendation-items">
+                  <a href="#">
+                    <h3>Youth arrested in Bhubaneswar for duping Rs 25 lakh from job aspirants</h3>
+                  </a>
+                </div>
+                <div class="reccommendation-items">
+                  <a href="#">
+                    <h3>Youth arrested in Bhubaneswar for duping Rs 25 lakh from job aspirants</h3>
+                  </a>
+                </div>
+              </div>
+              <!-- //trending -->
+            </div>
+            <p>While some experts put the blame on the excessive interference of the State government in the University affairs, some put the blame squarely on the shortage of teaching faculties, poor infrastructure, a very few number of research scholars and non-participation in international conferences.</p>
+            <p>&ldquo;The government is indirectly responsible for this because the autonomy has been taken away from the University. There is no point in appointing OAS officers as Registrars. An educational institution should be run by academicians only and not by bureaucrats. I fear, if the current trend continues, a time will come when we will see IAS officers as Vice-Chancellors,&rdquo; said former VC of Utkal University, Binayak Rath.</p>
+            <p>Rajesh Swain a student said, &ldquo;The number of research scholars has dropped because there are not sufficient professors in the University. Whatever the infrastructure we have, the University has failed to utilise it optimally.&rdquo;</p>
+            <p>To put the facts straight, Utkal University has hundreds of vacancies in teaching posts. As per the data provided by the Higher Education Minister in Odisha Assembly, the university has a sanctioned strength of 257 that includes Professors, Associate Professors, and Assistant Professors. Out of that 129 positions are currently lying vacant.</p>
+            <p>Similarly, out of the sanctioned 980 non-teaching staff, 667 positions are lying vacant.</p>
+            <p>However, some students denied the shortage of staff in the University.</p>
+            <p>&ldquo;There is no dearth of research scholars nor the University lacks infrastructure. If the rating has been downgraded then, it is due to a conspiracy,&rdquo; said a student, Biswajit Jatin Patra.</p>
+            <p>Meanwhile, the University is reportedly preparing to file an appeal with NAAC to re-evaluate the grade.</p>
+            <p>Speaking to reporters, the advisor to the Higher Education Department, Tanmay Swain said, &ldquo;We lost our previous grade by just a few points. The University authorities are discussing the matter today. I think they will appeal for a re-evaluation, and I am sure this will restore our previous rank.&rdquo;</p>
+            <p>It is pertinent to mention here that the University could score 3.16 Cumulative Grade Point Average (CGPA) in the assessment to secure A grade. The varsity was last accredited as A+ in an assessment by NAAC in 2016.</p>
+            <div class="article-summery-tags">
+              <ul class="article-summery-tags-list">
+                <li>
+                  <a href="https://odishatv.in/tag/imd">IMD</a>
+                </li>
+                <li>
+                  <a href="https://odishatv.in/tag/cyclone-mocha">Cyclone Mocha</a>
+                </li>
+                <li>
+                  <a href="https://odishatv.in/tag/cyclone">Cyclone</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+            <ul class="footer-link">
+              <li>
+                <a href="#" class="footer-link-heading">News Channels</a>
+              </li>
+              <li>
+                <a href="https://khabar.odishatv.in" title="OTV Khabar" target="_blank">OTV Khabar</a>
+              </li>
+              <li>
+                <a href="https://odishareporter.in" title="Odisha Reporter" target="_blank">Odisha Reporter</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/news" title="News" target="_self">News</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/videos" title="Videos" target="_self">Videos</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/photo-gallery" title="Photos" target="_self">Photos</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+            <ul class="footer-link">
+              <li>
+                <a href="#" class="footer-link-heading">Entertainment Channel</a>
+              </li>
+              <li>
+                <a href="https://www.tarangplus.in/" title="TarangPlus" target="_blank">TarangPlus</a>
+              </li>
+              <li>
+                <a href="https://tarangplus.in/serial-list" title="TarangTV" target="_blank">TarangTV</a>
+              </li>
+              <li>
+                <a href="https://www.tarangplus.in/music-list" title="TarangMusic" target="_blank">TarangMusic</a>
+              </li>
+              <li>
+                <a href="https://www.tarangplus.in/all-channels/prarthana-tv" title="Prarthana" target="_blank">Prarthana</a>
+              </li>
+              <li>
+                <a href="https://www.tarangplus.in/all-channels/alankar" title="Alankar" target="_blank">Alankar</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC85orSRNRJjruskGKA6HceA" title="City Plus" target="_blank">City Plus</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+            <ul class="footer-link">
+              <li>
+                <a href="#" class="footer-link-heading">Quick Links</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/about-us" title="About us" target="_self">About us</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/feedback" title="Feedback" target="_self">Feedback</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/contact-us" title="Contact us" target="_self">Contact us</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/privacy-policy" title="Privacy Policy" target="_self">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/terms-of-usage" title="Terms of Usage   " target="_self">Terms of Usage </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+            <ul class="footer-link">
+              <li>
+                <a href="#" class="footer-link-heading">Important Links</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/faqs" title="FAQs" target="_self">FAQs</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/redressal" title="Redressal" target="_self">Redressal</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/rio" title="RIO" target="_self">RIO</a>
+              </li>
+              <li>
+                <a href="https://odishatv.in/rate-card-otv" title="Rate Card" target="_self">Rate Card</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <h4 class="odishatv-app-heading">
+              <amp-img src="https://odishatv.in/commondir/images/otv-logo-ft.jpg" alt="OdishaTV" title="OdishaTV" width="33" height="28"></amp-img>ODISHA TV APP
+            </h4>
+            <ul class="odishatv-app">
+              <li>
+                <a href="https://apps.apple.com/us/app/otv-odisha-tv/id1132594358" aria-label="OTV App" target="_blank" class="svg-sprite play-store">
+                  <span class="svg-sprite-label">OTV App</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://play.google.com/store/apps/details?id=com.news.odisha_tv&amp;hl=en" aria-label="OTV App" target="_blank" class="svg-sprite app-store">
+                  <span class="svg-sprite-label">OTV App</span>
+                </a>
+              </li>
+            </ul>
+            <h4 class="tarangplus-app-heading">
+              <span class="svg-sprite tarang-plus" style="position: absolute; left: 0; top: -10px;"> &nbsp; </span>TARANG PLUS APP
+            </h4>
+            <ul class="odishatv-app">
+              <li>
+                <a href="https://apps.apple.com/us/app/tarangplus/id1478384536?ls=1" aria-label="Tarang Plus App" target="_blank" class="svg-sprite play-store">
+                  <span class="svg-sprite-label">Tarang Plus App</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://play.google.com/store/apps/details?id=com.otl.tarangplus" aria-label="Tarang Plus App" target="_blank" class="svg-sprite app-store">
+                  <span class="svg-sprite-label">Tarang Plus App</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-12">
+            <ul class="footer-follow-us">
+              <li class="footer-free-heading">Follow Us On:</li>
+              <li class="top-social-btn" style="list-style-type: none; float: left; margin-left: 7px;">
+                <a href="https://www.facebook.com/otvnews/" title="Facebook" target="_blank" class="facebook svg-sprite" style="display: block;">
+                  <span class="svg-sprite-label">facebook</span>
+                </a>
+              </li>
+              <li class="top-social-btn" style="list-style-type: none; float: left; margin-left: 7px;">
+                <a href="https://twitter.com/otvnews" title="Twitter" target="_blank" class="twitter svg-sprite" style="display: block;">
+                  <span class="svg-sprite-label">twitter</span>
+                </a>
+              </li>
+              <li class="top-social-btn" style="list-style-type: none; float: left; margin-left: 7px;">
+                <a href="https://www.instagram.com/otv.news" title="Instagram" target="_blank" class="instagram svg-sprite" style="display: block;">
+                  <span class="svg-sprite-label">instagram</span>
+                </a>
+              </li>
+              <li class="top-social-btn" style="list-style-type: none; float: left; margin-left: 7px;">
+                <a href="https://www.linkedin.com/company/odishatv" title="LinkedIn" target="_blank" class="linkedin svg-sprite" style="display: block;">
+                  <span class="svg-sprite-label">linkedin</span>
+                </a>
+              </li>
+              <li class="top-social-btn" style="list-style-type: none; float: left; margin-left: 7px;">
+                <a href="https://t.me/otvtelegram" title="Telegram" target="_blank" class="telegram svg-sprite" style="display: block;">
+                  <span class="svg-sprite-label">telegram</span>
+                </a>
+              </li>
+              <li class="top-social-btn" style="list-style-type: none; float: left; margin-left: 7px;">
+                <a href="https://www.kooapp.com/profile/otvnews" title="Koo" target="_blank" class="koo svg-sprite" style="display: block;">
+                  <span class="svg-sprite-label">koo</span>
+                </a>
+              </li>
+              <li class="top-social-btn" style="list-style-type: none; float: left; margin-left: 7px;">
+                <a href="https://www.youtube.com/c/OTVNewsEnglish" title="Youtube" target="_blank" class="youtube svg-sprite" style="display: block;">
+                  <span class="svg-sprite-label">youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <section class="copyright">
+      <div class="container">
+        <p>© 2023 - Odisha Television Limited. All Rights Reserved.</p>
+      </div>
+    </section>
+  </body>
+</html>

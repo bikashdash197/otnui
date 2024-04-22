@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+      <link href="https://odishatv.in/commondir/images/favicon.gif" rel="shortcut icon" type="image/gif">
+      <meta name="keywords" content="Home Page" />
+      <meta name="description" content="Home Page">
+      <title>OTV LIVE TV page mobile</title>
+      <style>
+         body {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Roboto', sans-serif;
+         font-weight: 400;
+         }
+         .container {
+         padding-right: 7.5px;
+         padding-left: 7.5px;
+         margin-right: auto;
+         margin-left: auto;
+         }
+         * {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         }
+         section {
+         float: left;
+         width: 100%;
+         }
+         .otv-300-250-ad {
+         width: 300px;
+         height: 250px;
+         display: flex;
+         margin: 0 auto;
+         text-align: center;
+         overflow: hidden;
+         background-color: #dfdfa1;
+         }
+         /* HEADING */
+         p, h1, h2, h3, h4, h5, h6 {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Roboto', sans-serif;
+         }
+         a, a:hover, a:focus, a:active {
+         text-decoration: none;
+         }
+         .bdn-heading-block {
+         margin: 0px 0px 12px 0px;
+         padding: 0px;
+         display: inline-block;
+         width: -webkit-fill-available;
+         position: relative;
+         }
+         h2.bdn-heading-one {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         position: relative;
+         padding-left: 10px;
+         }
+         h2.bdn-heading-one:before {
+         content: "";
+         background-color: #f00404;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         h2.bdn-heading-one-line {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         padding-left: 10px;
+         }
+         h2.bdn-heading-one-line span {
+         background-color: #fff;
+         padding: 0px 5px 0px 0px;
+         position: absolute;
+         z-index: 1;
+         }
+         h2.bdn-heading-one-line:before {
+         content: "";
+         background-color: #f00404;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         h2.bdn-heading-one-line:after {
+         content: "";
+         display: block;
+         position: absolute;
+         left: 13px;
+         top: 9px;
+         width: calc(100% - 75px);
+         height: 5px;
+         background-color: #cccccc;
+         border-radius: 5px;
+         z-index: 0;
+         }
+         a.bdn-more {
+         float: right;
+         color: #262626;
+         text-transform: uppercase;
+         border: #dc2229 solid 1px;
+         font-size: 13px;
+         margin: 0px 7.5px 0px 0px;
+         padding: 0px 5px;
+         line-height: 19px;
+         border-radius: 12px;
+         }
+         a.bdn-bottom-readmore {
+         color: #b70000;
+         text-transform: capitalize;
+         font-size: 15px;
+         position: relative;
+         float: right;
+         }
+         a.bdn-bottom-readmore strong {
+         color: #000;
+         font-size: 17px;
+         }
+         a.bdn-bottom-readmore:after {
+         content: "";
+         display: inline-block;
+         background-image: url(https://beta-live.odishatv.in/commondir/images/svg/more-doublearrow.svg);
+         width: 23px;
+         height: 16px;
+         margin: 6px 0px 0px 8px;
+         float: right;
+         }
+         /* //HEADING */
+         /* FOOTER */
+         footer {
+         float: left;
+         width: 100%;
+         -webkit-box-shadow: 0px -2px 5px 0px rgb(0 0 0 / 21%);
+         -moz-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.21);
+         box-shadow: 0px -2px 5px 0px rgb(0 0 0 / 21%);
+         padding: 10px 0px;
+         }
+         ul.footer-icons {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.footer-icons li {
+         list-style-type: none;
+         float: left;
+         width: 20%;
+         text-align: center;
+         }
+         ul.footer-icons li a {
+         text-decoration: none;
+         display: block;
+         color: #333;
+         text-transform: uppercase;
+         font-size: 10px;
+         }
+         ul.footer-icons li a img {
+         display: block;
+         margin: 0 auto 7px auto;
+         }
+         /* //FOOTER */
+         /* MENU BAR */
+         .bdn-menubar {
+         position: relative;
+         float: left;
+         width: 100%;
+         height: 35px;
+         padding: 0px 7.5px 0px 40px;
+         }
+         img.bdn-menu-homeicon {
+         height: 20px;
+         width: 20px;
+         position: absolute;
+         left: 7.5px;
+         top: 3.5px;
+         }
+         ul.bdn-nav {
+         margin: 0px;
+         padding: 0px;
+         overflow-y: scroll;
+         width: 100%;
+         }
+         ul.bdn-nav li {
+         list-style-type: none;
+         display: table-cell;
+         }
+         ul.bdn-nav li a {
+         text-decoration: none;
+         display: block;
+         width: max-content;
+         text-transform: uppercase;
+         font-size: 12px;
+         color: #333;
+         margin-right: 18px;
+         line-height: 35px;
+         }
+         /* //MENU BAR */
+         /* HEADER */
+         header {
+         float: left;
+         width: 100%;
+         padding: 6px 7.5px 0px 45px;
+         position: relative;
+         height: 50px;
+         background-color: #fff;
+         }
+         img.side-nav-btn {
+         position: absolute;
+         left: 7.5px;
+         top: 18px;
+         }
+         img.main-logo-img {
+         height: 36;
+         width: 200px;
+         }
+         img.search-bdn {
+         position: absolute;
+         right: 7.5px;
+         top: 20px;
+         }
+         header.fixed-bdnnav {
+         top: 0;
+         position: fixed;
+         width: 100%;
+         transition-duration: .5s;
+         z-index: 9;
+         }
+         /* //HEADER */
+         /* HAMBERGER MENU */
+         .bdn-otv-small-logo {
+         background-color: #fff;
+         padding: 10px;
+         }
+         .bdn-otv-small-logo span {
+         float: right;
+         text-transform: uppercase;
+         font-size: 16px;
+         color: #333;
+         margin-top: -2px;
+         }
+         .hamburger-nav {
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 344px;
+         background-color: #fff;
+         z-index: 999;
+         -webkit-box-shadow: -4px 1px 5px 1px rgb(0 0 0 / 22%);
+         -moz-box-shadow: -4px 1px 5px 1px rgba(0,0,0,0.22);
+         box-shadow: -4px 1px 5px 1px rgb(0 0 0 / 22%);
+         height: 100%;
+         }
+         button.sidemenubtn {
+         position: absolute;
+         top: 11px;
+         right: 0;
+         border: none;
+         background: none;
+         margin: 0px;
+         padding: 0px;
+         border-left: solid 1px #e7d4d4;
+         width: 47px;
+         text-align: center;
+         }
+         button.sidemenubtn img {
+         height: 13px;
+         width: 18px;
+         }
+         button.close-hamburger {
+         background-color: #fff;
+         position: absolute;
+         right: -35px;
+         top: 0;
+         border: none;
+         height: 35px;
+         width: 35px;
+         }
+         body.comment-active .hamburger-nav:before {
+         content: "";
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         background-color: #0000007a;
+         z-index: -1;
+         }
+         ul.hamburger-menu {
+         margin: 0px;
+         padding: 10px;
+         max-height: calc(100% - 20px);
+         overflow-y: scroll;
+         background-color: #fff;
+         margin-top: -10px;
+         }
+         ul.hamburger-menu li {
+         list-style-type: none;
+         display: block;
+         }
+         ul.hamburger-menu li a {
+         text-decoration: none;
+         display: block;
+         color: #333;
+         text-transform: capitalize;
+         font-size: 14px;
+         line-height: 40px;
+         border-bottom: solid 1px #f3eaea;
+         }
+         ul.hamburger-menu li a span {
+         border: solid 1px #e5e5e5;
+         background-color: #fff;
+         float: right;
+         display: block;
+         padding: 0px 15px;
+         border-radius: 19px;
+         line-height: 25px;
+         margin-top: 6px;
+         }
+         /* //HAMBERGER MENU */
+         /* SEARCH BAR */
+         .bdn-search-list {
+         height: 41px;
+         position: absolute;
+         right: 7.5px;
+         top: 5px;
+         width: calc(100% - 46px);
+         }
+         input.bdn-search {
+         height: 41px;
+         border: none;
+         outline: none;
+         background-color: #d3d3d3;
+         width: 100%;
+         padding: 0px 70px 0px 10px;
+         }
+         img.bdn-search-go {
+         position: absolute;
+         right: 43px;
+         top: 14px;
+         }
+         img.bdn-search-close {
+         position: absolute;
+         right: 9px;
+         top: 14px;
+         }
+         /* //SEARCH BAR */
+         /* BREADCRUMB */
+         .mobile-breadcrumb-container {
+         color: #000;
+         border-bottom: 1px solid #ffff;
+         box-shadow: #fff;
+         box-shadow: 1px 5px 8px -4px rgb(0 0 0 / 75%);
+         -webkit-box-shadow: 1px 5px 8px -4px rgb(147 145 145 / 30%);
+         -moz-box-shadow: 1px 5px 8px -4px rgba(0,0,0,.75);
+         margin: 8px 0 0;
+         background-color: #fff;
+         display: inline-block;
+         }
+         ul.mobile-breadcrumb {
+         margin: 3px 0;
+         padding: 0;
+         display: block;
+         float: left;
+         width: 100%;
+         height: 30px;
+         overflow: hidden;
+         }
+         ul.mobile-breadcrumb li {
+         list-style-type: none;
+         display: inline;
+         color: #666;
+         text-transform: capitalize;
+         font-size: 13px;
+         margin-right: 21px;
+         position: relative;
+         }
+         ul.mobile-breadcrumb li a {
+         color: #333;
+         font-weight: 400;
+         }
+         ul.mobile-breadcrumb li:last-child {
+         color: #333;
+         margin-left: 3px;
+         }
+         ul.mobile-breadcrumb, ul.mobile-breadcrumb li {
+         line-height: 30px;
+         position: relative;
+         }
+         ul.mobile-breadcrumb li:before {
+         content: "";
+         background-image: url(https://odishatv.in/commondir/images/svg/bread-crumb.svg);
+         margin-left: 8px;
+         display: block;
+         width: 9px;
+         height: 7px;
+         background-repeat: no-repeat;
+         position: absolute;
+         right: -17px;
+         top: 5px;
+         }
+         ul.mobile-breadcrumb li:last-child:before {
+         display: none;
+         }
+         /* //BREADCRUMB */
+         /*=================== listing ====================*/
+section.mobile-listing-sec {
+    float: left;
+    width: 100%;
+}
+.mobile-listing-start {
+    float: left;
+    margin: 0px;
+    background-color: white;
+    border: 1px solid #ecebeb;
+    padding: 10px 0px;
+    width: 100%;
+}
+.mobile-listing {
+    position: relative;
+    margin: 0px 0px 15px 0px;
+    border-bottom: 1px solid #dfdcdc;
+    padding: 0px 0px 5px 103px;
+    display: inline-block;
+    width: 100%;
+    min-height: 64px;
+}
+.mobile-listing:last-child {
+    border-bottom: none;
+}
+h1.about-page-main-heading {
+    margin: 15px 0px;
+    padding: 0px;
+    font-size: 31px;
+    display: inline-block;
+}
+h1.listing-heading {
+    margin: 15px 0px;
+    padding: 0px;
+    font-size: 22px;
+    display: inline-block;
+}
+h3.about-subheading {
+    margin: 0px;
+    padding: 0px;
+}
+.mobile-listing-image {
+    position: absolute;
+    left: 0px;
+}
+.mobile-listing-image i {
+    color: #f50000;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-size: 18px;
+}
+.mobile-listing h5 {
+    font-size: 17px;
+    text-decoration: none;
+    color: #000;
+    line-height: 20px;
+    margin: -5px 0px 0px 0px;
+    padding: 0px;
+}
+.mobile-listing-image img {
+    width: 96px;
+    height: 54px;
+    border-radius: 3px;
+}
+.mobile-listing h5 a {
+    color: #252525;
+}
+ul.search-result-pagination {
+    margin: 15px auto;
+    padding: 0px;
+    border: 1px solid #efe2e6;
+    width: fit-content;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+}
+
+ul.search-result-pagination li {
+    list-style-type: none;
+    display: table-cell;
+    border-right: 1px solid #efe2e6;
+    margin: 0px;
+    padding: 0px;
+}
+ul.search-result-pagination li.active a {
+    background: #a00606;
+    color: white !important;
+}
+ul.search-result-pagination li:last-child {
+    border: none;
+}
+ul.search-result-pagination li a:hover {
+    color: #a00606;
+}  
+ul.search-result-pagination li a {
+    padding: 10px;
+   color: #000;
+    line-height: 30px;
+}
+/*=================== //listing ====================*/
+      </style>
+   </head>
+   <body>
+      <header>
+         <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/hamburger-icon-otv.svg" alt="" title="" width="22" height="14" class="side-nav-btn"></a>
+         <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/logo.svg" alt="OTV Logo" title="OTV Logo" width="200" height="36" class="main-logo-img"></a>
+         <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="Search" title="Search" width="15" height="15" class="search-bdn">
+         <!-- SEARCH BOX -->
+         <div class="bdn-search-list" style="display: none;">
+            <form>
+               <input type="text" name="" class="bdn-search" placeholder="Search" style="display: none;">
+               <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="" title="" width="15" height="15" class="bdn-search-go" style="display: none;">
+               <img src="https://beta-live.odishatv.in/commondir/images/svg/close-gray.svg" alt="" title="" width="16" height="14" class="bdn-search-close" style="display: none;">
+            </form>
+            <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="Search" title="Search" width="15" height="15" class="search-bdn" style="display: none;">
+         </div>
+         <!-- // SEARCH BOX -->
+         <!-- HAMBERGER MENU -->
+         <div class="hamburger-nav" style="display: none;">
+            <button class="close-hamburger"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdnleftarrow.svg"></button>
+            <div class="bdn-otv-small-logo">
+               <a href="#" title="otv"><img src="https://odishatv.in//commondir/images/logo-white.png" alt="" title="" width="44" height="36"></a>
+               <span>menu</span>
+            </div>
+            <ul class="hamburger-menu">
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">covid <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">1 covid <span>new</span></a></li>
+            </ul>
+         </div>
+         <!-- //HAMBERGER MENU -->
+      </header>
+      <div class="bdn-menubar">
+         <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/news-deactive-bdn.svg" alt="" title="" width="20" height="20" class="bdn-menu-homeicon"></a>
+         <ul class="bdn-nav">
+            <li><a href="#" title="otv">home</a></li>
+            <li><a href="#" title="otv">about</a></li>
+            <li><a href="#" title="otv">contact</a></li>
+            <li><a href="#" title="otv">must watch</a></li>
+            <li><a href="#" title="otv">home</a></li>
+            <li><a href="#" title="otv">about</a></li>
+            <li><a href="#" title="otv">contact</a></li>
+            <li><a href="#" title="otv">must watch</a></li>
+            <li><a href="#" title="otv">home</a></li>
+            <li><a href="#" title="otv">about</a></li>
+            <li><a href="#" title="otv">contact</a></li>
+            <li><a href="#" title="otv">must watch</a></li>
+         </ul>
+      </div>
+      <!-- breadcrumb -->
+      <div class="container">
+         <div class="mobile-breadcrumb-container">
+            <ul class="mobile-breadcrumb">
+               <li><a href="https://odishatv.in/">Home</a></li>
+               <li><a href="https://odishatv.in/news">News</a></li>
+               <li><a href="https://odishatv.in/viral">Viral</a></li>
+               <li>Elderly couple recreates Amitabh Bachchan’s classic song Rimjhim Gire Sawan, netizens in awe; watch</li>
+            </ul>
+         </div>
+      </div>
+      <!-- //breadcrumb -->
+      <section class="mobile-listing-start">
+    <div class="container">
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/covid-19/130-frontline-workers-of-capital-hospital-in-bhubaneswar-test-covid-positive-so-far-168794"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/Covid_19_1642653878.jpg" alt="Covid-19" title="Covid-19"></a>
+            </div> <a href="https://odishatv.in/news/covid-19/130-frontline-workers-of-capital-hospital-in-bhubaneswar-test-covid-positive-so-far-168794"><h5>130 Frontline Workers Of Capital Hospital In Bhubaneswar Test Covid Positive So Far</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/covid-19/odisha-detects-10-368-new-covid-19-cases-7-fatalities-168792"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642651547.jpeg" alt="Odisha Covid Cases" title="Odisha Covid Cases"></a>
+            </div> <a href="https://odishatv.in/news/covid-19/odisha-detects-10-368-new-covid-19-cases-7-fatalities-168792"><h5>Odisha Detects 10,368 New Covid-19 Cases, 7 Fatalities</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/miscellaneous/sarpanch-post-auctioned-factual-inquiry-report-submitted-to-bolangir-collector-168791"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642651184.jpg" alt="Sarpanch Post Auctioned" title="Sarpanch Post Auctioned"></a>
+            </div> <a href="https://odishatv.in/news/miscellaneous/sarpanch-post-auctioned-factual-inquiry-report-submitted-to-bolangir-collector-168791"><h5>Sarpanch Post 'Auctioned': Factual Inquiry Report Submitted To Bolangir Collector</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/miscellaneous/newborn-baby-declared-dead-by-doctors-found-alive-during-funeral-in-odisha-s-keonjhar-168788"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642647403.jpg" alt="Newborn Baby " title="Newborn Baby "></a>
+            </div> <a href="https://odishatv.in/news/miscellaneous/newborn-baby-declared-dead-by-doctors-found-alive-during-funeral-in-odisha-s-keonjhar-168788"><h5>Newborn Baby Declared Dead By Doctors, Found Alive During Funeral In Odisha’s Keonjhar</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/miscellaneous/2-indigo-planes-including-bhubaneswar-bound-flight-avert-mid-air-collision-over-bengaluru-airport-168785"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642645521.jpg" alt="Indigo Mid-Air Collision Averted " title="Indigo Mid-Air Collision Averted "></a>
+            </div> <a href="https://odishatv.in/news/miscellaneous/2-indigo-planes-including-bhubaneswar-bound-flight-avert-mid-air-collision-over-bengaluru-airport-168785"><h5>2 Indigo Planes, Including Bhubaneswar-Bound Flight Avert Mid-Air Collision Over Bengaluru Airport</h5></a> </div>
+        <div class="otv-300-250-ad" style="margin-bottom: 20px;">
+            <div id="div-gpt-ad-22339530569-0" style="width: 300px; height: 250px;">
+                <script>
+                googletag.cmd.push(function() {
+                    googletag.display("div-gpt-ad-22339530569-0");
+                });
+                </script>
+            </div>
+        </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/odisha-breaking-news-today/latest-updates/2022/01/20-168784"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1629701474.jpeg" alt="breaking news" title="breaking news"></a>
+            </div> <a href="https://odishatv.in/odisha-breaking-news-today/latest-updates/2022/01/20-168784"><h5>Latest Odisha Breaking News Updates - Thursday, 20 January 2022</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/politics/odisha-rural-polls-set-stage-for-youth-brigade-to-take-up-the-gauntlet-for-serving-society-168783"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642614566.jpg" alt="Odisha Rural Polls Set Stage For Youth Brigade To Take Up The Gauntlet For Serving Society" title="Odisha Rural Polls Set Stage For Youth Brigade To Take Up The Gauntlet For Serving Society"></a>
+            </div> <a href="https://odishatv.in/news/politics/odisha-rural-polls-set-stage-for-youth-brigade-to-take-up-the-gauntlet-for-serving-society-168783"><h5>Odisha Rural Polls Set Stage For Youth Brigade To Take Up The Gauntlet For Serving Society</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/miscellaneous/bhubaneswar-youth-shoots-dead-stray-dog-for-eating-chicken-booked-168780"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642612467.jpg" alt="Bhubaneswar Youth 'Shoots Dead Stray Dog For Eating Chicken', Booked" title="Bhubaneswar Youth 'Shoots Dead Stray Dog For Eating Chicken', Booked"></a>
+            </div> <a href="https://odishatv.in/news/miscellaneous/bhubaneswar-youth-shoots-dead-stray-dog-for-eating-chicken-booked-168780"><h5>Bhubaneswar Youth 'Shoots Dead Stray Dog For Eating Chicken', Booked</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/politics/odisha-panchayat-election-bjd-faces-backlash-over-poll-code-violations-168779"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642611213.jpg" alt="Odisha Panchayat Election: BJD Faces Backlash Over Poll Code Violations" title="Odisha Panchayat Election: BJD Faces Backlash Over Poll Code Violations"></a>
+            </div> <a href="https://odishatv.in/news/politics/odisha-panchayat-election-bjd-faces-backlash-over-poll-code-violations-168779"><h5>Odisha Panchayat Election: BJD Faces Backlash Over Poll Code Violations</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/exclusive/omicron-replaces-delta-in-odisha-know-about-its-stealth-version-detected-in-many-states-168777"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642608000.jpg" alt="'Stealth' Omicron Lineage Detected In Many States! " title="'Stealth' Omicron Lineage Detected In Many States! "></a>
+            </div> <a href="https://odishatv.in/news/exclusive/omicron-replaces-delta-in-odisha-know-about-its-stealth-version-detected-in-many-states-168777"><h5>Omicron Replaces Delta In Odisha: Know About Its 'Stealth' Version Detected In Many States</h5></a> </div>
+        <div class="otv-300-250-ad" style="margin-bottom: 20px;">
+            <div id="div-gpt-ad-22439268496-0" style="width: 300px; height: 250px;">
+                <script>
+                googletag.cmd.push(function() {
+                    googletag.display("div-gpt-ad-22439268496-0");
+                });
+                </script>
+            </div>
+        </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/miscellaneous/boat-ambulance-service-in-odisha-s-swabhiman-anchal-from-jan-26-168771"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642601393.jpg" alt="Boat Ambulance Service In Odisha's Swabhiman Anchal From Jan 26" title="Boat Ambulance Service In Odisha's Swabhiman Anchal From Jan 26"></a>
+            </div> <a href="https://odishatv.in/news/miscellaneous/boat-ambulance-service-in-odisha-s-swabhiman-anchal-from-jan-26-168771"><h5>Boat Ambulance Service In Odisha's Swabhiman Anchal From Jan 26</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/jobs/ossc-exam-calendar-feb-2022-here-s-list-of-12-important-recruitment-tests-scheduled-next-month-168770"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1639910832.jpg" alt="OSSC Exam Calendar Feb 2022: Here’s List Of 12 Important Recruitment Tests Scheduled Next Month" title="OSSC Exam Calendar Feb 2022: Here’s List Of 12 Important Recruitment Tests Scheduled Next Month"></a>
+            </div> <a href="https://odishatv.in/news/jobs/ossc-exam-calendar-feb-2022-here-s-list-of-12-important-recruitment-tests-scheduled-next-month-168770"><h5>OSSC Exam Calendar Feb 2022: Here’s List Of 12 Important Recruitment Tests Scheduled Next Month</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/exclusive/vaccinated-elderly-unvaccinated-partly-vaccinated-youths-succumb-in-third-wave-in-odisha-168769"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642600085.jpg" alt="Third Wave Is Not That Mild!" title="Third Wave Is Not That Mild!"></a>
+            </div> <a href="https://odishatv.in/news/exclusive/vaccinated-elderly-unvaccinated-partly-vaccinated-youths-succumb-in-third-wave-in-odisha-168769"><h5>Vaccinated Elderly, Unvaccinated & Partly Vaccinated Youths Succumb ToThird Wave In Odisha</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/covid-19/lockdown-shutdown-not-enforced-to-protect-livelihoods-odisha-chief-secretary--168767"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642600195.jpg" alt="Lockdown, Shutdown Not Enforced To Protect Livelihoods: Odisha Chief Secretary " title="Lockdown, Shutdown Not Enforced To Protect Livelihoods: Odisha Chief Secretary "></a>
+            </div> <a href="https://odishatv.in/news/covid-19/lockdown-shutdown-not-enforced-to-protect-livelihoods-odisha-chief-secretary--168767"><h5>Lockdown, Shutdown Not Enforced To Protect Livelihoods: Odisha Chief Secretary </h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/politics/sec-bans-liquor-sale-48-hours-before-odisha-panchayat-polls-168766"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1633710228.jpg" alt="State Election Commission" title="State Election Commission"></a>
+            </div> <a href="https://odishatv.in/news/politics/sec-bans-liquor-sale-48-hours-before-odisha-panchayat-polls-168766"><h5>SEC Bans Liquor Sale 48 Hours Before Odisha Panchayat Polls</h5></a> </div>
+        <div class="otv-300-250-ad" style="margin-bottom: 20px;">
+            <div id="div-gpt-ad-22439153865-0" style="width: 300px; height: 250px;">
+                <script>
+                googletag.cmd.push(function() {
+                    googletag.display("div-gpt-ad-22439153865-0");
+                });
+                </script>
+            </div>
+        </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/jobs/osssc-combined-recruitment-exam-admit-card-released-here-s-how-to-download--168761"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642591673.jpg" alt="OSSSC Combined Recruitment Exam Admit Card Released, Here’s How To Download  " title="OSSSC Combined Recruitment Exam Admit Card Released, Here’s How To Download  "></a>
+            </div> <a href="https://odishatv.in/news/jobs/osssc-combined-recruitment-exam-admit-card-released-here-s-how-to-download--168761"><h5>OSSSC Combined Recruitment Exam Admit Card Released, Here’s How To Download  </h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/covid-19/odisha-s-omicron-tally-jumps-to-347-with-145-new-cases--168759"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642226997.jpg" alt="Odisha’s Omicron Tally Jumps To 347 With 145 New Cases " title="Odisha’s Omicron Tally Jumps To 347 With 145 New Cases "></a>
+            </div> <a href="https://odishatv.in/news/covid-19/odisha-s-omicron-tally-jumps-to-347-with-145-new-cases--168759"><h5>Odisha’s Omicron Tally Jumps To 347 With 145 New Cases </h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/miscellaneous/odisha-sees-another-childbirth-on-roads-mobile-network-down-in-gajapati-108-dial-failed-168752"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642584696.jpg" alt="Pregnant Woman" title="Pregnant Woman"></a>
+            </div> <a href="https://odishatv.in/news/miscellaneous/odisha-sees-another-childbirth-on-roads-mobile-network-down-in-gajapati-108-dial-failed-168752"><h5>Odisha Sees Another Childbirth On Roads: Mobile Network Down In Gajapati, 108 Dial Failed</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/crime/honeytrap-racket-busted-in-cuttack-3-arrested-168750"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642583744.jpg" alt="Honeytrap Racket" title="Honeytrap Racket"></a>
+            </div> <a href="https://odishatv.in/news/crime/honeytrap-racket-busted-in-cuttack-3-arrested-168750"><h5>Honeytrap Racket Busted In Cuttack, 3 Arrested</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/covid-19/dry-run-of-omicron-detection-kits-begins-in-4-odisha-cities-168742"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1637397680.jpg" alt="Health Director Bijay Mohapatra" title="Health Director Bijay Mohapatra"></a>
+            </div> <a href="https://odishatv.in/news/covid-19/dry-run-of-omicron-detection-kits-begins-in-4-odisha-cities-168742"><h5>Dry Run Of Omicron Detection Kits Begins In 4 Odisha Cities</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/entertainment/tribal-boys-from-odisha-s-malkangiri-shine-at-india-s-got-talent--168741"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642579185.JPG" alt="Tribal Boys From Odisha's Malkangiri Shine At ‘India’s Got Talent’" title="Tribal Boys From Odisha's Malkangiri Shine At ‘India’s Got Talent’"></a>
+            </div> <a href="https://odishatv.in/news/entertainment/tribal-boys-from-odisha-s-malkangiri-shine-at-india-s-got-talent--168741"><h5>Tribal Boys From Odisha's Malkangiri Shine At ‘India’s Got Talent’</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/covid-19/lockdown-shutdown-in-odisha-know-what-the-director-of-health-services-says-168738"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642576761.jpg" alt="Lockdown & Shutdown In Odisha: Health Services Director Rules Out!" title="Lockdown & Shutdown In Odisha: Health Services Director Rules Out!"></a>
+            </div> <a href="https://odishatv.in/news/covid-19/lockdown-shutdown-in-odisha-know-what-the-director-of-health-services-says-168738"><h5>Lockdown & Shutdown In Odisha: Know What The Director Of Health Services Says</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/miscellaneous/no-mobile-network-no-vote-villagers-threaten-to-boycott-panchayat-polls-in-odishal-s-kandhamal-168735"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642576945.jpg" alt="Boycott Panchayat Polls" title="Boycott Panchayat Polls"></a>
+            </div> <a href="https://odishatv.in/news/miscellaneous/no-mobile-network-no-vote-villagers-threaten-to-boycott-panchayat-polls-in-odishal-s-kandhamal-168735"><h5>No Mobile Network, No Vote: Villagers Threaten To Boycott Panchayat Polls In Odisha’s Kandhamal</h5></a> </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/education/cbse-school-in-bhubaneswar-seeks-money-for-marks-supreme-court-issues-notice-168734"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642573394.jpg" alt="CBSE School In Bhubaneswar ‘Seeks' Money For Marks" title="CBSE School In Bhubaneswar ‘Seeks' Money For Marks"></a>
+            </div> <a href="https://odishatv.in/news/education/cbse-school-in-bhubaneswar-seeks-money-for-marks-supreme-court-issues-notice-168734"><h5>CBSE School In Bhubaneswar ‘Seeks' Money For Marks, Supreme Court Issues Notice</h5></a> </div>
+        <div class="otv-300-250-ad" style="margin-bottom: 20px;">
+            <div id="div-gpt-ad-22405465152-0" style="width: 300px; height: 250px;">
+                <script>
+                googletag.cmd.push(function() {
+                    googletag.display("div-gpt-ad-22405465152-0");
+                });
+                </script>
+            </div>
+        </div>
+        <div class="mobile-listing">
+            <div class="mobile-listing-image">
+                <a href="https://odishatv.in/news/covid-19/covid-19-surge-hats-decentralised-in-bhubaneswar-168733"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1642572866.jpg" alt="Hats Decentralised" title="Hats Decentralised"></a>
+            </div> <a href="https://odishatv.in/news/covid-19/covid-19-surge-hats-decentralised-in-bhubaneswar-168733"><h5>Covid-19 Surge: Haats Decentralised In Bhubaneswar</h5></a> </div>
+    </div>
+    <ul class="search-result-pagination ">
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="https://odishatv.in/odisha/25" data-ci-pagination-page="2">2</a></li>
+        <li><a href="https://odishatv.in/odisha/50" data-ci-pagination-page="3">3</a></li>
+        <li><a href="https://odishatv.in/odisha/75" data-ci-pagination-page="4">4</a></li>
+        <li><a href="https://odishatv.in/odisha/100" data-ci-pagination-page="5">5</a></li>
+        <li><a href="https://odishatv.in/odisha/125" data-ci-pagination-page="6">6</a></li>
+        <li><a href="https://odishatv.in/odisha/25" data-ci-pagination-page="2" rel="next">Next</a></li>
+        <li><a href="https://odishatv.in/odisha/63850" data-ci-pagination-page="2555">Last</a></li>
+    </ul>
+</section>
+      <footer>
+         <div class="container">
+            <ul class="footer-icons">
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/news-deactive-bdn.svg" alt="" title="" width="38" height="30">home</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/webstory-deactive-bdn.svg" alt="" title="" width="38" height="30">web stories</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/live-bdn.svg" alt="" title="" width="38" height="30">live tv</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/photos-deactive-bdn.svg" alt="" title="" width="38" height="30">photos</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/video-deactive-bdn.svg" alt="" title="" width="38" height="30">videos</a></li>
+            </ul>
+         </div>
+      </footer>
+      <script src="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js"></script>
+      <script src="https://images.odishatv.in/assets/js/jquery.unveil.js" async defer ></script>
+      <script>
+         // unveil start
+            $(function() {
+                $("img").unveil();
+                // $("img").unveil(200, function() {
+                //     $(this).load(function() {
+                //         this.style.opacity = 1;
+                //     });
+                // });
+            });
+            // unveil end
+            // menu start
+                $('.side-nav-btn').click(function() {
+                $('.hamburger-nav').animate({width: "show"}, 200);
+                });
+                $('.close-hamburger').click(function() {
+                    $('.hamburger-nav').animate({width: "hide"}, 200);
+                });
+            // menu end
+            /* SEARCH BUTTON */
+            $(".search-bdn").click(function(){
+                 $(".bdn-search-list").animate({
+                    width: "show"
+                });
+                $(".bdn-search-go").show();
+                $(".bdn-search-close").show();
+                $(".bdn-search").show();
+            });
+            $(".bdn-search-close").click(function(){
+                 $(".bdn-search-list").animate({
+                    width: "hide"
+                });
+                $(".bdn-search-go").hide();
+                $(".bdn-search").hide();
+                $(this).hide();
+            });
+            /* //SEARCH BUTTON */
+            // sticky header start
+                var header = $("header");
+                $(window).scroll(function() {
+                    var scroll = $(window).scrollTop();
+                    if (scroll >= 1) {
+                        header.addClass("fixed-bdnnav");
+                    } else {
+                        header.removeClass("fixed-bdnnav");
+                    }
+                });
+            // sticky header end
+            $(document).ready(function(){
+                $(".article-read-more").click(function(){
+                    $(this).hide();
+                    $(".toggle-content").show();
+                });
+            });
+      </script>
+   </body>
+</html>

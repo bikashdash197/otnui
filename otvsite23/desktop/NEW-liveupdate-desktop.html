@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="preconnect" href="https://odishatv.in/commondir/css/bootstrap.min.css" crossorigin>
+      <link rel="preconnect" href="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js" crossorigin>
+      <link rel="preconnect" href="https://odishatv.in/commondir/js/bootstrap.min.js" crossorigin>
+      <link rel="preconnect" href="https://images.odishatv.in/assets/js/jquery.unveil.js" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://odishatv.in/commondir/css/bootstrap.min.css">
+      <link href="https://odishatv.in/commondir/images/favicon.gif" rel="shortcut icon" type="image/gif">
+      <meta name="keywords" content="Home Page" />
+      <meta name="description" content="Home Page">
+      <title>OTV listing page desktop</title>
+      <style>
+                  body {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Roboto', sans-serif;
+         font-weight: 400;
+         }
+         section {
+         float: left;
+         width: 100%;
+         }
+         .otv-300-250-ad {
+         width: 300px;
+         height: 250px;
+         display: flex;
+         margin: 0 auto;
+         text-align: center;
+         overflow: hidden;
+         background-color: #dfdfa1;
+         }
+         .otv-728-90-ad {
+         width: 728px;
+         height: 90px;
+         display: flex;
+         margin: 0 auto;
+         text-align: center;
+         overflow: hidden;
+         background-color: #dfdfa1;
+         }
+         /* BOOTSTRAP */
+         @media (min-width: 1200px) {
+         .container {
+         width: 1260px;
+         }
+         }
+         .col-xs-15,
+         .col-sm-15,
+         .col-md-15,
+         .col-lg-15 {
+         position: relative;
+         min-height: 1px;
+         padding-right: 7.5px;
+         padding-left: 7.5px;
+         }
+         .col-xs-15 {
+         width: 20%;
+         float: left;
+         }
+         @media (min-width: 768px) {
+         .col-sm-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         @media (min-width: 992px) {
+         .col-md-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         @media (min-width: 1200px) {
+         .col-lg-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         /* //BOOTSTRAP */
+         /* HEADING */
+         p, h1, h2, h3, h4, h5, h6 {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Roboto', sans-serif;
+         }
+         a, a:hover, a:focus, a:active {
+         text-decoration: none;
+         }
+         h2.bdn-heading-one-line {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         padding-left: 10px;
+         }
+         h2.bdn-heading-one-line span {
+         background-color: #fff;
+         padding: 0px 5px 0px 0px;
+         position: absolute;
+         z-index: 1;
+         }
+         h2.bdn-heading-one-line:before {
+         content: "";
+         background-color: #f00404;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         h2.bdn-heading-one-line:after {
+         content: "";
+         display: block;
+         position: absolute;
+         left: 13px;
+         top: 9px;
+         width: calc(100% - 75px);
+         height: 5px;
+         background-color: #cccccc;
+         border-radius: 5px;
+         z-index: 0;
+         }
+         a.bdn-more {
+         float: right;
+         color: #262626;
+         text-transform: uppercase;
+         border: #dc2229 solid 1px;
+         font-size: 13px;
+         margin: 0px 7.5px 0px 0px;
+         padding: 0px 5px;
+         line-height: 19px;
+         border-radius: 12px;
+         }
+         h2.bdn-heading-one {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         position: relative;
+         padding-left: 10px;
+         }
+         h2.bdn-heading-one:before {
+         content: "";
+         background-color: #f00404;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         /* //HEADING */
+         /* HEADER */
+         .bdn-main-nav.fixed-bdnnav {
+         top: 0;
+         position: fixed;
+         width: 100%;
+         transition-duration: .5s;
+         z-index: 9;
+         }
+         .bdn-main-nav {
+         float: left;
+         width: 100%;
+         background-color: #fff;
+         height: 80px;
+         box-shadow: 0 2px 4px rgb(0 0 0 / 8%);
+         }
+         .bdn-logo {
+         height: 80px;
+         padding-top: 15px;
+         width: 297.5px;
+         padding-left: 7.5px;
+         border-right: solid 1px #c5c5c5;
+         float: left;
+         }
+         .bdn-menu {
+         height: 80px;
+         float: left;
+         width: calc(100% - 297.5px);
+         }
+         .bdn-upper-menu {
+         height: 45px;
+         box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+         }
+         .bdn-lower-menu {
+         height: 35px;
+         }
+         button.bdn-sidemenu {
+         height: 45px;
+         width: 45px;
+         margin: 0px;
+         padding: 0px;
+         line-height: 45px;
+         border: none;
+         background: none;
+         float: left;
+         }
+         ul.upper-left-menu {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.upper-left-menu li {
+         list-style-type: none;
+         float: left;
+         line-height: 45px;
+         border-left: solid 1px #c5c5c5;
+         }
+         ul.upper-left-menu li a {
+         text-decoration: none;
+         display: block;
+         padding: 0px 15px;
+         text-transform: uppercase;
+         color: #333;
+         }
+         ul.upper-left-menu li a img {
+         margin: -6px 5px 0px 0px;
+         }
+         ul.upper-right-menu {
+         margin: 0px 7.5px 0px 0px;
+         padding: 0px;
+         float: right;
+         }
+         ul.upper-right-menu li {
+         list-style-type: none;
+         float: left;
+         line-height: 45px;
+         margin-left: 20px;
+         position: relative;
+         cursor: pointer;
+         }
+         ul.upper-right-menu li a {
+         text-decoration: none;
+         display: block;
+         text-transform: capitalize;
+         }
+         ul.lower-left-menu {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.lower-left-menu li {
+         list-style-type: none;
+         float: left;
+         margin-left: 10px;
+         line-height: 35px;
+         padding-top: 5px;
+         }
+         ul.lower-left-menu li a {
+         text-decoration: none;
+         display: block;
+         text-transform: uppercase;
+         color: #000;
+         font-size: 12px;
+         position: relative;
+         }
+         input.bdn-search {
+         position: absolute;
+         right: -13px;
+         top: 0;
+         height: 45px;
+         border: none;
+         outline: none;
+         background-color: #d3d3d3;
+         width: 320px;
+         padding: 0px 70px 0px 10px;
+         }
+         img.bdn-search-go {
+         position: absolute;
+         right: 24px;
+         top: 17px;
+         }
+         img.bdn-search-close {
+         position: absolute;
+         right: -6px;
+         top: 16px;
+         }
+         /* //HEADER */
+         /* HEADER */
+         header {
+         float: left;
+         width: 100%;
+         margin-bottom: 20px;
+         }
+         .top-bar {
+         float: left;
+         width: 100%;
+         background-color: #d3d3d3;
+         height: 35px;
+         }
+         ul.bdn-date-weather {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.bdn-date-weather li {
+         list-style-type: none;
+         float: left;
+         font-size: 14px;
+         text-transform: uppercase;
+         line-height: 35px;
+         }
+         li.bdn-weather {
+         position: relative;
+         margin-left: 25px;
+         }
+         li.bdn-weather:before {
+         content: "";
+         display: block;
+         width: 1px;
+         height: 14px;
+         background-color: #000;
+         position: absolute;
+         left: -12px;
+         top: 9px;
+         }
+         ul.bdn-top-social {
+         margin: 0px;
+         padding: 0px;
+         float: right;
+         }
+         ul.bdn-top-social li {
+         list-style-type: none;
+         float: left;
+         margin-left: 15px;
+         margin-right: 15px;
+         position: relative;
+         }
+         ul.bdn-top-social li a {
+         text-decoration: none;
+         display: block;
+         line-height: 35px;
+         }
+         ul.bdn-top-social li:before {
+         content: "";
+         display: block;
+         position: absolute;
+         right: -15px;
+         top: 0;
+         width: 1px;
+         height: 35px;
+         background-color: #9c9c9c;
+         }
+         ul.bdn-top-social li:last-child:before {
+         display: none;
+         }
+         ul.lower-left-menu li a span {
+         position: absolute;
+         right: -1px;
+         top: -13px;
+         color: #333;
+         font-size: 11px;
+         }
+         ul.lower-right-menu {
+         float: right;
+         margin: 0px 7.5px 0px 0px;
+         padding: 0px;
+         }
+         ul.lower-right-menu li {
+         list-style-type: none;
+         line-height: 35px;
+         margin-left: 40px;
+         float: left;
+         padding-top: 5px;
+         }
+         ul.lower-right-menu li a {
+         text-decoration: none;
+         display: block;
+         color: #000;
+         text-transform: capitalize;
+         font-size: 13px;
+         font-weight: 700;
+         position: relative;
+         }
+         ul.lower-right-menu li a span {
+         position: absolute;
+         right: 0;
+         top: -4px;
+         font-size: 12px;
+         color: #fff;
+         background-color: #b7392e;
+         line-height: 14px;
+         padding: 0px 3px;
+         border-radius: 2px;
+         }
+         /* //HEADER */
+         /* FOOTER */
+         footer {
+         float: left;
+         width: 100%;
+         }
+         .main-visit-links-ft{
+         background-color:rgba(34,34,34,255);
+         padding: 20px 0;
+         }
+         .ft-fst-row{
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 20px;
+         }
+         .logo-btn-ft{
+         display: flex;
+         }
+         .otv-logo-ft{
+         height: 35px;
+         margin-right: 20px;
+         }
+         .live-btn-otv-ft{
+         background-color: #c10503;
+         border: none;
+         border-radius: 22px;
+         padding: 0px 9px;
+         margin: 7px 0;
+         }
+         .live-btn-otv-ft a{
+         text-transform: capitalize;
+         color: #fff;
+         font-size: 14px;
+         text-decoration: none;
+         }
+         .sub-btn-otv-ft{
+         border:1px solid #fff;
+         background-color: #333030;
+         padding: 4px 6px;
+         border-radius: 4px;
+         }
+         .sub-btn-otv-ft a{
+         text-transform: uppercase;
+         font-size: 12px;
+         color: #fff;
+         font-weight: 600;
+         margin: 0;
+         text-decoration: none;
+         }
+         input.search-input-otv{
+         text-transform: capitalize;
+         padding: 4px 4px;
+         border-radius: 4px;
+         width: 420px;
+         margin-right: 5px;
+         }
+         .short-visit-link-otv{
+         border-right: 1px solid gray; 
+         }
+         h5.ft-link-heading a{
+         color: #fff;
+         text-transform: capitalize;
+         font-size: 14px;
+         padding: 0 0 4px 0;
+         text-decoration: underline;
+         }
+         ul.ft-subnews-link{
+         list-style-type: none;
+         }
+         ul.ft-subnews-link li a{
+         color: lightgray;
+         margin-left: -40px;
+         font-weight: 500;
+         font-size: 12px;
+         text-transform: capitalize;
+         text-decoration: none;
+         }
+         .partner-ft-otv{
+         background-color:#32373b;
+         padding: 10px 0;
+         }
+         h5.partner-ft-heading{
+         color: #fff;
+         padding: 0;
+         margin: 0 0 5px 0;
+         text-transform: uppercase;
+         font-size: 12px;
+         }
+         ul.partner-link-otv{
+         list-style-type: none;
+         margin-left: -40px;
+         }
+         ul.partner-link-otv li{
+         display: inline-block;
+         }
+         ul.partner-link-otv li a{
+         color: lightgray;
+         font-weight: 500;
+         font-size: 10px;
+         text-transform: uppercase;
+         text-decoration: none;
+         padding-right: 10px;
+         border-right: 1px solid gray;
+         }
+         .contact-ft-otv{
+         background-color: #1a1d22;
+         display: flex;
+         margin: 0;
+         padding: 0;
+         align-items: center;
+         }
+         ul.contact-us-link-otv{
+         list-style-type: none;
+         margin-left: -40px;
+         }
+         ul.contact-us-link-otv li a{
+         color: lightgray;
+         font-weight: 500;
+         font-size: 10px;
+         text-transform: uppercase;
+         text-decoration: none;
+         padding-right: 10px;
+         border-right: 1px solid gray;
+         }
+         ul.contact-us-link-otv li{
+         display: inline-block;
+         }
+         ul.social-icon-otv-ft{
+         list-style-type: none;
+         display: flex;
+         }
+         .social-icon-otv-img{
+         margin: 0 10px;
+         height: 14px;
+         }
+         .app-store-cnt-ft{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+         margin-left: 50px;
+         }
+         .store-title-otv{
+         color: #fff;
+         text-transform: uppercase;
+         margin: 0;
+         padding: 0;
+         font-size: 12px;
+         }
+         .googleplay-img-ft{
+         height: 40px;
+         }
+         .appstore-img-ft{
+         height: 28px;
+         }
+         /* //FOOTER */
+            /*----Live Details---*/
+section.bdn-live-update {
+    margin: 0px 0px 30px 0px;
+}
+.live-details-image {
+    margin-bottom: 25px;
+}
+.live-details-image img {
+    width: 100%;
+    height: auto;
+}
+h2.live-details-box-heading {
+    margin: 10px 0px;
+    font-size: 17px;
+    background-color: #7b0505;
+    color: white;
+    padding: 4px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+}
+h2.live-details-box-heading span {
+    color: #ffffff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+ul.live-details-bredcum {
+    margin: -13px 0px 9px 0px;
+    padding: 0px;
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+}
+ul.live-details-bredcum li {
+    list-style-type: none;
+    display: inline-block;
+    color: #7b0505;
+    font-size: 10px;
+    position: relative;
+    margin-right: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+ul.live-details-bredcum li a {
+    color: #7b0505;
+}
+ul.live-details-bredcum li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f101";
+    font-weight: 900;
+    top: 0px;
+    right: -15px;
+    color: #7b0505;
+    font-size: 10px;
+    position: absolute;
+}
+ul.live-details-bredcum li:last-child:before{
+    content: none;
+    }
+ul.live-details-bredcum li:last-child{
+    color: #736f6f;
+}   
+.live-details-heading {
+    border: 1px solid #e8e2e2;
+    margin-bottom: 25px;
+    padding: 10px 10px 5px 10px;
+}
+.live-details-heading h1 {
+    padding: 0px;
+    font-size: 28px;
+    margin: 0px;
+    font-weight: 600;
+    color: #656565;
+    line-height: 32px;
+}
+.live-details-heading h5 {
+    margin: 10px 0px;
+    padding: 5px;
+    background-color: #dadad3;
+    font-size: 15px;
+    font-weight: 600;
+    width: fit-content;
+}
+.live-details-heading p {
+    color: #222;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'Faustina', serif;
+    margin-bottom: 20px;
+    margin: 0px;
+    display: inline;
+}
+
+ul.live-details-sidebar {
+   margin: 0px;
+    padding: 7px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    border: 1px solid #cecece;
+    max-height: 319px;
+    overflow-x: auto;
+}
+
+ul.live-details-sidebar li {
+    list-style-type: none;
+    display: block;
+    margin-bottom: 5px;
+}
+ul.live-details-sidebar li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 12px;
+    top: 11px;
+    width: 8px;
+    height: 8px;
+    background-color: #7b0505;
+    border-radius: 50%;
+}
+ul.live-details-sidebar li a {
+    text-decoration: none;
+    color: #848282;
+    font-size: 17px;
+    list-style-type: none;
+    display: block;
+    position: relative;
+    background-color: #ebebeb;
+    padding: 4px 4px 4px 28px;
+    border-radius: 5px;
+    border: 1px solid #bfbebe;
+    cursor: pointer;
+}
+ul.live-details-sidebar li a span {
+    display: block;
+    color: #0e0e0e;
+}
+.live-details-banner {
+    margin-bottom: 40px;
+}
+.live-details-banner img {
+    width: 100%;
+    height: auto;
+}
+.live-details-start {
+    position: relative;
+    padding-left: 109px;
+}
+.live-details-one {
+    position: relative;
+}
+.live-details-one:before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 100%;
+    background-color: #dadada;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.live-details-time {
+    position: absolute;
+    left: -134px;
+    top: 0px;
+    width: 116px;
+}
+.live-details-content {
+    background-color: #ebebeb;
+    padding: 10px;
+    -webkit-box-shadow: 1px 6px 8px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: 1px 6px 8px 0px rgba(0,0,0,0.47);
+    box-shadow: 1px 6px 8px 0px rgba(0,0,0,0.47);
+    border-radius: 5px;
+    margin: 23px 15px 13px 25px;
+    position: relative;
+}
+.live-details-content p {
+    color: #222;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'Faustina', serif;
+    margin-bottom: 20px;
+    margin: 0px;
+}
+.live-details-content:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -30px;
+    top: -3px;
+    width: 14px;
+    height: 14px;
+    background-color: #7b0505;
+    border-radius: 50%; 
+}
+.live-details-content.active:before {
+box-shadow: 0 0 0 rgb(244 176 27);
+    animation: pulse 2s infinite;
+}
+.live-details-content ul {
+    margin: 0px 17px;
+    padding: 0px;
+}
+.live-details-content ul li{
+    list-style-type: none;
+    display: inline;
+   } 
+ .live-details-content ul li:first-child{
+position: relative;
+    margin-right: 15px;
+ }  
+ .live-details-content ul li:first-child a{
+    color: #7b0505;
+    font-weight: 700;
+    transition-duration: .5s;
+ }
+.live-details-content ul li:first-child:before{
+    content: "";
+    display: block;
+    background-color: #c10707;
+    width: 1px;
+    height: 18px;
+    position: absolute;
+    top: -1px;
+    right: -10px;
+    transform: rotate(10deg);
+ }  
+.live-details-content ul li a {
+    font-size: 19px;
+    text-decoration: none;
+    display: inline;
+    color: #000;
+    line-height: 24px;
+    transition-duration: .5s;
+}
+.live-details-content ul li a:hover {
+    color: #7b0505;
+    transition-duration: .5s;
+}
+.live-details-content h4 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 23px;
+}
+.live-details-content h5 {
+    margin: 10px 0px;
+    font-size: 14px;
+}
+.live-details-time p {
+    font-size: 18px;
+    color: #7b0505;
+}
+.live-details-time p span {
+    display: block;
+    color: #5f5f5e;
+    font-size: 11px;
+    line-height: 20px;
+}
+.live-details-banner-video {
+    position: relative;
+    margin: 15px 0px 5px 0px;
+    background-color: #f1f1f6;
+    padding: 5px;
+}
+h4.live-details-banner-video-details {
+    color: #474747;
+    font-size: 23px;
+    line-height: 26px;
+    font-family: 'Faustina', serif;
+    margin: 5px 0px 10px 0px;
+    padding: 0px;
+    font-weight: 600;
+}
+p.live-details-banner-video-disclaimer {
+    background-color: #f1f1f6;
+    color: #666;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0px;
+    padding: 5px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: italic;
+}
+p.live-details-banner-video-disclaimer span {
+    color: #ec5836;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.custom-story-img-block {
+    position: relative;
+    background-color: #f9faff;
+}
+.custom-story-img-block img {
+    max-width: 100%;
+    height: auto;
+}
+.custom-story-img-block span {
+    text-align: center;
+    display: block;
+    font-family: 'Libre Franklin',sans-serif;
+    font-size: 15px;
+    padding: 6px;
+}
+a#lodemore {
+    background-color: #7b1c18;
+    border: none;
+    border-radius: 0;
+    display: block;
+    width: fit-content;
+    margin: 15px auto;
+}
+/*----//Live Details---*/
+      </style>
+   </head>
+   <body>
+      <header>
+         <div class="top-bar">
+            <div class="col-lg-12">
+               <ul class="bdn-date-weather">
+                  <li>THURSDAY, AUGUst 20, 2020</li>
+                  <li class="bdn-weather">Bhubaneswar <img src="https://beta-live.odishatv.in/commondir/images/svg/weather-icon.svg" alt="" title="" width="19" height="19"> <strong>31 &deg; C</strong></li>
+               </ul>
+               <ul class="bdn-top-social">
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-facebook.svg" alt="" title="" width="6" height="11"></a></li>
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-twitter.svg" alt="" title="" width="12" height="12"></a></li>
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-linkedin.svg" alt="" title="" width="12" height="12"></a></li>
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-instagram.svg" alt="" title="" width="12" height="12"></a></li>
+                  <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdn-telegram.svg" alt="" title="" width="12" height="12"></a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="bdn-main-nav">
+            <div class="bdn-logo">
+               <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/logo.svg" alt="OTV Logo" title="OTV Logo" width="281" height="50" class="main-logo-img"></a>
+            </div>
+            <div class="bdn-menu">
+               <div class="bdn-upper-menu">
+                  <button class="bdn-sidemenu" title="menu">
+                  <img src="https://beta-live.odishatv.in/commondir/images/svg/hamburger-icon-otv.svg" alt="" title="" width="22" height="14">
+                  </button>
+                  <ul class="upper-left-menu">
+                     <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/home-otv.svg" alt="" title="" width="17" height="17"> news</a></li>
+                     <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/video-otv.svg" alt="" title="" width="17" height="17"> videos</a></li>
+                     <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/photos-otv.svg" alt="" title="" width="17" height="17"> photos</a></li>
+                     <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/webseries-otv.svg" alt="" title="" width="17" height="17"> webstories</a></li>
+                  </ul>
+                  <ul class="upper-right-menu">
+                     <li><img src="https://beta-live.odishatv.in/commondir/images/svg/fa-moon.svg" alt="" title="" width="43" height="25" class="darkmode-btn darkmode-svg-icon"></li>
+                     <li class="bdn-search-list">
+                        <form>
+                           <input type="text" name="" class="bdn-search" placeholder="Search" style="display: none;">
+                           <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="" title="" width="15" height="15" class="bdn-search-go" style="display: none;">
+                           <img src="https://beta-live.odishatv.in/commondir/images/svg/close-gray.svg" alt="" title="" width="16" height="14" class="bdn-search-close" style="display: none;">
+                        </form>
+                        <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="Search" title="Search" width="15" height="15" class="search-bdn">
+                     </li>
+                     <li><img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsignin.svg" alt="" title="" width="12" height="18"> Sign In</li>
+                  </ul>
+               </div>
+               <div class="bdn-lower-menu">
+                  <ul class="lower-left-menu">
+                     <li><a href="#" title="otv">live tv</a></li>
+                     <li><a href="#" title="otv">ipl 2023</a></li>
+                     <li><a href="#" title="otv">latest</a></li>
+                     <li><a href="#" title="otv">latest<span>New</span></a></li>
+                     <li><a href="#" title="otv">ipl 2023</a></li>
+                     <li><a href="#" title="otv">latest<span>New</span></a></li>
+                     <li><a href="#" title="otv">live tv</a></li>
+                     <li><a href="#" title="otv">ipl 2023</a></li>
+                     <li><a href="#" title="otv">latest<span>New</span></a></li>
+                  </ul>
+                  <ul class="lower-right-menu">
+                     <li><a href="#" title="otv">astrospeak<span>New</span></a></li>
+                     <li><a href="#" title="otv">astrospeak<span>New</span></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- SIDE MENU -->
+         <div class="hamburger-nav" style="display: none;">
+            <button class="close-hamburger"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdnleftarrow.svg"></button>
+            <div class="bdn-otv-small-logo">
+               <a href="#" title="otv"><img src="https://odishatv.in//commondir/images/logo-white.png" alt="" title="" width="44" height="36"></a>
+               <span>menu</span>
+            </div>
+            <ul class="hamburger-menu">
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">covid <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">1 covid <span>new</span></a></li>
+            </ul>
+         </div>
+         <!-- //SIDE MENU -->
+      </header>
+      <section class="bdn-live-update">
+         <div class="container">
+         <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 sticky">
+               <div class="otv-300-250-ad"> </div>
+               <h2 class="live-details-box-heading">Live Updates :<span> From The News Room</span></h2>
+               <ul class="live-details-sidebar">
+                  <li><a href="#livedetails1"><span> 20 July 2021, 07:10 PM IST</span>Odisha DGP Thanks All For Smooth Completion Of Bahuda Jatra</a></li>
+                  <li><a href="#livedetails2"><span> 20 July 2021, 07:03 PM IST</span>Bahuda Jatra Concludes On Emphatic Note As Lords Reach Srimandir</a></li>
+                  <li><a href="#livedetails3"><span> 20 July 2021, 05:26 PM IST</span>Divine Laxmi Narayan Bheta Unfolds Before Srimandir</a></li>
+                  <li><a href="#livedetails4"><span> 20 July 2021, 04:28 PM IST</span>Lord Balabhadra Arrives At Srimandir On Gigantic Taladhwaja</a></li>
+                  <li><a href="#livedetails5"><span> 20 July 2021, 03:55 PM IST</span>Bahuda Jatra: Servitors Pull Chariots Amid Heavy Rain In Puri</a></li>
+                  <li><a href="#livedetails6"><span> 20 July 2021, 03:35 PM IST</span>Lord Jagannath Gets Poda Pitha Treat Near Mausi Maa Temple</a></li>
+                  <li><a href="#livedetails7"><span> 20 July 2021, 01:45 PM IST</span>Juggernaut Rolls On! Lord Jagannath Rides Back To Srimandir</a></li>
+                  <li><a href="#livedetails8"><span> 20 July 2021, 01:24 PM IST</span>Goddess Subhadra Follows Bada Thakura, Darpadalana Proceeds Towards Srimandir</a></li>
+                  <li><a href="#livedetails9"><span> 20 July 2021, 12:53 PM IST</span>Puri King Marks 50 Years In Chhera Panhara Service Of The Lord</a></li>
+                  <li><a href="#livedetails10"><span> 20 July 2021, 12:36 PM IST</span>Saints’ Tryst With Lord Jagannath</a></li>
+                  <li><a href="#livedetails11"><span> 20 July 2021, 12:33 PM IST</span>Homecoming Of Lords: Bada Thakura Balabhadra Leads The Way</a></li>
+                  <li><a href="#livedetails12"><span> 20 July 2021, 12:24 PM IST</span>Chhera Panhara Concludes, Ghoda Lagi And Charamala Phita Niti </a></li>
+                  <li><a href="#livedetails13"><span> 20 July 2021, 12:15 PM IST</span>Gajapati Pays Obeisance To Lords, Cleans Chariots With Golden Broom</a></li>
+                  <li><a href="#livedetails14"><span> 20 July 2021, 11:32 AM IST</span>Chhera Panhara: No Distinction Between King And Sweeper</a></li>
+                  <li><a href="#livedetails15"><span> 20 July 2021, 11:10 AM IST</span>Gajapati Arrives To Conduct Divine Chhera Panhara Niti</a></li>
+                  <li><a href="#livedetails16"><span> 20 July 2021, 10:52 AM IST</span>Lord Madan, Mohan &amp; Ramakrushna Ascend The Chariot</a></li>
+                  <li><a href="#livedetails17"><span> 20 July 2021, 10:28 AM IST</span>Tahia: The Magnanimous Crown Of Holy Trinity</a></li>
+                  <li><a href="#livedetails18"><span> 20 July 2021, 09:11 AM IST</span>Royal Divine Procession Of Lord Jagannath Begins</a></li>
+                  <li><a href="#livedetails19"><span> 20 July 2021, 09:00 AM IST</span>Pahandi Bije Of Devi Subhadra</a></li>
+                  <li><a href="#livedetails20"><span> 20 July 2021, 08:18 AM IST</span>Pahandi Of Lord Balabhadra Begins</a></li>
+                  <li><a href="#livedetails21"><span> 20 July 2021, 08:07 AM IST</span>Pahandi Of Sri Sudarshan Begins In Puri</a></li>
+                  <li><a href="#livedetails22"><span> 20 July 2021, 07:32 AM IST</span>Bahuda Jatra: The Return Sojourn Of Holy Trinity To Srimandir</a></li>
+                  <li><a href="#livedetails23"><span> 19 July 2021, 08:29 PM IST</span>Stage Set For Bahuda Jatra, Srimandir Admin Announces Ritual Timings</a></li>
+                  <li><a href="#livedetails24"><span> 19 July 2021, 08:24 PM IST</span>Bahuda Jatra Ritual Timings</a></li>
+                  <li><a href="#livedetails25"><span> 19 July 2021, 08:24 PM IST</span>SJTA Chief to discuss preparations for Bahuda Jatra tomorrow</a></li>
+                  <li><a href="#livedetails26"><span> 18 July 2021, 07:22 PM IST</span>Preparations For Bahuda Jatra Of Holy Trinity Begins in Puri</a></li>
+                  <li><a href="#livedetails27"><span> 17 July 2021, 02:05 PM IST</span>Preparation For Bahuda Jatra Begins, Curfew To Be Clamped In Puri</a></li>
+                  <li><a href="#livedetails28"><span> 17 July 2021, 01:11 PM IST</span>Dakhina Moda Ritual Started Ahead of Bahuda Yatra</a></li>
+                  <li><a href="#livedetails29"><span> 17 July 2021, 12:46 PM IST</span>Sec 144 will be Clamped in Puri from 8 pm on Monday in View of Bahuda Jatra</a></li>
+                  <li><a href="#livedetails30"><span> 16 July 2021, 05:53 PM IST</span>Hera Panchami: Angry Goddess Laxmi Break Nandighosha Ratha</a></li>
+               </ul>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+               <div class="live-details-heading">
+                  <h1>LIVE Updates: Lords Arrive At Ratna Bedi After Week-Long Sojourn At Janma Bedi</h1>
+                  <!-- <h5>India - </h5>--><a href="https://odishatv.in/city/odisha"><span class="article-content-parent">Odisha</span></a>
+                  <p>The annual sojourn of Lord Jagannath and his siblings Goddess Shubhadra and Lord Balabhadra, famously known as- Ratha Jatra culminates with the return of the Holy Trinity from their aunt's place at Gundicha Temple to Srimandir. This return journey is known as <strong>Bahuda Jatra</strong>. Nine days after the Rath Jatra, the Bahuda Jatra, or the return journey, takes place. The holy festival is missing the usual pomp and grandeur and participation of lakhs of devotees due to the Covid-19 pandemic situation for the second year in a row. Elaborate preparations with water-tight security cover have been put in place for the smooth conduct of the festival. The district administration has imposed curfew in Puri town for the festival, prohibiting congregations even on rooftops. OTV brings you the happenings on the Bada Danda (Grand Road) live during the return sojourn of the Holy Trinity on their gigantic chariots. Check out all the latest updates here.</p>
+                  <!--                  <div class="live-details-banner-video">
+                     <h4 class="live-details-banner-video-details">Track Cyclone Yaas Direction and Movements</h4>
+                     
+                     
+                     <iframe width="100%" height="450" src="https://embed.windy.com/embed2.html?lat=15.750&lon=85.825&detailLat=15.750&detailLon=85.825&width=650&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=true&calendar=now&pressure=true&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>
+                     
+                     
+                     <p class="live-details-banner-video-disclaimer"><span>Disclaimer:</span>Cyclone YAAS tracker embedded from Windy.com is only an approximate visualisation predicting the movements of the Cyclone based on open data. Windy.com's projections may vary from predictions by other weather agencies such as India Meteorological Department (IMD). For precision, referencing  updates from IMD or associated agencies/institutes is strongly recommended.</p>
+                     </div> -->
+               </div>
+               <div class="live-details-banner"> <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1626438122.jpg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1626438122.jpg" alt="Puri Jagannath Bahuda Yatra 2021" title="Puri Jagannath Bahuda Yatra 2021"> </div>
+               <div class="otv-728-90-ad">
+               </div>
+               <div class="live-details-start" data-id="129408" data-count="30">
+                  <div class="live-details-one">
+                     <div class="live-details-content active" id="livedetails1">
+                        <div class="live-details-time">
+                           <p>19:10 PM<span>(3 months ago )</span></p>
+                        </div>
+                        <h4>Odisha DGP Thanks All For Smooth Completion Of Bahuda Jatra</h4>
+                        <h5>Posted by: Rajendra Prasad Mohapatra</h5>
+                        <p>Odisha Police DG Abhay expressed gratitude to police personnel, administrative officials and mostly the people of Puri and outside in cooperating well with the organisers for hassle-free conduct of the Bahuda Jatra of the Holy Trinity.</p>
+                     </div>
+                     <div class="live-details-content " id="livedetails2">
+                        <div class="live-details-time">
+                           <p>19:03 PM<span>(3 months ago )</span></p>
+                        </div>
+                        <h4>Bahuda Jatra Concludes On Emphatic Note As Lords Reach Srimandir</h4>
+                        <h5>Posted by: Rajendra Prasad Mohapatra</h5>
+                        <p>Curtains came down on the return Car Festival of the Puri Holy Trinity after the arrival of the three chariots of the deities at Srimandir following a week-long stay at Gundicha Temple.</p>
+                        <div class="custom-story-img-block"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1626787964.jpg"><span>Bahuda Jatra Concludes</span></div>
+                     </div>
+                     <div class="live-details-content " id="livedetails3">
+                        <div class="live-details-time">
+                           <p>17:26 PM<span>(3 months ago )</span></p>
+                        </div>
+                        <h4>Divine Laxmi Narayan Bheta Unfolds Before Srimandir</h4>
+                        <h5>Posted by: Rajendra Prasad Mohapatra</h5>
+                        <p>Laxmi Narayan Bheta is the most entertaining spectacle of meeting between Lord Jagannath &amp; Goddess Laxmi soon after the Mahaprabhu arrives at Srimandir. The get-together, which symbolizes how love builds on discord and both are inseparable, has a special significance in the life of humans.</p>
+                        <p>As per tradition, Lord Jagannath is forced to wait due to an angry Goddess Laxmi who refuses to allow the Mahaprabhu's chariot to join His elder brother Bada Thakura Balabhadra and Devi Subhadra in front of Srimandir. To diffuse the tensions, Gajapati intervenes and escorts Goddess Laxmi to the Nandighosha chariot where the divine meeting takes place with Lord Jagannath.&nbsp;</p>
+                        <div class="custom-story-img-block"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1626782173.jpg"><span>Bahuda Jatra: Laxmi Narayan Bheta</span></div>
+                        <p>It is believed that Goddess Laxmi remains angry with Lord Jagannath for not taking Her on their annual sojourn to Gundicha Temple even though the occasion of Rath Yatra commenced just a few days following the completion of their divine wedding ceremony.</p>
+                     </div>
+                     <div class="live-details-content " id="livedetails4">
+                        <div class="live-details-time">
+                           <p>16:28 PM<span>(3 months ago )</span></p>
+                        </div>
+                        <h4>Lord Balabhadra Arrives At Srimandir On Gigantic Taladhwaja</h4>
+                        <h5>Posted by: Rajendra Prasad Mohapatra</h5>
+                        <p>Bada Thakura Balabhadra arrived at Srimandir on his Taladhwaja chariot while followed by His dear sister Subhadra and lastly Mahaprabhu Jagannath accompanying him on His Nandighosha.&nbsp;</p>
+                     </div>
+                     <div class="live-details-content " id="livedetails5">
+                        <div class="live-details-time">
+                           <p>15:55 PM<span>(3 months ago )</span></p>
+                        </div>
+                        <h4>Bahuda Jatra: Servitors Pull Chariots Amid Heavy Rain In Puri</h4>
+                        <h5>Posted by: Rajendra Prasad Mohapatra</h5>
+                        <p>Pulling of chariots of the Holy Trinity witnessed euphoric scenes as heavy rainfall lashed Bada Danda. Servitors pulling the Raths were elated after the rain relief.</p>
+                        <div class="custom-story-img-block"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1626776664.JPG"><span>Rain Puri During Bahuda Jatra</span></div>
+                        <div class="custom-story-img-block"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1626776701.JPG"><span>Rain During Bahuda Jatra</span></div>
+                        <p>&nbsp;&nbsp;</p>
+                     </div>
+                     <div class="live-details-content " id="livedetails6">
+                        <div class="live-details-time">
+                           <p>15:35 PM<span>(3 months ago )</span></p>
+                        </div>
+                        <h4>Lord Jagannath Gets Poda Pitha Treat Near Mausi Maa Temple</h4>
+                        <h5>Posted by: Rajendra Prasad Mohapatra</h5>
+                        <p>Making his homeward journey to the Srimandir on His splendid Nandighosha, Mahaprabhu Jagannath made a brief halt near Mausi Maa Temple where he was offered the exquisite and His most loving Poda Pitha.</p>
+                        <div class="custom-story-img-block"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1626775499.JPG"><span>Bahuda Jatra: Poda Pitha Treat To Lord Jagannath</span></div>
+                        <div class="custom-story-img-block">
+                           <div class="custom-story-img-block"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1626775989.jpg"><span>Bahuda Jatra: Devi Subhadra Gets Poda Pitha Treat</span></div>
+                        </div>
+                     </div>
+                     <div class="live-details-content " id="livedetails7">
+                        <div class="live-details-time">
+                           <p>13:45 PM<span>(3 months ago )</span></p>
+                        </div>
+                        <h4>Juggernaut Rolls On! Lord Jagannath Rides Back To Srimandir</h4>
+                        <h5>Posted by: Rajendra Prasad Mohapatra</h5>
+                        <p>Finally, the moment everyone has been waiting for arrived as Lord Jagannath commenced his journey back to the Ratna Singhasana. The Lords' annual sojourn to Gundicha Temple ends on an emphatic note as Nandighosha chariot rolls on the Bada Danda towards the Srimandir.</p>
+                        <div class="custom-story-img-block"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1626768741.JPG"><span>Bahuda Jatra: Lord Jagannath's Homecoming</span></div>
+                     </div>
+                     <div class="live-details-content " id="livedetails8">
+                        <div class="live-details-time">
+                           <p>13:24 PM<span>(3 months ago )</span></p>
+                        </div>
+                        <h4>Goddess Subhadra Follows Bada Thakura, Darpadalana Proceeds Towards Srimandir</h4>
+                        <h5>Posted by: Rajendra Prasad Mohapatra</h5>
+                        <p>Following in the footsteps of her eldest brother Bada Thakura Balabhadra&nbsp;Devi Subhadra has commenced her return journey to Srimandir amid a mark of religious pomp and fervour.&nbsp;</p>
+                        <div class="custom-story-img-block"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1626767625.JPG"><span>Bahuda Jatra: Darpadalana Chariot On Way To Srimandir</span></div>
+                        <p>&nbsp;</p>
+                     </div>
+                     <div class="live-details-content " id="livedetails9">
+                        <div class="live-details-time">
+                           <p>12:53 PM<span>(3 months ago )</span></p>
+                        </div>
+                        <h4>Puri King Marks 50 Years In Chhera Panhara Service Of The Lord</h4>
+                        <h5>Posted by: Rajendra Prasad Mohapatra</h5>
+                        <p>Puri Gajapati Dibyasingha Deb completed a rare milestone in the centuries-long association of the erstwhile Kingdom family of Puri and the world-famous Lord Jagannath Temple as he marked 50 years in conducting the Chhera Panhara rituals of the Holy Trinity.</p>
+                        <div class="custom-story-img-block"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1626765767.JPG"><span>Puri Gajapati Marks 50 Years In Chhera Panhara</span></div>
+                        <p>Known as the foremost servitor of the Lords, he performed first Chhera Panhara in 1971 after ascending the throne in 1970 at the age of 17 following the death of his father, the then Maharaja of Puri, Gajapati Birakishore Deb.&nbsp;Dibyasingha Could not attend the special niti in 1976 as he was pursuing higher education in the United States.</p>
+                     </div>
+                     <div class="live-details-content " id="livedetails10">
+                        <div class="live-details-time">
+                           <p>12:36 PM<span>(3 months ago )</span></p>
+                        </div>
+                        <h4>Saints’ Tryst With Lord Jagannath</h4>
+                        <h5>Posted by: Rajendra Prasad Mohapatra</h5>
+                        <p>Puri was a big draw for medieval saints from across the country. The most notable among them were Shankaracharya, Shri Chaitanya, Ramanujacharya, Ballabhacharya, Guru Nanak, Kabir, Tulsi Das and Swami Ramdas. These saints not only visited Srikhetra to get a glimpse of the Lord, they left their footmarks here by establishing famous mathas.</p>
+                        <p><a href="https://odishatv.in/news/miscellaneous/saints-tryst-with-lord-jagannath-135750" target="_blank"><strong>Read More..</strong></a></p>
+                     </div>
+                  </div>
+                  <a href="javascript:void(0);" class="btn btn-info" id="lodemore">Load more...</a> 
+               </div>
+            </div>
+         </div>
+      </div>
+      </section>
+      <footer>
+         <div class="main-visit-links-ft">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-10">
+                     <div class="ft-fst-row">
+                        <div class="logo-btn-ft">
+                           <img src="https://beta-live.odishatv.in/commondir/images/svg/ft-logo-otv.svg" alt="" class="otv-logo-ft" width="197" height="35">
+                           <button class="live-btn-otv-ft"><a href="#" title="otv">live tv</a></button>
+                        </div>
+                        <div class="search-bar-otv-ft">
+                           <input type="text" placeholder="type here...." class="search-input-otv">
+                           <button class="sub-btn-otv-ft"><a href="#" title="otv">subscribe</a></button>
+                        </div>
+                     </div>
+                     <div class="ft-snd-row">
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#" title="otv">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                                 <li><a href="#" title="otv" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-2">
+                     <ul class="social-icon-otv-ft">
+                        <li><a href="#" title="otv" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/fb-ft-otv.svg" class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                        <li><a href="#" title="otv" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/twitter-ft-otv.svg" class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                        <li><a href="#" title="otv" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/youtube-ft-otv.svg" class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                        <li><a href="#" title="otv" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/telegram-ft-otv.svg"class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                     </ul>
+                     <div class="app-store-cnt-ft">
+                        <p class="store-title-otv">mobile app</p>
+                        <img src="https://beta-live.odishatv.in/commondir/images/svg/google-play-icon-ft.svg" class="googleplay-img-ft" alt="" width="103" height="40">
+                        <img src="https://beta-live.odishatv.in/commondir/images/svg/app-store-icon-ft.svg" class="appstore-img-ft" alt="" width="103" height="40">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="partner-ft-otv">
+            <div class="container">
+               <h5 class="partner-ft-heading">partner sites</h5>
+               <ul class="partner-link-otv">
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+                  <li><a href="#" title="otv" target="blank">otv news english</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="contact-ft-otv">
+            <div class="container">
+               <ul class="contact-us-link-otv">
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+                  <li><a href="#" title="otv" target="_blank">contact us</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <script src="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js"></script>
+      <script src="https://odishatv.in/commondir/js/bootstrap.min.js"></script>
+      <script src="https://images.odishatv.in/assets/js/jquery.unveil.js" async defer ></script>
+      <script>
+         jQuery(document).ready(function() {
+         /* DARKTHEME */
+         var src = $('.main-logo-img').attr("src");
+         var srcicon = $('.darkmode-svg-icon').attr("src");
+         $('.darkmode-btn').click(function() {
+             var logosrc1 = $('.main-logo-img').attr("src");
+             var logosrc2 = "logo.svg";
+             var logosrc3 = "dark-logo.svg";
+             if (logosrc1.indexOf(logosrc2) != -1) {
+                 $('.main-logo-img').attr("src", src.replace("logo.svg", "dark-logo.svg"));
+             }
+             if (logosrc1.indexOf(logosrc3) != -1) {
+                 $('.main-logo-img').attr("src", src.replace("dark-logo.svg", "logo.svg"));
+             }
+             var logosrcicon1 = $('.darkmode-svg-icon').attr("src");
+             var logosrcicon2 = "fa-moon.svg";
+             var logosrcicon3 = "fa-sun.svg";
+             if (logosrcicon1.indexOf(logosrcicon2) != -1) {
+                 $('.darkmode-svg-icon').attr("src", srcicon.replace("fa-moon.svg", "fa-sun.svg"));
+             }
+             if (logosrcicon1.indexOf(logosrcicon3) != -1) {
+                 $('.darkmode-svg-icon').attr("src", srcicon.replace("fa-sun.svg", "fa-moon.svg"));
+             }
+         });
+         const btn = document.querySelector(".darkmode-btn");
+         const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+         const currentTheme = localStorage.getItem("theme");
+         if (currentTheme == "dark") {
+             document.body.classList.toggle("dark-theme");
+             $('.main-logo-img').attr("src", src.replace("logo.svg", "dark-logo.svg"));
+             $('.darkmode-svg-icon').attr("src", srcicon.replace("fa-moon.svg", "fa-sun.svg"));
+         } else if (currentTheme == "light") {
+             document.body.classList.toggle("light-theme");
+         }
+         btn.addEventListener("click", function() {
+             if (prefersDarkScheme.matches) {
+                 document.body.classList.toggle("light-theme");
+                 var theme = document.body.classList.contains("light-theme") ?
+                     "light" :
+                     "dark";
+             } else {
+                 document.body.classList.toggle("dark-theme");
+                 var theme = document.body.classList.contains("dark-theme") ?
+                     "dark" :
+                     "light";
+             }
+             localStorage.setItem("theme", theme);
+         });
+         /* //DARKTHEME */
+         /* SEARCH BUTTON */
+         $(".search-bdn").click(function(){
+              $(".bdn-search").animate({
+                 width: "show"
+             });
+             $(".bdn-search-go").show();
+             $(".bdn-search-close").show();
+         });
+         $(".bdn-search-close").click(function(){
+              $(".bdn-search").animate({
+                 width: "hide"
+             });
+             $(".bdn-search-go").hide();
+             $(this).hide();
+         });
+         /* //SEARCH BUTTON */
+         // menu start
+         $('.bdn-sidemenu').click(function() {
+         $('.hamburger-nav').animate({width: "show"}, 200);
+          $("body").addClass("comment-active");
+         });
+         $('.close-hamburger').click(function() {
+             $('.hamburger-nav').animate({width: "hide"}, 200);
+         });
+                     // menu end
+         // sticky header start
+         
+             //caches a jQuery object containing the header element
+             var header = $(".bdn-main-nav");
+             $(window).scroll(function() {
+                 var scroll = $(window).scrollTop();
+                 if (scroll >= 35) {
+                     header.addClass("fixed-bdnnav");
+                 } else {
+                     header.removeClass("fixed-bdnnav");
+                 }
+             });
+         // sticky header end
+         });
+         // unveil start
+         $(function() {
+             $("img").unveil();
+             // $("img").unveil(200, function() {
+             //     $(this).load(function() {
+             //         this.style.opacity = 1;
+             //     });
+             // });
+         });
+         // unveil end
+      </script>
+   </body>
+</html>

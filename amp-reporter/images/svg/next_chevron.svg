@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="100" viewBox="0 0 63 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7c7c7c;
+        fill-rule: evenodd;
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <path id="NEXT_Chevron" class="cls-1" d="M1428,461q-24.675,24.966-49.43,50-6.66-6.741-13.55-13.71,17.865-18.078,35.85-36.271-17.985-18.2-35.87-36.287,6.915-6.99,13.57-13.732Q1403.275,435.986,1428,461Z" transform="translate(-1365 -411)"/>
+</svg>

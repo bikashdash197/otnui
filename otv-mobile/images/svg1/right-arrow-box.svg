@@ -1,0 +1,18 @@
+<svg id="F-play" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #d7d7d7;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        fill: #747474;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_1274_copy" data-name="Rectangle 1274 copy" class="cls-1" x="0.5" y="0.5" width="26" height="26"/>
+  <path id="F-play-2" data-name="F-play" class="cls-2" d="M1593.36,432.5a2.363,2.363,0,0,1-.19-0.154l-2.94-3.109a0.563,0.563,0,0,1-.01-0.9c0.44-.51.69-0.384,1.04,0,1.16,1.244,2.34,2.473,3.5,3.709a0.546,0.546,0,0,1,.01.9q-1.815,1.908-3.61,3.817a0.492,0.492,0,0,1-.84.009,0.648,0.648,0,0,1,0-1.116c0.96-.99,1.9-2,2.85-3A2.137,2.137,0,0,1,1593.36,432.5Z" transform="translate(-1578.5 -419.5)"/>
+</svg>

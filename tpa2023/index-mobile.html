@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>TPA 2023</title>  
+		<link rel="stylesheet" href="https://odishatv.in/commondir/css/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<style>
+			body {
+			margin: 0px;
+			pad: 0px;
+			}
+			section.tpa-page {
+			float: left;
+			width: 100%;
+			background-image: url(images/bg.jpg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			}
+			img.tpa-page-logo {
+			display: block;
+			margin: 20px auto;
+			max-width: 100%;
+			height: auto;
+			}
+			img.tpa-imagetext {
+			display: block;
+			margin: 0px auto 10px auto;
+			max-width: 100%;
+			height: auto;
+			}
+			.tpa-pageheader p {
+			margin: 0px;
+			padding: 0px 0px 15px 0px;
+			font-size: 20px;
+			line-height: 26px;
+			font-family: Faustina,serif;
+			font-weight: 400;
+			color: #000;
+			text-align: center;
+			}
+			.tpa-pageheader h1 {
+			    margin: 20px 0px 80px 0px;
+			    padding: 0px;
+			    font-size: 24px;
+			    line-height: 26px;
+			    font-family: Faustina,serif;
+			    font-weight: bold;
+			    color: #000;
+			    text-align: center;
+			    text-transform: capitalize;
+			    display: block;
+			    position: relative;
+			}
+			.tpa-pageheader h1:before {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 3px;
+			position: absolute;
+			left: 0;
+			top: 15px;
+			background-color: #c3bcbc;
+			z-index: 1;
+			}
+			.tpa-pageheader h1 span {
+			z-index: 3;
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			margin: 0 auto;
+			background-color: #ffffff;
+			width: fit-content;
+			padding: 0px 10px;
+			}
+			.nomination-card {
+			position: relative;
+			margin: 0px 0px 15px 0px;
+			background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 3px, transparent 3px) 0% 0%/8px 8px no-repeat,
+			radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 3px, transparent 3px) 100% 0%/8px 8px no-repeat,
+			radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 3px, transparent 3px) 0% 100%/8px 8px no-repeat,
+			radial-gradient(circle at 0 0, #ffffff 0, #ffffff 3px, transparent 3px) 100% 100%/8px 8px no-repeat,
+			linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 16px) no-repeat,
+			linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 10px) no-repeat,
+			linear-gradient(90deg, #ff0000 0%, rgba(225,234,255,1) 20%, rgba(0,208,12,1) 50%, rgba(255,0,0,1) 84%, #04a8ff 100%);
+			border-radius: 6px;
+			padding: 4px;
+			box-sizing: border-box;
+			}
+			img.nomination-card-image {
+			width: 100%;
+			height: 240px;
+			object-fit: cover;
+			}
+			.nomination-card h3 {
+			margin: 0px;
+			background-color: #6101ff;
+			color: #fff;
+			text-align: center;
+			padding: 0px 5px;
+			line-height: 60px;
+			height: 60px;
+			overflow: hidden;
+			font-size: 20px;
+			}
+			.nomination-trigger {
+			margin: 0px;
+			padding: 5px;
+			}
+			.nomination-trigger button {
+			line-height: 30px;
+			background-color: #e7e7e7;
+			outline: none;
+			border: solid 1px #b3a0a0;
+			width: 80px;
+			float: right;
+			margin-top: 15px;
+			border-radius: 5px;
+			}
+			.modal-body p {
+			margin: 0px;
+			padding: 0px 0px 15px 0px;
+			font-size: 20px;
+			line-height: 26px;
+			font-family: Faustina,serif;
+			font-weight: 400;
+			color: #000;
+			text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="tpa-page">
+			<div class="container">
+				<div class="tpa-pageheader">
+					<img src="images/tpa-logo.png" alt="" title="" class="tpa-page-logo">
+					<img src="images/tpa-text.png" alt="" title="" class="tpa-imagetext">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h1><span>Best actor negative (female)</span></h1>
+				</div>
+				<div class="tpa-nomination">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="nomination-card">
+								<img src="images/nominy.jpg" alt="" title="" class="nomination-card-image">
+								<h3>Arundhati</h3>
+								<div class="nomination-trigger">
+									<img src="images/vote.png" width="162" height="61" alt="" title="" class="nomination-card-vote">
+									<button data-toggle="modal" data-target="#myModal1">About</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="nomination-card">
+								<img src="images/nominy.jpg" alt="" title="" class="nomination-card-image">
+								<h3>Arundhati</h3>
+								<div class="nomination-trigger">
+									<img src="images/voted.png" width="162" height="61" alt="" title="" class="nomination-card-vote">
+									<button data-toggle="modal" data-target="#myModal2">About</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="nomination-card">
+								<img src="images/nominy.jpg" alt="" title="" class="nomination-card-image">
+								<h3>Arundhati</h3>
+								<div class="nomination-trigger">
+									<img src="images/vote.png" width="162" height="61" alt="" title="" class="nomination-card-vote">
+									<button>About</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="nomination-card">
+								<img src="images/nominy.jpg" alt="" title="" class="nomination-card-image">
+								<h3>Arundhati</h3>
+								<div class="nomination-trigger">
+									<img src="images/vote.png" width="162" height="61" alt="" title="" class="nomination-card-vote">
+									<button>About</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="nomination-card">
+								<img src="images/nominy.jpg" alt="" title="" class="nomination-card-image">
+								<h3>Arundhati</h3>
+								<div class="nomination-trigger">
+									<img src="images/vote.png" width="162" height="61" alt="" title="" class="nomination-card-vote">
+									<button>About</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="nomination-card">
+								<img src="images/nominy.jpg" alt="" title="" class="nomination-card-image">
+								<h3>Arundhati</h3>
+								<div class="nomination-trigger">
+									<img src="images/vote.png" width="162" height="61" alt="" title="" class="nomination-card-vote">
+									<button>About</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="nomination-card">
+								<img src="images/nominy.jpg" alt="" title="" class="nomination-card-image">
+								<h3>Arundhati</h3>
+								<div class="nomination-trigger">
+									<img src="images/vote.png" width="162" height="61" alt="" title="" class="nomination-card-vote">
+									<button>About</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="nomination-card">
+								<img src="images/nominy.jpg" alt="" title="" class="nomination-card-image">
+								<h3>Arundhati</h3>
+								<div class="nomination-trigger">
+									<img src="images/vote.png" width="162" height="61" alt="" title="" class="nomination-card-vote">
+									<button>About</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--**************** //MODAL *******************-->
+		<div class="modal fade" id="myModal1" role="dialog">
+			<div class="modal-dialog">
+			  <!-- Modal content-->
+			  <div class="modal-content">
+			    <div class="modal-header">
+			      <button type="button" class="close" data-dismiss="modal">&times;</button>
+			      <h4 class="modal-title"><strong>Arundhati</strong></h4>
+			    </div>
+			    <div class="modal-body">
+			      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			    </div>
+			    <div class="modal-footer">
+			      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			    </div>
+			  </div>
+			  
+			</div>
+		</div>
+		<div class="modal fade" id="myModal2" role="dialog">
+			<div class="modal-dialog">
+			  <!-- Modal content-->
+			  <div class="modal-content">
+			    <div class="modal-header">
+			      <button type="button" class="close" data-dismiss="modal">&times;</button>
+			      <h4 class="modal-title"><strong>Arundhati</strong></h4>
+			    </div>
+			    <div class="modal-body">
+			      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			    </div>
+			    <div class="modal-footer">
+			      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			    </div>
+			  </div>
+			  
+			</div>
+		</div>
+		<!--**************** //MODAL *******************-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Faustina&family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+		<script src="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js"></script>
+		<script src="https://odishatv.in/commondir/js/bootstrap.min.js"></script>
+	</body>
+</html>

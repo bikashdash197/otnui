@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+      <link href="https://odishatv.in/commondir/images/favicon.gif" rel="shortcut icon" type="image/gif">
+      <meta name="keywords" content="Home Page" />
+      <meta name="description" content="Home Page">
+      <title>OTV LIVE TV page mobile</title>
+      <style>
+         body {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Roboto', sans-serif;
+         font-weight: 400;
+         }
+         .container {
+         padding-right: 7.5px;
+         padding-left: 7.5px;
+         margin-right: auto;
+         margin-left: auto;
+         }
+         * {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         }
+         section {
+         float: left;
+         width: 100%;
+         }
+         .otv-300-250-ad {
+         width: 300px;
+         height: 250px;
+         display: flex;
+         margin: 0 auto;
+         text-align: center;
+         overflow: hidden;
+         background-color: #dfdfa1;
+         }
+         /* HEADING */
+         p, h1, h2, h3, h4, h5, h6 {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Roboto', sans-serif;
+         }
+         a, a:hover, a:focus, a:active {
+         text-decoration: none;
+         }
+         .bdn-heading-block {
+         margin: 0px 0px 12px 0px;
+         padding: 0px;
+         display: inline-block;
+         width: -webkit-fill-available;
+         position: relative;
+         }
+         h2.bdn-heading-one {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         position: relative;
+         padding-left: 10px;
+         }
+         h2.bdn-heading-one:before {
+         content: "";
+         background-color: #f00404;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         h2.bdn-heading-one-line {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         padding-left: 10px;
+         }
+         h2.bdn-heading-one-line span {
+         background-color: #fff;
+         padding: 0px 5px 0px 0px;
+         position: absolute;
+         z-index: 1;
+         }
+         h2.bdn-heading-one-line:before {
+         content: "";
+         background-color: #f00404;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         h2.bdn-heading-one-line:after {
+         content: "";
+         display: block;
+         position: absolute;
+         left: 13px;
+         top: 9px;
+         width: calc(100% - 75px);
+         height: 5px;
+         background-color: #cccccc;
+         border-radius: 5px;
+         z-index: 0;
+         }
+         a.bdn-more {
+         float: right;
+         color: #262626;
+         text-transform: uppercase;
+         border: #dc2229 solid 1px;
+         font-size: 13px;
+         margin: 0px 7.5px 0px 0px;
+         padding: 0px 5px;
+         line-height: 19px;
+         border-radius: 12px;
+         }
+         a.bdn-bottom-readmore {
+         color: #b70000;
+         text-transform: capitalize;
+         font-size: 15px;
+         position: relative;
+         float: right;
+         }
+         a.bdn-bottom-readmore strong {
+         color: #000;
+         font-size: 17px;
+         }
+         a.bdn-bottom-readmore:after {
+         content: "";
+         display: inline-block;
+         background-image: url(https://beta-live.odishatv.in/commondir/images/svg/more-doublearrow.svg);
+         width: 23px;
+         height: 16px;
+         margin: 6px 0px 0px 8px;
+         float: right;
+         }
+         /* //HEADING */
+         /* FOOTER */
+         footer {
+         float: left;
+         width: 100%;
+         -webkit-box-shadow: 0px -2px 5px 0px rgb(0 0 0 / 21%);
+         -moz-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.21);
+         box-shadow: 0px -2px 5px 0px rgb(0 0 0 / 21%);
+         padding: 10px 0px;
+         }
+         ul.footer-icons {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.footer-icons li {
+         list-style-type: none;
+         float: left;
+         width: 20%;
+         text-align: center;
+         }
+         ul.footer-icons li a {
+         text-decoration: none;
+         display: block;
+         color: #333;
+         text-transform: uppercase;
+         font-size: 10px;
+         }
+         ul.footer-icons li a img {
+         display: block;
+         margin: 0 auto 7px auto;
+         }
+         /* //FOOTER */
+         /* MENU BAR */
+         .bdn-menubar {
+         position: relative;
+         float: left;
+         width: 100%;
+         height: 35px;
+         padding: 0px 7.5px 0px 40px;
+         }
+         img.bdn-menu-homeicon {
+         height: 20px;
+         width: 20px;
+         position: absolute;
+         left: 7.5px;
+         top: 3.5px;
+         }
+         ul.bdn-nav {
+         margin: 0px;
+         padding: 0px;
+         overflow-y: scroll;
+         width: 100%;
+         }
+         ul.bdn-nav li {
+         list-style-type: none;
+         display: table-cell;
+         }
+         ul.bdn-nav li a {
+         text-decoration: none;
+         display: block;
+         width: max-content;
+         text-transform: uppercase;
+         font-size: 12px;
+         color: #333;
+         margin-right: 18px;
+         line-height: 35px;
+         }
+         /* //MENU BAR */
+         /* HEADER */
+         header {
+         float: left;
+         width: 100%;
+         padding: 6px 7.5px 0px 45px;
+         position: relative;
+         height: 50px;
+         background-color: #fff;
+         }
+         img.side-nav-btn {
+         position: absolute;
+         left: 7.5px;
+         top: 18px;
+         }
+         img.main-logo-img {
+         height: 36;
+         width: 200px;
+         }
+         img.search-bdn {
+         position: absolute;
+         right: 7.5px;
+         top: 20px;
+         }
+         header.fixed-bdnnav {
+         top: 0;
+         position: fixed;
+         width: 100%;
+         transition-duration: .5s;
+         z-index: 9;
+         }
+         /* //HEADER */
+         /* HAMBERGER MENU */
+         .bdn-otv-small-logo {
+         background-color: #fff;
+         padding: 10px;
+         }
+         .bdn-otv-small-logo span {
+         float: right;
+         text-transform: uppercase;
+         font-size: 16px;
+         color: #333;
+         margin-top: -2px;
+         }
+         .hamburger-nav {
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 344px;
+         background-color: #fff;
+         z-index: 999;
+         -webkit-box-shadow: -4px 1px 5px 1px rgb(0 0 0 / 22%);
+         -moz-box-shadow: -4px 1px 5px 1px rgba(0,0,0,0.22);
+         box-shadow: -4px 1px 5px 1px rgb(0 0 0 / 22%);
+         height: 100%;
+         }
+         button.sidemenubtn {
+         position: absolute;
+         top: 11px;
+         right: 0;
+         border: none;
+         background: none;
+         margin: 0px;
+         padding: 0px;
+         border-left: solid 1px #e7d4d4;
+         width: 47px;
+         text-align: center;
+         }
+         button.sidemenubtn img {
+         height: 13px;
+         width: 18px;
+         }
+         button.close-hamburger {
+         background-color: #fff;
+         position: absolute;
+         right: -35px;
+         top: 0;
+         border: none;
+         height: 35px;
+         width: 35px;
+         }
+         body.comment-active .hamburger-nav:before {
+         content: "";
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         background-color: #0000007a;
+         z-index: -1;
+         }
+         ul.hamburger-menu {
+         margin: 0px;
+         padding: 10px;
+         max-height: calc(100% - 20px);
+         overflow-y: scroll;
+         background-color: #fff;
+         margin-top: -10px;
+         }
+         ul.hamburger-menu li {
+         list-style-type: none;
+         display: block;
+         }
+         ul.hamburger-menu li a {
+         text-decoration: none;
+         display: block;
+         color: #333;
+         text-transform: capitalize;
+         font-size: 14px;
+         line-height: 40px;
+         border-bottom: solid 1px #f3eaea;
+         }
+         ul.hamburger-menu li a span {
+         border: solid 1px #e5e5e5;
+         background-color: #fff;
+         float: right;
+         display: block;
+         padding: 0px 15px;
+         border-radius: 19px;
+         line-height: 25px;
+         margin-top: 6px;
+         }
+         /* //HAMBERGER MENU */
+         /* SEARCH BAR */
+         .bdn-search-list {
+         height: 41px;
+         position: absolute;
+         right: 7.5px;
+         top: 5px;
+         width: calc(100% - 46px);
+         }
+         input.bdn-search {
+         height: 41px;
+         border: none;
+         outline: none;
+         background-color: #d3d3d3;
+         width: 100%;
+         padding: 0px 70px 0px 10px;
+         }
+         img.bdn-search-go {
+         position: absolute;
+         right: 43px;
+         top: 14px;
+         }
+         img.bdn-search-close {
+         position: absolute;
+         right: 9px;
+         top: 14px;
+         }
+         /* //SEARCH BAR */
+         /* BREADCRUMB */
+         .mobile-breadcrumb-container {
+         color: #000;
+         border-bottom: 1px solid #ffff;
+         box-shadow: #fff;
+         box-shadow: 1px 5px 8px -4px rgb(0 0 0 / 75%);
+         -webkit-box-shadow: 1px 5px 8px -4px rgb(147 145 145 / 30%);
+         -moz-box-shadow: 1px 5px 8px -4px rgba(0,0,0,.75);
+         margin: 8px 0 0;
+         background-color: #fff;
+         display: inline-block;
+         }
+         ul.mobile-breadcrumb {
+         margin: 3px 0;
+         padding: 0;
+         display: block;
+         float: left;
+         width: 100%;
+         height: 30px;
+         overflow: hidden;
+         }
+         ul.mobile-breadcrumb li {
+         list-style-type: none;
+         display: inline;
+         color: #666;
+         text-transform: capitalize;
+         font-size: 13px;
+         margin-right: 21px;
+         position: relative;
+         }
+         ul.mobile-breadcrumb li a {
+         color: #333;
+         font-weight: 400;
+         }
+         ul.mobile-breadcrumb li:last-child {
+         color: #333;
+         margin-left: 3px;
+         }
+         ul.mobile-breadcrumb, ul.mobile-breadcrumb li {
+         line-height: 30px;
+         position: relative;
+         }
+         ul.mobile-breadcrumb li:before {
+         content: "";
+         background-image: url(https://odishatv.in/commondir/images/svg/bread-crumb.svg);
+         margin-left: 8px;
+         display: block;
+         width: 9px;
+         height: 7px;
+         background-repeat: no-repeat;
+         position: absolute;
+         right: -17px;
+         top: 5px;
+         }
+         ul.mobile-breadcrumb li:last-child:before {
+         display: none;
+         }
+         /* //BREADCRUMB */
+          section.listing-section {
+         float: left;
+         width: 100%;
+         margin: 0px;
+         }
+         h2.bd-headline-one {
+         position: relative;
+         font-size: 25px;
+         font-weight: 500;
+         margin: 5px 0px;
+         line-height: 23px;
+         }
+         h2.bd-headline-one span {
+         line-height: 35px;
+         display: block;
+         width: fit-content;
+         background-color: #fff;
+         padding-right: 13px;
+         }
+         h2.bd-headline-one:after {
+         content: "";
+         width: -webkit-fill-available;
+         position: absolute;
+         right: 0;
+         top: 17px;
+         height: 4px;
+         z-index: -1;
+         display: block;
+         background-color: #bbb;
+         }
+         .listing-news-item {
+         margin: 10px 0px;
+         padding: 7px;
+         -webkit-box-shadow: 0px 0px 18px -4px rgb(0 0 0 / 34%);
+         -moz-box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.34);
+         box-shadow: 0px 0px 18px -4px rgb(0 0 0 / 34%);
+         -webkit-border-radius: 8px;
+         -moz-border-radius: 8px;
+         -o-border-radius: 8px;
+         border-radius: 8px;
+         background-color: #fff;
+         display: inline-block;
+         position: relative;
+         width: 100%;
+         min-height: 141px;
+         padding-right: 88px;
+         }
+         .listing-news-item-img {
+         width: 96px;
+         height: 65px;
+         object-fit: cover;
+         position: absolute;
+         right: 7.5px;
+         border-radius: 8px;
+         }
+         .listing-news-item-content h6 {
+         margin: 0px 0px 10px 0px;
+         padding: 0px;
+         color: #00b1cd;
+         font-size: 15px;
+         text-transform: uppercase;
+         }
+         .listing-news-item-content h5 {
+         font-size: 18px;
+         text-decoration: none;
+         display: block;
+         color: #000;
+         line-height: 27px;
+         margin: 0 0 5px 0;
+         padding: 0;
+         font-weight: 400;
+         }
+         .listing-news-share {
+         display: inline-block;
+         width: calc(100% - 10px);
+         }
+         ul.listing-news-time {
+         margin: 0px;
+         padding: 0px;
+         float: left;
+         width: fit-content;
+         }
+         ul.listing-news-time li {
+         font-size: 16px;
+         list-style-type: none;
+         float: left;
+         }
+         img.listing-play {
+         position: absolute;
+         right: 10px;
+         top: 10px;
+         width: 25px;
+         height: 25px;
+         background-color: #f65028bd;
+         border-radius: 50%;
+         padding: 6px;
+         }
+         li.otv-share-social-media-add a {
+         cursor: pointer;
+         display: block;
+         }
+         /*Page navigation */
+         nav.table-responsive.mb-2 {
+         width: 340px;
+         margin: 5px 0px;
+         }
+         .page-item.disabled .page-link{
+         color: #e6694d;
+         }
+         .page-link {
+          color: #000000;  
+         }
+
+         /*Page navigation */
+         .error-section {
+    text-align: center;
+    margin: 40px 0px;
+    position: relative;
+}
+.error-section img {
+    width: 100%;
+    height: 258px;
+}
+.error-section h1 {
+    padding: 0;
+    font-size: 32px;
+    margin: 9px 0px;
+    font-weight: 500;
+    line-height: 37px;
+}
+.error-section p {
+    font-size: 15px;
+    color: #858282;
+    line-height: 21px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.error-section a {
+    background-color: #EF5527;
+    padding: 7px 20px;
+    margin: 0px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+}
+ul.search-box {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 50px;
+}
+ul.search-box li input {
+    width: 100%;
+    border: 1px solid #bbb;
+    padding: 6px;
+}
+ul.search-box li {
+    display: inline-block;
+}
+ul.search-box li:first-child {
+    width: 60%;
+}
+button.search-btn-404 {
+    border: none;
+    padding: 7px 33px;
+    color: #fff;
+    background-color: #959790;
+    margin: 0;
+}
+      </style>
+   </head>
+   <body>
+      <header>
+         <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/hamburger-icon-otv.svg" alt="" title="" width="22" height="14" class="side-nav-btn"></a>
+         <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/logo.svg" alt="OTV Logo" title="OTV Logo" width="200" height="36" class="main-logo-img"></a>
+         <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="Search" title="Search" width="15" height="15" class="search-bdn">
+         <!-- SEARCH BOX -->
+         <div class="bdn-search-list" style="display: none;">
+            <form>
+               <input type="text" name="" class="bdn-search" placeholder="Search" style="display: none;">
+               <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="" title="" width="15" height="15" class="bdn-search-go" style="display: none;">
+               <img src="https://beta-live.odishatv.in/commondir/images/svg/close-gray.svg" alt="" title="" width="16" height="14" class="bdn-search-close" style="display: none;">
+            </form>
+            <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="Search" title="Search" width="15" height="15" class="search-bdn" style="display: none;">
+         </div>
+         <!-- // SEARCH BOX -->
+         <!-- HAMBERGER MENU -->
+         <div class="hamburger-nav" style="display: none;">
+            <button class="close-hamburger"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdnleftarrow.svg"></button>
+            <div class="bdn-otv-small-logo">
+               <a href="#" title="otv"><img src="https://odishatv.in//commondir/images/logo-white.png" alt="" title="" width="44" height="36"></a>
+               <span>menu</span>
+            </div>
+            <ul class="hamburger-menu">
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">covid <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">1 covid <span>new</span></a></li>
+            </ul>
+         </div>
+         <!-- //HAMBERGER MENU -->
+      </header>
+      <div class="bdn-menubar">
+         <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/news-deactive-bdn.svg" alt="" title="" width="20" height="20" class="bdn-menu-homeicon"></a>
+         <ul class="bdn-nav">
+            <li><a href="#" title="otv">home</a></li>
+            <li><a href="#" title="otv">about</a></li>
+            <li><a href="#" title="otv">contact</a></li>
+            <li><a href="#" title="otv">must watch</a></li>
+            <li><a href="#" title="otv">home</a></li>
+            <li><a href="#" title="otv">about</a></li>
+            <li><a href="#" title="otv">contact</a></li>
+            <li><a href="#" title="otv">must watch</a></li>
+            <li><a href="#" title="otv">home</a></li>
+            <li><a href="#" title="otv">about</a></li>
+            <li><a href="#" title="otv">contact</a></li>
+            <li><a href="#" title="otv">must watch</a></li>
+         </ul>
+      </div>
+      <section class="listing-section">
+         <div class="container">
+            <div class="common-listing">
+               <div class="error-section">
+               <h1><strong>404</strong><br>SORRY WE CAN'T FIND THIS PAGE!</h1>
+               <p>We are sorry,but we can't find the page you were looking for,it's probably something we have done wrong but now we know about it and we will try to fix it.</p>
+               <a href="">Home page</a>
+            </div>
+            <ul class="search-box">
+               <li><input type="" name=""></li>
+               <li><button class="search-btn-404">search</button></li>
+            </ul>
+               <div class="listing-news-item">
+                  <a href="#"><img src="images/medium-img.jpg" alt="" title="" class="listing-news-item-img"></a>
+                  <div class="listing-news-item-content">
+                     <a href="#">
+                        <h6>ENtertainment</h6>
+                     </a>
+                     <a href="#">
+                        <h5>ଏଥିରେ ଦିଆଯାଇଥିବା ବ୍ୟାକ୍‌ଗ୍ରାଉଣ୍ଡ୍ ମ୍ୟୁଜିକ୍ ଯିଏ ଶୁଣିବ ସିଏ ପ୍ରଶଂସା ଏଥିରେ ଦିଆଯାଇଥିବା</h5>
+                     </a>
+                  </div>
+                  <img src="images/svg/play-white.svg" class="listing-play" width="25" height="25" alt="" title="">
+               </div>
+               <div class="listing-news-item news-no-img">
+                  <div class="listing-news-item-content">
+                     <a href="#">
+                        <h6>ENtertainment</h6>
+                     </a>
+                     <a href="#">
+                        <h5>ଏଥିରେ ଦିଆଯାଇଥିବା ବ୍ୟାକ୍‌ଗ୍ରାଉଣ୍ଡ୍ ମ୍ୟୁଜିକ୍ ଯିଏ ଶୁଣିବ ସିଏ ପ୍ରଶଂସା ଏଥିରେ ଦିଆଯାଇଥିବା</h5>
+                     </a>
+                  </div>
+                  <img src="images/svg/play-white.svg" class="listing-play" width="25" height="25" alt="" title="">
+               </div>
+               <div class="listing-news-item">
+                  <a href="#"><img src="images/medium-img.jpg" alt="" title="" class="listing-news-item-img"></a>
+                  <div class="listing-news-item-content">
+                     <a href="#">
+                        <h6>ENtertainment</h6>
+                     </a>
+                     <a href="#">
+                        <h5>ଏଥିରେ ଦିଆଯାଇଥିବା ବ୍ୟାକ୍‌ଗ୍ରାଉଣ୍ଡ୍ ମ୍ୟୁଜିକ୍ ଯିଏ ଶୁଣିବ ସିଏ ପ୍ରଶଂସା ଏଥିରେ ଦିଆଯାଇଥିବା</h5>
+                     </a>
+                  </div>
+                  <img src="images/svg/play-white.svg" class="listing-play" width="25" height="25" alt="" title="">
+               </div>
+               <div class="listing-news-item">
+                  <a href="#"><img src="images/medium-img.jpg" alt="" title="" class="listing-news-item-img"></a>
+                  <div class="listing-news-item-content">
+                     <a href="#">
+                        <h6>ENtertainment</h6>
+                     </a>
+                     <a href="#">
+                        <h5>ଏଥିରେ ଦିଆଯାଇଥିବା ବ୍ୟାକ୍‌ଗ୍ରାଉଣ୍ଡ୍ ମ୍ୟୁଜିକ୍ ଯିଏ ଶୁଣିବ ସିଏ ପ୍ରଶଂସା ଏଥିରେ ଦିଆଯାଇଥିବା</h5>
+                     </a>
+                  </div>
+                  <img src="images/svg/play-white.svg" class="listing-play" width="25" height="25" alt="" title="">
+               </div>
+               <div class="listing-news-item">
+                  <a href="#"><img src="images/medium-img.jpg" alt="" title="" class="listing-news-item-img"></a>
+                  <div class="listing-news-item-content">
+                     <a href="#">
+                        <h6>ENtertainment</h6>
+                     </a>
+                     <a href="#">
+                        <h5>ଏଥିରେ ଦିଆଯାଇଥିବା ବ୍ୟାକ୍‌ଗ୍ରାଉଣ୍ଡ୍ ମ୍ୟୁଜିକ୍ ଯିଏ ଶୁଣିବ ସିଏ ପ୍ରଶଂସା ଏଥିରେ ଦିଆଯାଇଥିବା</h5>
+                     </a>
+                  </div>
+                  <img src="images/svg/play-white.svg" class="listing-play" width="25" height="25" alt="" title="">
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="container">
+            <ul class="footer-icons">
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/news-deactive-bdn.svg" alt="" title="" width="38" height="30">home</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/webstory-deactive-bdn.svg" alt="" title="" width="38" height="30">web stories</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/live-bdn.svg" alt="" title="" width="38" height="30">live tv</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/photos-deactive-bdn.svg" alt="" title="" width="38" height="30">photos</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/video-deactive-bdn.svg" alt="" title="" width="38" height="30">videos</a></li>
+            </ul>
+         </div>
+      </footer>
+      <script src="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js"></script>
+      <script src="https://images.odishatv.in/assets/js/jquery.unveil.js" async defer ></script>
+      <script>
+         // unveil start
+            $(function() {
+                $("img").unveil();
+                // $("img").unveil(200, function() {
+                //     $(this).load(function() {
+                //         this.style.opacity = 1;
+                //     });
+                // });
+            });
+            // unveil end
+            // menu start
+                $('.side-nav-btn').click(function() {
+                $('.hamburger-nav').animate({width: "show"}, 200);
+                });
+                $('.close-hamburger').click(function() {
+                    $('.hamburger-nav').animate({width: "hide"}, 200);
+                });
+            // menu end
+            /* SEARCH BUTTON */
+            $(".search-bdn").click(function(){
+                 $(".bdn-search-list").animate({
+                    width: "show"
+                });
+                $(".bdn-search-go").show();
+                $(".bdn-search-close").show();
+                $(".bdn-search").show();
+            });
+            $(".bdn-search-close").click(function(){
+                 $(".bdn-search-list").animate({
+                    width: "hide"
+                });
+                $(".bdn-search-go").hide();
+                $(".bdn-search").hide();
+                $(this).hide();
+            });
+            /* //SEARCH BUTTON */
+            // sticky header start
+                var header = $("header");
+                $(window).scroll(function() {
+                    var scroll = $(window).scrollTop();
+                    if (scroll >= 1) {
+                        header.addClass("fixed-bdnnav");
+                    } else {
+                        header.removeClass("fixed-bdnnav");
+                    }
+                });
+            // sticky header end
+            $(document).ready(function(){
+                $(".article-read-more").click(function(){
+                    $(this).hide();
+                    $(".toggle-content").show();
+                });
+            });
+      </script>
+   </body>
+</html>

@@ -1,0 +1,2179 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+      <link href="https://odishatv.in/commondir/images/favicon.gif" rel="shortcut icon" type="image/gif">
+      <meta name="keywords" content="Home Page" />
+      <meta name="description" content="Home Page">
+      <title>OTV home page mobile</title>
+      <style>
+         body {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Roboto', sans-serif;
+         font-weight: 400;
+         }
+         .container {
+         padding-right: 7.5px;
+         padding-left: 7.5px;
+         margin-right: auto;
+         margin-left: auto;
+         }
+         * {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         }
+         section {
+         float: left;
+         width: 100%;
+         }
+         .otv-300-250-ad {
+         width: 300px;
+         height: 250px;
+         display: flex;
+         margin: 0 auto;
+         text-align: center;
+         overflow: hidden;
+         background-color: #dfdfa1;
+         }
+         /* HEADING */
+         p, h1, h2, h3, h4, h5, h6 {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Roboto', sans-serif;
+         }
+         a, a:hover, a:focus, a:active {
+         text-decoration: none;
+         }
+         .bdn-heading-block {
+         margin: 0px 0px 12px 0px;
+         padding: 0px;
+         display: inline-block;
+         width: -webkit-fill-available;
+         position: relative;
+         }
+         h2.bdn-heading-one {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         position: relative;
+         padding-left: 10px;
+         }
+         h2.bdn-heading-one:before {
+         content: "";
+         background-color: #f00404;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         h2.bdn-heading-one-line {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         padding-left: 10px;
+         }
+         h2.bdn-heading-one-line span {
+         background-color: #fff;
+         padding: 0px 5px 0px 0px;
+         position: absolute;
+         z-index: 1;
+         }
+         h2.bdn-heading-one-line:before {
+         content: "";
+         background-color: #f00404;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         h2.bdn-heading-one-line:after {
+         content: "";
+         display: block;
+         position: absolute;
+         left: 13px;
+         top: 9px;
+         width: calc(100% - 75px);
+         height: 5px;
+         background-color: #cccccc;
+         border-radius: 5px;
+         z-index: 0;
+         }
+         a.bdn-more {
+         float: right;
+         color: #262626;
+         text-transform: uppercase;
+         border: #dc2229 solid 1px;
+         font-size: 13px;
+         margin: 0px 7.5px 0px 0px;
+         padding: 0px 5px;
+         line-height: 19px;
+         border-radius: 12px;
+         }
+         a.bdn-bottom-readmore {
+         color: #b70000;
+         text-transform: capitalize;
+         font-size: 15px;
+         position: relative;
+         float: right;
+         }
+         a.bdn-bottom-readmore strong {
+         color: #000;
+         font-size: 17px;
+         }
+         a.bdn-bottom-readmore:after {
+         content: "";
+         display: inline-block;
+         background-image: url(https://beta-live.odishatv.in/commondir/images/svg/more-doublearrow.svg);
+         width: 23px;
+         height: 16px;
+         margin: 6px 0px 0px 8px;
+         float: right;
+         }
+         /* //HEADING */
+         /* SPOTLIGHT */
+         .spotlight-news {
+         position: relative;
+         }
+         img.spotlight-news-thumb {
+         width: 100%;
+         height: auto;
+         }
+         .spotlight-news h1 {
+         color: #000;
+         font-size: 25px;
+         line-height: 32px;
+         position: relative;
+         font-weight: 700;
+         margin: 0px 0px 10px 0px;
+         }
+         /* //SPOTLIGHT */
+         /* WEBSTORY */
+         .webstory-container {
+         overflow-y: scroll;
+         width: 100%;
+         }
+         .webstory-item {
+         position: relative;
+         display: table-cell;
+         }
+         .webstory-item img {
+         width: 100%;
+         height: 267px;
+         object-fit: cover;
+         }
+         .webstory-content {
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         background-image: linear-gradient(transparent, black);
+         padding: 7.5px;
+         text-align: center;
+         display: block;
+         }
+         .webstory-content h3 {
+         background-color: #f4c219;
+         color: #000;
+         text-align: center;
+         width: fit-content;
+         font-size: 12px;
+         text-transform: uppercase;
+         font-weight: 700;
+         line-height: 20px;
+         padding: 0px 5px;
+         border-radius: 3px;
+         margin: 0 auto;
+         }
+         .webstory-content h4 {
+         color: #fff;
+         font-weight: 700;
+         font-size: 13px;
+         margin: 10px 0px;
+         }
+         .webstory-item-content {
+         width: 150px;
+         margin-right: 10px;
+         position: relative;
+         }
+         /* //WEBSTORY */
+         /* CARD DESIGN */
+         .bdn-card-one-no-img {
+         position: relative;
+         display: inline-block;
+         margin-bottom: 12px;
+         }
+         .bdn-card-one-no-img h3 {
+         text-decoration: none;
+         display: block;
+         color: #2b2b2b;
+         margin-bottom: 5px;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 25px;
+         }
+         .bdn-card-two {
+         position: relative;
+         padding-right: 106px;
+         min-height: 54px;
+         display: inline-block;
+         margin-bottom: 12px;
+         }
+         img.bdn-card-two-img {
+         width: 96px;
+         height: 54px;
+         position: absolute;
+         right: 0;
+         top: 0;
+         border-radius: 3px;
+         }
+         .bdn-card-two h4 {
+         font-size: 15px;
+         text-decoration: none;
+         display: block;
+         color: #000;
+         font-weight: 400;
+         line-height: 19px;
+         margin-bottom: 5px;
+         }
+         .bdn-card-two h2 {
+         font-size: 15px;
+         text-decoration: none;
+         display: block;
+         color: #2b2b2b;
+    	font-weight: 700;
+         line-height: 19px;
+         margin-bottom: 5px;
+         }
+         .bdn-card-two h3 {
+         text-decoration: none;
+         display: block;
+         color: #2b2b2b;
+         margin-bottom: 5px;
+         font-size: 14px;
+         font-weight: 700;
+         line-height: 18px;
+         }
+         .bdn-card-two ul {
+         margin: 12px 0px 0px 0px;
+         padding: 0px;
+         }
+         .bdn-card-two ul li {
+         list-style-type: none;
+         float: left;
+         text-transform: uppercase;
+         font-size: 12px;
+         color: #333;
+         }
+         .bdn-card-two li a {
+         color: #000;
+         margin-right: 23px;
+         position: relative;
+         }
+         .bdn-card-two ul li a:after {
+         content: "";
+         background-color: #b5afaf;
+         position: absolute;
+         width: 8px;
+         height: 8px;
+         border-radius: 50%;
+         right: -16px;
+         top: 3px;
+         }
+         .bdn-card-two.bottom-border {
+         padding-bottom: 20px;
+         margin-bottom: 23px;
+         }
+         .bdn-card-two.bottom-margin-two {
+         margin-bottom: 34px;
+         }
+         .bdn-card-two.bottom-sort-border:after {
+         width: 144px;
+         background-color: #e1dbdb;
+         height: 1px;
+         content: "";
+         display: block;
+         margin: 18px 0px 10px 0px;
+         }
+         .bottom-border {
+         border-bottom: solid 1px #e1dbdb;
+         }
+         .bdn-card-seven {
+         position: relative;
+         margin-bottom: 15px;
+         }
+         img.bdn-card-seven-img {
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+         }
+         .bdn-card-seven h3 {
+         padding: 10px;
+         font-size: 18px;
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         background-image: linear-gradient(transparent, black, black);
+         color: #fff;
+         font-weight: 400;
+         line-height: 23px;
+         }
+         .bdn-card-seven h4 {
+         padding: 10px;
+         font-size: 18px;
+         position: absolute;
+         left: 0;
+         bottom: 0;
+         background-image: linear-gradient(transparent, black, black);
+         color: #fff;
+         font-weight: 400;
+         line-height: 23px;
+         }
+         .bdn-card-seven.bottom-margin-seven {
+         margin-bottom: 35px;
+         }
+         /* //CARD DESIGN */
+         /* SECTION NEWS */
+         section.bdn-webstories {
+         margin-bottom: 20px;
+         }
+         section.opinion-sec {
+         margin-bottom: 20px;
+         }
+         section.movies-sec {
+         margin-bottom: 20px;
+         }
+         section.cricket-sec {
+         margin-bottom: 20px;
+         }
+         section.bisiness-sec {
+         margin-bottom: 20px;
+         }
+         section.sports-sec {
+         margin-bottom: 20px;
+         }
+         section.sports-sec {
+         margin-bottom: 20px;
+         }
+         section.science-sec {
+         margin-bottom: 20px;
+         }
+         section.education-sec {
+         margin-bottom: 20px;
+         }
+         section.lifestyle-sec {
+         margin-bottom: 20px;
+         }
+         section.food-sec {
+         margin-bottom: 20px;
+         }
+         section.health-sec {
+         margin-bottom: 20px;
+         }
+         section.astrology-sec {
+         margin-bottom: 20px;
+         }
+         section.art-sec {
+         margin-bottom: 20px;
+         }
+         section.sub-news-sec {
+         margin-bottom: 20px;
+         }
+         section.spotlight-sec {
+         margin-bottom: 20px;
+         }
+         section.technology-sec {
+         margin-bottom: 20px;
+         }
+         section.photos-sec {
+         margin-bottom: 20px;
+         }
+         section.videos-sec {
+         margin-bottom: 20px;
+         }
+         section.news-flash-sec {
+         margin-bottom: 20px;
+         }
+         /* //SECTION NEWS */
+         /* PHOTOS */
+         .photos-list {
+         overflow-y: scroll;
+         width: 100%;
+         }
+         .photos-item {
+         position: relative;
+         display: table-cell;
+         }
+         .photos-item-card {
+         width: 150px;
+         margin-right: 10px;
+         -webkit-box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 26%);
+         -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.26);
+         box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 26%);
+         border-radius: 5px;
+         overflow: hidden;
+         }
+         .photos-item-card h3 {
+         color: #000;
+         font-size: 16px;
+         line-height: 21px;
+         position: relative;
+         margin: 10px;
+         }
+         .photos-item-card h4 {
+         color: #337ab7;
+         font-size: 15px;
+         font-weight: 700;
+         text-transform: capitalize;
+         position: relative;
+         margin: 0px 10px 10px 10px;
+         }
+         .photos-item-card h4:before {
+         content: "";
+         display: inline-block;
+         background-image: url(https://beta-live.odishatv.in/commondir/images/svg/photos-otv.svg);
+         width: 18px;
+         height: 16px;
+         float: left;
+         margin: 0px 5px 0px 0px;
+         }
+         /* //PHOTOS */
+         /* VIDEOS */
+         .videos-list {
+         overflow-y: scroll;
+         width: 100%;
+         }
+         .videos-item {
+         position: relative;
+         display: table-cell;
+         }
+         .videos-item-card {
+         width: 150px;
+         margin-right: 10px;
+         -webkit-box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 26%);
+         -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.26);
+         box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 26%);
+         border-radius: 5px;
+         overflow: hidden;
+         }
+         .videos-item-card h3 {
+         color: #000;
+         font-size: 16px;
+         line-height: 21px;
+         position: relative;
+         margin: 10px;
+         }
+         .videos-item-card h4 {
+         color: #337ab7;
+         font-size: 15px;
+         font-weight: 700;
+         text-transform: capitalize;
+         position: relative;
+         margin: 0px 10px 10px 10px;
+         }
+         .videos-item-card h4:before {
+         content: "";
+         display: inline-block;
+         background-image: url(https://beta-live.odishatv.in/commondir/images/svg/photos-otv.svg);
+         width: 18px;
+         height: 16px;
+         float: left;
+         margin: 0px 5px 0px 0px;
+         }
+         /* //VIDEOS */
+         /* NEWS FLASH */
+         section.news-flash-sec {
+         background: linear-gradient(to bottom,  #1e5799 0%,#e44718 0%,#c51118 66%,#c51118 94%);
+         -webkit-box-shadow: 0px 9px 5px -5px rgba(0,0,0,0.52);
+         -moz-box-shadow: 0px 9px 5px -5px rgba(0,0,0,0.52);
+         box-shadow: 0px 9px 5px -5px rgba(0,0,0,0.52);
+         padding: 10px;
+         }
+         .news-flash h2 {
+         color: #fff;
+         text-transform: capitalize;
+         font-size: 24px;
+         font-weight: 700;
+         }
+         .news-flash h2:after {
+         content: "";
+         display: block;
+         width: 59px;
+         height: 5px;
+         background-color: #ff8b00;
+         margin: 10px 0px;
+         }
+         .news-flash h3 {
+         text-decoration: none;
+         display: block;
+         color: #ffffff;
+         margin-bottom: 5px;
+         font-size: 16px;
+         font-weight: 400;
+         line-height: 25px;
+         }
+         /* //NEWS FLASH */
+         /* FOOTER */
+         footer {
+         float: left;
+         width: 100%;
+         -webkit-box-shadow: 0px -2px 5px 0px rgb(0 0 0 / 21%);
+         -moz-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.21);
+         box-shadow: 0px -2px 5px 0px rgb(0 0 0 / 21%);
+         padding: 10px 0px;
+         }
+         ul.footer-icons {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.footer-icons li {
+         list-style-type: none;
+         float: left;
+         width: 20%;
+         text-align: center;
+         }
+         ul.footer-icons li a {
+         text-decoration: none;
+         display: block;
+         color: #333;
+         text-transform: uppercase;
+         font-size: 10px;
+         }
+         ul.footer-icons li a img {
+         display: block;
+         margin: 0 auto 7px auto;
+         }
+         /* //FOOTER */
+         /* MENU BAR */
+         .bdn-menubar {
+         position: relative;
+         float: left;
+         width: 100%;
+         height: 35px;
+         padding: 0px 7.5px 0px 40px;
+         }
+         img.bdn-menu-homeicon {
+         height: 20px;
+         width: 20px;
+         position: absolute;
+         left: 7.5px;
+         top: 3.5px;
+         }
+         ul.bdn-nav {
+         margin: 0px;
+         padding: 0px;
+         overflow-y: scroll;
+         width: 100%;
+         }
+         ul.bdn-nav li {
+         list-style-type: none;
+         display: table-cell;
+         }
+         ul.bdn-nav li a {
+         text-decoration: none;
+         display: block;
+         width: max-content;
+         text-transform: uppercase;
+         font-size: 12px;
+         color: #333;
+         margin-right: 18px;
+         line-height: 35px;
+         }
+         /* //MENU BAR */
+         /* HEADER */
+         header {
+         float: left;
+         width: 100%;
+         padding: 6px 7.5px 0px 45px;
+         position: relative;
+         height: 50px;
+         background-color: #fff;
+         }
+         img.side-nav-btn {
+         position: absolute;
+         left: 7.5px;
+         top: 18px;
+         }
+         img.main-logo-img {
+         height: 36;
+         width: 200px;
+         }
+         img.search-bdn {
+         position: absolute;
+         right: 7.5px;
+         top: 20px;
+         }
+		header.fixed-bdnnav {
+		top: 0;
+		position: fixed;
+		width: 100%;
+		transition-duration: .5s;
+		z-index: 9;
+		}
+         /* //HEADER */
+         /* HAMBERGER MENU */
+         .bdn-otv-small-logo {
+         background-color: #fff;
+         padding: 10px;
+         }
+         .bdn-otv-small-logo span {
+         float: right;
+         text-transform: uppercase;
+         font-size: 16px;
+         color: #333;
+         margin-top: -2px;
+         }
+         .hamburger-nav {
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 344px;
+         background-color: #fff;
+         z-index: 999;
+         -webkit-box-shadow: -4px 1px 5px 1px rgb(0 0 0 / 22%);
+         -moz-box-shadow: -4px 1px 5px 1px rgba(0,0,0,0.22);
+         box-shadow: -4px 1px 5px 1px rgb(0 0 0 / 22%);
+         height: 100%;
+         }
+         button.sidemenubtn {
+         position: absolute;
+         top: 11px;
+         right: 0;
+         border: none;
+         background: none;
+         margin: 0px;
+         padding: 0px;
+         border-left: solid 1px #e7d4d4;
+         width: 47px;
+         text-align: center;
+         }
+         button.sidemenubtn img {
+         height: 13px;
+         width: 18px;
+         }
+         button.close-hamburger {
+         background-color: #fff;
+         position: absolute;
+         right: -35px;
+         top: 0;
+         border: none;
+         height: 35px;
+         width: 35px;
+         }
+         body.comment-active .hamburger-nav:before {
+         content: "";
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         background-color: #0000007a;
+         z-index: -1;
+         }
+         ul.hamburger-menu {
+         margin: 0px;
+         padding: 10px;
+         max-height: calc(100% - 20px);
+         overflow-y: scroll;
+         background-color: #fff;
+         margin-top: -10px;
+         }
+         ul.hamburger-menu li {
+         list-style-type: none;
+         display: block;
+         }
+         ul.hamburger-menu li a {
+         text-decoration: none;
+         display: block;
+         color: #333;
+         text-transform: capitalize;
+         font-size: 14px;
+         line-height: 40px;
+         border-bottom: solid 1px #f3eaea;
+         }
+         ul.hamburger-menu li a span {
+         border: solid 1px #e5e5e5;
+         background-color: #fff;
+         float: right;
+         display: block;
+         padding: 0px 15px;
+         border-radius: 19px;
+         line-height: 25px;
+         margin-top: 6px;
+         }
+
+
+
+li.mobile-dropdown-nav {
+   position: relative;
+}
+li.mobile-dropdown-nav:before {
+    background-image: url(https://odishatv.in/commondir/images/svg/arrow-down.svg);
+    content: "";
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 9px;
+    width: 13px;
+    height: 11px;
+    transition-duration: .5s;
+    color: #fff;
+}
+ul.mobile-custom-dropdown {
+    display: none;
+    margin: 0px 0px 0px 30px;
+    padding: 0px;
+}
+
+
+
+
+         /* //HAMBERGER MENU */
+         /* SEARCH BAR */
+         .bdn-search-list {
+         height: 41px;
+         position: absolute;
+         right: 7.5px;
+         top: 5px;
+         width: calc(100% - 46px);
+         }
+         input.bdn-search {
+         height: 41px;
+         border: none;
+         outline: none;
+         background-color: #d3d3d3;
+         width: 100%;
+         padding: 0px 70px 0px 10px;
+         }
+         img.bdn-search-go {
+         position: absolute;
+         right: 43px;
+         top: 14px;
+         }
+         img.bdn-search-close {
+         position: absolute;
+         right: 9px;
+         top: 14px;
+         }
+         /* //SEARCH BAR */
+section.live-big-breaking-section {
+    margin-top: -19px;
+        position: relative;
+    z-index: 0;
+    padding: 20px 0px;
+}
+    .bigstory-img-otv {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    .side-add-bn{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    }
+    .side-add-bn img{
+    height: 450px;
+    width: 90px;
+    }
+
+p.bignews-sub-title a {
+    text-decoration: none;
+    display: block;
+    font-weight: 7;
+    color: #fff;
+    font-size: 16px;
+    line-height: 21px;
+    position: relative;
+    padding: 0px;
+}
+   
+    .cnt-vdo-otv-bn{
+    display: flex;
+    justify-content: space-between;
+    }
+    .vdo-iframe-bn{
+    margin-top:50px ;
+    }
+    .vdo-iframe-bn iframe{
+    height: 200px;
+    width: 270px;
+    }
+    p.heading-bn-otv{
+    color: #fff;
+    text-transform: capitalize;
+    margin: 40px 0 30px 0;
+    font-size: 19px;
+    }
+    p.heading-bn-otv span{
+    background-color:#ed5b32;
+    font-size:18px ;
+    font-weight: 600;
+    padding: 2px 10px;
+    text-transform: capitalize;
+    }
+    p.abt-bn-otv{
+    color:#fff;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 40px;
+    }
+    .abt-bn-otv a{
+    color: #fff;
+    text-decoration: none;
+    }
+    p.update-dt-time-bn{
+    color: gray;
+    text-transform: capitalize;
+    font-size: 12px;
+    }
+    p.update-dt-time-bn span{
+    color: rgb(184, 184, 25);
+    text-transform: capitalize;
+    }
+    span.lv-tv-otv{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    }
+p.abt-lv-otv {
+    color: #fff;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 34px;
+    margin: 10px 0px 20px 0px;
+}
+    .abt-lv-otv a{
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    .tm-headline-folder{
+    position: relative;
+    }
+    .tm-headline{
+    align-items:baseline;
+    margin-bottom: 25px;
+    position: relative;
+    }
+    .tm-otv{
+    position: absolute;
+    background-color: #ffffff;
+    padding: 0 0 0 5px;
+    border-radius:  0  20px 20px 0;
+    border-right: none;
+    width: 60px;
+    text-transform: uppercase;
+    top: 22px;
+    }
+    .tm-otv:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    border:.4px solid #fff;
+    height: 110px;
+    }
+    .tm-headline:last-child .tm-otv:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    border:0px solid #fff;
+    height: 110px;
+    }
+    span.tm-lv-otv{
+    color:#000;
+    font-size: 10px;
+    font-weight: 700;
+    margin: 0;
+    padding-left: 10px;
+    }
+    span.tm-lv-otv:after{
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: -5px;
+    top: 3px;
+    border: 2.5px solid black;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    }
+    .headline-otv-lv-cnt{
+        border: 2px solid #d81611;
+    padding: 5px 10px;
+    background-color: #00000080;
+    margin-left: 50px;
+    border-radius: 4px;
+    height: 82px;
+    overflow: hidden;
+    }
+    p.headline-otv-lv {
+        color: #ffffff;
+    padding: 4px 10px;
+    margin: 0;
+    height: 50px;
+    vertical-align: middle;
+    display: table-cell;
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 22px;
+}
+    a.more-btn-lv {
+    float: right;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #db461d;
+    border-radius: 4px;
+    line-height: 25px;
+    padding: 0px 10px;
+    }
+    section.live-big-breaking-section:before {
+    content: "";
+    display: block;
+    background-color: #000000ad;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+section.sub-news-section {
+    background-color: #000;
+    margin-bottom: 30px;
+    padding: 15px 0px;
+}
+.live-breaking-block {
+    z-index: 2222;
+    position: inherit;
+}
+.cnt-otv-bn {
+    margin-bottom: 10px;
+}
+.bdn-sub-news .bdn-sub-news-item:last-child .sub-bignews-otv {
+    border-right: none;
+}
+ul.bdn-live-heading-new {
+    margin: 22px 0px 0px 0px;
+    padding: 0px;
+    display: inline-block;
+}
+ul.bdn-live-heading-new li {
+    list-style-type: none;
+    display: block;
+}
+ul.bdn-live-heading-new li:first-child {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+}
+ul.bdn-live-heading-new li:last-child {
+    background-color: #bb2212;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 1px;
+    padding: 0px 10px
+}
+ul.bdn-live-heading-new li a {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+.lv-update-otv{
+    background-color: #000;
+    padding: 20px 0 10px 0;
+    border-bottom: 4px solid orangered ;
+
+}
+
+.sub-bignews-otv {
+    position: relative;
+    display: inline-block;
+    padding-left: 110px;
+    min-height: 86px;
+}
+.sub-bignews-otv img {
+    border-radius: 2px;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+p.bignews-sub-title a {
+    text-decoration: none;
+    display: block;
+    font-weight: 7;
+    color: #fff;
+    font-size: 16px;
+    line-height: 21px;
+    position: relative;
+    padding: 0px;
+    font-weight: 600;
+}
+img.ref-icon-otv {
+   float: left; 
+   margin-top:2px;
+}
+p.update-timing{
+    margin: 0 0px 11px 23px;
+    color: #b4b4bd;
+    text-transform: capitalize;
+}
+p.update-timing span{
+color:rgba(235, 235, 24, 0.854);
+margin-left: 10px;
+}
+/* category news */
+ul.category-news-nav {
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+    overflow-y: scroll;
+    width: 100%;
+}
+ul.category-news-nav li {
+    list-style-type: none;
+    display: table-cell;
+}
+ul.category-news-nav li a {
+    text-decoration: none;
+    display: block;
+    width: max-content;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #111;
+    margin-right: 20px;
+    line-height: 35px;
+}
+/* //category news */
+      </style>
+   </head>
+   <body>
+      <header>
+         <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/hamburger-icon-otv.svg" alt="" title="" width="22" height="14" class="side-nav-btn"></a>
+         <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/logo.svg" alt="OTV Logo" title="OTV Logo" width="200" height="36" class="main-logo-img"></a>
+         <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="Search" title="Search" width="15" height="15" class="search-bdn">
+         <!-- SEARCH BOX -->
+         <div class="bdn-search-list" style="display: none;">
+            <form>
+               <input type="text" name="" class="bdn-search" placeholder="Search" style="display: none;">
+               <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="" title="" width="15" height="15" class="bdn-search-go" style="display: none;">
+               <img src="https://beta-live.odishatv.in/commondir/images/svg/close-gray.svg" alt="" title="" width="16" height="14" class="bdn-search-close" style="display: none;">
+            </form>
+            <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="Search" title="Search" width="15" height="15" class="search-bdn" style="display: none;">
+         </div>
+         <!-- // SEARCH BOX -->
+         <!-- HAMBERGER MENU -->
+         <div class="hamburger-nav" style="display: none;">
+            <button class="close-hamburger"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdnleftarrow.svg"></button>
+            <div class="bdn-otv-small-logo">
+               <a href="#" title="otv"><img src="https://odishatv.in//commondir/images/logo-white.png" alt="" title="" width="44" height="36"></a>
+               <span>menu</span>
+            </div>
+            <ul class="hamburger-menu">
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li class="mobile-dropdown-nav"><a href="#" title="otv">Others</a>
+                  <ul class="mobile-custom-dropdown" style="display: none;">
+                     <li><a href="#" title="otv">elections 1<span>new</span></a></li>
+                     <li><a href="#" title="otv">elections 1<span>new</span></a></li>
+                     <li><a href="#" title="otv">elections 1</a></li>
+                     <li><a href="#" title="otv">elections 1<span>new</span></a></li>
+                     <li><a href="#" title="otv">elections 1<span>new</span></a></li>
+                     <li><a href="#" title="otv">elections 1<span>new</span></a></li>
+                     <li><a href="#" title="otv">elections 1</a></li>
+                     <li><a href="#" title="otv">elections 1<span>new</span></a></li>
+                  </ul>
+               </li>
+               <li class="mobile-dropdown-nav"><a href="#" title="otv">Others 1</a>
+                  <ul class="mobile-custom-dropdown" style="display: none;">
+                     <li><a href="#" title="otv">elections 2<span>new</span></a></li>
+                     <li><a href="#" title="otv">elections 2<span>new</span></a></li>
+                     <li><a href="#" title="otv">elections 2</a></li>
+                     <li><a href="#" title="otv">elections 2<span>new</span></a></li>
+                     <li><a href="#" title="otv">elections 2<span>new</span></a></li>
+                     <li><a href="#" title="otv">elections 2<span>new</span></a></li>
+                     <li><a href="#" title="otv">elections 2</a></li>
+                     <li><a href="#" title="otv">elections 2<span>new</span></a></li>
+                  </ul>
+               </li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">covid <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">1 covid <span>new</span></a></li>
+            </ul>
+         </div>
+         <!-- //HAMBERGER MENU -->
+      </header>
+      <div class="bdn-menubar">
+         <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/news-deactive-bdn.svg" alt="" title="" width="20" height="20" class="bdn-menu-homeicon"></a>
+         <ul class="bdn-nav">
+            <li><a href="#" title="otv">home</a></li>
+            <li><a href="#" title="otv">about</a></li>
+            <li><a href="#" title="otv">contact</a></li>
+            <li><a href="#" title="otv">must watch</a></li>
+            <li><a href="#" title="otv">home</a></li>
+            <li><a href="#" title="otv">about</a></li>
+            <li><a href="#" title="otv">contact</a></li>
+            <li><a href="#" title="otv">must watch</a></li>
+            <li><a href="#" title="otv">home</a></li>
+            <li><a href="#" title="otv">about</a></li>
+            <li><a href="#" title="otv">contact</a></li>
+            <li><a href="#" title="otv">must watch</a></li>
+         </ul>
+      </div>
+      <section class="news-flash-sec">
+         <div class="container">
+            <div class="news-flash">
+               <a href="#" title="otv">
+                  <h2>news flash</h2>
+               </a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4 Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+            </div>
+         </div>
+      </section>
+<section class="live-big-breaking-section">
+   <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1688895274.jpg" class="bigstory-img-otv" alt="otv667" width="434" height="244">
+   <div class="live-breaking-block">
+      <div class="container">
+         <div class="cnt-otv-bn">
+            <ul class="bdn-live-heading-new">
+               <li>live</li>
+               <li><a href="#" title="otv">world news</a>, TUESDAY, 04 JULY 2023</li>
+            </ul>
+            <p class="abt-lv-otv"><a href="#" title="otv">Lorem ipsum, dolor sit amet consectetur cingoi it. Vitae dolores </a></p>
+         </div>
+      </div>
+   </div>
+</section>
+<section>
+   <div class="lv-update-otv">
+      <div class="container">
+         <a href="#" title="otv">
+         <img src="https://beta-live.odishatv.in/commondir/images/svg/refresh-white.svg" class="ref-icon-otv" alt="" title="" width="14" height="14">
+         </a>
+         <p class="update-timing">latest update :<span>4mins ago</span></p>
+         <div class="tm-headline-folder">
+            <div class="tm-headline">
+               <div class="tm-otv">
+                  <span class="tm-lv-otv">3:30 pm</span>
+               </div>
+               <a href="#" title="otv">
+                  <div class="headline-otv-lv-cnt">
+                     <p class="headline-otv-lv">Vitae doloresconsectetur adipisicing elit. Ut beatae officia accusamus.</p>
+                  </div>
+               </a>
+            </div>
+            <div class="tm-headline">
+               <div class="tm-otv">
+                  <span class="tm-lv-otv">3:30 pm</span>
+               </div>
+               <a href="#" title="otv">
+                  <div class="headline-otv-lv-cnt">
+                     <p class="headline-otv-lv">Lorem ipsum dolor sit amet, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae doloresconsectetur adipisicing elit. Ut beatae officia accusamus.</p>
+                  </div>
+               </a>
+            </div>
+            <div class="tm-headline">
+               <div class="tm-otv">
+                  <span class="tm-lv-otv">3:30 pm</span>
+               </div>
+               <a href="#" title="otv">
+                  <div class="headline-otv-lv-cnt">
+                     <p class="headline-otv-lv">Lorem ipsum dolor sit amet, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae doloresconsectetur adipisicing elit. Ut beatae officia accusamus.</p>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="sub-news-section">
+   <div class="container">
+      <div class="row bdn-sub-news">
+         <div class="col-lg-4 bdn-sub-news-item">
+            <div class="sub-bignews-otv">
+               <p class="bignews-sub-title"><a href="#" title="otv">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias minus reiciendis aspernatur.</a></p>
+               <a href="#" title="otv">
+               <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1688287525.jpg" alt="" title="" height="54" width="96" >
+               </a>
+            </div>
+         </div>
+         <div class="col-lg-4 bdn-sub-news-item">
+            <div class="sub-bignews-otv">
+               <p class="bignews-sub-title"><a href="#" title="otv">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias minus reiciendis aspernatur.</a></p>
+               <a href="#" title="otv">
+               <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1688287525.jpg" alt="" title="" height="54" width="96" >
+               </a>
+            </div>
+         </div>
+         <div class="col-lg-4 bdn-sub-news-item">
+            <div class="sub-bignews-otv">
+               <p class="bignews-sub-title"><a href="#" title="otv">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias minus reiciendis aspernatur.</a></p>
+               <a href="#" title="otv">
+               <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1688287525.jpg" alt="" title="" height="54" width="96" >
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section class="bdn-category-news">
+   <div class="container">
+      <div class="bdn-heading-block">
+         <a href="#" title="otv">
+            <h2 class="bdn-heading-one">category news</h2>
+         </a>
+      </div>
+      <ul class="category-news-nav">
+         <li><a href="#">weather today</a></li>
+         <li><a href="#">weather today</a></li>
+         <li><a href="#">weather</a></li>
+         <li><a href="#">weather today</a></li>
+         <li><a href="#">weather today</a></li>
+         <li><a href="#">weather today</a></li>
+         <li><a href="#">weather today</a></li>
+         <li><a href="#">weather today</a></li>
+         <li><a href="#">weather today</a></li>
+         <li><a href="#">weather today</a></li>
+      </ul>
+      <div class="bdn-card-two bottom-border">
+         <a href="#" title="">
+            <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/IMAGE_1671787169.webp" alt="Drowning Deaths" title="" width="100" height="75" class="bdn-card-two-img">
+         </a>
+         <a href="" title="">
+            <h3>3 minor boys meet watery grave in Kendrapara</h3>
+         </a>
+         <ul>
+            <li><a href="http://localhost/otvsite23/odisha" title="Odisha">Odisha</a></li>
+            <li>8 months ago </li>
+         </ul>
+      </div>
+      <div class="bdn-card-two bottom-border">
+         <a href="#" title="">
+            <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/IMAGE_1671787169.webp" alt="Drowning Deaths" title="" width="100" height="75" class="bdn-card-two-img">
+         </a>
+         <a href="" title="">
+            <h3>3 minor boys meet watery grave in Kendrapara</h3>
+         </a>
+         <ul>
+            <li><a href="http://localhost/otvsite23/odisha" title="Odisha">Odisha</a></li>
+            <li>8 months ago </li>
+         </ul>
+      </div>
+      <div class="bdn-card-two bottom-border">
+         <a href="#" title="">
+            <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/IMAGE_1671787169.webp" alt="Drowning Deaths" title="" width="100" height="75" class="bdn-card-two-img">
+         </a>
+         <a href="" title="">
+            <h3>3 minor boys meet watery grave in Kendrapara</h3>
+         </a>
+         <ul>
+            <li><a href="http://localhost/otvsite23/odisha" title="Odisha">Odisha</a></li>
+            <li>8 months ago </li>
+         </ul>
+      </div>
+      <div class="bdn-card-two bottom-border">
+         <a href="#" title="">
+            <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/IMAGE_1671787169.webp" alt="Drowning Deaths" title="" width="100" height="75" class="bdn-card-two-img">
+         </a>
+         <a href="" title="">
+            <h3>3 minor boys meet watery grave in Kendrapara</h3>
+         </a>
+         <ul>
+            <li><a href="http://localhost/otvsite23/odisha" title="Odisha">Odisha</a></li>
+            <li>8 months ago </li>
+         </ul>
+      </div>
+      <div class="bdn-card-two bottom-border">
+         <a href="#" title="">
+            <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/IMAGE_1671787169.webp" alt="Drowning Deaths" title="" width="100" height="75" class="bdn-card-two-img">
+         </a>
+         <a href="" title="">
+            <h3>3 minor boys meet watery grave in Kendrapara</h3>
+         </a>
+         <ul>
+            <li><a href="http://localhost/otvsite23/odisha" title="Odisha">Odisha</a></li>
+            <li>8 months ago </li>
+         </ul>
+      </div>
+   </div>
+</section>
+      <section class="spotlight-sec">
+         <div class="container">
+            <div class="spotlight-news">
+               <a href="#" title="otv">
+                  <h1>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h1>
+               </a>
+               <div class="spotlight-news-image">
+                  <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/heatwave_1686888090.jpg" alt="" title="" width="366" height="205" class="spotlight-news-thumb"></a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="sub-news-sec">
+         <div class="container">
+            <div class="bdn-card-two bottom-border">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h2>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h2>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-two bottom-border">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-two bottom-border">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-two bottom-border">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-two bottom-border">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-two bottom-border">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-two">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <section class="bdn-webstories">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">Web stories</h2>
+               </a>
+               <a href="#" title="otv" class="bdn-more">more</a>
+            </div>
+            <div class="webstory-container">
+               <div class="webstory-item">
+                  <div class="webstory-item-content">
+                     <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/recent_photo_1687242704.webp" alt="" title="" width="237" height="370"></a>
+                     <div class="webstory-content">
+                        <a href="#" title="otv">
+                           <h3>world news</h3>
+                        </a>
+                        <a href="#" title="otv">
+                           <h4>7 Simple Home Remedies for Longer Hair</h4>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="webstory-item">
+                  <div class="webstory-item-content">
+                     <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/recent_photo_1687242704.webp" alt="" title="" width="237" height="370"></a>
+                     <div class="webstory-content">
+                        <a href="#" title="otv">
+                           <h3>world news</h3>
+                        </a>
+                        <a href="#" title="otv">
+                           <h4>7 Simple Home Remedies for Longer Hair</h4>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="webstory-item">
+                  <div class="webstory-item-content">
+                     <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/recent_photo_1687242704.webp" alt="" title="" width="237" height="370"></a>
+                     <div class="webstory-content">
+                        <a href="#" title="otv">
+                           <h3>world news</h3>
+                        </a>
+                        <a href="#" title="otv">
+                           <h4>7 Simple Home Remedies for Longer Hair</h4>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="webstory-item">
+                  <div class="webstory-item-content">
+                     <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/recent_photo_1687242704.webp" alt="" title="" width="237" height="370"></a>
+                     <div class="webstory-content">
+                        <a href="#" title="otv">
+                           <h3>world news</h3>
+                        </a>
+                        <a href="#" title="otv">
+                           <h4>7 Simple Home Remedies for Longer Hair</h4>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+      <section class="opinion-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">opinion</h2>
+               </a>
+            </div>
+            <div class="bdn-card-two">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <a href="#" title="" class="bdn-bottom-readmore">more from <strong>Opinion</strong></a>
+         </div>
+      </section>
+      <section class="movies-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">movies</h2>
+               </a>
+            </div>
+            <div class="bdn-card-two">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <a href="#" title="" class="bdn-bottom-readmore">more from <strong>movies</strong></a>
+         </div>
+      </section>
+      <section class="cricket-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">cricket</h2>
+               </a>
+            </div>
+            <div class="bdn-card-two">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <a href="#" title="" class="bdn-bottom-readmore">more from <strong>cricket</strong></a>
+         </div>
+      </section>
+      <section class="bisiness-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">business</h2>
+               </a>
+            </div>
+            <div class="bdn-card-two">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <a href="#" title="" class="bdn-bottom-readmore">more from <strong>business</strong></a>
+         </div>
+      </section>
+      <section class="sports-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">sports</h2>
+               </a>
+            </div>
+            <div class="bdn-card-two">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <a href="#" title="" class="bdn-bottom-readmore">more from <strong>sports</strong></a>
+         </div>
+      </section>
+      <section class="science-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">science</h2>
+               </a>
+            </div>
+            <div class="bdn-card-two">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <a href="#" title="" class="bdn-bottom-readmore">more from <strong>science</strong></a>
+         </div>
+      </section>
+      <section class="education-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">education</h2>
+               </a>
+            </div>
+            <div class="bdn-card-two">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <a href="#" title="" class="bdn-bottom-readmore">more from <strong>education</strong></a>
+         </div>
+      </section>
+      <section class="lifestyle-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">lifestyle</h2>
+               </a>
+            </div>
+            <div class="bdn-card-two">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <a href="#" title="" class="bdn-bottom-readmore">more from <strong>lifestyle</strong></a>
+         </div>
+      </section>
+      <section class="food-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">food</h2>
+               </a>
+            </div>
+            <div class="bdn-card-two">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <a href="#" title="" class="bdn-bottom-readmore">more from <strong>food</strong></a>
+         </div>
+      </section>
+      <section class="health-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">health</h2>
+               </a>
+            </div>
+            <div class="bdn-card-two">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <a href="#" title="" class="bdn-bottom-readmore">more from <strong>health</strong></a>
+         </div>
+      </section>
+      <section class="astrology-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">astrology</h2>
+               </a>
+            </div>
+            <div class="bdn-card-two">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <a href="#" title="" class="bdn-bottom-readmore">more from <strong>astrology</strong></a>
+         </div>
+      </section>
+      <section class="art-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">art</h2>
+               </a>
+            </div>
+            <div class="bdn-card-two">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?s4</h3>
+               </a>
+               <ul>
+                  <li><a href="#" title="otv">cricket</a></li>
+                  <li>2 hours ago</li>
+               </ul>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img bottom-border">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <div class="bdn-card-one-no-img">
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+               </a>
+            </div>
+            <a href="#" title="" class="bdn-bottom-readmore">more from <strong>art</strong></a>
+         </div>
+      </section>
+      <section class="technology-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">technology</h2>
+               </a>
+            </div>
+            <div class="bdn-card-seven">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/heatwave_1686888090.jpg" alt="" title="" width="300" height="169" class="bdn-card-seven-img"></a>
+               <a href="#" title="otv">
+                  <h3>Leaders' Wishes and Global Celebration: International Yoga Day 2023 Highlights3</h3>
+               </a>
+            </div>
+            <div class="bdn-card-two bottom-border">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?22</h3>
+               </a>
+            </div>
+            <div class="bdn-card-two bottom-border">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?22</h3>
+               </a>
+            </div>
+            <div class="bdn-card-two bottom-border">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?22</h3>
+               </a>
+            </div>
+            <div class="bdn-card-two">
+               <a href="#" title="otv"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="96" height="54" class="bdn-card-two-img"></a>
+               <a href="#" title="otv">
+                  <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?22</h3>
+               </a>
+            </div>
+            <a href="#" title="" class="bdn-bottom-readmore">more from <strong>technology</strong></a>
+         </div>
+      </section>
+      <section class="photos-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">photos</h2>
+               </a>
+            </div>
+            <div class="photos-list">
+               <div class="photos-item">
+                  <div class="photos-item-card">
+                     <a href="#" title="otv">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="150" height="84" class="photos-item-image">
+                     </a>
+                     <a href="#" title="otv">
+                        <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+                     </a>
+                     <a href="#" title="otv">
+                        <h4>07 images</h4>
+                     </a>
+                  </div>
+               </div>
+               <div class="photos-item">
+                  <div class="photos-item-card">
+                     <a href="#" title="otv">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="150" height="84" class="photos-item-image">
+                     </a>
+                     <a href="#" title="otv">
+                        <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+                     </a>
+                     <a href="#" title="otv">
+                        <h4>07 images</h4>
+                     </a>
+                  </div>
+               </div>
+               <div class="photos-item">
+                  <div class="photos-item-card">
+                     <a href="#" title="otv">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="150" height="84" class="photos-item-image">
+                     </a>
+                     <a href="#" title="otv">
+                        <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+                     </a>
+                     <a href="#" title="otv">
+                        <h4>07 images</h4>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="videos-sec">
+         <div class="container">
+            <div class="bdn-heading-block">
+               <a href="#" title="otv">
+                  <h2 class="bdn-heading-one">videos</h2>
+               </a>
+            </div>
+            <div class="videos-list">
+               <div class="videos-item">
+                  <div class="videos-item-card">
+                     <a href="#" title="otv">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="150" height="84" class="videos-item-image">
+                     </a>
+                     <a href="#" title="otv">
+                        <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+                     </a>
+                     <a href="#" title="otv">
+                        <h4>37:08</h4>
+                     </a>
+                  </div>
+               </div>
+               <div class="videos-item">
+                  <div class="videos-item-card">
+                     <a href="#" title="otv">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="150" height="84" class="videos-item-image">
+                     </a>
+                     <a href="#" title="otv">
+                        <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+                     </a>
+                     <a href="#" title="otv">
+                        <h4>37:08</h4>
+                     </a>
+                  </div>
+               </div>
+               <div class="videos-item">
+                  <div class="videos-item-card">
+                     <a href="#" title="otv">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/heatwave_1686888090.jpg" alt="" title="" width="150" height="84" class="videos-item-image">
+                     </a>
+                     <a href="#" title="otv">
+                        <h3>Go First Insolvency: What Should The Airline Do Next to The Highway?53</h3>
+                     </a>
+                     <a href="#" title="otv">
+                        <h4>37:08</h4>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="container">
+            <ul class="footer-icons">
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/news-deactive-bdn.svg" alt="" title="" width="38" height="30">home</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/webstory-deactive-bdn.svg" alt="" title="" width="38" height="30">web stories</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/live-bdn.svg" alt="" title="" width="38" height="30">live tv</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/photos-deactive-bdn.svg" alt="" title="" width="38" height="30">photos</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/video-deactive-bdn.svg" alt="" title="" width="38" height="30">videos</a></li>
+            </ul>
+         </div>
+      </footer>
+      <script src="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js"></script>
+      <script src="https://images.odishatv.in/assets/js/jquery.unveil.js" async defer ></script>
+      <script>
+         // unveil start
+            $(function() {
+                $("img").unveil();
+                // $("img").unveil(200, function() {
+                //     $(this).load(function() {
+                //         this.style.opacity = 1;
+                //     });
+                // });
+            });
+            // unveil end
+            // menu start
+                $('.side-nav-btn').click(function() {
+                $('.hamburger-nav').animate({width: "show"}, 200);
+                });
+                $('.close-hamburger').click(function() {
+                    $('.hamburger-nav').animate({width: "hide"}, 200);
+                });
+            // menu end
+            /* SEARCH BUTTON */
+            $(".search-bdn").click(function(){
+                 $(".bdn-search-list").animate({
+                    width: "show"
+                });
+                $(".bdn-search-go").show();
+                $(".bdn-search-close").show();
+                $(".bdn-search").show();
+            });
+            $(".bdn-search-close").click(function(){
+                 $(".bdn-search-list").animate({
+                    width: "hide"
+                });
+                $(".bdn-search-go").hide();
+                $(".bdn-search").hide();
+                $(this).hide();
+            });
+            /* //SEARCH BUTTON */
+            // sticky header start
+                var header = $("header");
+                $(window).scroll(function() {
+                    var scroll = $(window).scrollTop();
+                    if (scroll >= 1) {
+                        header.addClass("fixed-bdnnav");
+                    } else {
+                        header.removeClass("fixed-bdnnav");
+                    }
+                });
+            // sticky header end
+            $(document).ready(function(){
+               $('.mobile-dropdown-nav').click(function(){
+                   $(this).find(".mobile-custom-dropdown").slideToggle(400);
+                   $(this).toggleClass("nav-opened");
+               });
+            });
+      </script>
+   </body>
+</html>

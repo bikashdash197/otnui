@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+      <link href="https://odishatv.in/commondir/images/favicon.gif" rel="shortcut icon" type="image/gif">
+      <meta name="keywords" content="Home Page" />
+      <meta name="description" content="Home Page">
+      <title>OTV LIVE TV page mobile</title>
+      <style>
+         body {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Roboto', sans-serif;
+         font-weight: 400;
+         }
+         .container {
+         padding-right: 7.5px;
+         padding-left: 7.5px;
+         margin-right: auto;
+         margin-left: auto;
+         }
+         * {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         }
+         section {
+         float: left;
+         width: 100%;
+         }
+         .otv-300-250-ad {
+         width: 300px;
+         height: 250px;
+         display: flex;
+         margin: 0 auto;
+         text-align: center;
+         overflow: hidden;
+         background-color: #dfdfa1;
+         }
+         /* HEADING */
+         p, h1, h2, h3, h4, h5, h6 {
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Roboto', sans-serif;
+         }
+         a, a:hover, a:focus, a:active {
+         text-decoration: none;
+         }
+         .bdn-heading-block {
+         margin: 0px 0px 12px 0px;
+         padding: 0px;
+         display: inline-block;
+         width: -webkit-fill-available;
+         position: relative;
+         }
+         h2.bdn-heading-one {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         position: relative;
+         padding-left: 10px;
+         }
+         h2.bdn-heading-one:before {
+         content: "";
+         background-color: #f00404;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         h2.bdn-heading-one-line {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: capitalize;
+         float: left;
+         width: fit-content;
+         padding-left: 10px;
+         }
+         h2.bdn-heading-one-line span {
+         background-color: #fff;
+         padding: 0px 5px 0px 0px;
+         position: absolute;
+         z-index: 1;
+         }
+         h2.bdn-heading-one-line:before {
+         content: "";
+         background-color: #f00404;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         h2.bdn-heading-one-line:after {
+         content: "";
+         display: block;
+         position: absolute;
+         left: 13px;
+         top: 9px;
+         width: calc(100% - 75px);
+         height: 5px;
+         background-color: #cccccc;
+         border-radius: 5px;
+         z-index: 0;
+         }
+         a.bdn-more {
+         float: right;
+         color: #262626;
+         text-transform: uppercase;
+         border: #dc2229 solid 1px;
+         font-size: 13px;
+         margin: 0px 7.5px 0px 0px;
+         padding: 0px 5px;
+         line-height: 19px;
+         border-radius: 12px;
+         }
+         a.bdn-bottom-readmore {
+         color: #b70000;
+         text-transform: capitalize;
+         font-size: 15px;
+         position: relative;
+         float: right;
+         }
+         a.bdn-bottom-readmore strong {
+         color: #000;
+         font-size: 17px;
+         }
+         a.bdn-bottom-readmore:after {
+         content: "";
+         display: inline-block;
+         background-image: url(https://beta-live.odishatv.in/commondir/images/svg/more-doublearrow.svg);
+         width: 23px;
+         height: 16px;
+         margin: 6px 0px 0px 8px;
+         float: right;
+         }
+         /* //HEADING */
+         /* FOOTER */
+         footer {
+         float: left;
+         width: 100%;
+         -webkit-box-shadow: 0px -2px 5px 0px rgb(0 0 0 / 21%);
+         -moz-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.21);
+         box-shadow: 0px -2px 5px 0px rgb(0 0 0 / 21%);
+         padding: 10px 0px;
+         }
+         ul.footer-icons {
+         margin: 0px;
+         padding: 0px;
+         }
+         ul.footer-icons li {
+         list-style-type: none;
+         float: left;
+         width: 20%;
+         text-align: center;
+         }
+         ul.footer-icons li a {
+         text-decoration: none;
+         display: block;
+         color: #333;
+         text-transform: uppercase;
+         font-size: 10px;
+         }
+         ul.footer-icons li a img {
+         display: block;
+         margin: 0 auto 7px auto;
+         }
+         /* //FOOTER */
+         /* MENU BAR */
+         .bdn-menubar {
+         position: relative;
+         float: left;
+         width: 100%;
+         height: 35px;
+         padding: 0px 7.5px 0px 40px;
+         }
+         img.bdn-menu-homeicon {
+         height: 20px;
+         width: 20px;
+         position: absolute;
+         left: 7.5px;
+         top: 3.5px;
+         }
+         ul.bdn-nav {
+         margin: 0px;
+         padding: 0px;
+         overflow-y: scroll;
+         width: 100%;
+         }
+         ul.bdn-nav li {
+         list-style-type: none;
+         display: table-cell;
+         }
+         ul.bdn-nav li a {
+         text-decoration: none;
+         display: block;
+         width: max-content;
+         text-transform: uppercase;
+         font-size: 12px;
+         color: #333;
+         margin-right: 18px;
+         line-height: 35px;
+         }
+         /* //MENU BAR */
+         /* HEADER */
+         header {
+         float: left;
+         width: 100%;
+         padding: 6px 7.5px 0px 45px;
+         position: relative;
+         height: 50px;
+         background-color: #fff;
+         }
+         img.side-nav-btn {
+         position: absolute;
+         left: 7.5px;
+         top: 18px;
+         }
+         img.main-logo-img {
+         height: 36;
+         width: 200px;
+         }
+         img.search-bdn {
+         position: absolute;
+         right: 7.5px;
+         top: 20px;
+         }
+         header.fixed-bdnnav {
+         top: 0;
+         position: fixed;
+         width: 100%;
+         transition-duration: .5s;
+         z-index: 9;
+         }
+         /* //HEADER */
+         /* HAMBERGER MENU */
+         .bdn-otv-small-logo {
+         background-color: #fff;
+         padding: 10px;
+         }
+         .bdn-otv-small-logo span {
+         float: right;
+         text-transform: uppercase;
+         font-size: 16px;
+         color: #333;
+         margin-top: -2px;
+         }
+         .hamburger-nav {
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 344px;
+         background-color: #fff;
+         z-index: 999;
+         -webkit-box-shadow: -4px 1px 5px 1px rgb(0 0 0 / 22%);
+         -moz-box-shadow: -4px 1px 5px 1px rgba(0,0,0,0.22);
+         box-shadow: -4px 1px 5px 1px rgb(0 0 0 / 22%);
+         height: 100%;
+         }
+         button.sidemenubtn {
+         position: absolute;
+         top: 11px;
+         right: 0;
+         border: none;
+         background: none;
+         margin: 0px;
+         padding: 0px;
+         border-left: solid 1px #e7d4d4;
+         width: 47px;
+         text-align: center;
+         }
+         button.sidemenubtn img {
+         height: 13px;
+         width: 18px;
+         }
+         button.close-hamburger {
+         background-color: #fff;
+         position: absolute;
+         right: -35px;
+         top: 0;
+         border: none;
+         height: 35px;
+         width: 35px;
+         }
+         body.comment-active .hamburger-nav:before {
+         content: "";
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         background-color: #0000007a;
+         z-index: -1;
+         }
+         ul.hamburger-menu {
+         margin: 0px;
+         padding: 10px;
+         max-height: calc(100% - 20px);
+         overflow-y: scroll;
+         background-color: #fff;
+         margin-top: -10px;
+         }
+         ul.hamburger-menu li {
+         list-style-type: none;
+         display: block;
+         }
+         ul.hamburger-menu li a {
+         text-decoration: none;
+         display: block;
+         color: #333;
+         text-transform: capitalize;
+         font-size: 14px;
+         line-height: 40px;
+         border-bottom: solid 1px #f3eaea;
+         }
+         ul.hamburger-menu li a span {
+         border: solid 1px #e5e5e5;
+         background-color: #fff;
+         float: right;
+         display: block;
+         padding: 0px 15px;
+         border-radius: 19px;
+         line-height: 25px;
+         margin-top: 6px;
+         }
+         /* //HAMBERGER MENU */
+         /* SEARCH BAR */
+         .bdn-search-list {
+         height: 41px;
+         position: absolute;
+         right: 7.5px;
+         top: 5px;
+         width: calc(100% - 46px);
+         }
+         input.bdn-search {
+         height: 41px;
+         border: none;
+         outline: none;
+         background-color: #d3d3d3;
+         width: 100%;
+         padding: 0px 70px 0px 10px;
+         }
+         img.bdn-search-go {
+         position: absolute;
+         right: 43px;
+         top: 14px;
+         }
+         img.bdn-search-close {
+         position: absolute;
+         right: 9px;
+         top: 14px;
+         }
+         /* //SEARCH BAR */
+         /* BREADCRUMB */
+         .mobile-breadcrumb-container {
+         color: #000;
+         border-bottom: 1px solid #ffff;
+         box-shadow: #fff;
+         box-shadow: 1px 5px 8px -4px rgb(0 0 0 / 75%);
+         -webkit-box-shadow: 1px 5px 8px -4px rgb(147 145 145 / 30%);
+         -moz-box-shadow: 1px 5px 8px -4px rgba(0,0,0,.75);
+         margin: 8px 0 0;
+         background-color: #fff;
+         display: inline-block;
+         }
+         ul.mobile-breadcrumb {
+         margin: 3px 0;
+         padding: 0;
+         display: block;
+         float: left;
+         width: 100%;
+         height: 30px;
+         overflow: hidden;
+         }
+         ul.mobile-breadcrumb li {
+         list-style-type: none;
+         display: inline;
+         color: #666;
+         text-transform: capitalize;
+         font-size: 13px;
+         margin-right: 21px;
+         position: relative;
+         }
+         ul.mobile-breadcrumb li a {
+         color: #333;
+         font-weight: 400;
+         }
+         ul.mobile-breadcrumb li:last-child {
+         color: #333;
+         margin-left: 3px;
+         }
+         ul.mobile-breadcrumb, ul.mobile-breadcrumb li {
+         line-height: 30px;
+         position: relative;
+         }
+         ul.mobile-breadcrumb li:before {
+         content: "";
+         background-image: url(https://odishatv.in/commondir/images/svg/bread-crumb.svg);
+         margin-left: 8px;
+         display: block;
+         width: 9px;
+         height: 7px;
+         background-repeat: no-repeat;
+         position: absolute;
+         right: -17px;
+         top: 5px;
+         }
+         ul.mobile-breadcrumb li:last-child:before {
+         display: none;
+         }
+         /* //BREADCRUMB */
+         /*=================== GALLERY DETAILS ====================*/
+         .photo-gallery {
+         padding-bottom: 9px;
+         }
+         .photo-gallery img {
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+         }
+         .photo-gallery h1 {
+         color: #000;
+         font-size: 24px;
+         margin: 10px 0px;
+         padding: 0px;
+         }
+         .photo-gallery-details {
+         position: relative;
+         padding-bottom: 30px;
+         margin-bottom: 30px;
+         border-bottom: solid 1px #382f2f;
+         }
+         .photo-gallery-details-photo img {
+         width: 100%;
+         min-height: 185px;
+         object-fit: cover;
+         }
+         .photo-gallery-content {
+         margin: 0px;
+         padding: 0px;
+         border-bottom: 1px solid #4c4e4e;
+         }
+         .photo-gallery-content h1 {
+         font-size: 40px;
+         font-weight: 500;
+         color: #ffffff;
+         margin: 10px 0px;
+         }
+         .photo-gallery-content h3 {
+         font-size: 24px;
+         line-height: 30px;
+         color: #ffffff;
+         margin: 10px 0px;
+         }
+         .photo-gallery-content ul {
+         margin: 0px;
+         padding: 0px;
+         }
+         .photo-gallery-content ul li {
+         color: #fff;
+         list-style-type: none;
+         line-height: 40px;
+         font-size: 17px;
+         }
+         .photo-gallery-content ul li a {
+         color: #fff;
+         }
+         .photo-gallery-content ul li i {
+         margin-right: 10px;
+         font-size: 19px;
+         }
+         i.fas.fa-map-marker-alt.map {
+         color: #9b9c9c;
+         }
+         i.far.fa-clock.clock {
+         color: #9b9c9c;
+         }
+         .photo-gallery-content ul li:first-child {
+         position: relative;
+         margin-left: 23px;
+         font-size: 20px;
+         line-height: 26px;
+         }
+         .photo-gallery-content ul li:first-child:before {
+         content: "";
+         top: 8px;
+         left: -19px;
+         margin-right: 9px;
+         background-color: #ffffff;
+         position: absolute;
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         }
+         .photo-gallery-footer {
+         position: relative;
+         border-bottom: 1px solid #a2a2a257;
+         }
+         .photo-gallery-footer ul {
+         margin: 22px 8px;
+         padding: 0px;
+         }
+         .photo-gallery-footer ul li {
+         list-style: none;
+         display: inline;
+         }
+         .photo-gallery-footer ul li a {
+         color: #fff;
+         }
+         .photo-gallery-footer ul li i {
+         text-align: center;
+         width: 20px;
+         }
+         .photo-gallery-footer span {
+         position: absolute;
+         right: 7px;
+         color: white;
+         bottom: 53px;
+         font-size: 22px;
+         margin: 0px 2px;
+         }
+         .photo-gallery-footer p {
+         position: absolute;
+         right: 6px;
+         color: white;
+         bottom: 18px;
+         font-size: 20px;
+         }
+         .photo-sub-gallery {
+         background-color: #000;
+         padding-bottom: 9px;
+         }
+         .photo-sub-gallery-image{
+         position: relative;
+         }
+         .photo-sub-gallery-image img {
+         width: 100%;
+         height: auto;
+         object-fit: cover;
+         }
+         .photo-sub-gallery-image h4 {
+         position: absolute;
+         color: white;
+         bottom: -6px;
+         left: 6px;
+         font-size: 20px;
+         letter-spacing: 11px;
+         }
+         .photo-sub-gallery-image h4 span {
+         font-size: 25px;
+         font-weight: 500;
+         }
+         .photo-sub-gallery-content{
+         margin: 0px;
+         padding: 0px;
+         }
+         .photo-sub-gallery-content h3 {
+         font-size: 26px;
+         color: #ffffff;
+         font-weight: 500;
+         margin: 10px 0px;
+         }
+         .photo-sub-gallery-content p {
+         font-size: 18px;
+         color: #ffffff;
+         font-weight: 100;
+         }
+         .photo-sub-gallery-content h6 {
+         font-size: 16px;
+         color: #ffffff;
+         font-weight: 100;
+         margin: 14px 0px;
+         }
+         .photo-sub-gallery-footer {
+         position: relative;
+         border-bottom: 1px solid #a2a2a257;
+         }
+         .photo-sub-gallery-footer ul {
+         margin: 22px 0px;
+         padding: 0px;
+         }
+         .photo-sub-gallery-footer ul li {
+         list-style: none;
+         display: inline;
+         }
+         .photo-sub-gallery-footer ul li a {
+         color: #fff;
+         list-style: none;
+         display: inline;
+         font-size: 18px;
+         margin-right: 2px;
+         border-radius: 50%;
+         border: 2px solid #676363;
+         padding: 7px;
+         }
+         .photo-sub-gallery-footer ul li i {
+         text-align: center;
+         width: 20px;
+         }
+         .related-photo-gallery {
+         margin: 0px 0px 30px 0px;
+         }
+         p#gallery_copy_true {
+         color: #fff;
+         margin-top: 5px;
+         font-size: 17px;
+         }
+         .related-photo-gallery h3 {
+         color: #000;
+         margin: 13px 0px;
+         }
+         .related-photo-gallery-content {
+         position: relative;
+         padding: 0px 9px 9px 103px;
+         /* margin-bottom: 15px;*/
+         }
+         .related-photo-gallery-image {
+         position: absolute;
+         left: 0px;
+         top: 0px;
+         }
+         .related-photo-gallery-image a img {
+         width: 100%;
+         height: auto;
+         }
+         /*.related-photo-gallery-content h4 {
+         color: #fff;
+         font-size: 17px;
+         }*/
+         h4.odishatv-app-heading {
+         color: #fff;
+         margin: 15px 0px 30px 0px;
+         padding: 3px 0px 0px 0px;
+         font-size: 15px;
+         font-weight: 500;
+         position: relative;
+         padding-left: 46px;
+         }
+         h4.odishatv-app-heading:before {
+         display: block;
+         content: "";
+         background-image: url(https://images.odishatv.in/assets/images/single-sprite.png);
+         background-position: -150px -261px;
+         width: 39px;
+         height: 32px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         h4.tarangplus-app-heading {
+         color: #fff;
+         display: inline-block;
+         margin: 0px 0px 0px 0px;
+         padding: 3px 0px 0px 0px;
+         font-size: 15px;
+         font-weight: 500;
+         position: relative;
+         padding-left: 90px;
+         }
+         h4.tarangplus-app-heading:before {
+         display: block;
+         content: "";
+         background-image: url(https://images.odishatv.in/assets/images/single-sprite.png);
+         background-position: -239px -359px;
+         width: 82px;
+         height: 27px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         .footer-sidebar img {
+         width: 49%;
+         height: auto;
+         margin-bottom: 20px;
+         }
+         .footer-sidebar a {
+         text-decoration: none;
+         }
+         ul.odishatv-app {
+         margin: 20px 0px 20px 0px;
+         padding: 0px;
+         }
+         ul.odishatv-app li {
+         list-style-type: none;
+         display: inline-block;
+         }
+         ul.odishatv-app li a {
+         text-decoration: none;
+         display: block;
+         width: 87px;
+         height: 28px;
+         }
+         ul.odishatv-app li:first-child a {
+         background-image: url(https://images.odishatv.in/assets/images/single-sprite.png);
+         background-position: -241px -316px;
+         }
+         ul.odishatv-app li:last-child a {
+         background-image: url(https://images.odishatv.in/assets/images/single-sprite.png);
+         background-position: -332px -316px;
+         }
+         .related-photo-gallery-content h4 {
+         color: #fff;
+         font-size: 16px;
+         height: 55px;
+         overflow: hidden;
+         margin: 2px;
+         }
+         .related-photo-gallery-content h4 a {
+         color: #000;
+         }
+         ul.footer-button {
+         padding: 0px;
+         margin: 8px
+         }
+         ul.footer-button li {
+         display: inline-block;
+         margin: 20px 4px 5px 0px;
+         }
+         ul.footer-button li a {
+         color: #000;
+         border: 1px solid;
+         padding: 9px 9px;
+         border-radius: 9px;
+         }
+         ul.footer-button li a:hover {
+         color: #d79450;
+         }
+         h2.next-heading {
+         color: #ffffff;
+         font-weight: 500;
+         font-size: 28px;
+         border: 1px solid white;
+         margin: 0px;
+         padding: 6px 7px 6px 20px;
+         margin-bottom: 32px;
+         position: relative;
+         }
+         h2.next-heading:before {
+         content: "";
+         width: 0%;
+         height: 0%;
+         border-left: 12px solid transparent;
+         border-right: 12px solid transparent;
+         border-top: 11px solid white;
+         bottom: 0px;
+         top: 43px;
+         position: absolute;
+         }
+         .gallery-bread-crumb {
+         display: block;
+         margin: 13px 8px;
+         }
+         .gallery-bread-crumb ul {
+         margin: 0px;
+         padding: 0px;
+         }
+         .gallery-bread-crumb ul li {
+         list-style-type: none;
+         display: inline-block;
+         color: #ffffff;
+         text-transform: capitalize;
+         font-size: 18px;
+         position: relative;
+         margin-right: 20px;
+         }
+         .gallery-bread-crumb ul li:before {
+         font-family: "Font Awesome 5 Free";
+         content: "\f0da";
+         font-weight: 900;
+         top: 1px;
+         right: -16px;
+         color: #a00606;
+         font-size: 18px;
+         position: absolute;
+         }
+         .gallery-bread-crumb ul li a {
+         color: #a00606;
+         transition-duration: 1s;
+         }
+         .gallery-bread-crumb ul li a:hover {
+         color: #ffab23;
+         transition-duration: 1s;
+         }
+         .gallery-bread-crumb ul li:last-child:before {
+         display: none;
+         }
+         .gallery-bread-crumb ul li:last-child {
+         margin-right: 0px;
+         }
+         /*=================== //GALLERY DETAILS ====================*/
+         /*============2nd Socialmedia  ==============*/
+         ul.article-share-style-more-one {
+         position: absolute;
+         left: -209px;
+         bottom: -6px;
+         border: 1px solid #aaaaaa45;
+         box-shadow: 0 2px 8px #9a9797;
+         display: none;
+         background-color: #fff;
+         margin: 0px;
+         padding: 6px;
+         }
+         ul.article-share-style-more-one li {
+         list-style-type: none;
+         float: left;
+         margin: 0px 12.5px;
+         padding: 0px;
+         border: none !important;
+         margin-left: 0px !important;
+         padding-left: 0px !important;
+         }
+         ul.article-share-style-more-one li:last-child {
+         margin: 0px;
+         }
+         ul.article-share-style-more-one li a {
+         text-decoration: none;
+         display: block;
+         line-height: 50px;
+         }
+         ul.article-share-style-more-one li a:hover i{
+         color: #a00606 !important;
+         }
+         ul.article-share-style-more-one li a i.fab.fa-facebook-f {
+         color: #3c51a5;
+         }
+         ul.article-share-style-more-one li a i.fab.fa-twitter {
+         color: #5db2f7;
+         }
+         ul.article-share-style-more-one li a i.fab.fa-instagram {
+         color: #d94b8e;
+         }
+         ul.article-share-style-more-one li a i.fab.fa-pinterest-p {
+         color: #d93a34;
+         }
+         ul.article-share-style-more-one li a i.fab.fa-linkedin-in {
+         color: #036593;
+         }
+         ul.article-share-style-more-one li a i.fab.fa-telegram-plane {
+         color: #299ecf;
+         }
+         ul.article-share-style-more-one li a i.fas.fa-print {
+         color: #21428f;
+         }
+         ul.article-share-style-more-one li a i.fas.fa-comment-dots {
+         color: #f178a3;
+         }
+         ul.article-share-style-more-one li a i.fas.fa-bookmark {
+         color: #f4b01b;
+         }
+         ul.article-share-style-more-one li a i.fas.fa-share-alt {
+         color: #818181;
+         }
+         ul.article-share-style li {
+         list-style-type: none;
+         display: inline-block;
+         margin-left: 15px;
+         }
+         ul.article-share-style li a {
+         text-decoration: none;
+         display: block;
+         cursor: pointer;
+         }
+         ul.article-share-style li a i {
+         text-decoration: none;
+         display: block;
+         font-size: 22px;
+         margin-right: 10px;
+         }
+         ul.article-share-style-more li a i {
+         text-decoration: none;
+         display: block;
+         font-size: 19px;
+         }
+         ul.article-share-style-more li a i:hover {
+         }
+         .share-social-media-add {
+         position: relative;
+         }
+         ul.article-share-style-more {
+         position: absolute;
+         right: 100%;
+         bottom: -3px;
+         border: 1px solid #aaaaaa45;
+         box-shadow: 0 2px 8px #9a9797;
+         display: none;
+         background-color: #fff;
+         margin: 0px;
+         width: max-content;
+         height: 32px;
+         overflow: hidden;
+         padding: 0px 10px 0px 15px;
+         }
+         ul.article-share-style-more li {
+         list-style-type: none;
+         float: left;
+         margin: 0px 20.5px;
+         padding: 0px;
+         border: none !important;
+         margin-left: 0px !important;
+         padding-left: 0px !important;
+         }
+         ul.article-share-style-more li:last-child {
+         margin: 0px;
+         }
+         ul.article-share-style-more li a {
+         text-decoration: none;
+         display: block;
+         line-height: 17px;
+         padding: 6px 0px;
+         }
+         .share-social-media-add {
+         position: relative;
+         }
+         .photo-gallery-details-photo iframe {
+         width: 100%;
+         height: 236px;
+         }
+         span.photo-gallery-details-photo-credit-sub1 {
+         position: absolute;
+         bottom: 0px;
+         left: 0;
+         line-height: 17px;
+         background-color: rgb(0 0 0 / 0.58);
+         width: fit-content;
+         padding: 9px 0px;
+         color: #fff;
+         font-size: 13px;
+         opacity: 0.8;
+         }
+         ul.photo-gallery-details-photo-credit-sub2 {
+         position: absolute;
+         right: 0px;
+         bottom: 0px;
+         line-height: 15px;
+         background-color: #333;
+         width: fit-content;
+         padding: 8px;
+         color: #fff;
+         margin: 0px;
+         }
+         ul.photo-gallery-details-photo-credit-sub2 li {
+         list-style-type: none;
+         display: inline;
+         cursor: pointer;
+         }
+         ul.photo-gallery-details-photo-credit-sub2 li span {
+         font-size: 21px;
+         }
+         span.photo-gallery-details-photo-credit-sub1 i {
+         margin-right: 10px;
+         }
+         ul.photo-gallery-details-photo-credit-sub2 li:last-child {
+         margin-left: 15px;
+         border-left: 1px solid #eaeaea85;
+         padding-left: 16px;
+         }
+         .photo-gallery p {
+         color: #000;
+         margin-top: 5px;
+         font-size: 17px;
+         }
+         p.last-update-date-gallery {
+         color: #fff;
+         }
+         p.gallery_copy_true {
+         margin-bottom: 20px;
+         }
+         /* //PHOTO GALLERY */
+      </style>
+   </head>
+   <body>
+      <header>
+         <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/hamburger-icon-otv.svg" alt="" title="" width="22" height="14" class="side-nav-btn"></a>
+         <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/logo.svg" alt="OTV Logo" title="OTV Logo" width="200" height="36" class="main-logo-img"></a>
+         <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="Search" title="Search" width="15" height="15" class="search-bdn">
+         <!-- SEARCH BOX -->
+         <div class="bdn-search-list" style="display: none;">
+            <form>
+               <input type="text" name="" class="bdn-search" placeholder="Search" style="display: none;">
+               <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="" title="" width="15" height="15" class="bdn-search-go" style="display: none;">
+               <img src="https://beta-live.odishatv.in/commondir/images/svg/close-gray.svg" alt="" title="" width="16" height="14" class="bdn-search-close" style="display: none;">
+            </form>
+            <img src="https://beta-live.odishatv.in/commondir/images/svg/bdnsearch.svg" alt="Search" title="Search" width="15" height="15" class="search-bdn" style="display: none;">
+         </div>
+         <!-- // SEARCH BOX -->
+         <!-- HAMBERGER MENU -->
+         <div class="hamburger-nav" style="display: none;">
+            <button class="close-hamburger"><img src="https://beta-live.odishatv.in/commondir/images/svg/bdnleftarrow.svg"></button>
+            <div class="bdn-otv-small-logo">
+               <a href="#" title="otv"><img src="https://odishatv.in//commondir/images/logo-white.png" alt="" title="" width="44" height="36"></a>
+               <span>menu</span>
+            </div>
+            <ul class="hamburger-menu">
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">covid <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections <span>new</span></a></li>
+               <li><a href="#" title="otv">covid</a></li>
+               <li><a href="#" title="otv">elections</a></li>
+               <li><a href="#" title="otv">1 covid <span>new</span></a></li>
+            </ul>
+         </div>
+         <!-- //HAMBERGER MENU -->
+      </header>
+      <div class="bdn-menubar">
+         <a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/news-deactive-bdn.svg" alt="" title="" width="20" height="20" class="bdn-menu-homeicon"></a>
+         <ul class="bdn-nav">
+            <li><a href="#" title="otv">home</a></li>
+            <li><a href="#" title="otv">about</a></li>
+            <li><a href="#" title="otv">contact</a></li>
+            <li><a href="#" title="otv">must watch</a></li>
+            <li><a href="#" title="otv">home</a></li>
+            <li><a href="#" title="otv">about</a></li>
+            <li><a href="#" title="otv">contact</a></li>
+            <li><a href="#" title="otv">must watch</a></li>
+            <li><a href="#" title="otv">home</a></li>
+            <li><a href="#" title="otv">about</a></li>
+            <li><a href="#" title="otv">contact</a></li>
+            <li><a href="#" title="otv">must watch</a></li>
+         </ul>
+      </div>
+      <!-- breadcrumb -->
+      <div class="container">
+         <div class="mobile-breadcrumb-container">
+            <ul class="mobile-breadcrumb">
+               <li><a href="https://odishatv.in/">Home</a></li>
+               <li><a href="https://odishatv.in/news">News</a></li>
+               <li><a href="https://odishatv.in/viral">Viral</a></li>
+               <li>Elderly couple recreates Amitabh Bachchan’s classic song Rimjhim Gire Sawan, netizens in awe; watch</li>
+            </ul>
+         </div>
+      </div>
+      <!-- //breadcrumb -->
+      <section >
+         <div class="container">
+            <div class="photo-gallery">
+               <h1>R-Day 2022: Glimpses From Republic Day Parade Rehearsals In Delhi</h1>
+               <!-- <h4>OdishaTv.in</h4> -->
+               <p>A multi-layer security cover with facial recognition systems has been installed in Delhi ahead of the big day – 2022 Republic Day. Defence Ministry has said that due to COVID19 restrictions, the number of visitors will be substantially curtailed this year. Last year, 25000 visitors had taken part while this year the Ministry is looking forward to host 5000-8000 guests but nothing has been finalised as yet. Meanwhile, rehearsal for the R-Day Parade is underway in full swing. Contingents are leaving no stone unturned to make the celebrations grand and hassle-free. Here are the glimpses. </p>
+            </div>
+            <p class="last-update-date-gallery">Last updated: 19 January 2022, 08:31 AM IST</p>
+            <div class="photo-gallery-details" >
+               <!-- <h3>Republic Day 2022 </h3> -->
+               <div class="photo-gallery-details-photo" id="image_1">
+                  <img  data-url="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719" data-imagenum="1" data-alt="Republic Day 2022 " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1642559347.jpg" class="img-responsive gallery-responsive" alt="Republic Day 2022 " title="Republic Day 2022 ">
+                  <!--============ GALLERY SHARE ===========-->               
+                  <ul class="photo-gallery-details-photo-credit-sub2 ">
+                     <li><span>1</span>/14</li>
+                     <li class="share-social-media-add">
+                        <img src="https://odishatv.in/commondir/images/svg/share-icon.svg" class="story-page-share-icon" width="20" height="20" alt="Share" style="width: 17.5px; min-height: 12px;">
+                        <ul class="article-share-style-more photo-gallery-social">
+                           <li>
+                              <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1') +'&t='+encodeURIComponent('Republic Day 2022 '),'_blank'); return false;" ><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="20" height="20" alt="Facebook" style="width: 100%; min-height: auto;">
+                              </a>
+                           </li>
+                           <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1')+'&text='+encodeURIComponent('Republic Day 2022 ')+'&hashtags=otv','_blank'); return false;"><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="20" height="20" alt="Twitter" style="width: 100%; min-height: auto;"></a>
+                           </li>
+                           <!--<li>
+                              <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                              </li>-->
+                           <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1 is the best website to Get latest news and updates" title="Republic Day 2022 " data-link="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                           <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                        </ul>
+                     </li>
+                  </ul>
+                  <!--============ GALLERY SHARE ===========-->
+               </div>
+               <p class="gallery_copy_true">President’s Bodyguard march during rehearsal for the upcoming Republic Day parade in New Delhi.</p>
+            </div>
+            <div class="photo-gallery-details" >
+               <!-- <h3>Republic Day 2022 </h3> -->
+               <div class="photo-gallery-details-photo" id="image_2">
+                  <img  data-url="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719" data-imagenum="2" data-alt="Republic Day 2022 " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1642560092.jpg" class="img-responsive gallery-responsive" alt="Republic Day 2022 " title="Republic Day 2022 ">
+                  <!--============ GALLERY SHARE ===========-->               
+                  <ul class="photo-gallery-details-photo-credit-sub2 ">
+                     <li><span>2</span>/14</li>
+                     <li class="share-social-media-add">
+                        <img src="https://odishatv.in/commondir/images/svg/share-icon.svg" class="story-page-share-icon" width="20" height="20" alt="Share" style="width: 17.5px; min-height: 12px;">
+                        <ul class="article-share-style-more photo-gallery-social">
+                           <li>
+                              <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1') +'&t='+encodeURIComponent('Republic Day 2022 '),'_blank'); return false;" ><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="20" height="20" alt="Facebook" style="width: 100%; min-height: auto;">
+                              </a>
+                           </li>
+                           <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1')+'&text='+encodeURIComponent('Republic Day 2022 ')+'&hashtags=otv','_blank'); return false;"><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="20" height="20" alt="Twitter" style="width: 100%; min-height: auto;"></a>
+                           </li>
+                           <!--<li>
+                              <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                              </li>-->
+                           <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1 is the best website to Get latest news and updates" title="Republic Day 2022 " data-link="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                           <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                        </ul>
+                     </li>
+                  </ul>
+                  <!--============ GALLERY SHARE ===========-->
+               </div>
+               <p class="gallery_copy_true">Central Industrial Security Force (CISF) contingent march.</p>
+            </div>
+            <div class="photo-gallery-details" >
+               <!-- <h3>Republic Day 2022 </h3> -->
+               <div class="photo-gallery-details-photo" id="image_3">
+                  <img  data-url="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719" data-imagenum="3" data-alt="Republic Day 2022 " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1642559574.jpg" class="img-responsive gallery-responsive" alt="Republic Day 2022 " title="Republic Day 2022 ">
+                  <!--============ GALLERY SHARE ===========-->               
+                  <ul class="photo-gallery-details-photo-credit-sub2 ">
+                     <li><span>3</span>/14</li>
+                     <li class="share-social-media-add">
+                        <img src="https://odishatv.in/commondir/images/svg/share-icon.svg" class="story-page-share-icon" width="20" height="20" alt="Share" style="width: 17.5px; min-height: 12px;">
+                        <ul class="article-share-style-more photo-gallery-social">
+                           <li>
+                              <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1') +'&t='+encodeURIComponent('Republic Day 2022 '),'_blank'); return false;" ><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="20" height="20" alt="Facebook" style="width: 100%; min-height: auto;">
+                              </a>
+                           </li>
+                           <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1')+'&text='+encodeURIComponent('Republic Day 2022 ')+'&hashtags=otv','_blank'); return false;"><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="20" height="20" alt="Twitter" style="width: 100%; min-height: auto;"></a>
+                           </li>
+                           <!--<li>
+                              <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                              </li>-->
+                           <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1 is the best website to Get latest news and updates" title="Republic Day 2022 " data-link="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                           <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                        </ul>
+                     </li>
+                  </ul>
+                  <!--============ GALLERY SHARE ===========-->
+               </div>
+               <p class="gallery_copy_true">Indian soldiers march during the rehearsal for the R-Day Parade at Vijay Chowk, on a cold winter morning in New Delhi.</p>
+            </div>
+            <div class="photo-gallery-details" >
+               <!-- <h3>Republic Day 2022 </h3> -->
+               <div class="photo-gallery-details-photo" id="image_4">
+                  <img  data-url="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719" data-imagenum="4" data-alt="Republic Day 2022 " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1642560532.jpg" class="img-responsive gallery-responsive" alt="Republic Day 2022 " title="Republic Day 2022 ">
+                  <!--============ GALLERY SHARE ===========-->               
+                  <ul class="photo-gallery-details-photo-credit-sub2 ">
+                     <li><span>4</span>/14</li>
+                     <li class="share-social-media-add">
+                        <img src="https://odishatv.in/commondir/images/svg/share-icon.svg" class="story-page-share-icon" width="20" height="20" alt="Share" style="width: 17.5px; min-height: 12px;">
+                        <ul class="article-share-style-more photo-gallery-social">
+                           <li>
+                              <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1') +'&t='+encodeURIComponent('Republic Day 2022 '),'_blank'); return false;" ><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="20" height="20" alt="Facebook" style="width: 100%; min-height: auto;">
+                              </a>
+                           </li>
+                           <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1')+'&text='+encodeURIComponent('Republic Day 2022 ')+'&hashtags=otv','_blank'); return false;"><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="20" height="20" alt="Twitter" style="width: 100%; min-height: auto;"></a>
+                           </li>
+                           <!--<li>
+                              <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                              </li>-->
+                           <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1 is the best website to Get latest news and updates" title="Republic Day 2022 " data-link="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                           <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                        </ul>
+                     </li>
+                  </ul>
+                  <!--============ GALLERY SHARE ===========-->
+               </div>
+               <p class="gallery_copy_true">BSF's all-women biker team 'Seema Bhawani' practises daredevil stunts during the rehearsal for the Republic Day Parade at Vijay Chowk.</p>
+            </div>
+            <div class="photo-gallery-details" >
+               <!-- <h3>Republic Day 2022 </h3> -->
+               <div class="photo-gallery-details-photo" id="image_5">
+                  <img  data-url="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719" data-imagenum="5" data-alt="Republic Day 2022 " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1642559997.jpg" class="img-responsive gallery-responsive" alt="Republic Day 2022 " title="Republic Day 2022 ">
+                  <!--============ GALLERY SHARE ===========-->               
+                  <ul class="photo-gallery-details-photo-credit-sub2 ">
+                     <li><span>5</span>/14</li>
+                     <li class="share-social-media-add">
+                        <img src="https://odishatv.in/commondir/images/svg/share-icon.svg" class="story-page-share-icon" width="20" height="20" alt="Share" style="width: 17.5px; min-height: 12px;">
+                        <ul class="article-share-style-more photo-gallery-social">
+                           <li>
+                              <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1') +'&t='+encodeURIComponent('Republic Day 2022 '),'_blank'); return false;" ><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="20" height="20" alt="Facebook" style="width: 100%; min-height: auto;">
+                              </a>
+                           </li>
+                           <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1')+'&text='+encodeURIComponent('Republic Day 2022 ')+'&hashtags=otv','_blank'); return false;"><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="20" height="20" alt="Twitter" style="width: 100%; min-height: auto;"></a>
+                           </li>
+                           <!--<li>
+                              <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                              </li>-->
+                           <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1 is the best website to Get latest news and updates" title="Republic Day 2022 " data-link="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                           <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                        </ul>
+                     </li>
+                  </ul>
+                  <!--============ GALLERY SHARE ===========-->
+               </div>
+               <p class="gallery_copy_true">Special Forces commandos march during the rehearsal for the big Republic Day parade.</p>
+            </div>
+            <div class="photo-gallery-details" >
+               <!-- <h3>Republic Day 2022 </h3> -->
+               <div class="photo-gallery-details-photo" id="image_6">
+                  <img  data-url="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719" data-imagenum="6" data-alt="Republic Day 2022 " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1642560285.jpg" class="img-responsive gallery-responsive" alt="Republic Day 2022 " title="Republic Day 2022 ">
+                  <!--============ GALLERY SHARE ===========-->               
+                  <ul class="photo-gallery-details-photo-credit-sub2 ">
+                     <li><span>6</span>/14</li>
+                     <li class="share-social-media-add">
+                        <img src="https://odishatv.in/commondir/images/svg/share-icon.svg" class="story-page-share-icon" width="20" height="20" alt="Share" style="width: 17.5px; min-height: 12px;">
+                        <ul class="article-share-style-more photo-gallery-social">
+                           <li>
+                              <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1') +'&t='+encodeURIComponent('Republic Day 2022 '),'_blank'); return false;" ><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="20" height="20" alt="Facebook" style="width: 100%; min-height: auto;">
+                              </a>
+                           </li>
+                           <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1')+'&text='+encodeURIComponent('Republic Day 2022 ')+'&hashtags=otv','_blank'); return false;"><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="20" height="20" alt="Twitter" style="width: 100%; min-height: auto;"></a>
+                           </li>
+                           <!--<li>
+                              <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                              </li>-->
+                           <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1 is the best website to Get latest news and updates" title="Republic Day 2022 " data-link="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                           <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                        </ul>
+                     </li>
+                  </ul>
+                  <!--============ GALLERY SHARE ===========-->
+               </div>
+               <p class="gallery_copy_true">Army Contingent march during parade rehearsal</p>
+            </div>
+            <div class="photo-gallery-details" >
+               <!-- <h3>Republic Day 2022 </h3> -->
+               <div class="photo-gallery-details-photo" id="image_7">
+                  <img  data-url="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719" data-imagenum="7" data-alt="Republic Day 2022 " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1642560379.jpg" class="img-responsive gallery-responsive" alt="Republic Day 2022 " title="Republic Day 2022 ">
+                  <!--============ GALLERY SHARE ===========-->               
+                  <ul class="photo-gallery-details-photo-credit-sub2 ">
+                     <li><span>7</span>/14</li>
+                     <li class="share-social-media-add">
+                        <img src="https://odishatv.in/commondir/images/svg/share-icon.svg" class="story-page-share-icon" width="20" height="20" alt="Share" style="width: 17.5px; min-height: 12px;">
+                        <ul class="article-share-style-more photo-gallery-social">
+                           <li>
+                              <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1') +'&t='+encodeURIComponent('Republic Day 2022 '),'_blank'); return false;" ><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="20" height="20" alt="Facebook" style="width: 100%; min-height: auto;">
+                              </a>
+                           </li>
+                           <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1')+'&text='+encodeURIComponent('Republic Day 2022 ')+'&hashtags=otv','_blank'); return false;"><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="20" height="20" alt="Twitter" style="width: 100%; min-height: auto;"></a>
+                           </li>
+                           <!--<li>
+                              <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                              </li>-->
+                           <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1 is the best website to Get latest news and updates" title="Republic Day 2022 " data-link="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                           <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                        </ul>
+                     </li>
+                  </ul>
+                  <!--============ GALLERY SHARE ===========-->
+               </div>
+               <p class="gallery_copy_true">Members of the National Cadet Corps (NCC) march during rehearsal for the Republic Day parade.</p>
+            </div>
+            <div class="photo-gallery-details" >
+               <!-- <h3>Republic Day 2022 </h3> -->
+               <div class="photo-gallery-details-photo" id="image_8">
+                  <img  data-url="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719" data-imagenum="8" data-alt="Republic Day 2022 " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1642560436.jpg" class="img-responsive gallery-responsive" alt="Republic Day 2022 " title="Republic Day 2022 ">
+                  <!--============ GALLERY SHARE ===========-->               
+                  <ul class="photo-gallery-details-photo-credit-sub2 ">
+                     <li><span>8</span>/14</li>
+                     <li class="share-social-media-add">
+                        <img src="https://odishatv.in/commondir/images/svg/share-icon.svg" class="story-page-share-icon" width="20" height="20" alt="Share" style="width: 17.5px; min-height: 12px;">
+                        <ul class="article-share-style-more photo-gallery-social">
+                           <li>
+                              <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1') +'&t='+encodeURIComponent('Republic Day 2022 '),'_blank'); return false;" ><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="20" height="20" alt="Facebook" style="width: 100%; min-height: auto;">
+                              </a>
+                           </li>
+                           <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1')+'&text='+encodeURIComponent('Republic Day 2022 ')+'&hashtags=otv','_blank'); return false;"><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="20" height="20" alt="Twitter" style="width: 100%; min-height: auto;"></a>
+                           </li>
+                           <!--<li>
+                              <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                              </li>-->
+                           <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1 is the best website to Get latest news and updates" title="Republic Day 2022 " data-link="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                           <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                        </ul>
+                     </li>
+                  </ul>
+                  <!--============ GALLERY SHARE ===========-->
+               </div>
+               <p class="gallery_copy_true">Armored Combat Vehicles (AFV) during the rehearsal for the Republic Day Parade.</p>
+            </div>
+            <div class="photo-gallery-details" >
+               <!-- <h3>Republic Day 2022 </h3> -->
+               <div class="photo-gallery-details-photo" id="image_9">
+                  <img  data-url="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719" data-imagenum="9" data-alt="Republic Day 2022 " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1642560691.jpg" class="img-responsive gallery-responsive" alt="Republic Day 2022 " title="Republic Day 2022 ">
+                  <!--============ GALLERY SHARE ===========-->               
+                  <ul class="photo-gallery-details-photo-credit-sub2 ">
+                     <li><span>9</span>/14</li>
+                     <li class="share-social-media-add">
+                        <img src="https://odishatv.in/commondir/images/svg/share-icon.svg" class="story-page-share-icon" width="20" height="20" alt="Share" style="width: 17.5px; min-height: 12px;">
+                        <ul class="article-share-style-more photo-gallery-social">
+                           <li>
+                              <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1') +'&t='+encodeURIComponent('Republic Day 2022 '),'_blank'); return false;" ><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="20" height="20" alt="Facebook" style="width: 100%; min-height: auto;">
+                              </a>
+                           </li>
+                           <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1')+'&text='+encodeURIComponent('Republic Day 2022 ')+'&hashtags=otv','_blank'); return false;"><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="20" height="20" alt="Twitter" style="width: 100%; min-height: auto;"></a>
+                           </li>
+                           <!--<li>
+                              <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                              </li>-->
+                           <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1 is the best website to Get latest news and updates" title="Republic Day 2022 " data-link="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                           <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                        </ul>
+                     </li>
+                  </ul>
+                  <!--============ GALLERY SHARE ===========-->
+               </div>
+               <p class="gallery_copy_true">March of BSF Camel contingent soldiers </p>
+            </div>
+            <div class="photo-gallery-details" >
+               <!-- <h3>Republic Day 2022 </h3> -->
+               <div class="photo-gallery-details-photo" id="image_10">
+                  <img  data-url="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719" data-imagenum="10" data-alt="Republic Day 2022 " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1642560733.jpg" class="img-responsive gallery-responsive" alt="Republic Day 2022 " title="Republic Day 2022 ">
+                  <!--============ GALLERY SHARE ===========-->               
+                  <ul class="photo-gallery-details-photo-credit-sub2 ">
+                     <li><span>10</span>/14</li>
+                     <li class="share-social-media-add">
+                        <img src="https://odishatv.in/commondir/images/svg/share-icon.svg" class="story-page-share-icon" width="20" height="20" alt="Share" style="width: 17.5px; min-height: 12px;">
+                        <ul class="article-share-style-more photo-gallery-social">
+                           <li>
+                              <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1') +'&t='+encodeURIComponent('Republic Day 2022 '),'_blank'); return false;" ><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="20" height="20" alt="Facebook" style="width: 100%; min-height: auto;">
+                              </a>
+                           </li>
+                           <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1')+'&text='+encodeURIComponent('Republic Day 2022 ')+'&hashtags=otv','_blank'); return false;"><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="20" height="20" alt="Twitter" style="width: 100%; min-height: auto;"></a>
+                           </li>
+                           <!--<li>
+                              <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                              </li>-->
+                           <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1 is the best website to Get latest news and updates" title="Republic Day 2022 " data-link="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                           <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                        </ul>
+                     </li>
+                  </ul>
+                  <!--============ GALLERY SHARE ===========-->
+               </div>
+               <p class="gallery_copy_true">March of BSF Camel contingent soldiers </p>
+            </div>
+            <div class="photo-gallery-details" >
+               <!-- <h3>Republic Day 2022 </h3> -->
+               <div class="photo-gallery-details-photo" id="image_11">
+                  <img  data-url="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719" data-imagenum="11" data-alt="Republic Day 2022 " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1642560879.jpg" class="img-responsive gallery-responsive" alt="Republic Day 2022 " title="Republic Day 2022 ">
+                  <!--============ GALLERY SHARE ===========-->               
+                  <ul class="photo-gallery-details-photo-credit-sub2 ">
+                     <li><span>11</span>/14</li>
+                     <li class="share-social-media-add">
+                        <img src="https://odishatv.in/commondir/images/svg/share-icon.svg" class="story-page-share-icon" width="20" height="20" alt="Share" style="width: 17.5px; min-height: 12px;">
+                        <ul class="article-share-style-more photo-gallery-social">
+                           <li>
+                              <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1') +'&t='+encodeURIComponent('Republic Day 2022 '),'_blank'); return false;" ><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="20" height="20" alt="Facebook" style="width: 100%; min-height: auto;">
+                              </a>
+                           </li>
+                           <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1')+'&text='+encodeURIComponent('Republic Day 2022 ')+'&hashtags=otv','_blank'); return false;"><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="20" height="20" alt="Twitter" style="width: 100%; min-height: auto;"></a>
+                           </li>
+                           <!--<li>
+                              <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                              </li>-->
+                           <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1 is the best website to Get latest news and updates" title="Republic Day 2022 " data-link="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                           <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                        </ul>
+                     </li>
+                  </ul>
+                  <!--============ GALLERY SHARE ===========-->
+               </div>
+               <p class="gallery_copy_true">Special Forces commandos march during the R-Day parade rehearsal.</p>
+            </div>
+            <div class="photo-gallery-details" >
+               <!-- <h3>Republic Day 2022 </h3> -->
+               <div class="photo-gallery-details-photo" id="image_12">
+                  <img  data-url="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719" data-imagenum="12" data-alt="Republic Day 2022 " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1642560962.jpg" class="img-responsive gallery-responsive" alt="Republic Day 2022 " title="Republic Day 2022 ">
+                  <!--============ GALLERY SHARE ===========-->               
+                  <ul class="photo-gallery-details-photo-credit-sub2 ">
+                     <li><span>12</span>/14</li>
+                     <li class="share-social-media-add">
+                        <img src="https://odishatv.in/commondir/images/svg/share-icon.svg" class="story-page-share-icon" width="20" height="20" alt="Share" style="width: 17.5px; min-height: 12px;">
+                        <ul class="article-share-style-more photo-gallery-social">
+                           <li>
+                              <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1') +'&t='+encodeURIComponent('Republic Day 2022 '),'_blank'); return false;" ><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="20" height="20" alt="Facebook" style="width: 100%; min-height: auto;">
+                              </a>
+                           </li>
+                           <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1')+'&text='+encodeURIComponent('Republic Day 2022 ')+'&hashtags=otv','_blank'); return false;"><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="20" height="20" alt="Twitter" style="width: 100%; min-height: auto;"></a>
+                           </li>
+                           <!--<li>
+                              <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                              </li>-->
+                           <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1 is the best website to Get latest news and updates" title="Republic Day 2022 " data-link="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                           <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                        </ul>
+                     </li>
+                  </ul>
+                  <!--============ GALLERY SHARE ===========-->
+               </div>
+               <p class="gallery_copy_true">An employee of Assam Khadi and Village Industries Board dries the Ashoka Chakra portion of National flag, ahead of Republic Day celebrations in Guwahati.</p>
+            </div>
+            <div class="photo-gallery-details" >
+               <!-- <h3>Republic Day 2022</h3> -->
+               <div class="photo-gallery-details-photo" id="image_13">
+                  <img  data-url="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719" data-imagenum="13" data-alt="Republic Day 2022" src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1642561034.jpg" class="img-responsive gallery-responsive" alt="Republic Day 2022" title="Republic Day 2022">
+                  <!--============ GALLERY SHARE ===========-->               
+                  <ul class="photo-gallery-details-photo-credit-sub2 ">
+                     <li><span>13</span>/14</li>
+                     <li class="share-social-media-add">
+                        <img src="https://odishatv.in/commondir/images/svg/share-icon.svg" class="story-page-share-icon" width="20" height="20" alt="Share" style="width: 17.5px; min-height: 12px;">
+                        <ul class="article-share-style-more photo-gallery-social">
+                           <li>
+                              <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1') +'&t='+encodeURIComponent('Republic Day 2022'),'_blank'); return false;" ><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="20" height="20" alt="Facebook" style="width: 100%; min-height: auto;">
+                              </a>
+                           </li>
+                           <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1')+'&text='+encodeURIComponent('Republic Day 2022')+'&hashtags=otv','_blank'); return false;"><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="20" height="20" alt="Twitter" style="width: 100%; min-height: auto;"></a>
+                           </li>
+                           <!--<li>
+                              <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                              </li>-->
+                           <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1 is the best website to Get latest news and updates" title="Republic Day 2022" data-link="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                           <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                        </ul>
+                     </li>
+                  </ul>
+                  <!--============ GALLERY SHARE ===========-->
+               </div>
+               <p class="gallery_copy_true">Women tailors prepare the national flags at Assam Khadi & Village Industries Board office at Chandmari ahead of the Republic Day celebrations.</p>
+            </div>
+            <div class="photo-gallery-details" >
+               <!-- <h3>Republic Day 2022 </h3> -->
+               <div class="photo-gallery-details-photo" id="image_14">
+                  <img  data-url="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719" data-imagenum="14" data-alt="Republic Day 2022 " src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1642561118.jpg" class="img-responsive gallery-responsive" alt="Republic Day 2022 " title="Republic Day 2022 ">
+                  <!--============ GALLERY SHARE ===========-->               
+                  <ul class="photo-gallery-details-photo-credit-sub2 ">
+                     <li><span>14</span>/14</li>
+                     <li class="share-social-media-add">
+                        <img src="https://odishatv.in/commondir/images/svg/share-icon.svg" class="story-page-share-icon" width="20" height="20" alt="Share" style="width: 17.5px; min-height: 12px;">
+                        <ul class="article-share-style-more photo-gallery-social">
+                           <li>
+                              <a title="Share on facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1') +'&t='+encodeURIComponent('Republic Day 2022 '),'_blank'); return false;" ><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="20" height="20" alt="Facebook" style="width: 100%; min-height: auto;">
+                              </a>
+                           </li>
+                           <li><a title="Share on twitter" href="#" onclick="window.open('https://twitter.com/share?url='+encodeURIComponent('https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1')+'&text='+encodeURIComponent('Republic Day 2022 ')+'&hashtags=otv','_blank'); return false;"><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="20" height="20" alt="Twitter" style="width: 100%; min-height: auto;"></a>
+                           </li>
+                           <!--<li>
+                              <a href="http://instagram.com/sharer.php?u=&description=" title="" target="_blank">
+                              <i class="fab fa-instagram"></i>
+                              </a>
+                              </li>-->
+                           <!-- <li><a title="Share on whatsapp" href="whatsapp://send?text=https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1 is the best website to Get latest news and updates" title="Republic Day 2022 " data-link="https://odishatv.in/photo-gallery/national/r-day-2022-glimpses-from-republic-day-parade-rehearsals-in-delhi-168719?pid=1" data-action="share/whatsapp/share" target="_blank" class="hidden-md hidden-lg hvr-wobble-vertical"><i class="fab fa-whatsapp"></i></a></li> -->
+                           <!--     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li> -->
+                        </ul>
+                     </li>
+                  </ul>
+                  <!--============ GALLERY SHARE ===========-->
+               </div>
+               <p class="gallery_copy_true">An Army jawan folds the National flag during rehearsal for upcoming Republic Day parade in Kolkata.</p>
+            </div>
+            <ul class="footer-button">
+               <li><a href="https://odishatv.in/tag/republic-day">Republic Day</a></li>
+               <li><a href="https://odishatv.in/tag/republic-day-2022">Republic Day 2022</a></li>
+               <li><a href="https://odishatv.in/tag/r-day-parade">R-Day Parade</a></li>
+               <li><a href="https://odishatv.in/tag/new-delhi">New Delhi</a></li>
+            </ul>
+            <!--  <a href=""><h2 class="next-heading">Next gallery</h2></a> -->
+            <!-- //RELATED NEWS -->
+         </div>
+      </section>
+      <section>
+         <div class="container">
+            <div class="related-photo-gallery">
+               <h3>Related Photo Gallery</h3>
+               <div class="related-photo-gallery-content">
+                  <div class="related-photo-gallery-image"><a href="https://odishatv.in/photo-gallery/miscellaneous/against-all-odds-children-attending-classes-in-hard-snow-day-has-a-lesson-in-itself-168205"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/IMAGE_1641972732.jpg" alt="Snowfall in Kashmir" title="Snowfall in Kashmir"></a>
+                  </div>
+                  <h4><a href="https://odishatv.in/photo-gallery/miscellaneous/against-all-odds-children-attending-classes-in-hard-snow-day-has-a-lesson-in-itself-168205">Against All Odds: Children Attending Classes On A Hard Snow Day Has A Lesson In Itself</a> </h4>
+               </div>
+               <div class="related-photo-gallery-content">
+                  <div class="related-photo-gallery-image"><a href="https://odishatv.in/photo-gallery/covid-19/vaccination-of-teenagers-in-india-covaxin-its-victory-against-covid19-see-pictures-167594"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/IMAGE_1641267366.JPG" alt="Covid Vaccination of children in India " title="Covid Vaccination of children in India "></a>
+                  </div>
+                  <h4><a href="https://odishatv.in/photo-gallery/covid-19/vaccination-of-teenagers-in-india-covaxin-its-victory-against-covid19-see-pictures-167594">Teenagers COVAXINated: It’s ‘Victory’ Against Covid-19</a> </h4>
+               </div>
+               <div class="related-photo-gallery-content">
+                  <div class="related-photo-gallery-image"><a href="https://odishatv.in/photo-gallery/festivals-events/bagha-nacha-tiger-dance-tigers-roar-in-bhubaneswar-166729"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/IMAGE_1640156738.jpg" alt="Bagha Nacha or Tiger Dance in Odisha" title="Bagha Nacha or Tiger Dance in Odisha"></a>
+                  </div>
+                  <h4><a href="https://odishatv.in/photo-gallery/festivals-events/bagha-nacha-tiger-dance-tigers-roar-in-bhubaneswar-166729">Bagha Nacha: Tigers Roar In Bhubaneswar</a> </h4>
+               </div>
+               <div class="related-photo-gallery-content">
+                  <div class="related-photo-gallery-image"><a href="https://odishatv.in/photo-gallery/miscellaneous/lo-behold-skies-turn-crimson-gold-in-lord-jagannath-land-puri-165567"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/default.svg" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_4/IMAGE_1638770358.jpg" alt="Sky near Puri Jagannath temple after Jawad cyclone" title="Sky near Puri Jagannath temple after Jawad cyclone"></a>
+                  </div>
+                  <h4><a href="https://odishatv.in/photo-gallery/miscellaneous/lo-behold-skies-turn-crimson-gold-in-lord-jagannath-land-puri-165567">Lo & Behold! The Skies Turn Crimson Gold In Puri</a> </h4>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer>
+         <div class="container">
+            <ul class="footer-icons">
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/news-deactive-bdn.svg" alt="" title="" width="38" height="30">home</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/webstory-deactive-bdn.svg" alt="" title="" width="38" height="30">web stories</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/live-bdn.svg" alt="" title="" width="38" height="30">live tv</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/photos-deactive-bdn.svg" alt="" title="" width="38" height="30">photos</a></li>
+               <li><a href="#" title="otv"><img src="https://beta-live.odishatv.in/commondir/images/svg/video-deactive-bdn.svg" alt="" title="" width="38" height="30">videos</a></li>
+            </ul>
+         </div>
+      </footer>
+      <script src="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js"></script>
+      <script src="https://images.odishatv.in/assets/js/jquery.unveil.js" async defer ></script>
+      <script>
+         // unveil start
+            $(function() {
+                $("img").unveil();
+                // $("img").unveil(200, function() {
+                //     $(this).load(function() {
+                //         this.style.opacity = 1;
+                //     });
+                // });
+            });
+            // unveil end
+            // menu start
+                $('.side-nav-btn').click(function() {
+                $('.hamburger-nav').animate({width: "show"}, 200);
+                });
+                $('.close-hamburger').click(function() {
+                    $('.hamburger-nav').animate({width: "hide"}, 200);
+                });
+            // menu end
+            /* SEARCH BUTTON */
+            $(".search-bdn").click(function(){
+                 $(".bdn-search-list").animate({
+                    width: "show"
+                });
+                $(".bdn-search-go").show();
+                $(".bdn-search-close").show();
+                $(".bdn-search").show();
+            });
+            $(".bdn-search-close").click(function(){
+                 $(".bdn-search-list").animate({
+                    width: "hide"
+                });
+                $(".bdn-search-go").hide();
+                $(".bdn-search").hide();
+                $(this).hide();
+            });
+            /* //SEARCH BUTTON */
+            // sticky header start
+                var header = $("header");
+                $(window).scroll(function() {
+                    var scroll = $(window).scrollTop();
+                    if (scroll >= 1) {
+                        header.addClass("fixed-bdnnav");
+                    } else {
+                        header.removeClass("fixed-bdnnav");
+                    }
+                });
+            // sticky header end
+            $(document).ready(function(){
+                $(".article-read-more").click(function(){
+                    $(this).hide();
+                    $(".toggle-content").show();
+                });
+            });
+            jQuery(document).ready(function(){
+                $('.share-social-media-add').click(function(){
+                    $(this).find('.article-share-style-more').animate({width: "toggle"}, 200);
+                });
+            });
+      </script>
+   </body>
+</html>

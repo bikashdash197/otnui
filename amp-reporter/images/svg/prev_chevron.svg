@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63" height="100" viewBox="0 0 63 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7c7c7c;
+        fill-rule: evenodd;
+        opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <path id="PRI_Chevron" class="cls-1" d="M489,461l49.428-50,13.554,13.71-35.856,36.271L552,497.268,538.425,511Z" transform="translate(-489 -411)"/>
+</svg>

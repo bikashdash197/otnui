@@ -1,0 +1,24 @@
+<svg id="signin-with-facebook" xmlns="http://www.w3.org/2000/svg" width="100" height="35" viewBox="0 0 100 35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3155a4;
+      }
+
+      .cls-2 {
+        font-size: 25.463px;
+        fill: #fff;
+        font-family: "Open Sans";
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        fill: #f7f7f7;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" width="100" height="35" rx="2" ry="2"/>
+  <text id="Facebook" class="cls-2" transform="translate(33.836 21.858) scale(0.471)">Facebook</text>
+  <path class="cls-3" d="M1612,261.159c-0.27,0-.53,0-0.79,0-0.23,0-.47.007-0.71,0.019a0.848,0.848,0,0,0-.93.862c-0.03.564-.01,1.131-0.01,1.722h2.37c-0.03.237-.06,0.455-0.09,0.674-0.07.489-.14,0.977-0.19,1.467a0.163,0.163,0,0,1-.2.178c-0.57-.008-1.14,0-1.71,0h-0.18V272h-2.49v-5.917H1605v-2.32h0.17c0.59,0,1.17,0,1.75,0,0.12,0,.15-0.034.15-0.141,0-.619-0.01-1.239.01-1.858a2.744,2.744,0,0,1,1.02-2.123,2.87,2.87,0,0,1,1.57-.61,13.489,13.489,0,0,1,2.33.056v2.07Z" transform="translate(-1590 -248)"/>
+</svg>

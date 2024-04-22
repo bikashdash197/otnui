@@ -1,0 +1,16 @@
+<svg id="hamburger_icon" data-name="hamburger icon" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f1f1f1;
+      }
+
+      .cls-2 {
+        fill: #bd433e;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="19" cy="19" r="19"/>
+  <path id="Rectangle_1_copy_2" data-name="Rectangle 1 copy 2" class="cls-2" d="M1885,168h23v3h-23v-3Zm0,8h23v3h-23v-3Zm0,8h23v3h-23v-3Z" transform="translate(-1877 -158)"/>
+</svg>

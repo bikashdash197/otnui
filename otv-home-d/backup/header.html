@@ -1,0 +1,3524 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+      <!-- tab -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <!-- tab -->
+      <style>
+         @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+         body {
+         margin: 0;
+         padding: 0;
+         }
+         .header-otv-hm {
+         display: flex;
+         justify-content: space-between;
+         background-color: lightgray;
+         height: 22px;
+         }
+         a {
+         color: #000;
+         }
+         a:hover {
+         color: #000;
+         text-decoration: none;
+         }
+         .day-det-otv-hm {
+            display: flex;
+    font-size: 9px;
+    margin:4px 0 -4px 0;
+    text-align: center;
+         }
+         .day-det-otv-hm .temp {
+         color: black;
+         font-weight: 700;
+         font-size: 10px;
+         }
+         p.details-otv-hm {
+         color: gray;
+         text-transform: uppercase;
+         padding: 0 4px;
+         font-weight: 600;
+         letter-spacing: 1px;
+         }
+         p.details-otv-hm.dt-hm {
+         border-right: 1px solid black;
+         padding-right: 10px;
+         }
+         p.details-otv-hm.ct-hm {
+         color: black;
+         font-weight: 300;
+         font-size: 10px;
+         }
+         .social-links-otv {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         }
+         .social-links-hd {
+         display: flex;
+         align-items: center;
+         width: 28px;
+         height: 22px;
+         border-right: 2px solid gray;
+         padding: 5px 5px;
+         color: #0000;
+         }
+         .social-links-hd  img{
+            height: 9px;
+         }
+         .social-links-hd:last-child{
+             border-right: none;
+         }
+        
+         .weather-icon {
+         height: 10px;
+         }
+         .otv-logo-menu-op {
+         display: flex;
+         height: 70px;
+         border-bottom: 2px solid orangered;
+         }
+         .otv-header-logo {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 70px;
+         border-right: 1px solid lightgray;
+         width: 17vw;
+         }
+         .otv-header-logo-img {
+         height: 40px;
+         padding-right: 20px;
+         }
+         .menu-rows-hm {
+         width: 83vw;
+         }
+         .menu-row-one {
+         height: 45px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 100%;
+         }
+         ul.main-menu-list-hm {
+         display: flex;
+         margin-left: -42px;
+         margin-top: 18px;
+         }
+         ul.main-menu-list-hm li {
+         list-style-type: none;
+         padding: 0 10px;
+         text-transform: uppercase;
+         font-size: 20px;
+         font-weight: 600;
+         display: flex;
+         border-right: 2px solid lightgray;
+         }
+         p.main-menu-list {
+         text-transform: uppercase;
+         font-size: 10px;
+         color: gray;
+         margin: 10px 0 0 0;
+         }
+         p.c-og {
+         color: orangered;
+         }
+         img.main-menu-list-icon {
+         margin: 0 5px;
+         height: 14px;
+         }
+         ul.rt-main-menu-otv {
+         display: flex;
+         margin-left: -42px;
+         margin-top: 5px;
+         }
+         ul.rt-main-menu-otv li {
+         list-style-type: none;
+         padding: 0 4px;
+         display: flex;
+         margin-top: 20px;
+         }
+         img.nighticon-otv{
+           height: 20px;
+         }
+         img.searchicon-otv{
+            height: 12px;
+         }
+         img.mob-icon-otv{
+            height: 14px;
+         }
+         .signin-hm-otv{
+            font-size: 12px;
+            color: gray;
+            font-weight: 500;
+            text-transform:capitalize ;
+         }
+         .menu-row-two {
+         height: 25px;
+         display: flex;
+         }
+         ul.menu-list-otv-hm {
+         display: flex;
+         margin-left: -42px;
+         }
+         ul.menu-list-otv-hm li {
+         list-style-type: none;
+         padding: 5px 7px 0 7px;
+         text-transform: uppercase;
+         font-size: 9px;
+         font-weight: 600;
+         }
+         a.c-og {
+         color: orangered;
+         }
+         sup.c-og {
+         color: orangered;
+         font-weight: 600;
+         }
+         .astro-otv-hm {
+         display: flex;
+         align-items: center;
+         padding: 10px 10px;
+         border: 1px solid rgba(255, 68, 0, 0.475);
+         }
+         .astro-otv-img {
+         margin: -2px 3px 0 0;
+         }
+         p.astrospeak-otv {
+         font-weight: 700;
+         font-size: 12px;
+         text-transform: capitalize;
+         margin: 2px 0 0 0;
+         }
+         sup.astrospeak-otv {
+         background-color: orangered;
+         color: #fff;
+         font-weight: 600;
+         padding: 0 2px;
+         }
+         /* common-class ------------------*/
+         h4.container-heading-hm {
+         font-size: 20px;
+         text-transform: capitalize;
+         padding: 10px;
+         margin: 0;
+         }
+         a.blk {
+         color: #000;
+         text-decoration: none;
+         }
+         a.blk:hover {
+         text-decoration: none;
+         color: #000;
+         }
+         .more-3-otv {
+         position: absolute;
+         top: 5px;
+         right: 16px;
+         border: 2px solid red;
+         border-radius: 15px;
+         padding: 2px 5px;
+         font-size: 10px;
+         font-weight: 400;
+         text-transform: uppercase;
+         }
+         ul.story-panel-one-time {
+         margin: 0 0 0 4px;
+         padding: 0px;
+         }
+         ul.story-panel-one-time li:first-child {
+         color: red;
+         font-weight: 600;
+         }
+         ul.story-panel-one-time li {
+         list-style-type: none;
+         display: inline-block;
+         position: relative;
+         color: gray;
+         font-size: 10px;
+         font-weight: bold;
+         text-transform: uppercase;
+         }
+         /* common-class ////////////////*/
+         /* hero-section-------------------------- */
+         .otv-hm-heroSec {
+         background-color: #000;
+         margin-bottom: 30px;
+         padding-bottom: 8px;
+         }
+         .side-add-otv {
+         display: flex;
+         justify-content: center;
+         }
+         img.side-add-otv {
+         margin-top: 30px;
+         width: 100px;
+         height: 520px;
+         }
+         .heading-dropdown-otv {
+         display: flex;
+         justify-content: space-between;
+         }
+         h3.heading-otv-hm {
+         text-transform: uppercase;
+         font-family: Roboto, sans-serif;
+         font-weight: bold;
+         font-size: 22px;
+         margin: 10px 0;
+         color: #fff;
+         }
+         .hero-sec-img {
+         padding: 20px 0 0 0;
+         border-top: 3px solid orangered;
+         border-bottom: 3px solid orangered;
+         position: relative;
+         }
+         .otv-hm-heroSec-img{
+         height:384px ;
+         width:730px ;
+         }
+         .hero-sec-imgDes-contain {
+            padding: 20px 34px;
+
+         }
+         p.hero-sec-imgDes {
+    font-weight: 600;
+    font-size: 28px;
+    font-family: "Faustina", serif;
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    line-height: 32px;
+    text-align: center;
+    max-height: 130px;
+    overflow: hidden;
+         }
+         p.hero-sec-imgDes:hover {
+         text-decoration: none;
+         color: #fff;
+         }
+         .pht-credit-Sec {
+         display: flex;
+         margin: -34px 0 0 0;
+         background-color: #000;
+         opacity: 0.8;
+         align-items: center;
+         }
+         p.pht-credit-heroSec {
+         text-transform: capitalize;
+         font-weight: 600;
+         font-size: 12px;
+         color: gray;
+         margin: 8px;
+         }
+         .place-update-heroSec {
+         display: flex;
+         align-items: baseline;
+         border-top: 2px solid #333;
+         border-bottom: 2px solid #333;
+         padding: 5px 0 0 0;
+         }
+         p.last-update-hrsec {
+            color: gray;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: 500;
+         }
+         .plc-name-span {
+            color: red;
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-size: 9px;
+    padding: 0;
+    font-weight: 600;
+         }
+         .timimg-hrSec {
+         color: yellow;
+         }
+         img.pht-credit-Sec-icon{
+         height: 15px;
+         }
+         /* hero-section////////////////////--- */
+         /* hero-sec-next-sec -------------------*/
+         /* carousel----------------- */
+         .carousel-container {
+         background-color: #fff;
+         padding-bottom: 10px;
+         }
+         #slider {
+         min-height: 250px;
+         overflow: hidden;
+         max-width: 250px;
+         margin-bottom: 20px;
+         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+         }
+         .carousel-item h6 {
+         padding-left: 10px;
+         margin-bottom: 20px;
+         font-size: 12px;
+         font-weight: 400;
+         }
+         .carousel-item h6 span {
+         font-size: 7px;
+         font-weight: bold;
+         color: #fff;
+         padding: 2px;
+         text-align: center;
+         text-transform: uppercase;
+         background-color: red;
+         }
+         /* carousel////////////////// */
+         /* top stories --------------*/
+         .top-stories-otv {
+         background-color: #fff;
+         padding: 5px 5px 5px 0;
+         height: auto;
+         width: 255px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         margin-bottom: 20px;
+         position: relative;
+         }
+         h4.heading-one-hm {
+         padding: 5px 0px 0px 15px;
+         position: relative;
+         text-transform: uppercase;
+         font-weight: 700;
+         font-size: 17px;
+         color: #333;
+         line-height: 17px;
+         font-family: "Faustina", serif;
+         }
+         h4.heading-one-hm:before {
+         content: "";
+         display: block;
+         background-color: red;
+         position: absolute;
+         left: 0;
+         top: 2px;
+         width: 5px;
+         height: 20px;
+         }
+         .story-panel-one {
+         position: relative;
+         display: inline-block;
+         padding-left: 115px;
+         padding-bottom: 14px;
+         margin: 0px 0px 16px 0px;
+         }
+         .top-stories-img {
+            width: 105px;
+             height: 79px;
+         object-fit: cover;
+         position: absolute;
+         left: 0;
+         top: 0;
+         border-radius: 4px;
+         margin: 0 0 0 8px;
+         }
+         ul.story-panel-one-post {
+            margin: 0 0px 0px 0px;
+    padding: 0px;
+    height: 50px;
+    overflow: hidden;
+    line-height: 14px;
+    font-weight: 600;
+         }
+         ul.story-panel-one-post li {
+            list-style-type: none;
+    margin: 0 6px;
+    max-height: 40px;
+    line-height: 13px;
+    overflow: hidden;
+    margin-bottom: 8px;
+         }
+         ul.story-panel-one-post li a {
+         color: #000;
+         text-decoration: none;
+         font-weight: 600;
+         font-size: 12px;
+         }
+         ul.story-panel-one-time {
+         margin: 0 0 0 4px;
+         padding: 0px;
+         }
+         ul.story-panel-one-time li:first-child {
+         color: red;
+         font-size: 9px;
+         font-weight: 600;
+         }
+         ul.story-panel-one-time li {
+         list-style-type: none;
+         display: inline-block;
+         position: relative;
+         color: gray;
+         font-size: 9px;
+         font-weight: bold;
+         text-transform: uppercase;
+         }
+         /* top stories ///////////////*/
+         /* frist-prio-story------------------- */
+         .first-prio-sty-one {
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         width: 540px;
+         }
+         .frist-prio-story {
+         position: relative;
+         }
+         .frist-prio-story-img {
+         width: 540px;
+         height: 280px;
+         }
+         .frist-prio-time {
+         margin: 0px;
+         padding: 0px;
+         position: absolute;
+         right: 5px;
+         bottom: 5px;
+         }
+         ul.frist-prio-time li:first-child {
+         color: red;
+         font-weight: bold;
+         font-size: 12px;
+         }
+         ul.frist-prio-time li {
+         list-style-type: none;
+         display: inline-block;
+         color: gray;
+         font-size: 10px;
+         font-weight: 700;
+         text-transform: uppercase;
+         }
+         ul.frist-prio-credit li {
+         list-style-type: none;
+         display: inline-block;
+         color: #fff;
+         font-size: 12px;
+         font-weight: 600;
+         text-transform: capitalize;
+         }
+         .frist-prio-credit {
+         margin: 0px;
+         padding: 0px;
+         position: absolute;
+         left: 5px;
+         bottom: 5px;
+         }
+         h5.prio-story-title {
+         text-align: center;
+         padding: 10px 0;
+         font-weight: 700;
+         text-transform: capitalize;
+         font-size: 17px;
+         }
+         /* frist-prio-story /////////////////-- */
+         /* second-prio-story----------------- */
+         .second-prio-story {
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         width: 265px;
+         height: 260px;
+         position: relative;
+         padding: 0 0 10px 0;
+         min-height: 230px;
+         margin-bottom: 10px;
+         }
+         .second-prio-story-title {
+         font-size: 14px;
+         padding: 5px;
+         }
+         .second-prio-story img {
+         height: 170px;
+         width: 265px;
+         }
+         /* second-prio-story/////////////////////*/
+         /* learnmore-add-otv ---------------*/
+         .learnmore-add-otv {
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         padding: 0;
+         width: 265px;
+         height: 260px;
+         margin-bottom: 10px;
+         }
+         ul.learnmore-add {
+         display: flex;
+         justify-content: space-between;
+         padding: 0 10px;
+         margin: 0;
+         }
+         ul.learnmore-add li {
+         list-style-type: none;
+         color: gray;
+         font-size: 10px;
+         font-family: 'Libre Franklin', sans-serif;
+         font-weight: 700;
+         text-transform: uppercase;
+         }
+         .add-style-2 {
+         height: 236px;
+         width: 180px;
+         margin-bottom: 10px;
+         }
+         .learnmore-add-otv img {
+         height: 170px;
+         width: 260px;
+         }
+         button.learnmore{
+         border-radius: 6px;
+         padding: 4px 6px;
+         text-transform: capitalize;
+         background-color: #fff;
+         font-size: 8px;
+         font-weight: 700;
+         }
+         /* learnmore-add-otv //////////////*/
+         /* video-story-otv-hm--------------- */
+         .video-story-otv-hm {
+         height: 236px;
+         width: 160px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         border-radius: 2px;
+         margin-bottom: 20px;
+         }
+         img.video-story-img-otv {
+         border-radius: 4px;
+         height: 236px;
+         width: 160px;
+         }
+         .world-news-btn {
+         position: absolute;
+         top: 66%;
+         color: #fff;
+         border: none;
+         background-color: rgba(233, 233, 23, 0.847);
+         font-size: 8px;
+         text-transform: uppercase;
+         font-weight: bold;
+         padding: 2px;
+         }
+         .video-story-otv-title {
+         position: absolute;
+         top: 74%;
+         color: #fff;
+         text-decoration: none;
+         width: 100%;
+         border-radius: 2px;
+         background-color: #000000;
+         background: transparent linear-gradient(180deg,rgb(44 45 49 / 0) 0,#000 100%) 0 0 no-repeat;
+         }
+         a.video-story-otv-title:hover {
+         color: #fff;
+         text-decoration: none;
+         }
+         .video-story-otv-title h6 {
+         font-size: 12px;
+         z-index: 2;
+         height: 45px;
+         overflow: hidden;
+         padding: 8px;
+         }
+         /* video-story-otv-hm ///////////////*/
+         /* add-style-2------------ */
+         .add-style-2 {
+         height: 220px;
+         width:  160px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         background-color: red;
+         }
+         /* add-style-2////////////// */
+         /* least-prio-story------------ */
+         .least-prio-story {
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         margin-bottom: 10px;
+         width: 350px;
+         }
+         .least-prio-panel {
+         position: relative;
+         display: inline-block;
+         padding-right: 120px;
+         padding-bottom: 2px;
+         min-height: 74px;
+         border-bottom: 1px solid darkgray;
+         }
+         .least-prio-img {
+         width: 90px;
+         height: 60px;
+         object-fit: cover;
+         position: absolute;
+         right: 4px;
+         top: 0;
+         border-radius: 4px;
+         margin: 7px 0 7px 0;
+         }
+         ul.least-prio-panel-post {
+         margin: 0 0px 0px 0px;
+         padding: 0px;
+         height: 50px;
+         overflow: hidden;
+         line-height: 14px;
+         font-weight: 600;
+         }
+         ul.least-prio-panel-post li {
+         list-style-type: none;
+         margin: 0 6px;
+         }
+         ul.least-prio-panel-post li a {
+         color: #000;
+         text-decoration: none;
+         font-weight: 500;
+         font-size: 12px;
+         }
+         ul.least-prio-panel-post-time {
+         margin: 0px;
+         padding: 0px;
+         }
+         /* least-prio-story//////////// */
+         /* opinion-otv-hm ----------------*/
+         .opinion-container-otv-hm {
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         margin-bottom: 20px;
+         margin-top: -120px;
+         position: relative;
+         max-width: 825px;
+         overflow: hidden;
+         }
+         .opinion-flex-container-otv {
+         display: flex;
+         }
+         .opinion-panel-one {
+         position: relative;
+         display: inline-block;
+         padding-bottom: 12px;
+         min-height: 65px;
+         border-right: 1px solid black;
+         }
+         .opinion-panel-one:last-child {
+         border-right: none;
+         }
+         .opinion-stories-img {
+         width: 70px;
+         height: 55px;
+         object-fit: cover;
+         position: absolute;
+         left: 0;
+         top: 0;
+         border-radius: 4px;
+         margin: 0 0 0 8px;
+         }
+         ul.opinion-panel-one-post {
+         margin: 0 0px 0px 0px;
+         padding: 0px;
+         height: 50px;
+         overflow: hidden;
+         line-height: 14px;
+         font-weight: 600;
+         padding-left: 85px;
+         }
+         ul.opinion-panel-one-post li {
+         list-style-type: none;
+         margin: 0 6px;
+         }
+         ul.opinion-panel-one-post li a {
+         color: #000;
+         text-decoration: none;
+         font-weight: 500;
+         font-size: 12px;
+         }
+         ul.opinion-panel-author {
+         margin: 0px 0 0 6px;
+         padding: 0px;
+         }
+         ul.opinion-panel-author li {
+         list-style-type: none;
+         display: inline-block;
+         position: relative;
+         color: gray;
+         font-size: 10px;
+         font-weight: 700;
+         text-transform: uppercase;
+         padding-left: 85px;
+         }
+         h6.more-opinion-otv {
+         position: absolute;
+         top: 6px;
+         right: 20px;
+         text-transform: capitalize;
+         font-size: 12px;
+         }
+         /* opinion-otv-hm ////////////////*/
+         /* weather-------------*/
+         .add-otv-hm {
+         margin-bottom: 15px;
+         height: 250px;
+         width: 250px;
+         }
+         .weather-otv-hm {
+         height: 180px;
+         width: 250px;
+         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-weight: bold;
+         margin-bottom: 10px;
+         }
+         h3.weather-otv-hm {
+         font-size: 28px;
+         }
+         /* weather/////////////////*/
+         /* hero-sec-next-sec //////////////////////*/
+         /* web-stories-container-otv-hm---- */
+         .web-stories-container-otv-hm{
+         display: flex;
+         width: 100%;
+         margin-bottom: 40px;
+         position: relative;
+         }
+         .web-story-otv-hm{
+         width: 210px;
+         height:280px;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         border-radius: 2px;
+         margin-right: auto;
+         background-color: #000000;
+         background: transparent linear-gradient(180deg,rgb(44 45 49 / 0) 0,#000 100%) 0 0 no-repeat;
+         }
+         .web-story-otv-hm img {
+         border-radius: 2px;
+         width: 210px;
+         height:280px;
+         }
+         .web-story-otv-title {
+         border-radius: 4px;
+         position: absolute;
+         top: 73%;
+         width: 100%;
+         color: #fff;
+         padding: 5px 2px;
+         text-decoration: none;
+         background-color: #000000;
+         background: transparent linear-gradient(180deg,rgb(44 45 49 / 0) 0,#000 100%) 0 0 no-repeat; 
+         }
+         a.web-story-otv-title:hover {
+         color: #fff;
+         text-decoration: none;
+         }
+         .web-story-otv-title h6 {
+         font-size: 14px;
+         z-index: 2;
+         height:52px;
+         overflow: hidden;
+         }
+         .world-news-btn-web {
+         position: absolute;
+         top: 65%;
+         color: #fff;
+         border: none;
+         background-color: rgba(233, 223, 23, 0.92);
+         padding: 4px;
+         font-size: 8px;
+         text-transform: uppercase;
+         margin: 0;
+         font-weight: bold;
+         }
+         .more-2-otv{
+         position: absolute;
+         top: -26px;
+         right: 16px;
+         border: 2px solid red;
+         border-radius: 15px;
+         padding: 2px 5px;
+         font-size: 10px;
+         font-weight: 400;
+         text-transform: uppercase;
+         }
+         /* web-stories-container-otv-hm///// */
+         /* viral-news-container-otv-hm ------*/
+         .viral-news-container-otv-hm{
+         display: flex;
+         width: 100%;
+         margin-bottom: 40px;
+         position: relative;
+         }
+         .viral-news-otv-hm{
+         width: 16%;
+         box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+         margin-right: auto;
+         border-radius: 4px;
+         }
+         h6.viral-news-otv-title{
+         padding: 5px 4px 5px 10px;
+         font-size: 13px;
+         font-weight: 400;
+         }
+         .viral-news-otv-hm img {
+         border-radius: 4px 4px 0 0;
+         width: 182px;
+         height:150px;
+         }
+         .more-2-otv{
+         position: absolute;
+         top: -26px;
+         right: 16px;
+         border: 2px solid red;
+         border-radius: 15px;
+         padding: 2px 5px;
+         font-size: 10px;
+         font-weight: 400;
+         text-transform: uppercase;
+         }
+         /* viral-news-container-otv-hm /////////////*/
+         /* section for you----------- */
+         .sectionForYou-otv-hm{
+         position: relative;
+         margin-bottom: 40px ;
+         }
+         ul.section-menu-otv{
+         width: auto;
+         display: flex;
+         list-style-type: none;
+         overflow-x: hidden;
+         margin-left: -50px;
+         margin-bottom: 20px;
+         }
+         .section-menu-otv li{
+         margin: 0px 10px;
+         padding: 4px;
+         align-items: center;
+         border: 2px solid lightgray;
+         border-radius: 4px;
+         min-width: fit-content;
+         font-weight: 600;
+         background-color: #fff;
+         font-size: 14px;
+         }
+         .live-news-otv-hm{
+         margin-bottom: 20px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         min-height: 280px;
+         border-radius: 8px;
+         }
+         img.live-news-otv-img{
+         width: 350px;
+         height: 200px;
+         border-radius: 8px 8px 0 0;
+         border-bottom:4px solid red ;
+         } 
+         h6.live-news-otv-title{
+         font-weight: 400;
+         font-size: 16px;
+         padding: 5px 10px;
+         line-height: 26px;
+         }
+         .single-live-news-hm{
+         max-height:280px ;
+         }
+         .live-prio-panel {
+         position: relative;
+         display: inline-block;
+         padding-right: 120px;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         border-radius: 4px;
+         min-height: 90px;
+         margin-bottom: 6px;
+         }
+         img.live-prio-img {
+         width: 120px;
+         height: 60px;
+         object-fit: cover;
+         position: absolute;
+         right: 4px;
+         top: 0;
+         margin: 7px 0 7px 0;
+         border-radius: 4px;
+         }
+         ul.live-prio-panel-post {
+         padding:5px;
+         height: 68px;
+         overflow: hidden;
+         font-size: 14px;
+         }
+         ul.live-prio-panel-post li {
+         list-style-type: none;
+         margin: 0 6px;
+         line-height: 20px;
+         overflow: hidden;
+         font-weight: 400;
+         height: 40px;
+         }
+         .state-news-otv{
+         height: 280px;
+         }
+         /* section for you//////////// */
+         /* technology -------------------------*/
+         .tech-otv-hm{
+         position: relative;
+         margin-bottom: 40px ;
+         }
+         .tech-prio-story{
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         margin-bottom: 10px;
+         }
+         .tech-prio-panel {
+         position: relative;
+         display: inline-block;
+         padding-right: 120px;
+         padding-bottom: 2px;
+         min-height: 97px;
+         max-width: 262px;
+         margin: 5px 0 4px 0;
+         border-bottom: 1px solid darkgray;
+         }
+         .tech-prio-img {
+         width: 85px;
+         height: 64px;
+         object-fit: cover;
+         position: absolute;
+         right: 4px;
+         top: 0;
+         border-radius: 4px;
+         margin: 7px 0 7px 0;
+         }
+         ul.tech-prio-panel-post {
+         margin: 0 0px 0px 0px;
+         padding: 0px;
+         height: 54px;
+         overflow: hidden;
+         line-height: 14px;
+         font-weight: 600;
+         }
+         ul.tech-prio-panel-post li {
+         list-style-type: none;
+         margin: 0 6px;
+         }
+         ul.tech-prio-panel-post li a {
+         color: #000;
+         text-decoration: none;
+         font-weight: 500;
+         font-size: 12px;
+         }
+         ul.tech-prio-panel-post-time {
+         margin: 0px;
+         padding: 0px;
+         }
+         /* tech-latest-news ---------------*/
+         .tech-latest-news{
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         position: relative;
+         height: 554px;
+         }
+         .more-tech-news{
+         position: absolute;
+         bottom: 0;
+         right: 10px;
+         color: #000;
+         text-transform: capitalize;
+         font-size: 12px;
+         }
+         .main-tech-news{
+         position: relative;
+         margin-bottom: 26px;
+         }
+         .main-tech-news-title{
+         position: absolute;
+         font-size: 19px;
+         color: #fff;
+         font-weight: 700;
+         top: 51%;
+         left: 5px;
+         padding: 0 10px 0 14px;
+         height: 75px;
+         line-height: 24px;
+         overflow: hidden;
+         background-color: #000000;
+         background: transparent linear-gradient(180deg,rgb(44 45 49 / 0) 0,#000 100%) 0 0 no-repeat;
+         }
+         img.main-tech-news-img{
+         height: 175px;
+         width: 220px;
+         border-radius: 4px;
+         margin: 5px;
+         }
+         /* tech-latest-news /////////////////--*/
+         /* technology ///////////////////////*/
+         /* hcb-otv--------------------------- */
+         .hcb-otv{
+         margin-bottom: 40px;
+         }
+         /* movie --------------------------*/
+         .main-movie-news{
+         position: relative;
+         }
+         .main-movie-news-title{
+         position: absolute;
+         margin: 15px;
+         font-size: 20px;
+         color: #fff;
+         font-weight: 700;
+         top: 55%;
+         line-height: 25px;
+         height: 78px;
+         overflow: hidden;
+         z-index: 2;
+         background-color: #000000;
+         background: transparent linear-gradient(180deg,rgb(44 45 49 / 0) 0,#000 100%) 0 0 no-repeat;
+         }
+         img.main-movie-news-img{
+         height: 245px;
+         width: 355px;
+         border-radius: 4px;
+         margin: 5px;
+         }
+         .subsidiary-movie-news{
+         position: relative;
+         height: 141px;
+         width: 170px;
+         margin-bottom: 10px;
+         }
+         .subsidiary-movie-news-title{
+         position: absolute;
+         font-size: 14px;
+         color: #fff;
+         font-weight: 400;
+         padding: 0 15px;
+         top: 54%;
+         width: 94%;
+         line-height: 17px;
+         height: 53px;
+         overflow: hidden;
+         z-index: 2;
+         background-color: #000000;
+         background: transparent linear-gradient(180deg,rgb(44 45 49 / 0) 0,#000 100%) 0 0 no-repeat;
+         }
+         img.subsidiary-movie-news-img{
+         position: relative;
+         height: 141px;
+         width: 170px;
+         margin-bottom: 10px;
+         border-radius: 4px;
+         }
+         /* movie/////////////////////////////*/
+         /* hindi -----------------------------*/
+         .hindi-list-news-single {
+            position: relative;
+    display: inline-block;
+    padding-left: 60px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    height: 60px;
+         }
+         ul.live-prio-panel-post{
+         padding: 5px;
+         height: 60px;
+         overflow: hidden;
+         font-size: 12px;
+         }
+         img.hindi-list-news-img {
+         width: 55px;
+         height: 40px;
+         object-fit: cover;
+         position: absolute;
+         left: 4px;
+         top: 0;
+         margin: 7px 0 7px 0;
+         border-radius: 4px;
+         }
+         /* hindi //////////////////////*/
+         /* cricket ---------------------*/
+         .cricket-update-otv{
+         margin-left: -20px;
+         }
+         .main-cricket-news{
+         position: relative;
+         }
+         .main-cricket-news-title{
+         position: absolute;
+         font-size: 13px;
+         color: #fff;
+         font-weight: 700;
+         top: 55%;
+         left: 8px;
+         line-height: 15px;
+         padding: 0px 8px 6px 18px;
+         /* margin: 10px 10px; */
+         height: 46px;
+         overflow: hidden;
+         z-index: 2;
+         background-color: #000000;
+         background: transparent linear-gradient(180deg,rgb(44 45 49 / 0) 0,#000 100%) 0 0 no-repeat;
+         }
+         img.main-cricket-news-img{
+         height: 138px;
+         width: 182px;
+         border-radius: 4px;
+         margin: 5px;
+         }
+         /* cricket ////////////////////////*/
+         /* bussiness----------------------- */
+         .bussiness-prio-story{
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         margin-bottom: 10px;
+         max-height: 390px;
+         }
+         .bussiness-prio-panel {
+         position: relative;
+         display: inline-block;
+         padding-right: 85px;
+         height: 68px;
+         border-bottom: 1px solid darkgray;
+         margin-bottom: 5px;
+         }
+         .bussiness-prio-img {
+         width: 80px;
+         height: 60px;
+         position: absolute;
+         right: 4px;
+         top: 0;
+         border-radius: 4px;
+         margin: 7px 0 7px 0;
+         }
+         ul.bussiness-prio-panel-post {
+         margin: 0 0px 0px 0px;
+         padding: 0px;
+         height: 50px;
+         overflow: hidden;
+         line-height: 14px;
+         font-weight: 600;
+         }
+         ul.bussiness-prio-panel-post li {
+         list-style-type: none;
+         margin: 10px 6px;
+         }
+         ul.bussiness-prio-panel-post li a {
+         color: #000;
+         text-decoration: none;
+         font-weight: 500;
+         font-size: 12px;
+         }
+         ul.bussiness-prio-panel-post-time {
+         margin: 0px;
+         padding: 0px;
+         }
+         /* bussiness/////////////////////// */
+         /* hcb-otv///////////////////////// */
+         /* four-panel-section----------- */
+         .four-panel-section{
+         margin-bottom: 40px;
+         }
+         .odd-panel-sec{
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         }
+         .odd-panel-news{
+         position: relative;
+         }
+         .odd-panel-news-title{
+            
+         position: absolute;
+         padding: 0 15px 0 0;
+         font-size: 15px;
+         left: 5px;
+         color: #fff;
+         font-weight: 700;
+         top: 47%;
+         padding: 10px;
+         line-height: 22px;
+         height: 57px;
+         width: 96%;
+         overflow: hidden;
+         z-index: 2;
+         border-radius: 4px;
+         background-color: #000000;
+         background: transparent linear-gradient(180deg,rgb(44 45 49 / 0) 0,#000 100%) 0 0 no-repeat;
+         }
+         img.odd-panel-news-img{
+         height: 140px;
+         width: 290px;
+         border-radius: 4px;
+         margin: 5px 5px 22px 5px;
+         }
+         .even-panel-sec{
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         }
+         img.four-panel-news-img{
+         width: 56px;
+         height: 55px;
+         object-fit: cover;
+         position: absolute;
+         right: 4px;
+         top: 0;
+         margin: 7px 0 7px 0;
+         border-radius: 4px;
+         }
+         .four-panel-news {
+         position: relative;
+         display: inline-block;
+         padding-right: 60px;
+         border-radius: 4px;
+         margin-bottom: 8px;
+         }
+         ul.live-prio-panel-post{
+         padding: 5px;
+         height: 60px;
+         overflow: hidden;
+         font-size: 14px;
+         }
+         ul.even-prio-panel-post {
+         padding:5px;
+         height: 82px;
+         overflow: hidden;
+         font-size: 14px;
+         }
+         ul.even-prio-panel-post li {
+
+         list-style-type: none;
+         margin: 0 6px;
+         line-height: 20px;
+         overflow: hidden;
+         font-weight: 400;
+         height: 60px;
+      }
+         /* four-panel-section///////////////// */
+         /* three-panel-sec -------------------*/
+         .three-panel-sec{
+         margin-bottom: 40px;
+         }
+         img.three-panel-news-img{
+         width: 80px;
+         height: 68px;
+         object-fit: cover;
+         position: absolute;
+         right: 7px;
+         top: 0;
+         border-radius: 4px;
+         }
+         .three-panel-news {
+         position: relative;
+         display: inline-block;
+         padding-right: 80px;
+         border-radius: 4px;
+         margin: 7px 0;
+         }
+         ul.three-prio-panel-post {
+         padding:5px;
+         height: 102px;
+         overflow: hidden;
+         font-size: 14px;
+         }
+         ul.three-prio-panel-post li {
+         list-style-type: none;
+         margin: 0 6px;
+         line-height: 20px;
+         overflow: hidden;
+         font-weight: 400;
+         height: 77px;
+      }
+         ul.three-prio-panel-odd {
+         padding:5px;
+         height: 112px;
+         overflow: hidden;
+         font-size: 14px;
+         }
+         ul.three-prio-panel-odd li {
+         list-style-type: none;
+         margin: 0 6px;
+         line-height: 20px;
+         overflow: hidden;
+         font-weight: 400;
+         height: 84px;
+      }
+         /* big-panel-section ----------------*/
+         .big-panel-section{
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         min-height: 436px;
+         }
+         .big-story-panel-one {
+         position: relative;
+         display: inline-block;
+         padding-left: 190px;
+         padding-bottom: 0px;
+         }
+         img.big-stories-img {
+         width: 210px;
+         position: absolute;
+         top:6px;
+         left:6px;
+         border-radius: 4px;
+         margin: 0 0 0 2px;
+         }
+         ul.big-panel-one-post h5 {
+          padding: 0px;
+          font-size: 17px;
+          overflow: hidden;
+          line-height: 18px;
+          font-weight: 400;
+          max-height: 55px;
+         }
+         ul.big-panel-one-post li {
+         list-style-type: none;
+         margin: 0 6px 5px 0;
+         }
+         ul.big-panel-one-post li p {
+         color: gray;
+         text-decoration: none;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 19px;
+        max-height: 36px;
+        overflow: hidden;
+        margin-left: -20px;
+         }
+         /* big-panel-section ///////////////////*/
+         /* three-panel-sec ////////////////////*/
+         /* daily-show-otv-hm ------------*/
+         .daily-show-otv-hm{
+         position: relative;
+         }
+         /* daily-show-single-folder------------*/
+         .daily-show-single-folder{
+         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+         }
+         .daily-show-single-img{
+         width: 350px;
+         height: 200px;
+         border-radius: 2px 2px 0 0;
+         }
+         h5.daily-show-title-otv{
+         padding: 5px 10px 40px 10px ;
+         font-size: 18px;
+         font-weight: 600;
+         font-family: 'Faustina', serif;
+         border-bottom: 1px solid lightgray;
+         }
+         p.daily-show-details{
+         padding: 5px 10px 10px 10px ;
+         font-size: 15px;
+         }
+         /* daily-show-single-folder///////////*/
+         /* daily-show-otv-hm ///////////*/
+         /* img-cnt---------------- */
+         .img-container-otv-hm{
+         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+         margin-bottom: 30px;
+         min-height: 320px;
+         }
+         .img-container-img-otv{
+         padding: 10px;
+         }
+         .img-container-img-otv img{
+         height:200px;
+         width:360px  ;
+         }
+         .img-content-sidebar{
+         min-height: 160px;
+         padding: 5px;
+         }
+         .img-content-sidebar img{
+         height:80px;
+         width:150px;
+         }
+         span.img-no-otv{
+         font-weight: bold;
+         font-size: 12px;
+         }
+         .lg-img-otv{
+         position: relative;
+         }
+         /* img-cnt /////////////////*/
+         /* vdo-cnt---------------- */
+         .vdo-container-otv-hm{
+         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+         margin-bottom: 30px;
+         min-height: 320px;
+         }
+         .vdo-container-img-otv{
+         padding: 10px;
+         }
+         .vdo-container-img-otv img{
+         height:200px;
+         width:360px  ;
+         }
+         .vdo-content-sidebar{
+         min-height: 160px;
+         padding: 5px;
+         }
+         .vdo-content-sidebar img{
+         height:80px;
+         width:150px;
+         }
+         /* vdo-cnt /////////////////*/
+         /* footer-tab-otv----------------- */
+         .footer-otv-hm{
+         background-color: #333;
+         padding: 20px 0 0 0;
+         }
+         .footer-tab-otv{
+         margin-left: 12%;
+         }
+         .footer-content-otv{
+         margin-left: 12%;
+         }
+         ul.footer-tab-otv {
+         display: flex;
+         list-style-type: none;
+         }
+         ul.footer-tab-otv li{
+         margin: 0 7px;
+         background-color:red;
+         font-weight: 500;
+         padding: 4px 8px;
+         border-radius: 15px;
+         text-transform: capitalize;
+         }
+         ul.footer-tab-otv li a{
+         color: #fff;
+         }
+         .footer-content-otv{
+         display: flex;
+         }
+         ul.footer-catagori-container-otv{
+         list-style-type: none;
+         list-style-type: none;
+         padding-right: 40px;
+         border-right: 1px solid gray;
+         }
+         li.catagori-title-otv-ft {
+         font-size: 14px;
+         color: #fff;
+         font-weight: 700;
+         text-transform: capitalize;
+         text-decoration: underline;
+         }
+         li.catagori-list-otv-ft{
+         list-style-type: none;
+         font-size: 12px;
+         font-weight: 600;
+         color: lightgray;
+         text-transform: capitalize;
+         }
+         /* footer-tab-otv/////////////////// */
+         /* cricket-news ---------------*/
+         .sp-cricket-otv{
+         position: relative;
+         }
+         .cricket-container-otv-hm{
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         padding: 0 0 10px 10px;
+         margin-bottom:20px;
+         }
+         .cricket-container-otv-hm ul {
+         list-style: none;
+         display: flex;
+         border-bottom: 1px solid black;
+         /* width: 50%; */
+         padding:0 10px;
+         }
+         .other-cricket-tab-otv {
+         display: block;
+         font-size: 16px;
+         font-weight: 700;
+         text-transform: uppercase;
+         padding: 0 10px ;
+         text-decoration:none;
+         color: #000;
+         }
+         .other-cricket-tab-otv {
+         color: green;
+         margin: 0;
+         padding-bottom: 2px;
+         border-bottom: 2px solid green; 
+         }
+         .cricket-cnt-img{
+         margin: 10px;
+         padding: 0;
+         width: 355px;
+         height: 180px;
+         border-radius: 4px;
+         }
+         h6.cricket-cnt-otv{
+         margin: 10px;
+         }
+         .cricket-prio-panel {
+         position: relative;
+         display: inline-block;
+         padding-left: 70px;
+         }
+         img.cricket-prio-img {
+         width: 70px;
+         height: 50px;
+         object-fit: cover;
+         position: absolute;
+         left: 4px;
+         top: 0;
+         border-radius: 4px;
+         margin: 7px 0 7px 0;
+         }
+         ul.cricket-prio-panel-post {
+         padding:5px;
+         height: 50px;
+         overflow: hidden;
+         line-height: 14px;
+         font-size: 14px;
+         min-height: 60px;
+         border-bottom: 1px solid gray;
+         }
+         ul.cricket-prio-panel-post li {
+         list-style-type: none;
+         margin: 0 6px;
+         }
+         .cricket-sp-left{
+         margin-top: 10px;
+         padding-right:30px ;
+         border-right: 1px solid gray;
+         }
+         /* cricket-news ///////////////*/
+      </style>
+   </head>
+   <body>
+      <div class="header-otv-hm">
+         <div class="day-det-otv-hm">
+            <p class="details-otv-hm">thruday,</p>
+            <p class="details-otv-hm">septemember</p>
+            <p class="details-otv-hm dt-hm">20,2020</p>
+            <p class="details-otv-hm ct-hm">bhubaneswar</p>
+            <img src="#" alt="otv7" class="weather-icon">
+            <p class="details-otv-hm temp">31 <sup>o</sup>c </p>
+            <div class="dropdown down-arrow-hm">
+               <i class="bi bi-chevron-down down-arrow" data-toggle="dropdown"></i>
+               <div class="dropdown-menu">
+                  <button class="dropdown-item" type="button">Action</button>
+                  <button class="dropdown-item" type="button">Another action</button>
+                  <button class="dropdown-item" type="button"> Something else here </button>
+               </div>
+            </div>
+         </div>
+         <div class="social-links-otv">
+            <a href="#" class="social-links-hd">
+            <img src="images/facebook.svg" alt="fb">
+            </a>
+            <a href="#" class="social-links-hd">
+            <img src="images/twiter.svg" alt="twt">
+            </a>
+            <a href="#" class="social-links-hd">
+            <img src="images/linkedin.svg" alt="ld">
+            </a>
+            <a href="#" class="social-links-hd">
+            <img src="images/insta.svg" alt="insta">
+            </a>
+            <a href="#" class="social-links-hd">
+            <img src="images/youtube.svg" alt="yt">
+            </a>
+            <a href="#" class="social-links-hd">
+            <img src="images/telegram.svg" alt="tg">
+            </a>
+         </div>
+      </div>
+      <div class="menu-otv-hm">
+         <div class="otv-logo-menu-op">
+            <div class="otv-header-logo">
+               <img src="images/logo-odisha-tv.svg" alt="otv-logo" class="otv-header-logo-img">
+            </div>
+            <div class="menu-rows-hm">
+               <div class="menu-row-one">
+                  <ul class="main-menu-list-hm">
+                     <li>
+                        <a href="#">
+                        <img src="images/hamburger-icon.svg" alt="otv5" class="main-menu-list-icon">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <img src="images/home-otv.svg" alt="otv9" class="main-menu-list-icon">
+                        </a>
+                        <p class="main-menu-list c-og">news</p>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <img src="images/video-otv.svg" alt="otv71" class="main-menu-list-icon">
+                        </a>
+                        <p class="main-menu-list">videos</p>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <img src="images/photos-otv.svg" alt="otv73" class="main-menu-list-icon">
+                        </a>
+                        <p class="main-menu-list">photos</p>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <img src="images/webseries-otv.svg" alt="otv74" class="main-menu-list-icon">
+                        </a>
+                        <p class="main-menu-list">web stories</p>
+                     </li>
+                  </ul>
+                  <ul class="rt-main-menu-otv">
+                     <li>
+                        <a href="#">
+                        <img src="images/night-mode.svg" alt="otv5"  class="nighticon-otv">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <img src="images/search-otv.svg" alt="otv52"  class="searchicon-otv">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                        <img src="images/mobile-otv.svg" alt="otv51" class="mob-icon-otv">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <p class="signin-hm-otv">sign in</p>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="menu-row-two">
+                  <ul class="menu-list-otv-hm">
+                     <li>
+                        <a href="#">live tv</a>
+                     </li>
+                     <li>
+                        <a href="#">ipl</a>
+                     </li>
+                     <li>
+                        <a href="#">latest</a>
+                     </li>
+                     <li>
+                        <a href="#">india</a>
+                     </li>
+                     <li>
+                        <a href="#" class="c-og">my money</a>
+                     </li>
+                     <li>
+                        <a href="#">cricket</a>
+                     </li>
+                     <li>
+                        <a href="#">entertainment</a>
+                     </li>
+                     <li>
+                        <a href="#">lifestyle</a>
+                     </li>
+                     <li>
+                        <a href="#">buissness</a>
+                     </li>
+                     <li>
+                        <a href="#">world</a>
+                     </li>
+                     <li>
+                        <a href="#">mobility</a>
+                     </li>
+                     <li>
+                        <a href="#">viral</a>
+                     </li>
+                     <li>
+                        <a href="#">technology</a>
+                     </li>
+                     <li>
+                        <a href="#">vgame <sup class="c-og">new</sup>
+                        </a>
+                     </li>
+                  </ul>
+                  <div class="astro-otv-hm">
+                     <a href="#">
+                     <img src="https://odishatv.in/commondir/images/svg/astrospeak.svg" width="15" height="15" class="astro-otv-img" alt="otv111">
+                     </a>
+                     <p class="astrospeak-otv"> astrospeak <sup class="astrospeak-otv">new</sup>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- hero-section-->
+      <section>
+         <div class="otv-hm-heroSec">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-2">
+                     <div class="side-add-otv">
+                        <a href="#">
+                        <img src="https://tpc.googlesyndication.com/simgad/12789618444595425812" alt="otv1" class="side-add-otv">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-lg-8">
+                     <div class="heading-dropdown-otv">
+                        <h3 class="heading-otv-hm">big story</h3>
+                        <div class="dropdown hero-sec-da">
+                           <div class="dropdown-menu">
+                              <button class="dropdown-item" type="button">Action</button>
+                              <button class="dropdown-item" type="button"> Another action </button>
+                              <button class="dropdown-item" type="button"> Something else here </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="hero-sec-img">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/IMAGE_1685620863.jpg" alt="otv2" class="otv-hm-heroSec-img">
+                        </a>
+                        <div class="pht-credit-Sec">
+                           <img src="images/camera-icon.svg" alt="otv888" class="pht-credit-Sec-icon">
+                           <p class="pht-credit-heroSec"> photo credit: <span>Dev singh</span>
+                           </p>
+                        </div>
+                     </div>
+                     <a href="#">
+                        <div class="hero-sec-imgDes-contain">
+                        <p class="hero-sec-imgDes"> Lorem ipsum dolor  sit amet consectetur adipisicing elitsit amet consectetur adipisicing elit. enti Repellat doloremque repudiandae veniam officiis praes nobis delectus perspic mollitia maiores tenetur Lorem ipsum dolor  sit amet consectetur adipisicing e</p>
+                     </div>
+                     </a>
+                     <div class="place-update-heroSec">
+                        <span class="plc-name-span">india</span>
+                        <p class="last-update-hrsec"> last update: <span class="timimg-hrSec">17min ago</span>
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-2">
+                     <div class="side-add-otv">
+                        <a href="#">
+                        <img src="https://tpc.googlesyndication.com/simgad/12789618444595425812" alt="otv1" class="side-add-otv">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- hero-section //////////////////////-->
+      <!-- hero-section-nect-section -->
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3">
+                  <!-- carousel -->
+                  <div id="slider" class="carousel slide" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                        <li data-target="#slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider" data-slide-to="1"></li>
+                        <li data-target="#slider" data-slide-to="2"></li>
+                        <li data-target="#slider" data-slide-to="3"></li>
+                        <li data-target="#slider" data-slide-to="4"></li>
+                     </ol>
+                     <div class="carousel-container">
+                        <div class="carousel-inner">
+                           <h4 class="container-heading-hm">watch</h4>
+                           <div class="carousel-item active">
+                              <a href="#">
+                              <img class="d-block w-100" src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/srusti_1626330804.jpg" alt="otv4">
+                              </a>
+                              <a href="#" class="blk">
+                                 <h6>
+                                    <span> watchlive coverage:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto enim laudantium?
+                                 </h6>
+                              </a>
+                           </div>
+                           <div class="carousel-item">
+                              <a href="#">
+                              <img class="d-block w-100" src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/Al_Pacino_1685534264.jpg" alt="otv5">
+                              </a>
+                              <a href="#" class="blk">
+                                 <h6>
+                                    <span> watchlive coverage:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto enim laudantium?
+                                 </h6>
+                              </a>
+                           </div>
+                           <div class="carousel-item">
+                              <a href="#">
+                              <img class="d-block w-100" src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/srusti_1626330804.jpg" alt="otv6">
+                              </a>
+                              <a href="#" class="blk">
+                                 <h6>
+                                    <span> watchlive coverage:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto enim laudantium?
+                                 </h6>
+                              </a>
+                           </div>
+                           <div class="carousel-item">
+                              <a href="#">
+                              <img class="d-block w-100" src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/IMAGE_1685535064.jpg" alt="otv7">
+                              </a>
+                              <a href="#" class="blk">
+                                 <h6>
+                                    <span> watchlive coverage:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto enim laudantium?
+                                 </h6>
+                              </a>
+                           </div>
+                           <div class="carousel-item">
+                              <a href="#">
+                              <img class="d-block w-100" src="https://images.odishatv.in/uploadimage/library/16_9/16_9_3/cuttack_1685528096.jpg" alt="otv8">
+                              </a>
+                              <a href="#" class="blk">
+                                 <h6>
+                                    <span> watchlive coverage:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iusto enim laudantium?
+                                 </h6>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- carousel -->
+                  <!-- top story -->
+                  <div class="top-stories-otv">
+                     <h4 class="heading-one-hm">top stories</h4>
+                     <a href="#" class="blk">
+                        <p class="more-3-otv">more</p>
+                     </a>
+                     <div class="story-panel-one">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685525215.jpg" class="top-stories-img" alt="otv9">
+                        </a>
+                        <ul class="story-panel-one-post">
+                           <li>
+                              <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                           </li>
+                           
+                        </ul>
+                        <ul class="story-panel-one-time">
+                           <li>Odisha</li>
+                           <li>15 minutes ago</li>
+                        </ul>
+                     </div>
+                     <div class="story-panel-one">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685525215.jpg" class="top-stories-img" alt="otv10">
+                        </a>
+                        <ul class="story-panel-one-post">
+                           <li>
+                              <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                           </li>
+                           
+                        </ul>
+                        <ul class="story-panel-one-time">
+                           <li>Odisha</li>
+                           <li>15 minutes ago</li>
+                        </ul>
+                     </div>
+                     <div class="story-panel-one">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685525215.jpg" class="top-stories-img" alt="otv10">
+                        </a>
+                        <ul class="story-panel-one-post">
+                           <li>
+                              <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                           </li>
+                           
+                        </ul>
+                        <ul class="story-panel-one-time">
+                           <li>Odisha</li>
+                           <li>15 minutes ago</li>
+                        </ul>
+                     </div>
+                     <div class="story-panel-one">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/s_1685932009.jpg" class="top-stories-img" alt="otv11">
+                        </a>
+                        <ul class="story-panel-one-post">
+                           <li>
+                              <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                           </li>
+                           
+                        </ul>
+                        <ul class="story-panel-one-time">
+                           <li>Odisha</li>
+                           <li>15 minutes ago</li>
+                        </ul>
+                     </div>
+                     <div class="story-panel-one">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685525215.jpg" class="top-stories-img" alt="otv12">
+                        </a>
+                        <ul class="story-panel-one-post">
+                           <li>
+                              <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                           </li>
+                          
+                        </ul>
+                        <ul class="story-panel-one-time">
+                           <li>Odisha</li>
+                           <li>15 minutes ago</li>
+                        </ul>
+                     </div>
+                     <div class="story-panel-one">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/s_1685932009.jpg" class="top-stories-img" alt="otv13">
+                        </a>
+                        <ul class="story-panel-one-post">
+                           <li>
+                              <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                           </li>
+                           
+                        </ul>
+                        <ul class="story-panel-one-time">
+                           <li>Odisha</li>
+                           <li>15 minutes ago</li>
+                        </ul>
+                     </div>
+                     <div class="story-panel-one">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685525215.jpg" class="top-stories-img" alt="otv11114">
+                        </a>
+                        <ul class="story-panel-one-post">
+                           <li>
+                              <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                           </li>
+                           
+                        </ul>
+                        <ul class="story-panel-one-time">
+                           <li>Odisha</li>
+                           <li>15 minutes ago</li>
+                        </ul>
+                     </div>
+                     <div class="story-panel-one">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/s_1685932009.jpg" class="top-stories-img" alt="otv111111111115">
+                        </a>
+                        <ul class="story-panel-one-post">
+                           <li>
+                              <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                           </li>
+                           
+                        </ul>
+                        <ul class="story-panel-one-time">
+                           <li>Odisha</li>
+                           <li>15 minutes ago</li>
+                        </ul>
+                     </div>
+                     <div class="story-panel-one">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/s_1685932009.jpg" class="top-stories-img" alt="otv16">
+                        </a>
+                        <ul class="story-panel-one-post">
+                           <li>
+                              <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                           </li>
+                           
+                        </ul>
+                        <ul class="story-panel-one-time">
+                           <li>Odisha</li>
+                           <li>15 minutes ago</li>
+                        </ul>
+                     </div>
+                     <div class="story-panel-one">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685525215.jpg" class="top-stories-img" alt="otv117">
+                        </a>
+                        <ul class="story-panel-one-post">
+                           <li>
+                              <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                           </li>
+                           
+                        </ul>
+                        <ul class="story-panel-one-time">
+                           <li>Odisha</li>
+                           <li>15 minutes ago</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- top story ////////////////////-->
+               </div>
+               <div class="col-lg-6">
+                  <!-- frist-prio-story -->
+                  <div class="first-prio-sty-one">
+                     <div class="frist-prio-story">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/IMAGE_1685891640.jpg" class="frist-prio-story-img" alt="otv91">
+                        </a>
+                        <ul class="frist-prio-time">
+                           <li>Odisha</li>
+                           <li>15 minutes ago</li>
+                        </ul>
+                        <ul class="frist-prio-credit">
+                           <li>photo credit:</li>
+                           <li>silpa sinha</li>
+                        </ul>
+                     </div>
+                     <a href="#" class="blk">
+                        <h5 class="prio-story-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, perspiciatis. Magni, omnis <span>| Live update</span>
+                        </h5>
+                     </a>
+                  </div>
+                  <!-- frist-prio-story ///////////////////-->
+                  <div class="row">
+                     <div class="col-lg-8">
+                        <div class="least-prio-story">
+                           <div class="least-prio-panel">
+                              <a href="#">
+                              <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685874719.jpg" class="least-prio-img" alt="otv19">
+                              </a>
+                              <ul class="least-prio-panel-post">
+                                 <li>
+                                    <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="least-prio-panel">
+                              <a href="#">
+                              <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685874719.jpg" class="least-prio-img" alt="otv20">
+                              </a>
+                              <ul class="least-prio-panel-post">
+                                 <li>
+                                    <a href="#">Odisha shocker: Chhattisgarh tourists ourists attacked over toll attacked over toll payment</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="least-prio-panel">
+                              <a href="#">
+                              <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685874719.jpg" class="least-prio-img" alt="otv21">
+                              </a>
+                              <ul class="least-prio-panel-post">
+                                 <li>
+                                    <a href="#">Odisha shocker: Chhattisgarh tourists attacked over tollourists attacked over toll payment</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- video-story-otv-hm-->
+                     <div class="col-lg-4">
+                        <div class="add-style-2"></div>
+                     </div>
+                     <!-- video-story-otv-hm-->
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <!-- second-prio-story-->
+                        <div class="second-prio-story">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685874719.jpg" class="second-prio-story-img" alt="otv92">
+                           </a>
+                           <a href="#" class="blk">
+                              <h5 class="second-prio-story-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, </h5>
+                           </a>
+                           <ul class="story-panel-one-time">
+                              <li>Odisha</li>
+                              <li>15 minutes ago</li>
+                           </ul>
+                        </div>
+                        <!-- second-prio-story-->
+                     </div>
+                     <div class="col-lg-6">
+                        <!-- learnmore-add-otv-->
+                        <div class="learnmore-add-otv">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685874719.jpg" alt="otv23">
+                           </a>
+                           <a href="#" class="blk">
+                              <h5 class="second-prio-story-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, </h5>
+                           </a>
+                           <ul class="learnmore-add">
+                              <li>
+                                 <p>Lorem ipsum</p>
+                              </li>
+                              <li>
+                                 <button class="learnmore">load more</button>
+                              </li>
+                           </ul>
+                        </div>
+                        <!-- learnmore-add-otv ///////////-->
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-lg-4">
+                        <!-- video-story-otv-hm -->
+                        <div class="video-story-otv-hm">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1685863027.webp" class="video-story-img-otv" alt="otv93">
+                           </a>
+                           <div class="world-news-btn">
+                              worlds news
+                           </div>
+                           <a href="#" class="video-story-otv-title">
+                              <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                           </a>
+                        </div>
+                        <!-- video-story-otv-hm ///////////////-->
+                     </div>
+                     <div class="col-lg-4">
+                        <div class="video-story-otv-hm">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1685863027.webp" class="video-story-img-otv" alt="lg-img-otv">
+                           </a>
+                           <div class="world-news-btn">
+                              worlds news
+                           </div>
+                           <a href="#" class="video-story-otv-title">
+                              <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-lg-4">
+                        <div class="video-story-otv-hm">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1685863027.webp" class="video-story-img-otv" alt="94">
+                           </a>
+                           <div class="world-news-btn">
+                              worlds news
+                           </div>
+                           <a href="#" class="video-story-otv-title">
+                              <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                           </a>
+                        </div>
+                     </div>
+                     <!-- video-story-otv-hm ///////////////-->
+                  </div>
+                  <div class="row">
+                     <!-- video-story-otv-hm-->
+                     <div class="col-lg-4">
+                        <div class="video-story-otv-hm">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1685863027.webp" class="video-story-img-otv" alt="otv26">
+                           </a>
+                           <div class="world-news-btn">
+                              worlds news
+                           </div>
+                           <a href="#" class="video-story-otv-title">
+                              <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                           </a>
+                        </div>
+                     </div>
+                     <!-- video-story-otv-hm ///////////////-->
+                     <div class="col-lg-8">
+                        <!-- least-prio-story -->
+                        <div class="least-prio-story">
+                           <div class="least-prio-panel">
+                              <a href="#">
+                              <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685935726.jpg" class="least-prio-img" alt="otv27">
+                              </a>
+                              <ul class="least-prio-panel-post">
+                                 <li>
+                                    <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="least-prio-panel">
+                              <a href="#">
+                              <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685935726.jpg" class="least-prio-img" alt="otv28">
+                              </a>
+                              <ul class="least-prio-panel-post">
+                                 <li>
+                                    <a href="#">Odisha shocker: Chhattisgarh tourists ourists attacked over toll attacked over toll payment</a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <!-- least-prio-story /////////////////-->
+                           <div class="least-prio-panel">
+                              <a href="#">
+                              <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685935726.jpg" class="least-prio-img" alt="otv29">
+                              </a>
+                              <ul class="least-prio-panel-post">
+                                 <li>
+                                    <a href="#">Odisha shocker: Chhattisgarh tourists attacked over tollourists attacked over toll payment</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3">
+                  <a href="#">
+                  <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Teachers_1640940412.jpg" class="add-otv-hm" alt="otv300">
+                  </a>
+                  <!-- weather -->
+                  <div class="weather-otv-hm">
+                     <h3>weather</h3>
+                  </div>
+                  <!-- weather ///////////////////////-->
+                  <a href="#">
+                  <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Teachers_1640940412.jpg" class="add-otv-hm" alt="otv310">
+                  </a>
+                  <a href="#">
+                  <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Teachers_1640940412.jpg" class="add-otv-hm" alt="otv320">
+                  </a>
+                  <a href="#">
+                  <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Teachers_1640940412.jpg" class="add-otv-hm" alt="otv330">
+                  </a>
+                  <a href="#">
+                  <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Teachers_1640940412.jpg" class="add-otv-hm" alt="otv331">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- opinion -->
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-9">
+                  <div class="opinion-container-otv-hm">
+                     <h4 class="heading-one-hm">opinion</h4>
+                     <div class="opinion-flex-container-otv">
+                        <div class="opinion-panel-one">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685879130.jpg" class="opinion-stories-img" alt="otv45">
+                           </a>
+                           <ul class="opinion-panel-one-post">
+                              <li>
+                                 <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                              </li>
+                           </ul>
+                           <ul class="opinion-panel-author">
+                              <li>Odisha</li>
+                           </ul>
+                        </div>
+                        <div class="opinion-panel-one">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685879130.jpg" class="opinion-stories-img" alt="otv46">
+                           </a>
+                           <ul class="opinion-panel-one-post">
+                              <li>
+                                 <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                              </li>
+                           </ul>
+                           <ul class="opinion-panel-author">
+                              <li>Odisha</li>
+                           </ul>
+                        </div>
+                        <div class="opinion-panel-one">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/IMAGE_1685879130.jpg" class="opinion-stories-img" alt="otv49">
+                           </a>
+                           <ul class="opinion-panel-one-post">
+                              <li>
+                                 <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                              </li>
+                           </ul>
+                           <ul class="opinion-panel-author">
+                              <li>Odisha</li>
+                           </ul>
+                        </div>
+                     </div>
+                     <a href="#" class="blk">
+                        <h6 class="more-opinion-otv">more</h6>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- opinion -->
+      <!-- hero-section-nect-section ///////////////-->
+      <!-- webstories -->
+      <section>
+         <div class="container">
+            <div class="row">
+               <h4 class="heading-one-hm">web stories</h4>
+               <!-- web-stories-container-otv-->
+               <div class="web-stories-container-otv-hm">
+                  <div class="web-story-otv-hm">
+                     <a href="#">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1685863027.webp" alt="otv73">
+                     </a>
+                     <button class="world-news-btn-web">
+                     worlds news
+                     </button >
+                     <a href="#" class="web-story-otv-title">
+                        <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                     </a>
+                  </div>
+                  <div class="web-story-otv-hm">
+                     <a href="#">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1685863027.webp" alt="otv74">
+                     </a>
+                     <button class="world-news-btn-web">
+                     worlds news
+                     </button >
+                     <a href="#" class="web-story-otv-title">
+                        <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                     </a>
+                  </div>
+                  <div class="web-story-otv-hm">
+                     <a href="#">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1685863027.webp" alt="otv75">
+                     </a>
+                     <button class="world-news-btn-web">
+                     worlds news
+                     </button >
+                     <a href="#" class="web-story-otv-title">
+                        <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                     </a>
+                  </div>
+                  <div class="web-story-otv-hm">
+                     <a href="#">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1685863027.webp" alt="otv76">
+                     </a>
+                     <button class="world-news-btn-web">
+                     worlds news
+                     </button >
+                     <a href="#" class="web-story-otv-title">
+                        <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                     </a>
+                  </div>
+                  <div class="web-story-otv-hm">
+                     <a href="#">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/recent_photo_1685863027.webp" alt="otv77">
+                     </a>
+                     <button class="world-news-btn-web">
+                     worlds news
+                     </button >
+                     <a href="#" class="web-story-otv-title">
+                        <h6> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                     </a>
+                  </div>
+                  <a href="#" class="blk">
+                     <p class="more-2-otv">more</p>
+                  </a>
+               </div>
+               <!-- web-stories-container-otv-hm /////////////////-->
+            </div>
+         </div>
+      </section>
+      <!--webstories-->
+      <!--viralnews-->
+      <section>
+         <div class="container">
+            <div class="row">
+               <h4 class="heading-one-hm">viral news</h4>
+               <div class="viral-news-container-otv-hm">
+                  <div class="viral-news-otv-hm">
+                     <a href="#">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685671921.jpg" alt="otv78">
+                     </a>
+                     <a href="#" class="blk">
+                        <h6 class="viral-news-otv-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                     </a>
+                  </div>
+                  <div class="viral-news-otv-hm">
+                     <a href="#">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685671921.jpg" alt="otv80">
+                     </a>
+                     <a href="#" class="blk">
+                        <h6 class="viral-news-otv-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                     </a>
+                  </div>
+                  <div class="viral-news-otv-hm">
+                     <a href="#">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685671921.jpg" alt="otv85">
+                     </a>
+                     <a href="#" class="blk">
+                        <h6 class="viral-news-otv-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                     </a>
+                  </div>
+                  <div class="viral-news-otv-hm">
+                     <a href="#">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685671921.jpg" alt="otv86">
+                     </a>
+                     <a href="#" class="blk">
+                        <h6 class="viral-news-otv-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                     </a>
+                  </div>
+                  <div class="viral-news-otv-hm">
+                     <a href="#">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685671921.jpg" alt="otv87">
+                     </a>
+                     <a href="#" class="blk">
+                        <h6 class="viral-news-otv-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                     </a>
+                  </div>
+                  <div class="viral-news-otv-hm">
+                     <a href="#">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685671921.jpg" alt="otv89">
+                     </a>
+                     <a href="#" class="blk">
+                        <h6 class="viral-news-otv-title"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, rerum! </h6>
+                     </a>
+                  </div>
+                  <a href="#" class="blk">
+                     <p class="more-2-otv">read in odisha</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- viralnews -->
+      <!-- section for you-->
+      <section>
+         <div class="container">
+            <div class="sectionForYou-otv-hm">
+               <h4 class="heading-one-hm">section for you</h4>
+               <a href="#" class="blk">
+                  <p class="more-3-otv">more</p>
+               </a>
+               <ul class="nav nav-tabs">
+                  <li class="active">
+                     <a  data-toggle="tab" href="#Andhra-Pradesh-otv"> Andhra Pradesh</a>
+                  </li>
+                  <li>
+                     <a  data-toggle="tab" href="#Assam-otv"> Assam</a>
+                  </li>
+                  <li>
+                     <a data-toggle="tab" href="#Bihar-otv">Bihar</a>
+                  </li>
+                  <li>
+                     <a  data-toggle="tab" href="#Chhattisgarh-otv">Chhattisgarh</a>
+                  </li>
+                  <li><a data-toggle="tab" href="#Goa-otv">Goa</a></li>
+                  <li><a  data-toggle="tab" href="#Gujarat-otv">Gujarat</a></li>
+                  <li><a  data-toggle="tab" href="#Andhra-Pradesh-otv-otv"> Andhra Pradesh</a></li>
+                  <li><a data-toggle="tab" href="#Haryana-otv">Haryana</a></li>
+                  <li><a  data-toggle="tab" href="#Himachal-Pradesh-otv">Himachal Pradesh</a></li>
+                  <li><a data-toggle="tab" href="#Jammu-and-Kashmir-otv"> Jammu and Kashmir</a></li>
+                  <li><a  data-toggle="tab" href="#Jharkhand-otv">Jharkhand</a></li>
+                  <li><a  data-toggle="tab" href="#Karnataka-otv">Karnataka</a></li>
+                  <li><a  data-toggle="tab" href="#Kerala-otv">Kerala</a></li>
+                  <li><a  data-toggle="tab" href="#Madhya-Pradesh-otv">Madhya Pradesh</a></li>
+                  <li><a  data-toggle="tab" href="#Maharashtra-otv"> Maharashtra</a></li>
+               </ul>
+               <div class="tab-content state-news-otv">
+                  <div id="Andhra-Pradesh-otv" class="tab-pane fade in active show">
+                     <div class="row">
+                        <div class="col-lg-4">
+                           <div class="live-news-otv-hm">
+                              <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638513885.jpg" class="live-news-otv-img"  alt="otv201">
+                              <h6 class="live-news-otv-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quis nisi dolor?</h6>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="single-live-news-hm">
+                              <div class="live-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638513885.jpg" class="live-prio-img" alt="otv202">
+                                 </a>
+                                 <ul class="live-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="live-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638513885.jpg" class="live-prio-img" alt="otv203">
+                                 </a>
+                                 <ul class="live-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="live-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638513885.jpg" class="live-prio-img" alt="otv204">
+                                 </a>
+                                 <ul class="live-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="single-live-news-hm">
+                              <div class="live-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638513885.jpg" class="live-prio-img" alt="otv205">
+                                 </a>
+                                 <ul class="live-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="live-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638513885.jpg" class="live-prio-img" alt="otv206">
+                                 </a>
+                                 <ul class="live-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="live-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638513885.jpg" class="live-prio-img" alt="otv207">
+                                 </a>
+                                 <ul class="live-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="Assam-otv" class="tab-pane fade">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- section for you /////////////////////////////////-->
+      <!-- technology -->
+      <section>
+         <div class="container">
+            <div class="tech-otv-hm">
+               <div class="row">
+                  <div class="col-lg-8">
+                     <h4 class="heading-one-hm">technology</h4>
+                     <a href="#" class="blk">
+                        <p class="more-3-otv">more</p>
+                     </a>
+                     <div class="tech-latest-news">
+                        <div class="row">
+                           <div class="col-lg-4">
+                              <div class="main-tech-news">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638498160.jpg"  class="main-tech-news-img" alt="otv501">
+                                 <h5 class="main-tech-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                              </div>
+                              <div class="tech-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638498160.jpg" class="tech-prio-img" alt="otv502">
+                                 </a>
+                                 <ul class="tech-prio-panel-post">
+                                    <li>
+                                       <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="tech-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638498160.jpg" class="tech-prio-img" alt="otv504">
+                                 </a>
+                                 <ul class="tech-prio-panel-post">
+                                    <li>
+                                       <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="tech-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638498160.jpg" class="tech-prio-img" alt="otv505">
+                                 </a>
+                                 <ul class="tech-prio-panel-post">
+                                    <li>
+                                       <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="col-lg-4">
+                              <div class="tech-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638498160.jpg" class="tech-prio-img" alt="otv506">
+                                 </a>
+                                 <ul class="tech-prio-panel-post">
+                                    <li>
+                                       <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="tech-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638498160.jpg" class="tech-prio-img" alt="otv507">
+                                 </a>
+                                 <ul class="tech-prio-panel-post">
+                                    <li>
+                                       <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="tech-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638498160.jpg" class="tech-prio-img" alt="otv508">
+                                 </a>
+                                 <ul class="tech-prio-panel-post">
+                                    <li>
+                                       <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="tech-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638498160.jpg" class="tech-prio-img" alt="otv509">
+                                 </a>
+                                 <ul class="tech-prio-panel-post">
+                                    <li>
+                                       <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="tech-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638498160.jpg" class="tech-prio-img" alt="otv510">
+                                 </a>
+                                 <ul class="tech-prio-panel-post">
+                                    <li>
+                                       <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="col-lg-4">
+                              <div class="tech-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638498160.jpg" class="tech-prio-img" alt="otv511">
+                                 </a>
+                                 <ul class="tech-prio-panel-post">
+                                    <li>
+                                       <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="tech-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638498160.jpg" class="tech-prio-img" alt="otv512">
+                                 </a>
+                                 <ul class="tech-prio-panel-post">
+                                    <li>
+                                       <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="tech-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638498160.jpg" class="tech-prio-img" alt="otv513">
+                                 </a>
+                                 <ul class="tech-prio-panel-post">
+                                    <li>
+                                       <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="tech-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638498160.jpg" class="tech-prio-img" alt="otv514">
+                                 </a>
+                                 <ul class="tech-prio-panel-post">
+                                    <li>
+                                       <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="tech-prio-panel">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1638498160.jpg" class="tech-prio-img" alt="otv515">
+                                 </a>
+                                 <ul class="tech-prio-panel-post">
+                                    <li>
+                                       <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="more-tech-news"> <a href="#" class="blk">more tech news <span>></span></a> </div>
+                     </div>
+                  </div>
+                  <!-- technology /////////////////////-->
+                  <div class="col-lg-4">
+                     <!-- movie-->
+                     <h4 class="heading-one-hm">movie</h4>
+                     <a href="#" class="blk">
+                        <p class="more-3-otv">view more</p>
+                     </a>
+                     <div class="main-movie-news">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685935726.jpg" class="main-movie-news-img" alt="otv515">
+                        <h5 class="main-movie-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                     </div>
+                     <!-- movie///////////////////////////////-->
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <div class="subsidiary-movie-news">
+                              <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685935726.jpg"  class="subsidiary-movie-news-img" alt="otv516">
+                              <h5 class="subsidiary-movie-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                           </div>
+                           <div class="subsidiary-movie-news">
+                              <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685935726.jpg"  class="subsidiary-movie-news-img" alt="otv516">
+                              <h5 class="subsidiary-movie-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="subsidiary-movie-news">
+                              <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685935726.jpg"  class="subsidiary-movie-news-img" alt="otv516">
+                              <h5 class="subsidiary-movie-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                           </div>
+                           <div class="subsidiary-movie-news">
+                              <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685935726.jpg"  class="subsidiary-movie-news-img" alt="otv516">
+                              <h5 class="subsidiary-movie-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- technology ////////////////////////////////////-->
+      <!-- hindi-cricket-bussiness-->
+      <section>
+         <div class="container">
+            <div class="hcb-otv">
+               <div class="row">
+                  <!-- hindi-->
+                  <div class="col-lg-4">
+                     <h4 class="heading-one-hm">hindi news</h4>
+                     <a href="#" class="blk">
+                        <p class="more-3-otv">view more</p>
+                     </a>
+                     <!-- hindi-->
+                     <div class="hindi-list-news-single">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/s_1685158861.jpg" class="hindi-list-news-img" alt="otv701">
+                        </a>
+                        <ul class="live-prio-panel-post">
+                           <li>
+                              <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="hindi-list-news-single">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/s_1685158861.jpg" class="hindi-list-news-img" alt="otv702">
+                        </a>
+                        <ul class="live-prio-panel-post">
+                           <li>
+                              <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="hindi-list-news-single">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/s_1685158861.jpg" class="hindi-list-news-img" alt="otv703">
+                        </a>
+                        <ul class="live-prio-panel-post">
+                           <li>
+                              <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="hindi-list-news-single">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/s_1685158861.jpg" class="hindi-list-news-img" alt="otv704">
+                        </a>
+                        <ul class="live-prio-panel-post">
+                           <li>
+                              <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- hindi/////////////////////////////-->
+                  <!-- cricket -->
+                  <div class="col-lg-4">
+                     <!-- cricket -->
+                     <div class="cricket-update-otv">
+                        <h4 class="heading-one-hm">cricket</h4>
+                        <a href="#" class="blk">
+                           <p class="more-3-otv">view all</p>
+                        </a>
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <div class="main-cricket-news">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/s_1685158861.jpg" alt="otv705" class="main-cricket-news-img">
+                                 <h5 class="main-cricket-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                              </div>
+                              <div class="main-cricket-news">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/s_1685158861.jpg" alt="otv706" class="main-cricket-news-img">
+                                 <h5 class="main-cricket-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                              </div>
+                           </div>
+                           <div class="col-lg-6">
+                              <div class="main-cricket-news">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/s_1685158861.jpg" alt="otv707" class="main-cricket-news-img">
+                                 <h5 class="main-cricket-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                              </div>
+                              <div class="main-cricket-news">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/s_1685158861.jpg" alt="otv708" class="main-cricket-news-img">
+                                 <h5 class="main-cricket-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                              </div>
+                           </div>
+                           <!-- cricket ///////////////////////////////-->
+                        </div>
+                     </div>
+                  </div>
+                  <!-- cricket ///////////////////////////-->
+                  <!-- bussiness-->
+                  <div class="col-lg-4">
+                     <h4 class="heading-one-hm">bussiness news</h4>
+                     <a href="#" class="blk">
+                        <p class="more-3-otv">view more</p>
+                     </a>
+                     <!-- bussiness -->
+                     <div class="bussiness-prio-story">
+                        <div class="bussiness-prio-panel">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685879130.jpg" class="bussiness-prio-img" alt="otv709">
+                           </a>
+                           <ul class="bussiness-prio-panel-post">
+                              <li>
+                                 <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="bussiness-prio-panel">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685879130.jpg" class="bussiness-prio-img" alt="otv710">
+                           </a>
+                           <ul class="bussiness-prio-panel-post">
+                              <li>
+                                 <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="bussiness-prio-panel">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685879130.jpg" class="bussiness-prio-img" alt="otv711">
+                           </a>
+                           <ul class="bussiness-prio-panel-post">
+                              <li>
+                                 <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="bussiness-prio-panel">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685879130.jpg" class="bussiness-prio-img" alt="otv712">
+                           </a>
+                           <ul class="bussiness-prio-panel-post">
+                              <li>
+                                 <a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- bussiness ////////////////////////////////-->
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- hindi-cricket-bussiness //////////////////////////-->
+      <!-- four-panel-section-->
+      <section>
+         <div class="container">
+            <div class="four-panel-section">
+               <div class="row">
+                  <div class="col-lg-6">
+                     <div class="row">
+                        <div class="col-lg-7">
+                           <div class="odd-panel-sec">
+                              <h4 class="heading-one-hm">lifestyle</h4>
+                              <div class="odd-panel-news">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg"  class="odd-panel-news-img" alt="748">
+                                 <h5 class="odd-panel-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                              </div>
+                              <div class="four-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="four-panel-news-img" alt="747">
+                                 </a>
+                                 <ul class="live-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="four-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="four-panel-news-img" alt="746">
+                                 </a>
+                                 <ul class="live-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="four-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="four-panel-news-img" alt="745">
+                                 </a>
+                                 <ul class="live-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-5">
+                           <div class="even-panel-sec">
+                              <h4 class="heading-one-hm">food</h4>
+                              <div class="four-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="four-panel-news-img" alt="otvv744">
+                                 </a>
+                                 <ul class="even-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="four-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="four-panel-news-img" alt="743">
+                                 </a>
+                                 <ul class="even-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="four-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="four-panel-news-img" alt="742">
+                                 </a>
+                                 <ul class="even-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="four-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="four-panel-news-img" alt="741">
+                                 </a>
+                                 <ul class="even-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="row">
+                        <div class="col-lg-7">
+                           <div class="odd-panel-sec">
+                              <h4 class="heading-one-hm">lifestyle</h4>
+                              <div class="odd-panel-news">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="odd-panel-news-img" alt="739">
+                                 <h5 class="odd-panel-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                              </div>
+                              <div class="four-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="four-panel-news-img" alt="747">
+                                 </a>
+                                 <ul class="live-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="four-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="four-panel-news-img" alt="737">
+                                 </a>
+                                 <ul class="live-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="four-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="four-panel-news-img" alt="736">
+                                 </a>
+                                 <ul class="live-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-5">
+                           <div class="even-panel-sec">
+                              <h4 class="heading-one-hm">food</h4>
+                              <div class="four-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="four-panel-news-img" alt="735">
+                                 </a>
+                                 <ul class="even-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="four-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="four-panel-news-img" alt="733">
+                                 </a>
+                                 <ul class="even-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="four-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="four-panel-news-img" alt="732">
+                                 </a>
+                                 <ul class="even-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="four-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1685943516.jpg" class="four-panel-news-img" alt="731">
+                                 </a>
+                                 <ul class="even-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- four-panel-section//////////////////////////////////-->
+      <!-- three-panel-sec -->
+      <section>
+         <div class="container">
+            <div class="three-panel-sec">
+               <div class="row">
+                  <div class="col-lg-6">
+                     <div class="row">
+                        <div class="col-lg-5">
+                           <div class="even-panel-sec">
+                              <h4 class="heading-one-hm">education</h4>
+                              <div class="three-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/lockdown-5_1622381122.jpg" class="three-panel-news-img" alt="otv782">
+                                 </a>
+                                 <ul class="three-prio-panel-odd">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="three-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/lockdown-5_1622381122.jpg" class="three-panel-news-img" alt="otv782">
+                                 </a>
+                                 <ul class="three-prio-panel-odd">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="three-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/lockdown-5_1622381122.jpg" class="three-panel-news-img" alt="otv782">
+                                 </a>
+                                 <ul class="three-prio-panel-odd">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="three-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/lockdown-5_1622381122.jpg" class="three-panel-news-img" alt="otv782">
+                                 </a>
+                                 <ul class="three-prio-panel-odd">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+ 
+                              
+                           </div>
+                        </div>
+                        <div class="col-lg-7">
+                           <div class="odd-panel-sec">
+                              <h4 class="heading-one-hm">science</h4>
+                              <div class="odd-panel-news">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/lockdown-5_1622381122.jpg"  class="odd-panel-news-img" alt="otv788">
+                                 <h5 class="odd-panel-news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                              </div>
+                              <div class="three-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/lockdown-5_1622381122.jpg" class="three-panel-news-img" alt="otv789">
+                                 </a>
+                                 <ul class="three-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="three-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/lockdown-5_1622381122.jpg" class="three-panel-news-img" alt="otv789">
+                                 </a>
+                                 <ul class="three-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="three-panel-news">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/lockdown-5_1622381122.jpg" class="three-panel-news-img" alt="otv789">
+                                 </a>
+                                 <ul class="three-prio-panel-post">
+                                    <li>
+                                       <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists iin theOdishaOdisha shocker: Chhattisgarh tourists iin theOdisha shocker: Chhattisgarh tourist to name it as </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              
+                             
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <!-- big-panel-section -->
+                     <div class="big-panel-section">
+                        <h4 class="heading-one-hm">sports news</h4>
+                        <div class="big-story-panel-one">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/lockdown-5_1622381122.jpg" class="big-stories-img" alt="otv794">
+                           </a>
+                           <ul class="big-panel-one-post">
+                              <li>
+                                 <h5><a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a></h5>
+                              </li>
+                              <li>
+                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus corporis tenetur ad.</p>
+                              </li>
+                              <li>
+                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus corporis tenetur ad.</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <h4 class="heading-one-hm">health</h4>
+                        <div class="big-story-panel-one">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/lockdown-5_1622381122.jpg" class="big-stories-img" alt="otv794">
+                           </a>
+                           <ul class="big-panel-one-post">
+                              <li>
+                                 <h5><a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a></h5>
+                              </li>
+                              <li>
+                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus corporis tenetur ad.</p>
+                              </li>
+                              <li>
+                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus corporis tenetur ad.</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <h4 class="heading-one-hm">art</h4>
+                        <div class="big-story-panel-one">
+                           <a href="#">
+                           <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/lockdown-5_1622381122.jpg" class="big-stories-img" alt="otv794">
+                           </a>
+                           <ul class="big-panel-one-post">
+                              <li>
+                                 <h5><a href="#">Odisha shocker: Chhattisgarh tourists attacked over toll payment</a></h5>
+                              </li>
+                              <li>
+                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus corporis tenetur ad.</p>
+                              </li>
+                              <li>
+                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus corporis tenetur ad.</p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <!-- big-panel-section ////////////////////-->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- three-panel-sec //////////////////////////-->
+      <!-- daily-show-otv-hm -->
+      <section>
+         <div class="container">
+            <div class="daily-show-otv-hm">
+               <h4 class="heading-one-hm">daily shows</h4>
+               <div class="row">
+                  <!-- daily-show-single-folder -->
+                  <div class="col-lg-4">
+                     <div class="daily-show-single-folder">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Teachers_1640940412.jpg" alt="otv888" class="daily-show-single-img">
+                        </a>
+                        <a href="#">
+                           <h5 class="daily-show-title-otv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt illo quos voluptate?</h5>
+                        </a>
+                        <a href="#">
+                           <p class="daily-show-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sequi doloribus.</p>
+                        </a>
+                     </div>
+                  </div>
+                  <!-- daily-show-single-folder/////////////////-->
+                  <div class="col-lg-4">
+                     <div class="daily-show-single-folder">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Teachers_1640940412.jpg" alt="otv888" class="daily-show-single-img">
+                        </a>
+                        <a href="#">
+                           <h5 class="daily-show-title-otv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt illo quos voluptate?</h5>
+                        </a>
+                        <a href="#">
+                           <p class="daily-show-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sequi doloribus.</p>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-lg-4">
+                     <div class="daily-show-single-folder">
+                        <a href="#">
+                        <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Teachers_1640940412.jpg" alt="otv888" class="daily-show-single-img">
+                        </a>
+                        <a href="#">
+                           <h5 class="daily-show-title-otv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt illo quos voluptate?</h5>
+                        </a>
+                        <a href="#">
+                           <p class="daily-show-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tempora sequi doloribus.</p>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <a href="#" class="blk">
+                  <p class="more-3-otv">more</p>
+               </a>
+            </div>
+         </div>
+      </section>
+      <!-- daily-show-otv-hm /////////////////////////////////-->
+      <!-- vdo-img-cnt -->
+      <section>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6">
+                  <h4 class="heading-one-hm">videos</h4>
+                  <div class="vdo-container-otv-hm">
+                     <div class="row">
+                        <div class="col-lg-8">
+                           <div class="vdo-container-img-otv">
+                              <a href="#">
+                              <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Teachers_1640940412.jpg" alt="otv895">
+                              </a> 
+                              <a href="#" class="blk">
+                                 <h5 style="font-size: 20px; font-weight: bold;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus voluptate assumenda facilis?  | <span class="img-no-otv">00:00</span></h5>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="vdo-content-sidebar">
+                              <a href="#">
+                              <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Teachers_1640940412.jpg"  alt="otv896">
+                              </a> 
+                              <a href="#" class="blk">
+                                 <h6 style="font-size:14px; font-weight: 500;">Lorem ipsum dolor sit amet  | <span class="img-no-otv">00:00</span> </h6>
+                              </a>
+                           </div>
+                           <div class="vdo-content-sidebar">
+                              <a href="#">
+                              <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Teachers_1640940412.jpg"  alt="otv897">
+                              </a> 
+                              <a href="#" class="blk">
+                                 <h6 style="font-size: 14px; font-weight: 500;">Lorem ipsum dolor sit amet consectetur?  | <span class="img-no-otv">00:00</span></h6>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <p class="more-3-otv">view all</p>
+                  </div>
+                  <!-- vdo-cnt //////////////////////////-->
+               </div>
+               <div class="col-lg-6">
+                  <!-- img-cnt -->
+                  <h4 class="heading-one-hm">images</h4>
+                  <div class="img-container-otv-hm">
+                     <div class="row">
+                        <div class="col-lg-8">
+                           <div class="img-container-img-otv">
+                              <div class="lg-img-otv">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Teachers_1640940412.jpg"  alt="otv898">
+                                 </a> 
+                              </div>
+                              <a href="#" class="blk">
+                                 <h5 style="font-size: 20px; font-weight: bold;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus voluptate assumenda facilis?  | <span class="img-no-otv">5imges</span></h5>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="col-lg-4">
+                           <div class="img-content-sidebar">
+                              <div class="st-img-otv">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Teachers_1640940412.jpg" alt="otv899">
+                                 </a>
+                              </div>
+                              <a href="#" class="blk">
+                                 <h6 style="font-size: 14px; font-weight: 500;">Lorem ipsum dolor sit amet consectetur?  | <span class="img-no-otv">5imges</span></h6>
+                              </a>
+                           </div>
+                           <div class="img-content-sidebar">
+                              <div class="st-img-otv">
+                                 <a href="#">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/Teachers_1640940412.jpg"  alt="otv458" >
+                                 </a> 
+                              </div>
+                              <a href="#" class="blk">
+                                 <h6 style="font-size: 14px; font-weight: 500;">Lorem ipsum dolor sit amet consect? | <span class="img-no-otv">5imges</span></h6>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <p class="more-3-otv">view all</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- vdo-img-cnt //////////////////////////-->
+      <!-- cricket-news-->
+      <section>
+         <div class="container sp-cricket-otv">
+            <h4 class="heading-one-hm">cricket news</h4>
+            <div class="cricket-container-otv-hm">
+               <ul class="nav nav-tabs">
+                  <li class="active">
+                     <a class="other-cricket-tab-otv" data-toggle="tab" href="#news">news</a>
+                  </li>
+                  <li>
+                     <a class="other-cricket-tab-otv" data-toggle="tab" href="#photos">photos</a>
+                  </li>
+                  <li>
+                     <a class="other-cricket-tab-otv" data-toggle="tab" href="#videos">videos</a>
+                  </li>
+               </ul>
+               <div  class="tab-content">
+                  <div id="news" class="tab-pane fade in active show">
+                     <div class="row">
+                        <div class="col-lg-7">
+                           <div class="row cricket-sp-left">
+                              <div class="col-lg-7">
+                                 <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/lockdown-5_1622381122.jpg" alt="otv886" class="cricket-cnt-img">
+                                 <h6 class="cricket-cnt-otv">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eius beatae optio debitis quas dolore sequi? Officiis</h6>
+                              </div>
+                              <div class="col-lg-5">
+                                 <div class="cricket-prio-panel">
+                                    <a href="#">
+                                    <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/lockdown-5_1622381122.jpg" alt="otv678" class="cricket-prio-img">
+                                    </a>
+                                    <ul class="cricket-prio-panel-post">
+                                       <li>
+                                          <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="cricket-prio-panel">
+                                    <a href="#">
+                                    <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/lockdown-5_1622381122.jpg" alt="otv679" class="cricket-prio-img">
+                                    </a>
+                                    <ul class="cricket-prio-panel-post">
+                                       <li>
+                                          <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="cricket-prio-panel">
+                                    <a href="#">
+                                    <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/lockdown-5_1622381122.jpg" alt="otv999" class="cricket-prio-img">
+                                    </a>
+                                    <ul class="cricket-prio-panel-post">
+                                       <li>
+                                          <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="cricket-prio-panel">
+                                    <a href="#">
+                                    <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_2/lockdown-5_1622381122.jpg" alt="otv6781" class="cricket-prio-img">
+                                    </a>
+                                    <ul class="cricket-prio-panel-post">
+                                       <li>
+                                          <a href="#" class="blk">Odisha shocker: Chhattisgarh tourists </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-5">
+                        </div>
+                     </div>
+                  </div>
+                  <div id="photos" class="tab-pane fade">
+                  </div>
+               </div>
+            </div>
+            <p class="more-3-otv">read in odia</p>
+         </div>
+      </section>
+      <!-- cricket-news ////////////////////////////-->
+      <!-- footer -->
+      <div class="footer-otv-hm">
+         <ul class="footer-tab-otv">
+            <li class="active"><a href="#">live tv</a></li>
+            <li><a  href="#">videos</a></li>
+            <li><a href="#">photos gallery</a></li>
+         </ul>
+         <div class="footer-content-otv">
+            <ul class="footer-catagori-container-otv">
+               <li class="catagori-title-otv-ft"> latest news</li>
+               <li  class="catagori-list-otv-ft">state news</li>
+               <li class="catagori-list-otv-ft">news</li>
+               <li class="catagori-list-otv-ft">astro</li>
+               <li  class="catagori-list-otv-ft">world</li>
+               <li  class="catagori-list-otv-ft">technology</li>
+            </ul>
+            <ul class="footer-catagori-container-otv">
+               <li class="catagori-title-otv-ft"> latest news</li>
+               <li  class="catagori-list-otv-ft">state news</li>
+               <li class="catagori-list-otv-ft">news</li>
+               <li class="catagori-list-otv-ft">astro</li>
+               <li  class="catagori-list-otv-ft">world</li>
+               <li  class="catagori-list-otv-ft">technology</li>
+            </ul>
+            <ul class="footer-catagori-container-otv">
+               <li class="catagori-title-otv-ft"> latest news</li>
+               <li  class="catagori-list-otv-ft">state news</li>
+               <li class="catagori-list-otv-ft">news</li>
+               <li class="catagori-list-otv-ft">astro</li>
+               <li  class="catagori-list-otv-ft">world</li>
+               <li  class="catagori-list-otv-ft">technology</li>
+            </ul>
+            <ul class="footer-catagori-container-otv">
+               <li class="catagori-title-otv-ft"> latest news</li>
+               <li  class="catagori-list-otv-ft">state news</li>
+               <li class="catagori-list-otv-ft">news</li>
+               <li class="catagori-list-otv-ft">astro</li>
+               <li  class="catagori-list-otv-ft">world</li>
+               <li  class="catagori-list-otv-ft">technology</li>
+            </ul>
+         </div>
+      </div>
+      <!-- footer-otv//////////////////////////////// -->
+   </body>
+</html>

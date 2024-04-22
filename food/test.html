@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Event</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            text-decoration: none;
+
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+
+        }
+
+        .header__logo img {
+
+            width: 50%;
+            margin: 20px;
+
+        }
+
+        .food-img {
+            width: 150px;
+        }
+
+        .trending-menu-bar {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .trending-menu-bar p {
+            font-weight: 700;
+            margin: 0 0 20px 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .trending-menu-bar ul {
+            display: flex;
+            overflow-x: scroll;
+            list-style-type: none;
+
+        }
+
+        .trending-menu-bar ul li {
+            height: 30px;
+            width: 100%;
+            border: 2px solid gray;
+            border-radius: 20px;
+            padding: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            margin: 0 2px;
+
+        }
+
+
+        /*division started container-food-card*/
+        .food-card-container {
+
+            background-color: #5a3b38;
+            border-radius: 12px;
+            height: auto;
+            padding-bottom: 12px;
+        }
+
+        .food-card img {
+            border-radius: 12px;
+            padding: 12px;
+            border-radius: 12px;
+        }
+
+        .recipe-name {
+            margin: 38px 0 10px 12px;
+            color: white;
+            font-size: 28px;
+        }
+
+        .recipe-description {
+            margin: 18px;
+            color: white;
+            font-size: 18px;
+        }
+
+        .customise-recipe-details {
+            height: auto;
+            display: flex;
+            background-color: #4c2d2a;
+            border-radius: 12px;
+            margin: 15px;
+            padding: 4px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+
+        .customise-recipe h6 {
+            border-bottom: 2px solid yellow;
+            color: yellow;
+            font-size: 19px;
+            padding: 5px;
+            width: 70%;
+            margin: 0 0 0 16px;
+
+        }
+
+        .customise-recipe p {
+            color: white;
+            padding: 8px 0;
+            margin: 0 0 0 18px;
+            font-weight: 200;
+        }
+
+        .ribbon {
+            position: absolute;
+            color: black;
+            background-color: #ffed4a;
+            font-size: 16px;
+            font-weight: 600;
+            left: 0px;
+            clip-path: polygon(100% 0, 84% 91%, 84% 100%, 0 100%, 0 0);
+            width: 220px;
+            border-left: ;
+            border-top: 12px;
+        }
+
+        .ribbon h6 {
+            font-size: 20px;
+            margin-left: 18px;
+            margin-top: 5px;
+
+        }
+
+        /*division ended*/
+
+        /*division started container-(recipe of the day)*/
+
+        .news-scroll-heading {
+            color: #873e23;
+            margin-left: 12px;
+            font-size: 28px;
+            position: relative;
+            margin-top: 20px;
+
+        }
+
+        .news-scroll-heading:after {
+            position: absolute;
+            content: " ";
+            height: 4px;
+            width: 30%;
+            background-color: #8c8b94;
+            margin: 15px;
+
+        }
+
+        .overflow-section {
+            height: 350px;
+            width: 326px;
+            display: flex;
+            width: auto;
+            overflow-x: scroll;
+        }
+
+        .overflow-section img {
+            margin: 12px;
+            border-radius: 12px;
+            height: 300px;
+            width: 326px;
+        }
+
+        .recipe-card {
+            position: relative;
+        }
+
+        .overflow-section h3 {
+            position: absolute;
+            font-size: 22px;
+            bottom: 60px;
+            color: white;
+            left: 32px;
+        }
+
+        .date-details {
+            display: flex;
+            color: white;
+        }
+
+        .date-details .description {
+            position: absolute;
+            bottom: 90px;
+            left: 32px;
+        }
+
+        .date-details .date {
+            position: absolute;
+            bottom: 90px;
+            left: 150px;
+
+        }
+
+        /*division ended*/
+
+
+        /*division started container-(stunning updates)*/
+
+        .stunning-updates {
+            display: flex;
+
+        }
+
+        .stunning-news-heading {
+            margin: 30px 0px 0 12px;
+            border-bottom: 5px solid #f2d358;
+            padding-bottom: 12px;
+            width: 40%;
+            font-size: 23px;
+            font-weight: 700;
+
+        }
+
+        .stunning-news-image {
+            border-radius: 12px;
+            margin: 4%;
+
+        }
+
+        .stunning-news a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .site-visit-link {
+            margin-left: 19px;
+            width: 90%;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .stunning-news p {
+            margin-left: 19px;
+            width: 90%;
+            padding-bottom: 20px;
+            border-bottom: 1px solid gray;
+            font-size: 20px;
+            font-weight: 400;
+            color: gray;
+        }
+
+        /*division ended*/
+
+
+        /*division started container-(latest updates)*/
+
+        .latest-updates {
+            display: flex;
+            border-bottom: 1px solid gray;
+        }
+
+        .latest-updates img {
+            border-radius: 12px;
+            margin: 12px;
+        }
+
+        .latest-updates-headline {
+            color: black;
+        }
+
+        .date-description {
+            display: flex;
+            color: gray;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .date-description .description {
+            margin-right: 20px;
+            font-size: 12px;
+        }
+
+        /*division ended*/
+
+
+
+
+        /*division stared container-(tips-container)*/
+        .tips-container {
+            height: auto;
+            margin: 40px 8px 20px 8px;
+            background-color: #fff9d4;
+            padding: 2%;
+            border-radius: 10px;
+        }
+
+        .tips-container p {
+            border-bottom: 1px solid gray;
+            width: 90%;
+            margin-left: 12px;
+            padding-bottom: 8px;
+        }
+
+        .tips-container h3 {
+            margin-left: 12px;
+        }
+
+        /*division ended*/
+
+        /*division started container-(photos section)*/
+        .photos-card-section {
+            background-color: #488575;
+            padding: 15% 0;
+            margin-bottom: 20px;
+            width: auto;
+            display: flex;
+            overflow-x: scroll;
+        }
+
+        .photos-collection-card {
+            padding: 4%;
+            background-color: white;
+            border-radius: 12px;
+            margin: 0 15px;
+            box-shadow: rgb(160 219 185) 0px 8px, rgb(178 174 208) 0px 16px;
+
+        }
+
+        .photo-gallery {
+            position: relative;
+        }
+
+        .photos-collection-card img {
+            border-radius: 12px;
+        }
+
+        .photos-collection-card h3 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .photos-number {
+            position: absolute;
+            bottom: 4px;
+            left: 47px;
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .svg-icon {
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            bottom: 24px;
+            fill: white;
+            left: 22px;
+        }
+
+        .photos-card-section h2 {
+            color: white;
+            margin: 0px 0px 28px 12px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        /*division ended*/
+
+
+        /*division started container-(visual-container)*/
+
+        .visual-container {
+            padding: 5% 3% 5% 3%;
+            background-color: #362828;
+        }
+
+        .visual-container h2 {
+            color: white;
+            margin: 0px 0px 28px 12px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .food-video-card {
+
+            background-color: #000;
+            border-radius: 12px;
+            height: auto;
+            padding-bottom: 12px;
+
+        }
+
+        .video-card iframe {
+            border-radius: 12px;
+            padding: 2%;
+        }
+
+        .video-section {
+            margin-top: 80px;
+            width: auto;
+            display: flex;
+            overflow-x: scroll;
+        }
+
+        .video-section iframe {
+            border-radius: 12px;
+            padding: 2%;
+
+        }
+
+        .ribbon-video {
+            position: absolute;
+            color: black;
+            background-color: #ffed4a;
+            font-size: 16px;
+            font-weight: 600;
+            left: 0px;
+            clip-path: polygon(100% 0, 84% 91%, 84% 100%, 0 100%, 0 0);
+            padding: 0px;
+            width: 120px;
+            border-left: ;
+            border-top: 12px;
+
+        }
+
+        .ribbon-video h6 {
+            font-size: 20px;
+            margin-left: 18px;
+            margin-top: 5px;
+        }
+
+
+        /*division ended*/
+
+        .share {
+            height: 25px;
+            width: 25px;
+            padding: 4px;
+            border-radius: 50%;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+            color: black;
+            margin-top: -10px;
+            margin-left: 10px;
+        }
+
+        .d-none {
+            visibility: hidden;
+        }
+
+        .icons {
+            display: flex;
+            width: 50px;
+            border-radius: 18px;
+            justify-content: space-between;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+
+        }
+
+        .fa {
+            padding: 2px;
+            font-size: 10px;
+            width: 10px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 5px;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #88124f;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header__logo">
+            <img src="odisha-tv.png">
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="food_logo.png" class="food-img"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Horoscope</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Horoscope</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Horoscope</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cyclone</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    click to visit site
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <div class="trending-menu-bar">
+        <p>TRENDING <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="brown"
+                class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path
+                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+            </svg></p>
+
+        <ul>
+            <a href="">
+                <li>Horoscope</li>
+            </a>
+            <a href="">
+                <li>Cyclone</li>
+            </a>
+            <a href="">
+                <li>Cricket</li>
+            </a>
+            <a href="">
+                <li>Horoscope</li>
+            </a>
+            <a href="">
+                <li>Cyclone</li>
+            </a>
+            <a href="">
+                <li>Cricket</li>
+            </a>
+
+        </ul>
+
+    </div>
+
+
+    <div class="container">
+        <div class="food-card-container">
+            <div class="food-card">
+                <img src="https://source.unsplash.com/300x200/?burger/" alt="" height="" title="">
+            </div>
+            <div class="ribbon">
+
+                <h6>Recipe of the day</h6>
+            </div>
+            <h3 class="recipe-name">Thekua</h3>
+            <p class="recipe-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel pulvinar erat,
+                id ullamcorper nunc. Proin lacinia congue faucibus.</p>
+            <div class="customise-recipe-details">
+                <div class="customise-recipe">
+                    <h6>SEND IN YOUR RECIPE</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel pulvinar erat</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="yellow" class="bi bi-chevron-right"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="news-scroll-container">
+        <h1 class="news-scroll-heading"><span>Recipe of the Day</span></h1>
+        <div class="overflow-section">
+
+            <div class="recipe-card">
+                <img src="https://source.unsplash.com/300x400/?snacks/">
+                <div class="date-details">
+                    <p class="description">Food & Drinks</p>
+                    <p class="date">OCT 7, 2022 </p>
+
+
+                </div>
+                <h3>5easy traditional recipe </h3>
+            </div>
+            <div class="recipe-card">
+                <img src="https://source.unsplash.com/300x400/?snacks/">
+                <div class="date-details">
+                    <p class="description">Food & Drinks</p>
+                    <p class="date">OCT 7, 2022 </p>
+                </div>
+                <h3>5easy traditional recipe </h3>
+            </div>
+            <div class="recipe-card">
+                <img src="https://source.unsplash.com/300x400/?snacks/">
+                <div class="date-details">
+                    <p class="description">Food & Drinks</p>
+                    <p class="date">OCT 7, 2022 </p>
+                </div>
+                <h3>5easy traditional recipe </h3>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="stunning-news">
+        <div class="stunning-updates">
+
+            <h4 class="stunning-news-heading">Weight loss</h4>
+        </div>
+
+        <img src="https://source.unsplash.com/356x300/?computer/" alt="" height="" title="" class="stunning-news-image">
+
+        <a href="#">
+            <h4 class="site-visit-link">id ullamcorper nunc. Proin lacinia congue faucibus</h4>
+        </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel pulvinar eratdolor sit amet, consectetur
+            adipiscing elit. In vel pulvinar erat, id ullamcorper nunc</p>
+
+        <img src="https://source.unsplash.com/356x300/?laptop/" alt="" height="" title="" class="stunning-news-image">
+
+        <a href="#">
+            <h4 class="site-visit-link">id ullamcorper nunc. Proin lacinia congue faucibus</h4>
+        </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel pulvinar eratdolor sit amet, consectetur
+            adipiscing elit. In vel pulvinar erat, id ullamcorper nunc</p>
+
+        <img src="https://source.unsplash.com/356x300/?mobile/" alt="" height="" title="" class="stunning-news-image">
+
+        <a href="#">
+            <h4 class="site-visit-link">id ullamcorper nunc. Proin lacinia congue faucibus</h4>
+        </a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel pulvinar eratdolor sit amet, consectetur
+            adipiscing elit. In vel pulvinar erat, id ullamcorper nunc</p>
+    </div>
+
+
+
+
+
+
+
+    <div class="latest-updates">
+        <img src="https://source.unsplash.com/100x100/?girl/" title="" alt="" height="">
+        <div class="latest-update-content">
+
+            <h3 class="latest-updates-headline">consectetur In vel pulvinar eratdolor sit consectetur</h3>
+            <div class="date-description">
+
+                <p class="description">Food & Drinks</p>
+                <p class="date">OCT 7, 2022 </p>
+                <div class="share" onClick="share()">
+                    <i class="fas fa-share-alt"></i>
+                </div>
+                <div class="icons d-none" id="icons">
+                    <div><a href="#" class="fa fa-facebook"></a></div>
+                    <div><a href="#" class="fa fa-instagram"></a></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="latest-updates">
+        <img src="https://source.unsplash.com/100x100/?netflix/" title="" alt="" height="">
+        <div class="latest-update-content">
+
+            <h3 class="latest-updates-headline">consectetur In vel pulvinar eratdolor sit consectetur</h3>
+            <div class="date-description">
+
+                <p class="description">Food & Drinks</p>
+                <p class="date">OCT 7, 2022 </p>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="latest-updates">
+        <img src="https://source.unsplash.com/100x100/?office/" title="" alt="" height="">
+        <div class="latest-update-content">
+
+            <h3 class="latest-updates-headline">consectetur In vel pulvinar eratdolor sit consectetur</h3>
+            <div class="date-description">
+
+                <p class="description">Food & Drinks</p>
+                <p class="date">OCT 7, 2022 </p>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="tips-container">
+        <h3>Weight Loss Tips</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel pulvinar eratdolor sit amet, consectetur
+            adipiscing</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel pulvinar eratdolor sit amet, consectetur
+            adipiscing</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel pulvinar eratdolor sit amet, consectetur
+            adipiscing</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel pulvinar eratdolor sit amet, consectetur
+            adipiscing</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel pulvinar eratdolor sit amet, consectetur
+            adipiscing</p>
+    </div>
+
+
+
+
+    <div class="photos-card-section">
+        <div class="photos-collection-card">
+            <div class="photo-gallery">
+
+                <img src="https://source.unsplash.com/260x200/?fastivals/" alt="" height="">
+                <img src="D:\priya\food\svg-gallery.svg" class="svg-icon">
+                <p class="photos-number">6 Photos</p>
+            </div>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+            <div class="date-description">
+
+                <p class="description">Food & Drinks</p>
+                <p class="date">OCT 7, 2022 </p>
+            </div>
+
+        </div>
+        <div class="photos-collection-card">
+            <div class="photo-gallery">
+
+                <img src="https://source.unsplash.com/260x200/?fastivals/" alt="" height="">
+                <img src="D:\priya\food\svg-gallery.svg" class="svg-icon">
+                <p class="photos-number">6 Photos</p>
+            </div>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+            <div class="date-description">
+
+                <p class="description">Food & Drinks</p>
+                <p class="date">OCT 7, 2022 </p>
+            </div>
+
+        </div>
+        <div class="photos-collection-card">
+            <div class="photo-gallery">
+
+                <img src="https://source.unsplash.com/260x200/?fastivals/" alt="" height="">
+                <img src="D:\priya\food\svg-gallery.svg" class="svg-icon">
+                <p class="photos-number">6 Photos</p>
+            </div>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+            <div class="date-description">
+
+                <p class="description">Food & Drinks</p>
+                <p class="date">OCT 7, 2022 </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="visual-container">
+        <h2>Video</h2>
+        <div class="food-video-card">
+            <div class="video-card">
+                <iframe width="346" height="300" src="https://www.youtube.com/embed/Ctcm3VxSMvY"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="ribbon-video">
+
+                <h6>video</h6>
+            </div>
+            <h3 class="recipe-name">Thekua</h3>
+            <p class="recipe-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vel pulvinar erat,
+                id ullamcorper nunc. Proin lacinia congue faucibus.
+            </p>
+        </div>
+
+        <div class="video-section">
+            <iframe width="300" height="300" src="https://www.youtube.com/embed/2pEIGQwZt6s"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="300" height="300" src="https://www.youtube.com/embed/2pEIGQwZt6s"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="300" height="300" src="https://www.youtube.com/embed/2pEIGQwZt6s"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+    <script>
+        function share() {
+            let icons = document.getElementById('icons')
+            if (icons.classList.contains('d-none'))
+                icons.classList.remove('d-none');
+            else {
+                icons.classList.add("d-none");
+
+            }
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

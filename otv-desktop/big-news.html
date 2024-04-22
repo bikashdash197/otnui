@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Big News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://images.odishatv.in/assets/js/jquery-3.6.0.min.js"></script>
+    <style type="text/css">
+        a {
+            text-decoration: none;
+        }
+        section.big-news {
+    float: left;
+    width: 100%;
+}
+h3.custom-heading-three {
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+    position: relative;
+}
+h3.custom-heading-three span {
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0px 10px;
+    position: relative;
+    padding-left: 14px;
+}
+h3.custom-heading-three:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #ded9db;
+    top: 20px;
+    right: 0;
+    z-index: -1;
+}
+h3.custom-heading-three span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    background-color: #f00;
+    width: 5px;
+    height: 14px;
+}
+h2.custom-heading-two {
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+    position: relative;
+}
+h2.custom-heading-two span {
+    background-color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 16px;
+}
+h2.custom-heading-two:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #ded9db;
+    top: 20px;
+    right: 0;
+    z-index: -1;
+}
+h2.custom-heading-two span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background-color: #f00;
+    width: 5px;
+    height: 20px;
+}
+
+
+h2.custom-heading-two-live {
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+    position: relative;
+}
+h2.custom-heading-two-live span {
+    background-color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 35px;
+}
+h2.custom-heading-two-live:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #ded9db;
+    top: 20px;
+    right: 0;
+    z-index: -1;
+}
+h2.custom-heading-two-live span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    background-color: #f00;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+a.big-readmore {
+    margin: 0px;
+    padding: 0px;
+    color: red;
+    text-decoration: none;
+    background-color: #fbe6e6;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 17px;
+}
+a.large-readmore {
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    text-decoration: none;
+    background-color: red;
+    display: block;
+    text-align: center;
+    line-height: 54px;
+    border-radius: 22px;
+    font-size: 21px;
+    font-weight: 700;
+}
+a.large-readmore-live {
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    color: #fff;
+    text-decoration: none;
+    background-color: red;
+    display: block;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 22px;
+    font-size: 21px;
+    font-weight: 700;
+}
+/* date and share */
+.date-n-share {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    margin: 7px 0px;
+}
+ul.otv-cat-time {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+ul.otv-cat-time li {
+    list-style-type: none;
+    float: left;
+    color: #9b9393;
+    font-size: 14px;
+    margin-right: 15px;
+}
+ul.otv-cat-time li a {
+    text-decoration: none;
+    display: block;
+    color: #9b9393;
+    font-size: 14px;
+    position: relative;
+}
+ul.otv-cat-time li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -9px;
+    top: 4px;
+    width: 2px;
+    height: 10px;
+    background-color: #b9b7b780;
+}
+ul.otv-cat-share-icon {
+    float: right;
+    padding: 0;
+    margin: -6px 0px 0px 0px;
+}
+ul.otv-cat-share-icon li {
+    display: inline-block;
+    margin-right: 7px;
+    position: relative;
+}
+li.otv-share-social-media-add a {
+    cursor: pointer;
+    display: block;
+}
+ul.otv-cat-share-icon li img {
+    width: 20px;
+    height: 20px;
+}
+ul.otv-article-share-style-more-one {
+    position: absolute;
+    right: calc(100% + 5px);
+    bottom: -7px;
+    border: 1px solid #aaaaaa45;
+    box-shadow: 0 2px 8px #9a9797;
+    display: none;
+    background-color: #fff;
+    margin: 0px;
+    width: max-content;
+    height: 36px;
+    overflow: hidden;
+    padding: 0px 8px 0px 8px;
+}
+ul.otv-article-share-style-more-one li {
+    list-style-type: none;
+    float: left;
+    margin: 0px 12.5px;
+    padding: 0px;
+    border: none !important;
+    margin-left: 0px !important;
+    padding-left: 0px !important;
+}
+ul.otv-article-share-style-more-one li a {
+    text-decoration: none;
+    display: block;
+    line-height: 21px;
+    padding: 6px 0px;
+}
+/* //date and share */
+.bigstory-sbar-item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+img.bigstory-sbar-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+.bigstory-sbar-item h4 {
+    padding: 0px;
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 17px;
+    margin: 10px 0px 0px 0px;
+    line-height: 24px;
+}
+.bigstory-sbar-item p {
+    color: #333;
+    font-size: 13px;
+    line-height: 21px;
+}
+.big-news-header {
+    padding: 10px;
+    background-color: #efefef;
+    border: solid 1px #d4d4d4;
+    border-radius: 7px;
+    display: inline-block;
+    width: 100%;
+}
+.big-news-header h1 {
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #000;
+}
+ul.big-news-author {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+ul.big-news-author li {
+    list-style-type: none;
+    float: left;
+    font-size: 12px;
+    font-weight: normal;
+    color: #a7a7a7;
+    position: relative;
+    margin-right: 15px;
+}
+ul.big-news-author li:before {
+    content: "";
+    position: absolute;
+    right: -9px;
+    top: 3px;
+    width: 2px;
+    height: 11px;
+    background-color: #cfbfbf;
+}
+ul.big-news-author li:last-child:before {
+    display: none;
+}
+ul.big-news-author li a {
+    text-decoration: none;
+    display: block;
+    color: #a7a7a7;
+}
+ul.big-news-author li:first-child a {
+    color: #ff0000;
+}
+ul.big-news-share {
+    margin: -6px 0px 0px 0px;
+    padding: 0px;
+    float: right;
+}
+ul.big-news-share li {
+    list-style-type: none;
+    float: left;
+    margin-left: 12px;
+}
+ul.big-news-share li a {
+    text-decoration: none;
+    display: block;
+}
+.big-news-thumbnail {
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0px;
+}
+img.bigstory-thumbnail {
+    width: 100%;
+    height: auto;
+}
+.big-news-thumbnail-image {
+    position: relative;
+}
+.big-news-thumbnail-image h5 {
+    margin: 0px;
+    padding: 0px 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    line-height: 40px;
+    color: #fff;
+    font-size: 17px;
+    background-color: #00000038;
+    width: 100%;
+}
+.big-news-thumbnail h6 {
+    margin: 0px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 10px;
+}
+h6.big-news-caption {
+    background-color: #c90218;
+}
+h6.big-news-caption-live {
+    background-color: #000;
+}
+ul.big-news-tagging {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    width: 100%;
+}
+ul.big-news-tagging li {
+    list-style-type: none;
+    float: left;
+    margin-right: 8px;
+}
+ul.big-news-tagging li a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    background-color: #f00;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 35px;
+    padding: 0px 15px;
+    border-radius: 11px;
+}
+ul.big-news-related {
+    margin: 10px 0px 20px 0px;
+    padding: 0px;
+    display: inline-block;
+    width: 100%;
+}
+ul.big-news-related li {
+    list-style-type: none;
+    display: block;
+    border-bottom: solid 1px #f1f1f1;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 35px;
+}
+ul.big-news-related li:last-child {
+    border-bottom: none;
+}
+ul.big-news-related li a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+    font-size: 20px;
+    font-weight: normal;
+}
+ul.big-news-related li:before {
+    background-image: url(https://odishatv.in/commondir/images/svg/next_chevron.svg);
+    content: "";
+    background-size: 17px;
+    background-repeat: no-repeat;
+    width: 39px;
+    height: 101px;
+    display: block;
+    position: absolute;
+    left: 3px;
+    top: 2px;
+    opacity: 0.3;
+}
+.big-news-live-details {
+    display: inline-block;
+    position: relative;
+    border-left: solid 3px #c5b3b399;
+    margin-left: 200px;
+    padding-left: 25px;
+}
+.big-news-live-details-item {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.big-news-live-details-item h4 {
+        margin: 0px;
+    padding: 0px;
+    color: #000;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+}
+.big-news-live-details-item h6 {
+    margin: 5px 0px;
+    padding: 0px;
+    color: #d4c4c4;
+    font-size: 14px;
+}
+.big-news-live-details-item h6 a {
+    color: #ff5c5c;
+}
+.big-news-live-details-item p {
+    color: #333;
+    font-size: 13px;
+    line-height: 21px;
+}
+.big-news-live-details-item h5 {
+    position: absolute;
+    left: -175px;
+    top: 10px;
+    width: 200px;
+    color: #f00;
+    font-size: 16px;
+}
+.big-news-live-details-item h5 span {
+    display: block;
+    color: #a7979799;
+    font-weight: normal;
+    font-size: 11px;
+    margin-top: 6px;
+}
+.big-news-live-details-item h5:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #f00;
+    border-radius: 50%;
+    position: absolute;
+    left: -24px;
+    top: 15px;
+}
+</style>
+</head>
+<body>
+<section class="big-news">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h2 class="custom-heading-two"><span>Other Big Story</span></h2>
+                <h2 class="custom-heading-two-live"><span>Other Big Story</span></h2>
+                <div class="big-news-header">
+                    <a href=""><h1>Padampur bypoll: BJD workers accused of distributing cash, detained in Bargarh village</h1></a>
+                    <ul class="big-news-author">
+                        <li><a href="">SUSANT SINGH</a></li>
+                        <li><a href="">Bhubaneswar</a></li>
+                        <li>Latest Update 3pm</li>
+                    </ul>
+                    <ul class="big-news-share">
+                        <li><a href=""><img src="https://odishatv.in/commondir/images/svg/facebook-single.svg" width="17" height="17" alt="Facebook"></a></li>
+                        <li><a href=""><img src="https://odishatv.in/commondir/images/svg/twitter-single.svg" width="17" height="17" alt="Twitter"></a></li>
+                        <li><a href=""><img src="https://odishatv.in/commondir/images/svg/telegram-single.svg" width="17" height="17" alt="Telegram"></a></li>
+                        <li><a href=""><img src="https://odishatv.in/commondir/images/svg/whatsapp-single.svg" width="17" height="17" alt="WhataApp"></a></li>
+                        <li><a href=""><img src="https://odishatv.in/commondir/images/svg/print-icon.svg" width="17" height="17" alt="Print"></a></li>
+                    </ul>
+                </div>
+                <div class="big-news-thumbnail">
+                    <div class="big-news-thumbnail-image">
+                         <a href="#"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1669725177.jpg" alt="" title="" width="" height="" class="bigstory-thumbnail"></a>
+                        <h5>Padampur bypoll: BJD workers</h5>
+                     </div>
+                    <h6 class="big-news-caption">As per the NCS, the quake occurred today at around 8:32AM in Bay of Bengal at a depth of 10km.</h6>
+                    <h6 class="big-news-caption-live">As per the NCS, the quake occurred today at around 8:32AM in Bay of Bengal at a depth of 10km.</h6>
+                </div>
+                <ul class="big-news-tagging">
+                    <li><a href="#">Other</a></li>
+                    <li><a href="#">Big</a></li>
+                    <li><a href="#">Story</a></li>
+                </ul>
+                <ul class="big-news-related">
+                    <li><a href="#">Woman forced to sit with loco pilot after she halts metro movement for this reason #Watch</a></li>
+                    <li><a href="#">Padampur bypoll: BJD workers accused of distributing cash, detained in Bargarh village</a></li>
+                    <li><a href="#">Is Ruturaj Gaikwad dating popular Marathi actress Sayali Sanjeev? Actress says our</a></li>
+                    <li><a href="#">Nagarjuna and Prabhas’ doppelgangers will leave you surprised, check here</a></li>
+                    <li><a href="#">Rohit Shetty and Ranveer Singh’s Cirkus trailer is powerful dose of comedy</a></li>
+                </ul>
+                <div class="big-news-live-details">
+                    <div class="big-news-live-details-item">
+                        <a href="#"><h4>Woman forced to sit with loco pilot after she halts metro movement for this reason #Watch</h4></a>
+                        <h6>Posted By: <a href="#">Bikash Dash</a></h6>
+                        <p>After hugging the groom continuously, the ‘burqa wali’ attempted to kiss him. However, the bride seemed to be calm After hugging the groom continuously, the ‘burqa wali’ attempted to kiss him. However, the bride seemed to be calm</p>
+                        <h5>2:54 AMP<span>(12 Minutes Ago)</span></h5>
+                    </div>
+                    <div class="big-news-live-details-item">
+                        <a href="#"><h4>Woman forced to sit with loco pilot after she halts metro movement for this reason #Watch</h4></a>
+                        <h6>Posted By: <a href="#">Bikash Dash</a></h6>
+                        <p>After hugging the groom continuously, the ‘burqa wali’ attempted to kiss him. However, the bride seemed to be calm After hugging the groom continuously, the ‘burqa wali’ attempted to kiss him. However, the bride seemed to be calm</p>
+                        <h5>2:54 AMP<span>(12 Minutes Ago)</span></h5>
+                    </div>
+                    <div class="big-news-live-details-item">
+                        <a href="#"><h4>Woman forced to sit with loco pilot after she halts metro movement for this reason #Watch</h4></a>
+                        <h5>2:54 AMP<span>(12 Minutes Ago)</span></h5>
+                    </div>
+                     <a href="#" class="large-readmore-live">Read More</a>
+                </div>
+                <a href="#" class="large-readmore">Read More</a>
+            </div>
+            <div class="col-lg-3">
+                <h3 class="custom-heading-three"><span>Other Big Story</span></h3>
+                <div class="bigstory-sbar-item">
+                    <a href="#"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1669725177.jpg" alt="" title="" width="" height="" class="bigstory-sbar-thumbnail"></a>
+                    <a href="#"><h4>Padampur bypoll: BJD workers accused of distributing</h4></a>
+                    <div class="date-n-share">
+                               <ul class="otv-cat-time">
+                                  <li><a href="">World News</a></li>
+                                  <li>17 March 2022</li>
+                               </ul>
+                               <ul class="otv-cat-share-icon">
+                                  <li class="otv-share-social-media-add">
+                                     <a><img src="https://odishatv.in/commondir/images/svg/share-icon.svg"></a>
+                                     <ul class="otv-article-share-style-more-one" style="display: none;">
+                                        <li>
+                                           <a title="Share on facebook" href="#"><img src="https://odishatv.in/commondir/images/svg/facebook.svg" width="20" height="20" alt="Facebook">
+                                           </a>
+                                        </li>
+                                        <li>
+                                           <a title="Share on facebook" href="#"><img src="https://odishatv.in/commondir/images/svg/facebook.svg" width="20" height="20" alt="Facebook">
+                                           </a>
+                                        </li>
+                                     </ul>
+                                  </li>
+                               </ul>
+                            </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="bigstory-sbar-item">
+                    <a href="#"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1669725177.jpg" alt="" title="" width="" height="" class="bigstory-sbar-thumbnail"></a>
+                    <a href="#"><h4>Padampur bypoll: BJD workers accused of distributing</h4></a>
+                    <div class="date-n-share">
+                               <ul class="otv-cat-time">
+                                  <li><a href="">World News</a></li>
+                                  <li>17 March 2022</li>
+                               </ul>
+                               <ul class="otv-cat-share-icon">
+                                  <li class="otv-share-social-media-add">
+                                     <a><img src="https://odishatv.in/commondir/images/svg/share-icon.svg"></a>
+                                     <ul class="otv-article-share-style-more-one" style="display: none;">
+                                        <li>
+                                           <a title="Share on facebook" href="#"><img src="https://odishatv.in/commondir/images/svg/facebook.svg" width="20" height="20" alt="Facebook">
+                                           </a>
+                                        </li>
+                                        <li>
+                                           <a title="Share on facebook" href="#"><img src="https://odishatv.in/commondir/images/svg/facebook.svg" width="20" height="20" alt="Facebook">
+                                           </a>
+                                        </li>
+                                     </ul>
+                                  </li>
+                               </ul>
+                            </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="bigstory-sbar-item">
+                    <a href="#"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_0/IMAGE_1669725177.jpg" alt="" title="" width="" height="" class="bigstory-sbar-thumbnail"></a>
+                    <a href="#"><h4>Padampur bypoll: BJD workers accused of distributing</h4></a>
+                    <div class="date-n-share">
+                               <ul class="otv-cat-time">
+                                  <li><a href="">World News</a></li>
+                                  <li>17 March 2022</li>
+                               </ul>
+                               <ul class="otv-cat-share-icon">
+                                  <li class="otv-share-social-media-add">
+                                     <a><img src="https://odishatv.in/commondir/images/svg/share-icon.svg"></a>
+                                     <ul class="otv-article-share-style-more-one" style="display: none;">
+                                        <li>
+                                           <a title="Share on facebook" href="#"><img src="https://odishatv.in/commondir/images/svg/facebook.svg" width="20" height="20" alt="Facebook">
+                                           </a>
+                                        </li>
+                                        <li>
+                                           <a title="Share on facebook" href="#"><img src="https://odishatv.in/commondir/images/svg/facebook.svg" width="20" height="20" alt="Facebook">
+                                           </a>
+                                        </li>
+                                     </ul>
+                                  </li>
+                               </ul>
+                            </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <a href="#" class="big-readmore">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    jQuery(document).ready(function(){
+        $(".otv-share-social-media-add").click(function(){
+            //$('.article-share-style-more').hide();
+            $(this).find('.otv-article-share-style-more').animate({width: "toggle"}, 200);
+            $(this).find('.otv-article-share-style-more-one').animate({width: "toggle"}, 200);
+        });
+    });   
+</script>
+</body>
+</html>

@@ -1,0 +1,903 @@
+<?php include_once 'includes/header.php'; ?>
+<style type="text/css">
+    .municipal-election-tabbing {
+    float: left;
+    width: 100%;
+    margin: 10px 0px 30px 0px;
+    }
+   h1.heading-municipal-election {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   color: #c50000;
+   font-weight: 700;
+   line-height: 35px;
+   font-size: 36px;
+   margin-bottom: 12px;
+   }
+   p.summery-municipal-election {
+   padding: 0;
+   margin: 0;
+   font-size: 15px;
+   font-weight: 500;
+   line-height: 22px;
+   text-align: center;
+   margin-bottom: 10px;
+   }
+   table.muncipal-election-table {
+   border-collapse: collapse;
+   border-spacing: 0;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   }
+   .muncipal-election-table tr td {
+   width: 20%;
+   text-align: left;
+   padding: 6px 6px 6px 6px;
+   float: left;
+   border: none;
+   border-top: none;
+   border-left: none;
+   margin: 0;
+   position: relative;
+   height: 50%;
+   }
+   .muncipal-election-table tr td:nth-child(2) {
+   width: 40%;
+   }
+   td.muncipal-party-symbol img {
+   width: 32px;
+   height: 32px;
+   margin: 0 auto;
+   text-align: center;
+   display: block;
+   }
+   td.muncipal-party-symbol span {
+   display: block;
+   font-size: 10px;
+   color: #000;
+   font-weight: 700;
+   margin: 3px 0px 0px 5px;
+   text-align: center;
+   }
+   td.muncipal-candidate-candidate img {
+   float: left;
+   width: 30px;
+   height: 30px;
+   margin: 0px;
+   }
+   td.muncipal-candidate-candidate h5 {
+   margin: 12px 0px 0px 0px;
+   padding: 0;
+   font-size: 14px;
+   font-weight: 600;
+   line-height: 14px;
+   top: 10px;
+   color: #181818;
+   }
+   td.muncipal-total-vote h5 {
+   margin: 8px 0px 0px 0px;
+   padding: 0;
+   text-align: center;
+   font-size: 19px;
+   color: #979797;
+   }
+   td.muncipal-total-vote h5 span {
+   font-size: 12px;
+   margin-left: 2px;
+   color: #737373;
+   }
+   td.muncipal-result h5 {
+   margin: 12px 0px 0px 0px;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+   }
+   h5.muncipal-result-win {
+   color: #00a500;
+   font-weight: 600;
+   letter-spacing: 1px;
+   }
+   h5.muncipal-result-loss {
+   color: #ff0000;
+   font-weight: 600;
+   letter-spacing: 1px;
+   }
+   h5.muncipal-result-awaited {
+   color: #a9a9a9;
+   font-weight: 500;
+   }
+   ul.municipal-area {
+   background-color: #f4f4f4;
+   text-align: center;
+   margin: 0px 0px 5px 0px;
+   padding: 7px 0px;
+   border-bottom: solid 4px #7b0505;
+   }
+   ul.municipal-area li {
+   list-style-type: none;
+   display: inline-block;
+   }
+   ul.municipal-area li a {
+   text-decoration: none;
+   display: block;
+   text-transform: uppercase;
+   font-family: 'Libre Franklin', sans-serif;
+   color: #7b0505;
+   font-size: 16px;
+   margin: 0px 5px;
+   line-height: 31px;
+   }
+   ul.municipal-area li.active a {
+   border-bottom: solid 3px #2db12d;
+   font-weight: 600;
+   color: #2db12d;
+   }
+   .municipal-ward-list {
+   float: left;
+   width: 100%;
+   }
+   .municipal-ward {
+   float: left;
+   width: 100%;
+   position: relative;
+   background-color: #e7e8ed;
+   padding-bottom: 15px;
+   margin-bottom: 15px;
+   }
+   .municipal-ward:nth-child(even) {
+   background-color: #f9faff;
+   }
+   ul.municipal-ward-candidates {
+   margin: 0px 7.5px;
+   padding: 0px;
+   }
+   ul.municipal-ward-candidates li {
+   list-style-type: none;
+   float: left;
+   width: 48.7%;
+   background-color: #fff;
+   margin-right: 4.5px;
+   position: relative;
+   padding: 40px 5px 11px 5px;
+   border-radius: 9px;
+   text-align: center;
+   font-size: 13px;
+   font-weight: 700;
+   color: #7b0505;
+   border: solid 1px #d6d6d6;
+   margin-bottom: 4.5px;
+   }
+   .municipal-ward h3 {
+   padding: 7.5px;
+   font-size: 22px;
+   margin: 0px 0px 15px 0px;
+   text-transform: capitalize;
+   background-color: #d5d6db;
+   }
+   .municipal-ward h3 span {
+   float: right;
+   font-family: 'Faustina', serif;
+   font-weight: 400;
+   }
+   ul.municipal-ward-candidates li:last-child {
+   margin-right: 0px;
+   }
+   ul.municipal-ward-candidates li img {
+   width: 30px;
+   height: 30px;
+   }
+   ul.municipal-ward-candidates li span {
+   position: absolute;
+   right: 5px;
+   top: 9px;
+   font-size: 12px;
+   text-transform: uppercase;
+   padding: 3px;
+   width: 63px;
+   border-radius: 12px;
+   }
+   span.municipal-elections-win {
+   background-color: #2db12d;
+   color: #fff;
+   }
+   span.municipal-elections-loss {
+   background-color: #db0000;
+   color: #fff;
+   }
+   span.municipal-elections-awaited {
+   background-color: #e7e8ed;
+   color: #333;
+   }
+   ul.municipal-ward-candidates li strong {
+   position: absolute;
+   left: 45px;
+   top: 7px;
+   font-size: 18px;
+   font-weight: normal;
+   }
+   ul.municipal-ward-candidates li img {
+   width: 30px;
+   height: 30px;
+   position: absolute;
+   left: 5px;
+   top: 5px;
+   }
+   ul.municipal-ward-candidates li:hover {
+   background-color: #fbd88d4d;
+   -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.07);
+   -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.07);
+   box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.07);
+   }
+</style>
+<div class="otv-300-250-ad">
+    <!-- /370089190/Below_Header_Category_Mobile_300x250 -->
+    <div id="div-gpt-ad-22339530254-0" style="width: 300px; height: 250px;">
+        <script>
+        googletag.cmd.push(function() {
+            googletag.display("div-gpt-ad-22339530254-0");
+        });
+        </script>
+    </div>
+</div>
+<div class="container odisha-page-main-title">
+    <h1 class="heading-municipal-election">Odisha Municipal Election 2022 </h1>
+      <p class="summery-municipal-election">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using</p>
+</div>
+    <div class="municipal-election-tabbing">
+                <ul class="municipal-area">
+                   <li class="active"><a data-toggle="tab" href="#bhubaneswar">bhubaneswar</a></li>
+                   <li><a data-toggle="tab" href="#cuttack">cuttack</a></li>
+                   <li><a data-toggle="tab" href="#brahmapur">brahmapur</a></li>
+                </ul>
+                <div class="tab-content">
+                   <div id="bhubaneswar" class="tab-pane fade in active">
+                      <table class="muncipal-election-table">
+                         <tbody>
+                            <tr class="active">
+                               <td class="muncipal-party-symbol">
+                                  <a href=""><img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title=""><span>BJD</span>
+                                  </a>
+                               </td>
+                               <td class="muncipal-candidate-candidate">
+                                  <h5>Gopal Prasad Pradhan</h5>
+                               </td>
+                               <td class="muncipal-total-vote">
+                                  <h5>52<span>votes</span></h5>
+                               </td>
+                               <td class="muncipal-result">
+                                  <h5 class="muncipal-result-awaited">Awaited</h5>
+                               </td>
+                            </tr>
+                            <tr class="active">
+                               <td class="muncipal-party-symbol">
+                                  <a href=""><img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title=""><span>BJP</span>
+                                  </a>
+                               </td>
+                               <td class="muncipal-candidate-candidate">
+                                  <h5>Gopal Prasad Pradhan</h5>
+                               </td>
+                               <td class="muncipal-total-vote">
+                                  <h5>52<span>votes</span></h5>
+                               </td>
+                               <td class="muncipal-result">
+                                  <h5 class="muncipal-result-win">WIN</h5>
+                               </td>
+                            </tr>
+                            <tr class="active">
+                               <td class="muncipal-party-symbol">
+                                  <a href=""><img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title=""><span>INC</span>
+                                  </a>
+                               </td>
+                               <td class="muncipal-candidate-candidate">
+                                  <h5>Gopal Prasad Pradhan</h5>
+                               </td>
+                               <td class="muncipal-total-vote">
+                                  <h5>52<span>votes</span></h5>
+                               </td>
+                               <td class="muncipal-result">
+                                  <h5 class="muncipal-result-loss">Loss</h5>
+                               </td>
+                            </tr>
+                            <tr class="active">
+                               <td class="muncipal-party-symbol">
+                                  <a href=""><img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title=""><span>OTHERS</span>
+                                  </a>
+                               </td>
+                               <td class="muncipal-candidate-candidate">
+                                  <h5>Gopal Prasad Pradhan</h5>
+                               </td>
+                               <td class="muncipal-total-vote">
+                                  <h5>52<span>votes</span></h5>
+                               </td>
+                               <td class="muncipal-result">
+                                  <h5 class="muncipal-result-awaited">Awaited</h5>
+                               </td>
+                            </tr>
+                         </tbody>
+                      </table>
+                      <div class="municipal-ward-list">
+               <div class="municipal-ward">
+                  <h3>Ward no. 01 <span>Bhubaneswar</span></h3>
+                  <ul class="municipal-ward-candidates">
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                        <strong>BJP</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-win">Win</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                        <strong>BJD</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-loss">Loss</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                        <strong>INC</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                        <strong>OTHERS</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="municipal-ward">
+                  <h3>Ward no. 02 <span>Bhubaneswar</span></h3>
+                  <ul class="municipal-ward-candidates">
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                        <strong>BJP</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-win">Win</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                        <strong>BJD</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-loss">Loss</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                        <strong>INC</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                        <strong>OTHERS</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="municipal-ward">
+                  <h3>Ward no. 03 <span>Bhubaneswar</span></h3>
+                  <ul class="municipal-ward-candidates">
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                        <strong>BJP</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-win">Win</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                        <strong>BJD</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-loss">Loss</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                        <strong>INC</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                        <strong>OTHERS</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="municipal-ward">
+                  <h3>Ward no. 04 <span>Bhubaneswar</span></h3>
+                  <ul class="municipal-ward-candidates">
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                        <strong>BJP</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-win">Win</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                        <strong>BJD</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-loss">Loss</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                        <strong>INC</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                        <strong>OTHERS</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="municipal-ward">
+                  <h3>Ward no. 05 <span>Bhubaneswar</span></h3>
+                  <ul class="municipal-ward-candidates">
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                        <strong>BJP</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-win">Win</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                        <strong>BJD</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-loss">Loss</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                        <strong>INC</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                        <strong>OTHERS</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+          </div>
+          <div id="cuttack" class="tab-pane fade">
+             <table class="muncipal-election-table">
+                <tbody>
+                   <tr class="active">
+                      <td class="muncipal-party-symbol">
+                         <a href=""><img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title=""><span>BJD</span>
+                         </a>
+                      </td>
+                      <td class="muncipal-candidate-candidate">
+                         <h5>Gopal Prasad Pradhan2</h5>
+                      </td>
+                      <td class="muncipal-total-vote">
+                         <h5>52<span>votes</span></h5>
+                      </td>
+                      <td class="muncipal-result">
+                         <h5 class="muncipal-result-awaited">Awaited</h5>
+                      </td>
+                   </tr>
+                   <tr class="active">
+                      <td class="muncipal-party-symbol">
+                         <a href=""><img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title=""><span>BJP</span>
+                         </a>
+                      </td>
+                      <td class="muncipal-candidate-candidate">
+                         <h5>Gopal Prasad Pradhan</h5>
+                      </td>
+                      <td class="muncipal-total-vote">
+                         <h5>52<span>votes</span></h5>
+                      </td>
+                      <td class="muncipal-result">
+                         <h5 class="muncipal-result-win">WIN</h5>
+                      </td>
+                   </tr>
+                   <tr class="active">
+                      <td class="muncipal-party-symbol">
+                         <a href=""><img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title=""><span>INC</span>
+                         </a>
+                      </td>
+                      <td class="muncipal-candidate-candidate">
+                         <h5>Gopal Prasad Pradhan</h5>
+                      </td>
+                      <td class="muncipal-total-vote">
+                         <h5>52<span>votes</span></h5>
+                      </td>
+                      <td class="muncipal-result">
+                         <h5 class="muncipal-result-loss">Loss</h5>
+                      </td>
+                   </tr>
+                   <tr class="active">
+                      <td class="muncipal-party-symbol">
+                         <a href=""><img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title=""><span>OTHERS</span>
+                         </a>
+                      </td>
+                      <td class="muncipal-candidate-candidate">
+                         <h5>Gopal Prasad Pradhan</h5>
+                      </td>
+                      <td class="muncipal-total-vote">
+                         <h5>52<span>votes</span></h5>
+                      </td>
+                      <td class="muncipal-result">
+                         <h5 class="muncipal-result-awaited">Awaited</h5>
+                      </td>
+                   </tr>
+                </tbody>
+             </table>
+             <div class="municipal-ward-list">
+               <div class="municipal-ward">
+               <h3>Ward no. 01 <span>Cuttack</span></h3>
+               <ul class="municipal-ward-candidates">
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                     <strong>BJP</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-win">Win</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                     <strong>BJD</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-loss">Loss</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                     <strong>INC</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-awaited">awaited</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                     <strong>OTHERS</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-awaited">awaited</span>
+                  </li>
+               </ul>
+               </div>
+               <div class="municipal-ward">
+               <h3>Ward no. 02 <span>Cuttack</span></h3>
+               <ul class="municipal-ward-candidates">
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                     <strong>BJP</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-win">Win</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                     <strong>BJD</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-loss">Loss</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                     <strong>INC</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-awaited">awaited</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                     <strong>OTHERS</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-awaited">awaited</span>
+                  </li>
+               </ul>
+               </div>
+               <div class="municipal-ward">
+               <h3>Ward no. 03 <span>Cuttack</span></h3>
+               <ul class="municipal-ward-candidates">
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                     <strong>BJP</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-win">Win</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                     <strong>BJD</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-loss">Loss</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                     <strong>INC</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-awaited">awaited</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                     <strong>OTHERS</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-awaited">awaited</span>
+                  </li>
+               </ul>
+               </div>
+               <div class="municipal-ward">
+               <h3>Ward no. 04 <span>Cuttack</span></h3>
+               <ul class="municipal-ward-candidates">
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                     <strong>BJP</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-win">Win</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                     <strong>BJD</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-loss">Loss</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                     <strong>INC</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-awaited">awaited</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                     <strong>OTHERS</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-awaited">awaited</span>
+                  </li>
+               </ul>
+               </div>
+               <div class="municipal-ward">
+               <h3>Ward no. 05 <span>Cuttack</span></h3>
+               <ul class="municipal-ward-candidates">
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                     <strong>BJP</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-win">Win</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                     <strong>BJD</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-loss">Loss</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                     <strong>INC</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-awaited">awaited</span>
+                  </li>
+                  <li>
+                     <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                     <strong>OTHERS</strong>
+                     Gopal Prasad Pradhan
+                     <span class="municipal-elections-awaited">awaited</span>
+                  </li>
+               </ul>
+               </div>
+         </div>
+   </div>
+                   <div id="brahmapur" class="tab-pane fade">
+                      <table class="muncipal-election-table">
+                         <tbody>
+                            <tr class="active">
+                               <td class="muncipal-party-symbol">
+                                  <a href=""><img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title=""><span>BJD</span>
+                                  </a>
+                               </td>
+                               <td class="muncipal-candidate-candidate">
+      
+                                  <h5>Gopal Prasad Pradhan</h5>
+                               </td>
+                               <td class="muncipal-total-vote">
+                                  <h5>52<span>votes</span></h5>
+                               </td>
+                               <td class="muncipal-result">
+                                  <h5 class="muncipal-result-awaited">Awaited</h5>
+                               </td>
+                            </tr>
+                            <tr class="active">
+                               <td class="muncipal-party-symbol">
+                                  <a href=""><img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title=""><span>BJP</span>
+                                  </a>
+                               </td>
+                               <td class="muncipal-candidate-candidate">
+      
+                                  <h5>Gopal Prasad Pradhan</h5>
+                               </td>
+                               <td class="muncipal-total-vote">
+                                  <h5>52<span>votes</span></h5>
+                               </td>
+                               <td class="muncipal-result">
+                                  <h5 class="muncipal-result-win">WIN</h5>
+                               </td>
+                            </tr>
+                            <tr class="active">
+                               <td class="muncipal-party-symbol">
+                                  <a href=""><img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title=""><span>INC</span>
+                                  </a>
+                               </td>
+                               <td class="muncipal-candidate-candidate">
+      
+                                  <h5>Gopal Prasad Pradhan</h5>
+                               </td>
+                               <td class="muncipal-total-vote">
+                                  <h5>52<span>votes</span></h5>
+                               </td>
+                               <td class="muncipal-result">
+                                  <h5 class="muncipal-result-loss">Loss</h5>
+                               </td>
+                            </tr>
+                            <tr class="active">
+                               <td class="muncipal-party-symbol">
+                                  <a href=""><img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title=""><span>OTHERS</span>
+                                  </a>
+                               </td>
+                               <td class="muncipal-candidate-candidate">
+      
+                                  <h5>Gopal Prasad Pradhan3</h5>
+                               </td>
+                               <td class="muncipal-total-vote">
+                                  <h5>52<span>votes</span></h5>
+                               </td>
+                               <td class="muncipal-result">
+                                  <h5 class="muncipal-result-awaited">Awaited</h5>
+                               </td>
+                            </tr>
+                         </tbody>
+                      </table>
+                      <div class="municipal-ward-list">
+               <div class="municipal-ward">
+                  <h3>Ward no. 01 <span>brahmapur</span></h3>
+                  <ul class="municipal-ward-candidates">
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                        <strong>BJP</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-win">Win</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                        <strong>BJD</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-loss">Loss</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                        <strong>INC</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                        <strong>OTHERS</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="municipal-ward">
+                  <h3>Ward no. 02 <span>brahmapur</span></h3>
+                  <ul class="municipal-ward-candidates">
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                        <strong>BJP</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-win">Win</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                        <strong>BJD</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-loss">Loss</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                        <strong>INC</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                        <strong>OTHERS</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="municipal-ward">
+                  <h3>Ward no. 03 <span>brahmapur</span></h3>
+                  <ul class="municipal-ward-candidates">
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                        <strong>BJP</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-win">Win</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                        <strong>BJD</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-loss">Loss</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                        <strong>INC</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                        <strong>OTHERS</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="municipal-ward">
+                  <h3>Ward no. 04 <span>brahmapur</span></h3>
+                  <ul class="municipal-ward-candidates">
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                        <strong>BJP</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-win">Win</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                        <strong>BJD</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-loss">Loss</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                        <strong>INC</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                        <strong>OTHERS</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                  </ul>
+               </div>
+               <div class="municipal-ward">
+                  <h3>Ward no. 05 <span>brahmapur</span></h3>
+                  <ul class="municipal-ward-candidates">
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjp.svg" alt="" title="">
+                        <strong>BJP</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-win">Win</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/bjd.svg" alt="" title="">
+                        <strong>BJD</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-loss">Loss</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/inc.svg" alt="" title="">
+                        <strong>INC</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                     <li>
+                        <img src="https://odishatv.in/commondir/images/svg/ind.svg" alt="" title="">
+                        <strong>OTHERS</strong>
+                        Gopal Prasad Pradhan
+                        <span class="municipal-elections-awaited">awaited</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+                   </div>
+                </div>
+             </div>
+            <!--=================== //TABBING ======================--> 
+
+<?php include_once 'includes/footer.php'; ?>

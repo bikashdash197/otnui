@@ -1,0 +1,25 @@
+<svg id="USER-icon" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6e83b7;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #edeff1;
+      }
+
+      .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        fill: #d3d3d3;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_2_copy_2" data-name="Ellipse 2 copy 2" class="cls-1" cx="15.5" cy="15.5" r="15.5"/>
+  <circle class="cls-2" cx="15.5" cy="9.406" r="6.16"/>
+  <path id="Ellipse_2_copy" data-name="Ellipse 2 copy" class="cls-3" d="M1519.5,72.565c5.91,0,10.7,2.758,10.7,6.161s-4.79,6.161-10.7,6.161-10.7-2.758-10.7-6.161S1513.59,72.565,1519.5,72.565Z" transform="translate(-1504 -57)"/>
+  <path class="cls-4" d="M1514.51,73.6a12.8,12.8,0,0,1,9.98,0l-4.92,6.356Z" transform="translate(-1504 -57)"/>
+</svg>

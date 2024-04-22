@@ -1,0 +1,18 @@
+<svg id="B-play" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #d7d7d7;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        fill: #747474;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <rect id="Rectangle_1274_copy_2" data-name="Rectangle 1274 copy 2" class="cls-1" x="0.5" y="0.5" width="26" height="26"/>
+  <path id="Shape_1277_copy" data-name="Shape 1277 copy" class="cls-2" d="M1536.64,433.5a2.16,2.16,0,0,1,.19.154l2.94,3.108a0.563,0.563,0,0,1,.01.9c-0.44.511-.69,0.384-1.04,0-1.16-1.244-2.34-2.474-3.5-3.71a0.545,0.545,0,0,1-.01-0.9q1.815-1.91,3.61-3.818a0.492,0.492,0,0,1,.84-0.008,0.648,0.648,0,0,1,0,1.116c-0.96.99-1.9,2-2.85,3A1.937,1.937,0,0,1,1536.64,433.5Z" transform="translate(-1524.5 -419.5)"/>
+</svg>

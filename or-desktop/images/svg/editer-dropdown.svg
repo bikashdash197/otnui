@@ -1,0 +1,16 @@
+<svg id="editer-dropdown" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d2051e;
+      }
+
+      .cls-2 {
+        fill: #f7f7f7;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="10" cy="10" r="10"/>
+  <path class="cls-2" d="M787,1051.29c0.434-.41.885-0.84,1.339-1.27q1.806,1.71,3.634,3.43c1.234-1.17,2.447-2.31,3.653-3.45,0.479,0.46.932,0.89,1.374,1.31-1.653,1.55-3.332,3.13-5,4.69C790.343,1054.44,788.663,1052.86,787,1051.29Z" transform="translate(-782 -1043)"/>
+</svg>
