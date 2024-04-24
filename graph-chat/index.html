@@ -105,6 +105,38 @@
 		.graphchat {
 		margin: 0px 0px 50px 0px;
 		}
+img.graphzoom {
+    position: absolute;
+    right: 38px;
+    top: 5px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 24px;
+    margin: 0px;
+    padding: 3px;
+    cursor: pointer;
+    background-color: #fff;
+    z-index: 1;
+}
+.graphchat.activegraph {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 40px;
+    background-color: #fff;
+    width: 1000px;
+    height: 562px;
+    padding: 10px;
+    z-index: 2;
+    overflow-y: scroll;
+    border: solid 4px #f1f1f1;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 32px 17px rgb(0 0 0 / 46%);
+    -moz-box-shadow: 0px 0px 32px 17px rgba(0,0,0,0.46);
+    box-shadow: 0px 0px 32px 17px rgb(0 0 0 / 46%);
+}
 	</style>
 </head>
 	<body>
@@ -182,26 +214,30 @@
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="graphchat">
+							<img src="zoom.png" width="32" height="32" alt="zoom" title="zoom" class="graphzoom">
 							<h3 class="graph-heading">Stories</h3>
-							<canvas id="StoriesChart" style="width:100%;max-width:600px"></canvas>
+							<canvas id="StoriesChart"></canvas>
 						</div>
 					</div>
 					<div class="col-lg-6">
 						<div class="graphchat">
+							<img src="zoom.png" width="32" height="32" alt="zoom" title="zoom" class="graphzoom">
 							<h3 class="graph-heading">Active Users</h3>
-							<canvas id="ActiveUsersChart" style="width:100%;max-width:600px"></canvas>
+							<canvas id="ActiveUsersChart"></canvas>
 						</div>
 					</div>
 					<div class="col-lg-6">
 						<div class="graphchat">
+							<img src="zoom.png" width="32" height="32" alt="zoom" title="zoom" class="graphzoom">
 							<h3 class="graph-heading">Views</h3>
-							<canvas id="ViewsChart" style="width:100%;max-width:600px"></canvas>
+							<canvas id="ViewsChart"></canvas>
 						</div>
 					</div>
 					<div class="col-lg-6">
 						<div class="graphchat">
+							<img src="zoom.png" width="32" height="32" alt="zoom" title="zoom" class="graphzoom">
 							<h3 class="graph-heading">New Users</h3>
-							<canvas id="NewUsersChart" style="width:100%;max-width:600px"></canvas>
+							<canvas id="NewUsersChart"></canvas>
 						</div>
 					</div>
 				</div>
@@ -295,6 +331,27 @@
 			$(function() {
 				$('input[name="daterange"]').daterangepicker();
 			});
+
+
+
+
+$(document).ready(function(){
+  $(".graphzoom").click(function(){
+  	$(this).closest(".graphchat").find("#StoriesChart").attr("width", "1200px");
+    $(this).closest(".graphchat").find("#StoriesChart").attr("height", "500px");
+    $(this).closest(".graphchat").toggleClass("activegraph");
+
+
+var src = $(this).attr('src');
+    var newsrc = (src=='zoom.png') ? 'magnifying-glass.png' : 'zoom.png';
+    $(this).attr('src', newsrc );
+  });
+});
+
+
+
+
+
 		</script>
 	</body>
 </html>
