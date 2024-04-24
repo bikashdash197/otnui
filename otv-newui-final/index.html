@@ -1,0 +1,2697 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <style>
+         /* commom-css */
+         body {
+         margin: 0;
+         padding: 0;
+         font-family: 'Roboto', sans-serif;
+         }
+         a{
+         text-decoration: none;
+         }
+         .otv-rel-box {
+         position: relative;
+         margin: 10px 0px;
+         padding: 10px;
+         -webkit-box-shadow: 0px 0px 18px -4px rgb(0 0 0 / 34%);
+         -moz-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.34);
+         box-shadow: 0px 0px 18px -4px rgb(0 0 0 / 34%);
+         -webkit-border-radius: 8px;
+         -moz-border-radius: 8px;
+         -o-border-radius: 8px;
+         border-radius: 8px;
+         background-color: #fff;
+         width: 100%;
+         min-height: 140px;
+         }
+         /* add */
+         .otv-300-250-ad:before, .otv-300-50-ad:before, .otv-970-250-ad:before, .otv-728-90-ad:before, .otv-300-600-ad:before, .otv-320-50-ad:before, .otv-970-90-ad:before {
+         content: "advertisement";
+         position: absolute;
+         right: 0;
+         left: 0;
+         top: 0;
+         width: 100%;
+         margin: 0 auto;
+         background-color: #e3e3e3;
+         height: 30px;
+         line-height: 30px;
+         text-transform: capitalize;
+         font-size: 14px;
+         color: #000;
+         }
+         .otv-300-250-ad, .otv-300-50-ad, .otv-970-250-ad, .otv-728-90-ad, .otv-300-600-ad, .otv-320-50-ad, .otv-970-90-ad {
+         display: flex;
+         margin: 10px auto;
+         text-align: center;
+         overflow: hidden;
+         padding-top: 30px;
+         position: relative;
+         margin-bottom: 10px;
+         background-color: #f5f3f3;
+         }
+         .otv-300-250-ad {
+         width: 300px;
+         height: 280px;
+         }
+         /* add ///////////////*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         /* header */
+         /*=========== TOP MENU ============*/
+ul.day-weather {
+    margin: 0px 0px 0px 15px;
+    padding: 0px;
+    display: block;
+    width: 360px;
+    position: relative;
+    float: left;
+}
+ul.day-weather i {
+    color: #f4b01b;
+    font-size: 20px;
+}
+ul.day-weather li {
+    color: #5a5757;
+    margin: 0px 6px;
+    font-size: 14px;
+    line-height: 30px;
+    list-style-type: none;
+    display: inline-block;
+}
+ul.day-weather li:first-child {
+    font-size: 16px;
+    color: #000;
+}
+ul.day-weather li:last-child {
+    font-size: 12px;
+    color: #adadad;
+}
+.main-logo img {
+    max-width: 100%;
+    height: auto;
+}
+.main-logo img {
+    max-width: 100%;
+    height: auto;
+}
+header {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 9px 0px 15px 0px;
+    max-height: 83.3px;
+}
+ul.top-menu {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: inline-block;
+}
+ul.top-menu li {
+    list-style-type: none;
+    display: inline-block;
+}
+.top-menu-right {
+    float: right;
+    text-align: right;
+}
+ul.top-menu li a {
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0px 10px;
+    color: #212121;
+}
+ul.top-menu li.active a {
+    background-color: #212121;
+    color: #fff;
+}
+ul.top-menu li a button {
+    background-color: #7b0505;
+    border: none;
+    border-radius: 3px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 14px;
+    padding: 0px 10px;
+    outline: none;
+}
+li.top-social-btn a i {
+    color: #fff !important;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px !important;
+    font-size: 11px !important;
+    transition-duration: .5s;
+    border-radius: 50%;
+}
+li.top-social-btn img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+li.top-social-btn a i:hover {
+    transition-duration: .5s;
+    background-color: #212121 !important
+}
+.top-menu-right li a {
+    margin: 0px !important;
+    padding: 0px 2px !important;
+}
+li.top-social-btn a i.fab.fa-facebook-f {
+    background-color: #3c51a5;
+}
+li.top-social-btn a i.fab.fa-twitter {
+    background-color: #5db2f7;
+}
+li.top-social-btn a i.fab.fa-instagram {
+    background-color: #d94b8e;
+}
+li.top-social-btn a i.fab.fa-pinterest-p {
+    background-color: #d93a34;
+}
+li.top-social-btn a i.fab.fa-linkedin-in {
+    background-color: #036593;
+}
+li.top-social-btn a i.fab.fa-telegram-plane {
+    background-color: #299ecf;
+}
+li.top-social-btn a i.fab.fa-youtube {
+    background-color: #fa423b;
+}
+/* RESPONSIVE MENU */
+.mobile-menu-box {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 2;
+    width: 100%;
+    background-color: #333;
+    height: 100%;
+    padding: 10px 70px 10px 10px;
+    /*display: none;*/
+}
+.mobile-menu-box p {
+    color: #fff;
+}
+.mobile-menu-box::-webkit-scrollbar {
+  display: none;
+}
+.mobile-menu-box::scrollbar {
+  display: none;
+}
+.mobile-menu-box-overly::-webkit-scrollbar {
+  display: none;
+}
+.mobile-menu-box-overly::scrollbar {
+  display: none;
+}
+ul.menu-signin {
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+    display: inline-block;
+    width: 100%;
+}
+ul.menu-signin li {
+    list-style-type: none;
+    display: inline-block;
+}
+a.darkmode-btn {
+    margin-bottom: 15px;
+    display: block;
+    width: fit-content;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+ul.menu-signin li a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    background-color: #434449;
+    line-height: 35px;
+    padding: 0;
+    width: 110px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    border-radius: 5px;
+    border: solid 1.7px #fff;
+    margin-right: 5px;
+}
+ul.mobile-menu-social {
+    margin: 15px 0px;
+    padding: 0px;
+}
+ul.mobile-menu-social li {
+    list-style-type: none;
+    display: block;
+    line-height: 32px;
+}
+ul.mobile-menu-social li a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+ul.mobile-menu-social li a i {
+    color: #fff;
+    width: 25px;
+}
+ul.custom-mobile-menu {
+    margin: 15px 0px 0px 0px;
+    padding: 0px;
+}
+ul.custom-mobile-menu li {
+    list-style-type: none;
+    display: block;
+    line-height: 30px;
+    border-bottom: dashed 1px #434449;
+    position: relative;
+    cursor: pointer;
+}
+ul.custom-mobile-menu li a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+}
+ul.mobile-custom-dropdown li {
+    position: relative;
+}
+ul.mobile-custom-dropdown li:before {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 12px;
+    width: 6px;
+    height: 6px;
+    background-color: #f3b01b;
+    border-radius: 50%;
+}
+li.mobile-dropdown-nav:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 9px solid #f3b01b;
+    position: absolute;
+    right: 0;
+    top: 11px;
+}
+ul.mobile-custom-dropdown {
+    display: none;
+    margin: 0px 0px 0px 30px;
+    padding: 0px;
+}
+button.main-nav-bd-close {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: #f3b136;
+    color: #fff;
+    border: none;
+    outline: none;
+    line-height: 41px;
+    width: 40px;
+    text-align: center;
+    font-size: 28px;
+}
+button.main-nav-bd-toggle {
+    display: none;
+}
+/* //RESPONSIVE MENU */
+
+@media screen and (max-width: 768px) {
+    .bd-weather-details {
+    display: none;
+    }
+    li.top-social-btn {
+    display: none !important;
+    }
+    li.read-in-odia {
+    margin-left: 0px;
+    margin-top: 2px;
+    }
+    li.read-in-odia a {
+    font-size: 12px !important;
+    }
+    li.read-in-odia a img {
+    width: 28px;
+    }
+    .main-logo img {
+    width: 150px;
+    height: auto;
+}
+header {
+    padding: 5px 0px;
+}
+}
+@media screen and (max-width: 992px) {
+    .bd-main-navmenu {
+    display: none;
+    }
+    .megamenu-search-field {
+    right: 40px;
+    width: calc(100% - 40px);
+    list-style: 41px;
+    }
+    button.main-nav-bd-toggle {
+    border: none;
+    outline: none;
+    margin: 0px 0px 0px 15px;
+    padding: 0px;
+    color: #fff;
+    background: none;
+    font-size: 29px;
+    display: inline-block;
+}
+}
+/*=========== //TOP MENU ============*/
+/*============ MEGA MENU =============*/
+img#searchbtn1 {
+    width: 20px;
+}
+a.darkmode-btn {
+    text-transform: capitalize !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    cursor: pointer;
+}
+a.darkmode-btn strong {
+    background-color: #000000;
+    outline: none;
+    width: 37px;
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 14px;
+    float: right;
+    transition-duration: 1s;
+    border: solid 1px #7f6161;
+}
+span.darkmode-btn-text {
+    width: 95px !important;
+    display: inline-block;
+    line-height: 39px;
+    font-size: 15px;
+    font-weight: normal;
+}
+a.darkmode-btn i {
+    position: absolute;
+    left: -1px;
+    top: -4px;
+    background-color: #697c9b;
+    width: 21px;
+    height: 21px;
+    padding-top: 3px;
+    border-radius: 50%;
+    border: solid 2px #697c9b;
+    transition-duration: 1s;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+.dark-theme a.darkmode-btn i {
+    background-color: #fff;
+    right: -1px !important;
+    left: auto;
+    top: -4px;
+    transition-duration: 1s;
+    color: #7b1c18;
+    font-size: 14px;
+    line-height: 13px;
+    padding-left: 1px;
+}
+.dark-theme a.darkmode-btn strong {
+    background-color: #000;
+    transition-duration: 1s;
+}
+.dark-theme a.darkmode-btn i {
+    border: solid 2px #fff;
+}
+.mega-menu-right {
+    float: right !important;
+}
+.navbar-collapse.collapse {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+div.megamenu {
+    float: left;
+    width: 100%;
+    background-color: #7b0505;
+    display: block;
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+    position: relative;
+}
+div.fixed-megamenu {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    transition-duration: .5s;
+    z-index: 9;
+}
+ul.nav.navbar-nav {
+    margin: 0px;
+    padding: 0px;
+    width: fit-content;
+    height: 41px;
+    float: left;
+}
+ul.nav.navbar-nav li {
+    list-style-type: none;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    border-right: 1px solid #212121;
+    position: initial;
+}
+ul.nav.navbar-nav li.sticky-logo-home {
+    width: 63px;
+    height: 41px;
+    text-align: center;
+}
+ul.nav.navbar-nav li.sticky-logo-home a i {
+    font-size: 19px;
+}
+li.dropdown.single-menu a i {
+    color: #fff;
+}
+ul.nav.navbar-nav li:last-child {
+    border-right: none;
+}
+ul.single-dropdown li:last-child {
+    background-color: #fff !important;
+    margin-top: -4px;
+    border-top: solid 0.5px #2f2d2d;
+}
+ul.nav.navbar-nav li a:hover, ul.nav.navbar-nav li a:focus, ul.nav.navbar-nav li a:active {
+    background-color: #efe9e9;
+    transition-duration: .5s;
+    color: #000;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    border: none;
+    border-radius: 0px;
+}
+ul.dropdown-menu.megamenu {
+    padding: 15px;
+}
+.mega-menu-right {
+    float: right;
+}
+ul.nav.navbar-nav li.more {
+    border-right: none;
+}
+.mega-menu-right .dropdown-menu.megamenu {
+    margin: 0px;
+    padding: 25px 0px;
+}
+ul.nav.navbar-nav li.menu-active {
+    background-color: #efe9e9;
+}
+ul.nav.navbar-nav li.menu-active a {
+    color: #000 !important;
+}
+ul.nav.navbar-nav li.menu-active a i {
+    color: #000 !important;
+}
+.single-menu {
+    position: relative !important;
+}
+ul.single-dropdown {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 0px;
+    top: 41px;
+    width: 190px;
+    background-color: #fff;
+    z-index: 9;
+    display: none;
+    /*overflow-y: scroll;*/
+    max-height: 400px;
+}
+/*ul.single-dropdown::-webkit-scrollbar{
+    display: none;
+}*/
+ul.single-dropdown li {
+    list-style-type: none;
+    display: block !important;
+    float: none !important;
+    border-bottom: solid .5px #2f2d2d;
+    border-right: none !important;
+}
+ul.single-dropdown li a {
+    text-decoration: none;
+    display: block;
+    line-height: 30px !important;
+    color: #000 !important;
+    background-color: #fff;
+}
+ul.single-dropdown li a:hover {
+    background-color: #efe9e9 !important;
+}
+li.megamenu-search {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0px !important;
+    padding: 0px 9px !important;
+    line-height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 33px;
+    height: 40px;
+}
+.megamenu-search-field {
+    position: absolute;
+    right: 7.5px;
+    top: 0;
+    border: none;
+    outline: none;
+    background-color: #f1f1f6;
+    color: #000;
+    line-height: 30px;
+    padding-left: 3px;
+    height: 41px;
+    text-align: center;
+    display: none;
+    z-index: 2;
+    width: 45%;
+}
+.megamenu-search-field div#___gcse_0 {
+    width: calc(100% - 48px);
+}
+.megamenu-search-field button.gsc-search-button.gsc-search-button-v2 {
+    line-height: initial;
+    background-color: #f0ae1f;
+    border: navajowhite;
+}
+.mega-menu-right ul.single-dropdown {
+    right: -2px !important;
+    left: auto;
+}
+.large-menu-item {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    min-height: 200px;
+}
+.large-menu-item img {
+    width: 100%;
+    /*height: 135px;*/
+    object-fit: cover;
+}
+.large-menu-item a {
+    margin: 0px;
+    padding: 0px !important;
+}
+.large-menu-item h4 {
+    margin: 0px;
+    padding: 7px 0px;
+    color: #333;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+}
+.large-menu-item a:hover {
+    background: none !important;
+}
+.large-menu-item-margin {
+    margin: 0px;
+    padding: 0px 15px 0px 0px !important;
+}
+ul.dropdown-menu.megamenu li {
+    border: none !important;
+}
+ul.large-menu-item-list {
+    margin: 0px;
+    padding: 0px;
+}
+ul.large-menu-item-list li {
+    list-style-type: none;
+    display: block !important;
+    float: none !important;
+    line-height: 35px !important;
+}
+ul.large-menu-item-list li a {
+    color: #333 !important;
+    border-bottom: solid 1px #e6e6e6;
+}
+ul.large-menu-item-list li a:hover {
+    background: none !important;
+}
+li.sticky-logo-white {
+    display: none;
+    width: 63px;
+}
+.container.megamenu-container {
+    position: relative;
+}
+button.megamenu-search-close {
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 7.5px;
+    width: 40px;
+    height: 41px;
+    font-size: 22px;
+    background-color: #ef5637;
+    transition-duration: .5s;
+    z-index: 3;
+}
+button.megamenu-search-go {
+    border: none;
+    outline: none;
+    color: #9c8d8d;
+    position: absolute;
+    top: 0;
+    right: 47.5px;
+    width: 40px;
+    height: 41px;
+    font-size: 18px;
+    background: none;
+    transition-duration: .5s;
+    z-index: 3;
+}
+/*=========== //MEGA MENU ============*/
+.event-menu-part {
+    margin: 13px 0px 0px 0px;
+    float: left;
+    width: 100%;
+}
+.event-menu-part ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.event-menu-part ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 10px;
+    position: relative;
+}
+.event-menu-part ul li a {
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+}
+.event-menu-part ul li a img {
+    float: left;
+    margin-right: 5px;
+}
+@keyframes shine {
+  from { -webkit-mask-position: 150%; }
+  to { -webkit-mask-position: -50%; }
+}
+.event-menu-part ul li a strong {
+    background-color: #ef5527;
+    color: #fff;
+    font-size: 10px;
+    padding: 1px 5px;
+    border-radius: 2px;
+    position: absolute;
+    right: 0px;
+    top: -6px;
+    line-height: 15px;
+    /* -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-size: 200%; */
+  animation: shine 2s linear infinite;
+}
+.event-menu-part ul li a span {
+    color: #000;
+    font-weight: 700;
+    font-size: 13px;
+}
+body.dark-theme .event-menu-part ul li a span {
+  color: #fff;
+}
+ul.other-submenu-list {
+    position: absolute;
+    left: 0;
+    top: 41px;
+    width: 100%;
+    background-color: #dcdcdc;
+    text-align: center;
+    z-index: 1;
+    display: none;
+}
+.other-submenu-name {
+   position: relative !important;
+}
+.other-submenu-name:before {
+    content: "";
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #7e0000;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 41px;
+    z-index: 9999;
+}
+li.other-submenu:hover ul.other-submenu-list, 
+li.other-submenu:hover .other-submenu-name:before {
+   display: block !important;
+}
+ul.other-submenu-list li {
+    list-style-type: none;
+    display: inline-block !important;
+    position: relative !important;
+   float: none !important;
+   border-right: none !important;
+}
+ul.other-submenu-list li a {
+    text-decoration: none;
+    display: block;
+    color: #333 !important;
+    text-transform: capitalize !important;
+    font-size: 15px !important;
+    margin: 0px 10px !important;
+    font-weight: 700 !important;
+    padding: 0px 2px !important;
+}
+ul.other-submenu-list li:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 12px;
+    background-color: #bdbdbd;
+    position: absolute;
+    right: -2px;
+    top: 14px;
+}
+ul.other-submenu-list li:last-child:before {
+   display: none !important;
+}
+ul.nav.navbar-nav li a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px 9px;
+    line-height: 41px;
+    font-size: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+li.mega-item-li {
+    width: 100%;
+    height: auto;
+    display: contents;
+}
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Faustina', serif;
+   font-weight: 400;
+}
+p, span {
+    font-family: 'Libre Franklin', sans-serif;
+}
+li{
+    font-family: 'Faustina', serif;
+    font-weight: 400;
+}
+a, a:focus, a:hover, a:active {
+    text-decoration: none !important;
+}
+@media (min-width: 1200px) {
+.container {
+    width: 1260px;
+}
+}
+         /* header /////////////////////*/
+
+/*================ //DARKMODE ==================*/
+/* SVG SPRITE */
+.svg-sprite {
+    background: url(https://odishatv.in/commondir/images/svg/svg-sprite.svg);
+    background-repeat: no-repeat;
+}
+.svg-sprite-label {
+    display: none;
+}
+a.svg-sprite.translate-svg {
+    width: 35px;
+    height: 17px;
+    background-position: -201px -8px;
+}
+a.facebook.svg-sprite {
+    width: 22px;
+    height: 22px;
+    background-position: -120px -90px;
+}
+a.twitter.svg-sprite {
+        width: 22px;
+    height: 22px;
+    background-position: -60px -90px;
+}
+a.instagram.svg-sprite {
+    width: 22px;
+    height: 22px;
+    background-position: -150px -90px;
+}
+a.linkedin.svg-sprite {
+    width: 22px;
+    height: 22px;
+    background-position: -180px -90px;
+}
+a.telegram.svg-sprite {
+    width: 22px;
+    height: 22px;
+    background-position: -90px -90px;
+}
+a.koo.svg-sprite {
+    width: 22px;
+    height: 22px;
+    background-position: -210px -90px;
+}
+a.youtube.svg-sprite {
+    width: 22px;
+    height: 22px;
+    background-position: 0px -90px;
+}
+a.svg-sprite.play-store {
+    width: 104px;
+    height: 31px;
+    background-position: 0px -49px;
+    display: block;
+}
+a.svg-sprite.app-store {
+    width: 104px;
+    height: 31px;
+    background-position: -128px -49px;
+    display: block;
+}
+span.svg-sprite.tarang-plus {
+    width: 55px;
+    height: 34px;
+    background-position: 0px 0;
+    display: block;
+}
+/* //SVG SPRITE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         /* breadcrumb */
+         .otv-b {
+         list-style: none;
+         padding: 0;
+         margin: 20px 0 20px 0;
+         }
+         .otv-b li{
+         display: inline;
+         }
+         .otv-b li a{
+         color: #000; 
+         }
+         .otv-b li:nth-child(-n+2) a{
+         color: orange; 
+         }
+         .otv-b li:not(:last-child)::after {
+         content: '/';
+         margin: 0 2px;
+         }
+         /* breadcrumb///////////////// */
+         /* all-heading */
+         h1.otv-headline{
+         margin: 0 0 10px 0;
+         padding: 0;
+         font-size: 28px;
+         line-height: 32px;
+         font-weight: 600;
+         color: #000;
+         }
+         p.headline-des{
+         margin: 0 0 20px 0;
+         padding: 0 0 20px 0;
+         font-size: 16px;
+         line-height: 22px;
+         font-weight: 400;
+         color: #756f6f;
+         border-bottom: 1px dashed #756f6f;
+         }
+         /* all-heading/////////////////////// */
+         /* author-des */
+         .author-des {
+         display: flex;
+         align-items: center;
+         margin-bottom: 20px;
+         }
+         .author-image {
+         height: 45px;
+         width: 45px;
+         border-radius: 50%;
+         margin-right: 10px;
+         }
+         ul.author-info {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         }
+         ul.author-info li {
+         position: relative;
+         display: inline-block;
+         margin-bottom: 5px;
+         color: #232121;
+         text-transform: capitalize;
+         font-size: 16px;
+         font-weight: 500;
+         }
+         ul.author-info li span {
+         color: #302f2f;
+         font-size: 16px;
+         font-weight: 500;
+         }
+         ul.author-info li:first-child {
+         margin-right: 7px;
+         color: orange;
+         }
+         ul.author-info li:first-child::after {
+         position: absolute;
+         top: 3px;
+         right: -5px;
+         content: '';
+         display: block;
+         height: 15px;
+         width: 1px;
+         background-color: #514f4f;
+         }
+         ul.author-info li a img{
+         height: 20px;
+         width: 20px;
+         }
+         ul.publish-info{
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         }
+         ul.publish-info li {
+         display: inline-block;
+         margin-bottom: 5px;
+         color: #807474;
+         text-transform: uppercase;
+         font-size: 14px;
+         font-weight: 400;
+         position: relative;
+         margin-right: 12px;
+         }   
+         ul.publish-info li:not(:last-child)::after {
+         position: absolute;
+         top: 10px;
+         right: -12px;
+         content: '';
+         display: block;
+         height: 4px;
+         width: 4px;
+         background:#948c8c;
+         border-radius: 50%;
+         margin: 0 2px;
+         }
+         span.publish-info-label{
+         color: #b7abab;
+         text-transform: uppercase;
+         font-size: 14px;
+         font-weight: 400; 
+         }
+         .icons {
+         margin-left: auto;
+         }
+         .icons a{
+         display: inline-block;
+         width: 20px;
+         height: 20px;
+         margin-right: 15px;
+         }
+         /* author-des ///////////////////////////////*/
+         /* featured-container */
+         .featured-container {
+         padding: 6px;
+         background-color:rgb(255, 245, 232);
+         margin-bottom: 20px;
+         border:2px dashed #ada7a7;
+         border-radius: 4px;
+         }
+         .featured-container img{
+         width:100%;
+         height: auto;
+         border-radius: 6px;
+         }
+         .featured-img-container{
+         position: relative;
+         }
+         img.featured-img-playicon {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         height: 70px;
+         width: 70px;
+         }
+         p.featured-container-des{
+         margin: 5px 10px 5px 10px;
+         padding: 0;
+         font-size: 16px;
+         line-height: 20px;
+         font-weight: 400;
+         color: #848282;
+         }
+         /* featured-container ////////////////////*/
+         /* social-icons */
+         .otv-sl {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 5px 20px;
+         border-radius: 5px;
+         }
+         .subscription-button {
+         background-color:#ff5c00;
+         color: #fff;
+         padding: 10px 30px;
+         border: none;
+         border-radius: 25px;
+         font-size: 16px;
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         }
+         .subscription-button img{
+         height: 20px;
+         width: auto;
+         margin: 0 15px 0 0;
+         }
+         .otv-sl .social-icons {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         }
+         .otv-sl .social-icons a {
+         margin-left: 10px;
+         text-decoration: none;
+         color: #333;
+         font-size: 24px;
+         }
+         /* social-icons */
+         /* news-summery */
+         .news-summery {
+         background-color: #fffced;
+         border: solid 1px #dddee4;
+         padding:30px 15px;
+         margin: 20px 0px 20px 0px;
+         display: inline-block;
+         border: 2px solid #F57C00;
+         }
+         .news-summery h2 {
+         margin: 0px 0px 10px 0px;
+         padding: 0px;
+         color: #000;
+         text-transform: capitalize;
+         font-size: 22px;
+         font-weight: 700;
+         line-height: 22px;
+         }
+         ul.news-summery-list{
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         }
+         ul.news-summery-list li {
+         list-style-type: none;
+         display: block;
+         position: relative;
+         padding-left: 25px;
+         margin-bottom: 0px;
+         color: #2e2e2e;
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 29px;
+         }
+         .news-summery ul li:before {
+         content: "";
+         display: block;
+         width: 10px;
+         height: 5px;
+         background-color: #F57C00;
+         position: absolute;
+         left: 0;
+         top: 10px;
+         }
+         /* news-summery ///////////////////////////// */
+         /* article */
+         .article-wrapper {
+         max-height: 600px;
+         overflow: hidden;
+         position: relative;
+         margin-bottom: 20px;
+         }
+         .article-content:first-letter {
+         color: #232121;
+         font-size: 58px;
+         font-weight: 400;
+         position: relative;
+         margin-top: 10px;
+         float: left;
+         margin-right: 5px;
+         text-transform: uppercase;
+         }
+         a.orglinkcss {
+         color: #F57C00;
+         text-decoration: underline;
+         }
+         .article-content p {
+         color: #222;
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 26px;
+         margin-bottom: 20px;
+         }
+         .blur-overlay {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 170px;
+         background: linear-gradient(to top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%);
+         backdrop-filter: blur(1px);
+         }
+         #showMoreBtn {
+         display: none;
+         position: absolute;
+         bottom: 0;
+         left: 50%;
+         padding: 5px 30px;
+         transform: translateX(-50%);
+         width: auto;
+         height: 40px;
+         background: #F57C00;
+         color: #fff;
+         font-size: 14px;
+         font-weight: 400;
+         text-align: center;
+         cursor: pointer;
+         text-transform: uppercase;
+         border-radius: 20px;
+         border: none;
+         outline: none;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         margin-bottom: 20px;
+         z-index: 1;
+         }
+         /* article ///////////////////////////////*/
+         /* rel-headline */
+         h2.rel-headline {
+         position: relative;
+         font-size: 26px;
+         line-height: 35px;
+         font-weight: 500;
+         margin: 10px 0px;
+         display: flex;
+         justify-content: center;
+         text-transform: capitalize; 
+         }
+         h2.rel-headline span {
+         display: block;
+         width: fit-content;
+         background-color: #fff;
+         padding: 0 10px;
+         }
+         h2.rel-headline::before {
+         content: "";
+         position: absolute;
+         top: 50%; 
+         left: 0;
+         width: 100%; 
+         height: 4px; 
+         background-color: #ccc; 
+         z-index: -1;
+         }
+         .otv-rel-box {
+         position: relative;
+         margin: 10px 0px;
+         padding: 10px;
+         -webkit-box-shadow: 0px 0px 18px -4px rgb(0 0 0 / 34%);
+         -moz-box-shadow: 0px 0px 18px -4px rgba(0, 0, 0, 0.34);
+         box-shadow: 0px 0px 18px -4px rgb(0 0 0 / 34%);
+         -webkit-border-radius: 8px;
+         -moz-border-radius: 8px;
+         -o-border-radius: 8px;
+         border-radius: 8px;
+         background-color: #fff;
+         width: 100%;
+         min-height: 140px;
+         }
+         .otv-rel-box-sub {
+         position: relative;
+         width: 100%;
+         height: auto;
+         margin-bottom: 15px;
+         }
+         .otv-rel-box-sub-img {
+         position: absolute;
+         right: 0;
+         width: 186px;
+         height: 126px;
+         object-fit: cover;
+         border-radius: 8px;
+         }
+         .otv-rel-box-sub-content {
+         padding-right: 190px; 
+         min-height: 130px;
+         }
+         .otv-rel-box-sub h4 {
+         margin: 0;
+         padding: 0;
+         font-size: 18px;
+         text-decoration: none;
+         color: #000;
+         line-height: 27px;
+         font-weight: 400;
+         }
+         .otv-rel-box-sub h4 span {
+         font-size: 18px;
+         text-decoration: none;
+         color: #ef6917;
+         font-weight: 400;
+         }
+         .otv-rel-time-share {
+         display: flex;
+         justify-content: space-between;
+         }
+         ul.otv-rel-time,
+         ul.otv-rel-ss {
+         margin: 0;
+         padding: 0;
+         list-style-type: none;
+         }
+         ul.otv-rel-time li{
+         position: relative;
+         display: inline-block;
+         font-size: 16px;
+         margin-right: 10px;
+         color: #333;
+         }
+         ul.otv-rel-time li:first-child{
+         color:rgb(78, 78, 222);
+         }
+         ul.otv-rel-time li:first-child::after{
+         position: absolute;
+         content: "";
+         height: 5px;
+         width: 5px;
+         background-color: #525151;
+         border-radius: 50%;
+         top: 50%;
+         right: -10px;
+         }
+         ul.otv-rel-ss li {
+         display: inline-block;
+         font-size: 16px;
+         margin-right: 10px;
+         }
+         /* rel-headline /////////////////////////*/
+         /* mid-content */
+         .mid-content{
+         padding-bottom: 5px;
+         border-bottom: 1px dotted #221717;
+         margin-bottom: 15px;
+         }
+         .mid-content p{
+         color: #222;
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 26px;
+         margin-bottom: 20px;
+         }
+         /* mid-content */
+         .article-share {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding-bottom: 5px;
+         border-bottom: 1px dotted #221717;
+         margin-bottom: 15px;
+         padding-bottom: 10px;
+
+         }
+         .article-share-left {
+         flex: 1;
+         }
+         .article-share-left p{
+         text-transform: uppercase;
+         text-align: center;
+         font-size: 17px;
+         margin: 0;
+         }
+         .article-share-right {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         }
+         .article-share-right a:not(:last-child) {
+         margin-right: 10px;
+         }
+         .tags-otv{
+         display: flex;
+         align-items: center;
+         }
+         .tags-otv-left {
+         flex: 1;
+         padding: 10px;
+         }
+         .tags-otv-left p{
+         text-transform: uppercase;
+         text-align: center;
+         font-size: 24px;
+         margin: 0;
+         }
+         .tags-otv-right a{
+         color: #ef6917;
+         line-height: 24px;
+         text-transform: uppercase;
+         margin: 10px;
+         padding: 0;
+         }
+         /* right-bar-style */
+         .otv-heading-one-container{
+         display: block;
+         height: 22px;
+         margin-bottom: 10px;
+         }
+         h2.otv-heading-one-line {
+         margin: 0;
+         color: #000;
+         font-size: 20px;
+         text-transform: capitalize;
+         padding-left: 10px;
+         font-weight: 700;
+         position: relative;
+         }
+         h2.otv-heading-one-line:before {
+         content: "";
+         background-color: #ef6917;
+         height: 22px;
+         width: 5px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         }
+         h2.otv-heading-one-line span {
+         background-color: #fff;
+         padding: 0 5px 0 0;
+         position: absolute; 
+         z-index: 1; 
+         }
+         
+         .otv-right-box-sub-img{
+         position: absolute;
+         right: 0;
+         width: 86px;
+         height: 76px;
+         object-fit: cover;
+         border-radius: 8px;
+         }
+         .otv-right-box-sub-content{
+         padding-right: 90px; 
+         min-height: 86px;
+         }
+         .otv-right-box-sub {
+         position: relative;
+         width: 100%;
+         height: auto;
+         margin-bottom: 15px;
+         }
+         .otv-right-box-sub h4 {
+         margin: 0;
+         padding: 0;
+         font-size: 18px;
+         text-decoration: none;
+         color: #000;
+         line-height: 22px;
+         font-weight: 400;
+         }
+         .otv-right-box-sub h4 span {
+         font-size: 18px;
+         text-decoration: none;
+         color: #ef6917;
+         font-weight: 400;
+         }
+         /* otv-right-box-main  */
+         .otv-right-box-main {
+         width: 100%;
+         height: auto;
+         margin-bottom: 15px;
+         }
+         .otv-right-box-main-img{
+         width: 100%;
+         height: 146px;
+         object-fit: cover;
+         border-radius: 8px;
+         }
+         .otv-right-box-main h4 {
+         margin: 0 0 10px 0;
+         padding: 0;
+         font-size: 18px;
+         text-decoration: none;
+         color: #000;
+         line-height: 22px;
+         font-weight: 400;
+         }
+         .otv-right-box-main h4 span {
+         font-size: 18px;
+         text-decoration: none;
+         color: #ef6917;
+         font-weight: 400;
+         }
+         /* otv-right-box-main  */
+         /* add-lp-otv-last */
+         .add-lp-otv-last {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         border: none;
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+         padding: 20px;
+         }
+         .chr-container {
+         padding: 10px 0 10px 0;
+         margin-bottom: 10px;
+         border-bottom: 1px solid #e9d5d5;
+         }
+         img.otv-logo-lp {
+         height: 48px;
+         width: 200px;
+         margin-bottom: 10px;
+         }
+         p.chr-lp {
+         float: left;
+         font-size: 18px;
+         text-transform: capitalize;
+         padding: 0px 10px;
+         margin: 0;
+         position: relative
+         }
+         p.chr-lp:after {
+         content: "";
+         display: block;
+         position: absolute;
+         left: -3px;
+         top: 8px;
+         width: 5px;
+         height: 5px;
+         background-color: #f40a0a;
+         border-radius: 50%;
+         }
+         .app-store-lp {
+         text-align: center;
+         }
+         .googleplay-img-lp{
+         height: 35px;
+         width: auto;
+         object-fit: cover;
+         border-radius: 8px;
+         }
+         p.cnt-lp {
+         text-align: center;
+         color: #372828;
+         font-size: 16px;
+         font-weight: 500;
+         margin: 0 0 10px 0;
+         }
+         .social-lp a{
+         margin-right: 10px;
+         }
+         /* .googleplay-img-lp {
+         height: 50px;
+         width: 140px;
+         }
+         .appstore-img-lp {
+         height: 35px;
+         line-height: 50px;
+         width: 120px;
+         } */
+         /* add-lp-otv-last */
+         /* right-bar-style //////////////*/
+         /* left-custom-col-4 */
+         .single-latest-news h4{
+         margin: 0 0 10px 0;
+         padding: 0;
+         font-size: 16px;
+         text-decoration: none;
+         color: #000;
+         line-height: 20px;
+         font-weight: 400;
+         }
+         .single-latest-news h4 span{
+         margin: 0 0 10px 0;
+         padding: 0;
+         font-size: 16px;
+         text-decoration: none;
+         color:#ef6917;
+         line-height: 20px;
+         font-weight: 400;
+         }
+         p.upload-timing{
+         margin: 0 0 10px 0;
+         padding: 0;
+         font-size: 12px;
+         text-decoration: none;
+         color: #4e3f3f;
+         line-height: 14px;
+         font-weight: 400;
+         }
+         /* left-custom-col-4/////////////////// */
+         /* webstories  */
+         .bdn-webstories {
+         margin-bottom: 30px;
+         height: 409px;
+         }
+         
+         .story-item {
+         position: relative;
+         min-height: 1px;
+         padding-right: 7.5px;
+         padding-left: 7.5px;
+         width: 252px;
+         }
+         .webstory-content {
+         position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(transparent, #000);
+    padding: 7.5px;
+    text-align: center;
+    display: block;
+    height: 80px;
+         }
+         .webstory-content h4 {
+         color: #fff;
+         font-weight: 700;
+         font-size: 13px;
+         margin: 10px 0;
+         }
+         .webstoriesRow{
+         display: flex;
+         width: auto;
+         overflow-x: scroll;
+         }
+         /* webstories  ///////////////*/
+         /* scrollbar */
+         .webstoriesRow::-webkit-scrollbar {
+         width: 10px; 
+         height: 8px; 
+         }
+         .webstoriesRow::-webkit-scrollbar-track {
+         background: #f1f1f1; 
+         margin: 7px;
+         }
+         .webstoriesRow::-webkit-scrollbar-thumb {
+         background: #ab1313; 
+         }
+         /* scrollbar /////////////////*/
+             /* footer /////////////////////*/
+             .main-visit-links-ft{
+         background-color:rgba(34,34,34,255);
+         padding: 20px 0;
+         }
+         .ft-fst-row{
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 20px;
+         }
+         .logo-btn-ft{
+         display: flex;
+         }
+         .otv-logo-ft{
+         height: 35px;
+         margin-right: 20px;
+         }
+         .live-btn-otv-ft{
+         background-color: #c10503;
+         border: none;
+         border-radius: 22px;
+         padding: 0px 9px;
+         margin: 7px 0;
+         }
+         a.live-btn-otv-ft {
+         text-transform: capitalize;
+         color: #fff;
+         font-size: 14px;
+         text-decoration: none;
+         line-height: 30px;
+         }
+         .sub-btn-otv-ft{
+         border:1px solid #fff;
+         background-color: #333030;
+         padding: 4px 6px;
+         border-radius: 4px;
+         }
+         a.sub-btn-otv-ft {
+         text-transform: uppercase;
+         font-size: 12px;
+         color: #fff;
+         font-weight: 600;
+         margin: 0;
+         text-decoration: none;
+         }
+         input.search-input-otv{
+         text-transform: capitalize;
+         padding: 4px 4px;
+         border-radius: 4px;
+         width: 420px;
+         margin-right: 5px;
+         }
+         .short-visit-link-otv{
+         border-right: 1px solid gray; 
+         }
+         h5.ft-link-heading a{
+         color: #fff;
+         text-transform: capitalize;
+         font-size: 14px;
+         padding: 0 0 4px 0;
+         text-decoration: underline;
+         }
+         ul.ft-subnews-link{
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         }
+         ul.ft-subnews-link li a{
+         color: lightgray;
+         font-weight: 500;
+         font-size: 12px;
+         text-transform: capitalize;
+         text-decoration: none;
+         }
+         .col-xs-15,
+         .col-sm-15,
+         .col-md-15,
+         .col-lg-15 {
+         position: relative;
+         min-height: 1px;
+         padding-right: 7.5px;
+         padding-left: 7.5px;
+         }
+         .col-xs-15 {
+         width: 20%;
+         float: left;
+         }
+         @media (min-width: 768px) {
+         .col-sm-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         @media (min-width: 992px) {
+         .col-md-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         @media (min-width: 1200px) {
+         .col-lg-15 {
+         width: 20%;
+         float: left;
+         }
+         }
+         .partner-ft-otv{
+         background-color:#32373b;
+         padding: 10px 0;
+         }
+         h5.partner-ft-heading{
+         color: #fff;
+         padding: 0;
+         margin: 0 0 5px 0;
+         text-transform: uppercase;
+         font-size: 12px;
+         }
+         ul.partner-link-otv{
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         }
+         ul.partner-link-otv li{
+         display: inline-block;
+         }
+         ul.partner-link-otv li a{
+         color: lightgray;
+         font-weight: 500;
+         font-size: 10px;
+         text-transform: uppercase;
+         text-decoration: none;
+         padding-right: 10px;
+         border-right: 1px solid gray;
+         }
+         .contact-ft-otv{
+         background-color: #1a1d22;
+         display: flex;
+         margin: 0;
+         padding: 0;
+         align-items: center;
+         }
+         ul.contact-us-link-otv{
+         list-style-type: none;
+         margin-left: -40px;
+         }
+         ul.contact-us-link-otv li a{
+         color: lightgray;
+         font-weight: 500;
+         font-size: 10px;
+         text-transform: uppercase;
+         text-decoration: none;
+         padding-right: 10px;
+         border-right: 1px solid gray;
+         }
+         ul.contact-us-link-otv li{
+         display: inline-block;
+         }
+         ul.social-icon-otv-ft{
+            list-style-type: none;
+    display: flex;
+    margin: 0 0 20px 0;
+    padding: 0;
+    justify-content: center;
+         }
+         .social-icon-otv-img{
+         margin: 0 10px;
+         height: 14px;
+         }
+         .app-store-cnt-ft{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+         }
+         .app-store-cnt-ft a{
+         margin-bottom: 10px;
+
+         }
+         .store-title-otv{
+         color: #fff;
+         text-transform: uppercase;
+         margin: 0;
+         padding: 0;
+         font-size: 12px;
+         }
+         .googleplay-img-ft{
+         height: 40px;
+         }
+         .appstore-img-ft{
+         height: 28px;
+         }
+         /* footer /////////////////////*/
+      </style>
+   </head>
+   <body>
+      <header>
+         <div class="container">
+       <div class="row">
+         <div class="col-lg-4 col-md-4 col-sm-5 col-xs-6">
+           <div class="main-logo">
+             <a href="https://odishatv.in/">
+               <img src="https://odishatv.in/commondir/images/logo.svg" class="main-logo-img" alt="OdishaTV" title="OdishaTV" style="width: 300px; height: 65px;">
+           </a>
+           </div>
+         </div>
+         <div class="col-lg-5 col-md-5 col-sm-hidden col-xs-hidden">
+         <!--============ EVENT ITEMS ============-->
+        
+         <div class="event-menu-part">
+          <ul>
+             <!-- <li><a href="https://odishatv.in/ayodhya-ram-mandir-inauguration?utm_source=Google&utm_medium=logo&utm_campaign=AyodhyaRamMandirInauguration" title="Ayodhya Ram Mandir Inauguration"><img src="" width="113" height="50" alt="Ayodhya Ram Mandir Inauguration" title="Ayodhya Ram Mandir Inauguration"><span>Ram Mandir</span><strong>NEW</strong></a></li> -->
+             <li><a href="https://odishatv.in/general-elections?utm_source=google&utm_medium=banner&utm_campaign=general_elections&utm_id=general_elections&utm_term=general_elections" title="Elections 2024"><img src="https://odishatv.in/commondir/images/elections2024.png" width="50" height="50" alt="Elections 2024" title="Elections 2024"><span>Elections 2024</span><strong>NEW</strong></a></li>
+           </ul>
+       </div>
+         <!--=========== //EVENT ITEMS ===========-->
+         </div>
+       <div class="col-lg-3 col-md-3 col-sm-7 col-xs-6" style="height: 51px; position: relative;">
+         <div class="bd-weather-details">
+         <div id="weather">  
+       </div>
+       </div>
+       <!------------- TOP MENU --------------->
+       <ul class="top-menu top-menu-right" style="position: absolute; top:25px; right: 7.5px;">
+          <li class="top-social-btn"><a href="https://www.facebook.com/otvnews/" title="Facebook" target="_blank" class="facebook svg-sprite" height="22" width="22"><span class="svg-sprite-label">facebook</span></a></li>
+          <li class="top-social-btn"><a href="https://twitter.com/otvnews" title="Twitter" target="_blank" class="twitter svg-sprite" height="22" width="22"><span class="svg-sprite-label">twitter</span></a></li>
+          <li class="top-social-btn"><a href="https://www.instagram.com/otv.news" title="Instagram" target="_blank" class="instagram svg-sprite" height="22" width="22"><span class="svg-sprite-label">instagram</span></a></li>
+          <li class="top-social-btn"><a href="https://www.linkedin.com/company/odishatv" title="LinkedIn" target="_blank" class="linkedin svg-sprite" height="22" width="22"><span class="svg-sprite-label">linkedin</span></a></li>
+          <li class="top-social-btn"><a href="https://t.me/otvtelegram" title="Telegram" target="_blank" class="telegram svg-sprite" height="22" width="22"><span class="svg-sprite-label">telegram</span></a></li>
+          <li class="top-social-btn"><a href="https://www.kooapp.com/profile/otvnews" title="Koo" target="_blank" class="koo svg-sprite" height="22" width="22"><span class="svg-sprite-label">koo</span></a></li>
+          <li class="top-social-btn"><a href="https://www.youtube.com/c/OTVNewsEnglish" title="Youtube" target="_blank" class="youtube svg-sprite" height="22" width="22"><span class="svg-sprite-label">youtube</span></a></li>
+          <li class="read-in-odia"><a href="https://otvkhabar.in/" title="ଓଡ଼ିଆରେ ପଢନ୍ତୁ" target="_blank" class="svg-sprite translate-svg" width="35" height="17"><span class="svg-sprite-label">translate</span></a></li>
+       </ul>
+       <!------------ //TOP MENU -------------->
+       </div>
+       </div>
+         </div>
+       </header>     
+      <!-- header  /////////////////////////////-->
+      <div class="megamenu">
+         <div class="container megamenu-container">
+            <button class="megamenu-search-close" style="display: none;"><img src="https://odishatv.in/commondir/images/svg/close-search.svg" alt="Search Close" title="Search Close"></button>
+            <button class="megamenu-search-go" id="searchbtn" style="display: none;"><img src="https://odishatv.in/commondir/images/svg/search-gray-color.svg" alt="Search Button" title="Search Button" id="searchbtn1"></button>
+            <input placeholder="Search here..." type="text" name="megamenu-search" id="megamenu-search" class="megamenu-search-field" required="" style="display: none;">
+            <div class="navbar-collapse">
+               <button class="main-nav-bd-toggle"><img src="https://odishatv.in/commondir/images/svg/hamburger-icon.svg" alt="Menu" title="Menu"></button>
+               <ul class="nav navbar-nav bd-main-navmenu">
+                  <li class="sticky-logo-white" style="display: none;"><a href="https://odishatv.in/"><img src="https://odishatv.in/commondir/images/logo-white.png" alt="home" title="home"></a></li>
+                  <li class="sticky-logo-home"><a href="https://odishatv.in/"><img src="https://odishatv.in/commondir/images/svg/menu-home-white.svg" alt="Home Icon" title="Home Icon" width="22" height="18"></a></li>
+                  <!--==================== NEW MENU ======================-->
+                  <li class="other-submenu"><a href="https://odishatv.in/odisha"  title="Odisha"  target="_self" class="other-submenu-name">Local</a>
+                     <ul class="other-submenu-list">
+                        <li><a href="https://odishatv.in/odisha/bhubaneswar" title="Bhubaneswar">Bhubaneswar</a></li>
+                        <li><a href="https://odishatv.in/odisha/cuttack" title="Cuttack">Cuttack</a></li>
+                        <li><a href="https://odishatv.in/odisha/puri" title="Puri">Puri</a></li>
+                     </ul>
+                  </li>
+                  <li class="other-submenu"><a href="https://odishatv.in/news"  title="News"  target="_self" class="other-submenu-name">News</a>
+                     <ul class="other-submenu-list">
+                        <li><a href="https://odishatv.in/national" title="National">National</a></li>
+                        <li><a href="https://odishatv.in/international" title="International">International</a></li>
+                        <li><a href="https://odishatv.in/politics" title="Politics"  target="_self">Politics</a></li>
+                        <li><a href="https://odishatv.in/crime" title="Crime">Crime</a></li>
+                        <li><a href="https://odishatv.in/technology" title="Technology">Technology</a></li>
+                        <li><a href="https://odishatv.in/videos" title="videos">videos</a></li>
+                        <li><a href="https://odishatv.in/business" title="Business"  target="_self">Business</a></li>
+                        <li><a href="https://odishatv.in/food" title="food">food</a></li>
+                        <li><a href="https://odishatv.in/health" title="Health">Health</a></li>
+                        <li><a href="https://odishatv.in/covid-19" title="Covid 19">Covid 19</a></li>
+                        <li><a href="https://odishatv.in/festivals-events"  title="Festivals"  target="_self">Festivals</a></li>
+                        <li><a href="https://odishatv.in/lifestyle"  title="lifestyle"  target="_self">lifestyle</a></li>
+                        <li><a href="https://odishatv.in/opinion" title="Opinion"  target="_self">Opinion</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="https://odishatv.in/jobs"  title="Jobs"  target="_self" class="other-submenu-name">Jobs</a></li>
+                  <li><a href="https://odishatv.in/education"  title="Education"  target="_self" class="other-submenu-name">Education</a>
+                  </li>
+                  <li class="other-submenu"><a href="https://odishatv.in/entertainment"  title="Entertainment"  target="_self" class="other-submenu-name">Entertainment</a>
+                     <ul class="other-submenu-list">
+                        <li><a href="https://odishatv.in/entertainment/hollywood" title="Hollywood">Hollywood</a></li>
+                        <li><a href="https://odishatv.in/entertainment/bollywood" title="Bollywood">Bollywood</a></li>
+                        <li><a href="https://odishatv.in/entertainment/tollywood" title="Tollywood">Tollywood</a></li>
+                        <li><a href="https://odishatv.in/entertainment/ollywood" title="Ollywood">Ollywood</a></li>
+                        <li><a href="https://odishatv.in/entertainment/ott" title="OTT">OTT</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="https://odishatv.in/astrospeak"  title="Astrospeak"  target="_self" class="other-submenu-name">Astrospeak</a></li>
+                  <li><a href="https://odishatv.in/sports" title="Sports"  target="_self" class="other-submenu-name">Sports</a></li>
+                  <li><a href="https://odishatv.in/webstories" title="Webstories" class="other-submenu-name">Webstories</a></li>
+                  <li  class="dropdown single-menu">
+                     <a href="#" title="allmenu"  target="_self"><img src="https://odishatv.in/commondir/images/svg/three-dot.svg" alt="drpdown" width="17" height="5"></a>
+                     <ul class="single-dropdown">
+                        <li><a href="https://odishatv.in/weather" title="Weather">Weather</a></li>
+                        <li><a href="https://odishatv.in/viral" title="Viral">Viral</a></li>
+                        <li><a href="https://odishatv.in/trending" title="Trending">Trending</a></li>
+                        <li><a href="https://odishatv.in/photo-gallery" title="Photo Gallery">Photo Gallery</a></li>
+                        <li><a href="https://odishatv.in/cyber-security" title="Cyber Security">Cyber Security</a></li>
+                     </ul>
+                  </li>
+               </ul>
+               <ul class="nav navbar-nav mega-menu-right">
+                  <li class="liveicon"><a href="https://odishatv.in/live-tv?utm_source=direct&utm_medium=icon&utm_campaign=livetv_header_icon_desktop"><img src="https://odishatv.in/commondir/images/livetvicon.gif" alt="Live Tv" style="width:29px; height:27px;"> LIVE TV</a></li>
+                  <li>
+                     <a onclick="myFunction()" class="darkmode-btn" title="dark mode" href="#">
+                        <span class="darkmode-btn-text">DARK MODE</span> <!--<strong><i class="fas fa-moon darkmode-icon"></i></strong>--><img src="https://odishatv.in/commondir/images/svg/fa-moon.svg" width="43" height="25" alt="scrollToTop" title="scrollToTop" class="darkmode-svg-icon">
+                     </a>
+                  </li>
+                  <li class="megamenu-search"><img src="https://odishatv.in/commondir/images/svg/search-white.svg" alt="Search Button" title="Search Button" id="searchbtn1" width="28" height="28"></li>
+               </ul>
+               <!--############ Primary right menu############ -->
+            </div>
+         </div>
+      </div>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8">
+               <!-- breadcrumb -->
+               <ul class="otv-b">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Home</a></li>
+                  <li>Current Page</li>
+               </ul>
+               <!-- breadcrumb////////////////////////-->
+               <h1 class="otv-headline">ECI issues notification for 4th Phase of election; know polling hours in four Lok Sabha seats in Odisha
+               </h1>
+               <p class="headline-des">ECI issues notification for 4th Phase of election; know polling hours in four Lok Sabha seats in Odi ssues notification for 4th Phase of election; know polling hours in four Lok Sabha seats in Odisha</p>
+               <!-- author-des -->
+               <div class="author-des">
+                  <img src="images/author.webp" alt="Author Image" class="author-image">
+                  <div class="auth-container">
+                     <ul class="author-info">
+                        <li><span class="author-info-label">by:</span> John Doe
+                        </li>
+                        <li><span class="author-info-label">Written by:</span> John Doe
+                           <a href="#">
+                           <img src="images/dropdown-ARROW.svg" alt=""></a> 
+                        </li>
+                        <li><span class="author-info-label">Published by:</span> Jane Smith
+                           <a href="#">
+                           <img src="images/dropdown-ARROW.svg" alt=""></a>
+                        </li>
+                     </ul>
+                     <ul class="publish-info">
+                        <li><span class="publish-info-label">Published date:</span> April 17, 2024</li>
+                        <li><span class="publish-info-label">Last published:</span>April 15, 10:00 AM IST</li>
+                     </ul>
+                  </div>
+                  <div class="icons">
+                     <a><img src="images/latter-size.svg" width="32" height="32" alt="Share"></a>
+                     <a href="#" onclick="javascript: window.print(); return false;"><img src="images/print.svg" width="32" height="32" alt="Print"></a>
+                  </div>
+               </div>
+               <div class="featured-container">
+                  <div class="featured-img-container">
+                     <a href="https://odishatv.in/news/politics/odisha-elections/bjd-announces-5th-list-of-candidates-cm-naveen-patnaik-to-contest-from-kantabanji-232881">
+                     <img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/recent_photo_1713336042.webp" data-src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/recent_photo_1713336042.webp" alt="BJD announces 5th list of candidates, CM Naveen Patnaik to contest from Kantabanji" title="BJD announces 5th list of candidates, CM Naveen Patnaik to contest from Kantabanji">
+                     </a>
+                     <img src="images/PLAY.svg" class="featured-img-playicon" alt="">
+                  </div>
+                  <p class="featured-container-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, nostrum! Molestiae totam saepe quod numquam, officiis aperiam nobis, ad, iure suscipit magnam consequatur. Distinctio, inventore obcaecati temporibus nostrum corporis quibusdam!</p>
+               </div>
+               <!-- author-des//////////////////-->
+               <!-- social-icons -->
+               <div class="otv-sl">
+                  <a href="#" class="subscription-button"> <img src="images/subscribe_icon.svg" alt=""> Subscribe to notification</a>
+                  <div class="social-icons">
+                     <a href="#"> <img src="images/SHARE.svg" alt=""> </a>
+                     <a href="#"> <img src="images/SAVE.svg" alt=""> </a>
+                     <a href="#"> <img src="images/fb-lp.svg" alt=""> </a>
+                     <a href="#"> <img src="images/twitter-lp.svg" alt=""> </a>
+                     <a href="#"> <img src="images/insta-lp.svg" alt=""> </a>
+                     <a href="#"> <img src="images/youtube-lp.svg" alt=""> </a>
+                  </div>
+               </div>
+               <!-- social-icons -->
+               <!-- news-summery -->
+               <div class="news-summery">
+                  <h2>News Highlights</h2>
+                  <ul class="news-summery-list">
+                     <li>
+                       
+                        Avneet Kaur was recently spotted with her Luv Ki Arrange
+                        Marriage co-star Sunny Singh.Avneet Kaur was recently spotted with her Luv Ki Arrange
+                        Marriage co-star Sunny Singh.
+                     </li>
+                     <li>
+                        The social media celebrity had a sweet answer to a question from
+                        the paparazzi.
+                     </li>
+                  </ul>
+               </div>
+               <!-- news-summery -//////////////////////////-->
+               <!-- left-custom-col-4 -->
+               <div class="row">
+                  <div class="col-lg-4">
+                     <div class="otv-rel-box">
+                        <div class="otv-heading-one-container">
+                           <a href="#">
+                              <h2 class="otv-heading-one-line"><span>food</span>
+                              </h2>
+                              </a>
+                        </div>
+                        <div class="single-latest-news">
+                        <h4><span>The social </span>media celebrity had a sweet answer to a question from
+                        the paparazzi.</h4> 
+                        <p class="upload-timing">7mins ago</p>
+                        </div>
+                        <div class="single-latest-news">
+                        <h4><span>The social </span>media celebrity had a sweet answer to a question from
+                        the paparazzi.</h4> 
+                        <p class="upload-timing">7mins ago</p>
+                        </div>
+                        <div class="single-latest-news">
+                        <h4><span>The social </span>media celebrity had a sweet answer to a question from
+                        the paparazzi.</h4> 
+                        <p class="upload-timing">7mins ago</p>
+                        </div>
+                        <div class="single-latest-news">
+                        <h4><span>The social </span>media celebrity had a sweet answer to a question from
+                        the paparazzi.</h4> 
+                        <p class="upload-timing">7mins ago</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-8">
+                 
+                     <div class="article-wrapper">
+                        <div class="article-content">
+                        <p> 
+                        Avneet Kaur was today spotted at the airport along with actor
+                        Sunny Singh.<a class="orglinkcss" href="#">Here</a> The pair has been roped in to play the lead
+                        couple in an upcoming movie project Luv Ki Arrange Marriage to
+                        be directed by Ishrat Khan. The team has already started
+                        shooting for the family comedy-drama in Madhya Pradesh.
+                        </p>
+                        <p>
+                        
+                        and Sunny Singh landed at the airport,<a class="orglinkcss" href="#">Here</a> paparazzi started
+                        requesting them for a click and following them closely. Both
+                        Avneet and Sunny obliged happily and posed for them. However,
+                        even after that the paps continued to follow Avneet and asked,
+                        “Avneetji love ki arrange marriage.”
+                        </p>
+                        <p>
+                        The famous social media celebrity knew that the photographers
+                        were not asking about the movie but about her opinion on this
+                        topic and just kept on smiling. Nonetheless, the paps too kept
+                        on pursuing her asking again and again.
+                        </p>
+                        <p>
+                        Eventually, she reacted by saying, Avneet Kaur
+                        “love ki arrange marriage”
+                        without giving any inkling about her thoughts on the topic.
+                        </p>
+                        <p>
+                        Usually, she gets a lot of love and appreciation for her
+                        posts. But her recent dance video had most of the users
+                        slamming her moves and a few even commented that in trying to
+                        look sexy, Avneet is losing her natural charm and cuteness.
+                        </p>
+                        <p>
+                        Avneet Kaur has been working since childhood and has worked in
+                        many television serials including Ek Mutthi Aasmaan, Meri Maa,
+                        Chandra Nandini, Hamari Sister Didi, and Aladdin: Naam Toh
+                        Suna Hoga.
+                        </p>
+                        </div>
+                        <button id="showMoreBtn">Show More</button>
+                     </div>
+                  <!-- article //////////////////////////////-->
+                  <!-- related stories -->
+                      <h2 class="rel-headline"> <span> related stories</span></h2>
+                        <div class="otv-rel-box">
+                           <div class="otv-rel-box-sub">
+                           <a href="#">
+                           <img src="https://assets.odishareporter.in/uploadimage/library/16_9/16_9_2/IMAGE_1713408084.JPG" alt="Polling Party" title="Polling Party" class="otv-rel-box-sub-img"></a>
+                           <div class="otv-rel-box-sub-content">
+                           <a href="#">
+                           <h4><span>Avneet Kaur has</span> working since childhood and has worked in
+                           many television serials including working since childhood and has worked in
+                           many television serials including </h4>
+                           </a>
+                           </div>
+                           </div>
+                        <div class="otv-rel-time-share">
+                        <ul class="otv-rel-time">
+                        <li>Thursday</li>
+                        <li> 18 April 2024</li>
+                        </ul>
+                        <ul class="otv-rel-ss">
+                        <li><a href="#"> <img src="images/SHARE.svg" alt=""> </a>
+                        </li>
+                        <li><a href="#"> <img src="images/SAVE.svg" alt=""> </a></li>
+                        </ul>
+                        </div>
+                        </div>
+                        <div class="otv-rel-box">
+                        <div class="otv-rel-box-sub">
+                        <a href="#">
+                        <img src="https://assets.odishareporter.in/uploadimage/library/16_9/16_9_2/IMAGE_1713408084.JPG" alt="Polling Party" title="Polling Party" class="otv-rel-box-sub-img"></a>
+                        <div class="otv-rel-box-sub-content">
+                        <a href="#">
+                        <h4><span>Avneet Kaur has</span> working since childhood and has worked in
+                        many television serials including working since childhood and has worked in
+                        many television serials including </h4>
+                        </a>
+                        <!-- <p class="rel-box-sub-first-para"> Hamari Sister Didi, and Aladdin: Naam Toh
+                           Suna Hoga.</p> -->
+                        </div>
+                        </div>
+                        <div class="otv-rel-time-share">
+                        <ul class="otv-rel-time">
+                        <li>Thursday</li>
+                        <li> 18 April 2024</li>
+                        </ul>
+                        <ul class="otv-rel-ss">
+                        <li><a href="#"> <img src="images/SHARE.svg" alt=""> </a>
+                        </li>
+                        <li><a href="#"> <img src="images/SAVE.svg" alt=""> </a></li>
+                        </ul>
+                        </div>
+                        </div>
+                        <div class="otv-rel-box">
+                              <div class="otv-rel-box-sub">
+                              <a href="#">
+                              <img src="https://assets.odishareporter.in/uploadimage/library/16_9/16_9_2/IMAGE_1713408084.JPG" alt="Polling Party" title="Polling Party" class="otv-rel-box-sub-img"></a>
+                              <div class="otv-rel-box-sub-content">
+                              <a href="#">
+                              <h4><span>Avneet Kaur has</span> working since childhood and has worked in
+                              many television serials including working since childhood and has worked in
+                              many television serials including </h4>
+                              </a>
+                              <!-- <p class="rel-box-sub-first-para"> Hamari Sister Didi, and Aladdin: Naam Toh
+                                 Suna Hoga.</p> -->
+                              </div>
+                              </div>
+                        <div class="otv-rel-time-share">
+                        <ul class="otv-rel-time">
+                        <li>Thursday</li>
+                        <li> 18 April 2024</li>
+                        </ul>
+                        <ul class="otv-rel-ss">
+                        <li><a href="#"> <img src="images/SHARE.svg" alt=""> </a>
+                        </li>
+                        <li><a href="#"> <img src="images/SAVE.svg" alt=""> </a></li>
+                        </ul>
+                        </div>
+                        </div>
+                        <div class="mid-content">
+                        <p>According to a report in India Today, Uday Krishna Reddy worked a police constable. His journey to this achievement traces back to a pivotal moment of humiliation. His UPSC journey began after he faced humiliation from a circle inspector, who publicly shamed Reddy over a personal grudge.
+                        </p>
+                        <p>The circle inspector humiliated Reddy in front of 60 fellow policemen, leading him to resign from his police job in 2018. He wholeheartedly committed himself to prepare for UPSC and become a bigger officer than the circle inspector.Recalling the incident, Uday said, “The CI humiliated me in front of 60 policemen. I resigned from the job the same day and started preparing for UPSC Civil Services Exam. I want to become an IAS officer.”.</p>
+                        <div class="article-share">
+                        <div class="article-share-left">
+                        <p>Share this article</p>
+                        </div>
+                        <div class="article-share-right">
+                        <a href="#"><img src="images/twitter-lp.svg" alt="otv" ></a>
+                        <a href="#"><img src="images/fb-lp.svg" alt="otv" ></a>
+                        <a href="#"><img src="images/insta-lp.svg" alt="otv"  ></a>
+                        <a href="#"><img src="images/SAVE.svg" alt="otv" ></a>
+                        </div>
+                        </div>
+                        <div class="tags-otv">
+                        <div class="tags-otv-left">
+                        <p>tags</p>
+                        </div>
+                        <div class="tags-otv-right">
+                        <a href="#">odisha</a>
+                        <a href="#">cuttack</a>
+                        <a href="#">bhubaneshwar</a>
+                        <a href="#">asham</a>
+                        <a href="#">ganga</a>
+                        <a href="#">bhadrak</a>
+                        <a href="#">modi</a>
+                        <a href="#">rahul</a>
+                        </div>
+                        </div>
+                        </div>
+                  <!-- related stories/////////////-->
+                  <!-- webstory -->
+                  <section class="bdn-webstories">
+                  <div class="otv-heading-one-container">
+                  <a href="#">
+                  <h2 class="otv-heading-one-line"><span>webstories</span>
+                  </h2>
+                  </a>
+                  </div>
+                  <div class="webstoriesRow">
+                  <div class="story-item">
+                  <a href="https://old.odishatv.in/webstories/entertainment/ahsaas-channa-darsheel-harshaali-and-jannat-zubair-as-child-artist-horrors-in-ai-s-vision-212564" title="Ahsaas Channa, Darsheel, Harshaali, and Jannat Zubair as Child Artist Horrors in AI's Vision" target="_blank"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/recent_photo_1692348935.webp" alt="Ahsaas Channa, Darsheel, Harshaali, and Jannat Zubair as Child Artist Horrors in AI's Vision" title="Ahsaas Channa, Darsheel, Harshaali, and Jannat Zubair as Child Artist Horrors in AI's Vision" width="237" height="370"></a>
+                  <div class="webstory-content">
+                  
+                  <a href="https://old.odishatv.in/webstories/entertainment/ahsaas-channa-darsheel-harshaali-and-jannat-zubair-as-child-artist-horrors-in-ai-s-vision-212564" title="Ahsaas Channa, Darsheel, Harshaali, and Jannat Zubair as Child Artist Horrors in AI's Vision" target="_blank"><h4>Ahsaas Channa, Darsheel, Harshaali, and Jannat Zubair as Child Artist Horrors in AI's Vision</h4></a>
+                  </div>
+                  </div>
+                  <div class="story-item">
+                  <a href="https://old.odishatv.in/webstories/sports/virat-kohli-rohit-and-sanju-s-adorable-little-big-heads-reimagined-by-ai-212561" title="Virat Kohli, Rohit, and Sanju's Adorable Little Big Heads Reimagined by AI" target="_blank"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/recent_photo_1692348420.webp" alt="Virat Kohli, Rohit, and Sanju's Adorable Little Big Heads Reimagined by AI" title="Virat Kohli, Rohit, and Sanju's Adorable Little Big Heads Reimagined by AI" width="237" height="370"></a>
+                  <div class="webstory-content">
+                  <a href="https://old.odishatv.in/webstories/sports/virat-kohli-rohit-and-sanju-s-adorable-little-big-heads-reimagined-by-ai-212561" title="Virat Kohli, Rohit, and Sanju's Adorable Little Big Heads Reimagined by AI" target="_blank"><h4>Virat Kohli, Rohit, and Sanju's Adorable Little Big Heads Reimagined by AI</h4></a>
+                  </div>
+                  </div>
+                  <div class="story-item">
+                  <a href="https://old.odishatv.in/webstories/lifestyle/10-benefits-of-waking-up-early-212530" title="10 Benefits of Waking Up Early" target="_blank"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/recent_photo_1692336654.webp" alt="10 Benefits of Waking Up Early" title="10 Benefits of Waking Up Early" width="237" height="370"></a>
+                  <div class="webstory-content">
+                  <a href="https://old.odishatv.in/webstories/lifestyle/10-benefits-of-waking-up-early-212530" title="10 Benefits of Waking Up Early" target="_blank"><h4>10 Benefits of Waking Up Early</h4></a>
+                  </div>
+                  </div>
+                  <div class="story-item">
+                  <a href="https://old.odishatv.in/webstories/entertainment/shah-rukh-samantha-and-priyanka-shine-ai-imagined-superhero-transformations-212450" title="Shah Rukh, Samantha and Priyanka Shine: AI-imagined Superhero Transformations" target="_blank"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/recent_photo_1692258501.webp" alt="Shah Rukh, Samantha and Priyanka Shine: AI-imagined Superhero Transformations" title="Shah Rukh, Samantha and Priyanka Shine: AI-imagined Superhero Transformations" width="237" height="370"></a>
+                  <div class="webstory-content">
+                 
+                  <a href="https://old.odishatv.in/webstories/entertainment/shah-rukh-samantha-and-priyanka-shine-ai-imagined-superhero-transformations-212450" title="Shah Rukh, Samantha and Priyanka Shine: AI-imagined Superhero Transformations" target="_blank"><h4>Shah Rukh, Samantha and Priyanka Shine: AI-imagined Superhero Transformations</h4></a>
+                  </div>
+                  </div>
+                  <div class="story-item">
+                  <a href="https://old.odishatv.in/webstories/health/10-quick-home-remedies-for-pink-eye-212434" title="10 Quick Home Remedies for Pink Eye" target="_blank"><img src="https://images.odishatv.in/uploadimage/library/16_9/16_9_1/recent_photo_1692249643.webp" alt="10 Quick Home Remedies for Pink Eye" title="10 Quick Home Remedies for Pink Eye" width="237" height="370"></a>
+                  <div class="webstory-content">
+                  <a href="https://old.odishatv.in/webstories/health/10-quick-home-remedies-for-pink-eye-212434" title="10 Quick Home Remedies for Pink Eye" target="_blank"><h4>10 Quick Home Remedies for Pink Eye</h4></a>
+                  </div>
+                  </div>
+               </div>
+                  </section> 
+                  <div class="otv-rel-box">
+                  <div class="otv-rel-box-sub">
+                  <a href="#">
+                  <img src="https://assets.odishareporter.in/uploadimage/library/16_9/16_9_2/IMAGE_1713408084.JPG" alt="Polling Party" title="Polling Party" class="otv-rel-box-sub-img"></a>
+                  <div class="otv-rel-box-sub-content">
+                  <a href="#">
+                  <h4><span>Avneet Kaur has</span> working since childhood and has worked in
+                  many television serials including working since childhood and has worked in
+                  many television serials including </h4>
+                  </a>
+                 
+                  </div>
+                  </div>
+                  <div class="otv-rel-time-share">
+                  <ul class="otv-rel-time">
+                  <li>Thursday</li>
+                  <li> 18 April 2024</li>
+                  </ul>
+                  <ul class="otv-rel-ss">
+                  <li><a href="#"> <img src="images/SHARE.svg" alt=""> </a>
+                  </li>
+                  <li><a href="#"> <img src="images/SAVE.svg" alt=""> </a></li>
+                  </ul>
+                  </div>
+                  </div>
+                  <div class="otv-rel-box">
+                  <div class="otv-rel-box-sub">
+                  <a href="#">
+                  <img src="https://assets.odishareporter.in/uploadimage/library/16_9/16_9_2/IMAGE_1713408084.JPG" alt="Polling Party" title="Polling Party" class="otv-rel-box-sub-img"></a>
+                  <div class="otv-rel-box-sub-content">
+                  <a href="#">
+                  <h4><span>Avneet Kaur has</span> working since childhood and has worked in
+                  many television serials including working since childhood and has worked in
+                  many television serials including </h4>
+                  </a>
+                  
+                  </div>
+                  </div>
+                  <div class="otv-rel-time-share">
+                  <ul class="otv-rel-time">
+                  <li>Thursday</li>
+                  <li> 18 April 2024</li>
+                  </ul>
+                  <ul class="otv-rel-ss">
+                  <li><a href="#"> <img src="images/SHARE.svg" alt=""> </a>
+                  </li>
+                  <li><a href="#"> <img src="images/SAVE.svg" alt=""> </a></li>
+                  </ul>
+                  </div>
+                  </div>
+                  <div class="otv-rel-box">
+                  <div class="otv-rel-box-sub">
+                  <a href="#">
+                  <img src="https://assets.odishareporter.in/uploadimage/library/16_9/16_9_2/IMAGE_1713408084.JPG" alt="Polling Party" title="Polling Party" class="otv-rel-box-sub-img"></a>
+                  <div class="otv-rel-box-sub-content">
+                  <a href="#">
+                  <h4><span>Avneet Kaur has</span> working since childhood and has worked in
+                  many television serials including working since childhood and has worked in
+                  many television serials including </h4>
+                  </a>
+                  
+                  </div>
+                  </div>
+                  <div class="otv-rel-time-share">
+                  <ul class="otv-rel-time">
+                  <li>Thursday</li>
+                  <li> 18 April 2024</li>
+                  </ul>
+                  <ul class="otv-rel-ss">
+                  <li><a href="#"> <img src="images/SHARE.svg" alt=""> </a>
+                  </li>
+                  <li><a href="#"> <img src="images/SAVE.svg" alt=""> </a></li>
+                  </ul>
+                  </div>
+                  </div>
+                  <!-- webstory //////////////////-->
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4">
+               <!-- right-bar-style -->
+               <div class="otv-heading-one-container">
+                  <a href="#">
+                     <h2 class="otv-heading-one-line"><span>food</span>
+                     </h2>
+                  </a>
+               </div>
+               <!-- add    -->
+               
+              
+               <!-- add    -->
+               <div class="otv-rel-box">
+                  <div class="otv-right-box-main">
+                        <div class="otv-right-box-main-content">
+                     <a href="#">
+                     <h4><span>Avneet Kaur has</span> working since childhood and has worked in
+                     many television serials including working since </h4>
+                     </a>
+                     <!-- <p class="rel-box-sub-first-para"> Hamari Sister Didi, and Aladdin: Naam Toh
+                        Suna Hoga.</p> -->
+                     </div>
+                     <img src="https://assets.odishareporter.in/uploadimage/library/16_9/16_9_2/IMAGE_1713408084.JPG" alt="Polling Party" title="Polling Party" class="otv-right-box-main-img">
+                  </div>
+                  <div class="otv-rel-time-share">
+                     <ul class="otv-rel-time">
+                        <li>Thursday</li>
+                        <li> 18 April 2024</li>
+                     </ul>
+                     <ul class="otv-rel-ss">
+                        <li><a href="#"> <img src="images/SHARE.svg" alt=""> </a>
+                        </li>
+                        <li><a href="#"> <img src="images/SAVE.svg" alt=""> </a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="otv-rel-box">
+                  <div class="otv-right-box-sub">
+                     <a href="#">
+                     <img src="https://assets.odishareporter.in/uploadimage/library/16_9/16_9_2/IMAGE_1713408084.JPG" alt="Polling Party" title="Polling Party" class="otv-right-box-sub-img"></a>
+                     <div class="otv-right-box-sub-content">
+                        <a href="#">
+                           <h4><span>Avneet Kaur has</span> working since childhood and has worked in
+                              many television serials including working since 
+                           </h4>
+                        </a>
+                        <!-- <p class="rel-box-sub-first-para"> Hamari Sister Didi, and Aladdin: Naam Toh
+                           Suna Hoga.</p> -->
+                     </div>
+                  </div>
+                  <div class="otv-rel-time-share">
+                     <ul class="otv-rel-time">
+                        <li>Thursday</li>
+                        <li> 18 April 2024</li>
+                     </ul>
+                     <ul class="otv-rel-ss">
+                        <li><a href="#"> <img src="images/SHARE.svg" alt=""> </a>
+                        </li>
+                        <li><a href="#"> <img src="images/SAVE.svg" alt=""> </a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="otv-rel-box">
+                  <div class="otv-right-box-sub">
+                     <a href="#">
+                     <img src="https://assets.odishareporter.in/uploadimage/library/16_9/16_9_2/IMAGE_1713408084.JPG" alt="Polling Party" title="Polling Party" class="otv-right-box-sub-img"></a>
+                     <div class="otv-right-box-sub-content">
+                        <a href="#">
+                           <h4><span>Avneet Kaur has</span> working since childhood and has worked in
+                              many television serials including working since 
+                           </h4>
+                        </a>
+                        <!-- <p class="rel-box-sub-first-para"> Hamari Sister Didi, and Aladdin: Naam Toh
+                           Suna Hoga.</p> -->
+                     </div>
+                  </div>
+                  <div class="otv-rel-time-share">
+                     <ul class="otv-rel-time">
+                        <li>Thursday</li>
+                        <li> 18 April 2024</li>
+                     </ul>
+                     <ul class="otv-rel-ss">
+                        <li><a href="#"> <img src="images/SHARE.svg" alt=""> </a>
+                        </li>
+                        <li><a href="#"> <img src="images/SAVE.svg" alt=""> </a></li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- add-lp-otv-last -->
+               <div class="add-lp-otv-last">
+                  <img src="https://beta-live.odishatv.in/commondir/images/logo.svg" alt="OTV Logo" title="OTV Logo" width="141" height="25" class="otv-logo-lp">
+                  <div class="chr-container">
+                     <p class="chr-lp">free</p>
+                     <p class="chr-lp">fire</p>
+                     <p class="chr-lp">unbaised</p>
+                  </div>
+                  <div class="app-store-lp">
+                     <p class="cnt-lp">download app</p>
+                     <img src="images/google.png" class="googleplay-img-lp" alt="" >
+                     <img src="images/apple.png" class="googleplay-img-lp" alt="" >
+                  </div>
+                  <div class="social-lp">
+                     <p class="cnt-lp">follow us on</p>
+                     <a href="#"><img src="images/fb-lp.svg" alt=""></a>
+                     <a href="#"><img src="images/insta-lp.svg" alt=""></a>
+                     <a href="#"> <img src="images/twitter-lp.svg" alt=""></a>
+                     <a href="#"><img src="images/youtube-lp.svg" alt=""></a>
+                  </div>
+               </div>
+              
+              
+               <!-- add-lp-otv-last//////////////////////-->
+               <!-- right-bar-style -->
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="main-visit-links-ft">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-10">
+                     <div class="ft-fst-row">
+                        <div class="logo-btn-ft">
+                           <img src="images/ft-logo-otv.svg" alt="otv5677" class="otv-logo-ft">
+                           <a href="#"  class="live-btn-otv-ft">
+                           live tv
+                        </a>
+                        </div>
+                        <div class="search-bar-otv-ft">
+                           <input type="text" placeholder="type here...." class="search-input-otv">
+                           <a href="#" class="sub-btn-otv-ft">
+                           subscribe
+                        </a>
+                        </div>
+                     </div>
+                     <div class="ft-snd-row">
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-15">
+                           <div class="short-visit-link-otv">
+                              <h5 class="ft-link-heading"><a href="#">latest news</a></h5>
+                              <ul class="ft-subnews-link">
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                                 <li><a href="#" target="_blank">state news</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-2">
+                     <ul class="social-icon-otv-ft">
+                        <li><a href="https://www.facebook.com/otvnews/" title="facebook-otv" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/fb-ft-otv.svg" class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                        <li><a href="https://twitter.com/otvnews" title="Twitter-otv" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/twitter-ft-otv.svg" class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                        <li><a href="https://www.youtube.com/c/OTVNewsEnglish" title="Youtube" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/youtube-ft-otv.svg" class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                        <li><a href="https://t.me/otvtelegram" title="Telegram" target="_blank"><img src="https://beta-live.odishatv.in/commondir/images/svg/telegram-ft-otv.svg" class="social-icon-otv-img" alt="" width="20" height="14"></a></li>
+                     </ul>
+                     <div class="app-store-cnt-ft">
+                        <p class="store-title-otv">mobile app</p>
+                        <a href="https://apps.apple.com/us/app/otv-odisha-tv/id1132594358" target="_blank" class="svg-sprite play-store">
+                        
+                        
+                      </a>
+                      <a href="https://play.google.com/store/apps/details?id=com.news.odisha_tv&amp;hl=en" target="_blank" class="svg-sprite app-store">
+                        
+                      </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="partner-ft-otv">
+            <div class="container">
+               <h5 class="partner-ft-heading">partner sites</h5>
+               <ul class="partner-link-otv">
+                  <li><a href="#" target="blank">otv news english</a></li>
+                  <li><a href="#" target="blank">otv news english</a></li>
+                  <li><a href="#" target="blank">otv news english</a></li>
+                  <li><a href="#" target="blank">otv news english</a></li>
+                  <li><a href="#" target="blank">otv news english</a></li>
+                  <li><a href="#" target="blank">otv news english</a></li>
+                  <li><a href="#" target="blank">otv news english</a></li>
+                  <li><a href="#" target="blank">otv news english</a></li>
+                  <li><a href="#" target="blank">otv news english</a></li>
+                  <li><a href="#" target="blank">otv news english</a></li>
+                  <li><a href="#" target="blank">otv news english</a></li>
+                  <li><a href="#" target="blank">otv news english</a></li>
+                  <li><a href="#" target="blank">otv news english</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="contact-ft-otv">
+            <div class="container">
+               <ul class="contact-us-link-otv">
+                  <li><a href="#" target="_blank">contact us</a></li>
+                  <li><a href="#" target="_blank">contact us</a></li>
+                  <li><a href="#" target="_blank">contact us</a></li>
+                  <li><a href="#" target="_blank">contact us</a></li>
+                  <li><a href="#" target="_blank">contact us</a></li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <script>
+         document.addEventListener("DOMContentLoaded", function() {
+         const contentWrapper = document.querySelector(".article-wrapper");
+         const showMoreBtn = document.getElementById("showMoreBtn");
+         const blurOverlay = document.createElement("div");
+         blurOverlay.classList.add("blur-overlay");
+         contentWrapper.appendChild(blurOverlay);
+         
+         showMoreBtn.addEventListener("click", function() {
+         contentWrapper.style.maxHeight = "max-content";
+         showMoreBtn.style.display = "none";
+         blurOverlay.style.display = "none";
+         });
+         
+         if (contentWrapper.scrollHeight > contentWrapper.clientHeight) {
+         showMoreBtn.style.display = "block";
+         }
+         });
+         
+      </script>
+   </body>
+</html>

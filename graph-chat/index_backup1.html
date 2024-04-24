@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Include Required Prerequisites -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+	<!-- Include Date Range Picker -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	<title>GRAPH CHAT</title>
+	<style>
+		body {
+		margin: 0px;
+		padding: 0px;
+		}
+		section.value-select-sec {
+		margin: 40px 0px;
+		padding: 0px;
+		float: left;
+		width: 100%;
+		}
+		p.numberlebel {
+		margin: 0px;
+		padding: 0px;
+		font-size: 15px;
+		font-weight: normal;
+		color: #777;
+		}
+		h2.numberval {
+		margin: 6px 0px;
+		padding: 0px;
+		font-size: 23px;
+		font-weight: bold;
+		color: #000;
+		}
+		.numbervalues {
+		margin-bottom: 25px;
+		}
+		.fieldbox {
+		width: 200px;
+		height: 50px;
+		border: none;
+		outline: none;
+		background: none;
+		margin-left: 10px;
+		float: right;
+		padding: 0px 10px;
+		-webkit-box-shadow: -1px 1px 2px 1px rgb(0 0 0 / 37%);
+		-moz-box-shadow: -1px 1px 2px 1px rgba(0,0,0,0.37);
+		box-shadow: -1px 1px 2px 1px rgb(0 0 0 / 37%);
+		}
+		.form-field {
+		display: inline-block;
+		width: 100%;
+		margin: 5px 0px 22px 0px;
+		}
+		.form-field label {
+		margin: 8px 0px 0px 0px;
+		padding: 0px;
+		font-size: 24px;
+		font-weight: normal;
+		color: #000;
+		}
+		button.defaultbutton {
+		margin: 0px;
+		padding: 0px;
+		background-color: #e0e0e0;
+		border: none;
+		outline: none;
+		width: 200px;
+		line-height: 50px;
+		border-radius: 9px;
+		font-size: 24px;
+		color: #000;
+		margin-top: 30px;
+		}
+		section.bd-graphchat {
+		margin: 50px 0px 50px 0px;
+		padding: 0px;
+		float: left;
+		width: 100%;
+		}
+		h3.graph-heading {
+		margin: 0px 0px 20px 30px;
+		padding: 0px;
+		color: #000;
+		font-size: 17px;
+		position: relative;
+		padding-left: 47px;
+		}
+		h3.graph-heading:before {
+		content: "";
+		display: block;
+		width: 37px;
+		height: 2px;
+		background-color: #5c00ff;
+		position: absolute;
+		left: 0;
+		top: 8px;
+		}
+		.graphchat {
+		margin: 0px 0px 50px 0px;
+		}
+	</style>
+</head>
+	<body>
+		<section class="value-select-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="form-field">
+							<label>Channel</label>
+							<select name="channel" id="channel" class="fieldbox">
+							  <option>Channel Name</option>
+							  <option value="volvo">Volvo</option>
+							  <option value="saab">Saab</option>
+							  <option value="mercedes">Mercedes</option>
+							  <option value="audi">Audi</option>
+							</select>
+						</div>
+						<div class="form-field">
+							<label>Category</label>
+							<select name="category" id="category" class="fieldbox">
+							  <option>Category Name</option>
+							  <option value="volvo">Volvo</option>
+							  <option value="saab">Saab</option>
+							  <option value="mercedes">Mercedes</option>
+							  <option value="audi">Audi</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="numbervalues">
+									<p class="numberlebel">Stories</p>
+									<h2 class="numberval">78,764,509</h2>
+								</div>
+								<div class="numbervalues">
+									<p class="numberlebel">Views</p>
+									<h2 class="numberval">78,764,509</h2>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="numbervalues">
+									<p class="numberlebel">Active Users</p>
+									<h2 class="numberval">78,764,509</h2>
+								</div>
+								<div class="numbervalues">
+									<p class="numberlebel">New Users</p>
+									<h2 class="numberval">78,764,509</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="form-field">
+							<label>Date</label>
+							<input type="text" name="daterange" value="01/01/2015 - 01/31/2015" class="fieldbox" />
+						</div>
+						<div class="form-field">
+							<label>Employee</label>
+							<select name="employee" id="employee" class="fieldbox">
+							  <option>Employee Name</option>
+							  <option value="volvo">Volvo</option>
+							  <option value="saab">Saab</option>
+							  <option value="mercedes">Mercedes</option>
+							  <option value="audi">Audi</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<button class="defaultbutton">Default</button>
+			</div>
+		</section>
+		<section class="bd-graphchat">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="graphchat">
+							<h3 class="graph-heading">Stories</h3>
+							<canvas id="StoriesChart" style="width:100%;max-width:600px"></canvas>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="graphchat">
+							<h3 class="graph-heading">Active Users</h3>
+							<canvas id="ActiveUsersChart" style="width:100%;max-width:600px"></canvas>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="graphchat">
+							<h3 class="graph-heading">Views</h3>
+							<canvas id="ViewsChart" style="width:100%;max-width:600px"></canvas>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="graphchat">
+							<h3 class="graph-heading">New Users</h3>
+							<canvas id="NewUsersChart" style="width:100%;max-width:600px"></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script>
+			const xValues_StoriesChart = ["Mar 11","Mar 14", "Mar 17", "Mar 18", "Mar 20", "Mar 21", "Mar 22", "Mar 24", "Mar 26", "Mar 28"];
+			const yValues_StoriesChart = [100000,300000,200000,100000,400000,300000,400000,200000,400000,500000,500000];
+			new Chart("StoriesChart", {
+			  type: "line",
+			  data: {
+			    labels: xValues_StoriesChart,
+			    datasets: [{
+			      fill: false,
+			      lineTension: 0,
+			      backgroundColor: "rgba(0,0,255,1.0)",
+			      borderColor: "rgba(0,0,255,0.1)",
+			      data: yValues_StoriesChart
+			    }]
+			  },
+			  options: {
+			    legend: {display: false},
+			    scales: {
+			      yAxes: [{ticks: {min: 100000, max:600000}}],
+			    }
+			  }
+			});
+			const xValues_ActiveUsersChart = ["Mar 11","Mar 14", "Mar 17", "Mar 18", "Mar 20", "Mar 21", "Mar 22", "Mar 24", "Mar 26", "Mar 28"];
+			const yValues_ActiveUsersChart = [500000,400000,300000,200000,100000,500000,400000,300000,200000,100000,500000];
+			new Chart("ActiveUsersChart", {
+			  type: "line",
+			  data: {
+			    labels: xValues_ActiveUsersChart,
+			    datasets: [{
+			      fill: false,
+			      lineTension: 0,
+			      backgroundColor: "rgba(0,0,255,1.0)",
+			      borderColor: "rgba(0,0,255,0.1)",
+			      data: yValues_ActiveUsersChart
+			    }]
+			  },
+			  options: {
+			    legend: {display: false},
+			    scales: {
+			      yAxes: [{ticks: {min: 100000, max:600000}}],
+			    }
+			  }
+			});
+			const xValues_ViewsChart = ["Mar 11","Mar 14", "Mar 17", "Mar 18", "Mar 20", "Mar 21", "Mar 22", "Mar 24", "Mar 26", "Mar 28"];
+			const yValues_ViewsChart = [100000,200000,300000,400000,500000,100000,200000,300000,400000,500000,100000];
+			new Chart("ViewsChart", {
+			  type: "line",
+			  data: {
+			    labels: xValues_ViewsChart,
+			    datasets: [{
+			      fill: false,
+			      lineTension: 0,
+			      backgroundColor: "rgba(0,0,255,1.0)",
+			      borderColor: "rgba(0,0,255,0.1)",
+			      data: yValues_ViewsChart
+			    }]
+			  },
+			  options: {
+			    legend: {display: false},
+			    scales: {
+			      yAxes: [{ticks: {min: 100000, max:600000}}],
+			    }
+			  }
+			});
+			const xValues_NewUsersChart = ["Mar 11","Mar 14", "Mar 17", "Mar 18", "Mar 20", "Mar 21", "Mar 22", "Mar 24", "Mar 26", "Mar 28"];
+			const yValues_NewUsersChart = [100000,500000,200000,300000,400000,300000,100000,500000,400000,100000,500000];
+			new Chart("NewUsersChart", {
+			  type: "line",
+			  data: {
+			    labels: xValues_NewUsersChart,
+			    datasets: [{
+			      fill: false,
+			      lineTension: 0,
+			      backgroundColor: "rgba(0,0,255,1.0)",
+			      borderColor: "rgba(0,0,255,0.1)",
+			      data: yValues_NewUsersChart
+			    }]
+			  },
+			  options: {
+			    legend: {display: false},
+			    scales: {
+			      yAxes: [{ticks: {min: 100000, max:600000}}],
+			    }
+			  }
+			});
+			$(function() {
+				$('input[name="daterange"]').daterangepicker();
+			});
+		</script>
+	</body>
+</html>

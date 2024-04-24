@@ -1,0 +1,19 @@
+<svg id="PLAY" xmlns="http://www.w3.org/2000/svg" width="71" height="71" viewBox="0 0 71 71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff3a00;
+        stroke: #fff;
+        stroke-width: 1px;
+        opacity: 0.61;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="35.5" cy="35.5" r="35"/>
+  <path class="cls-2" d="M798.211,675.5L776.789,663.66v23.678L798.211,675.5" transform="translate(-748.5 -638.5)"/>
+</svg>
